@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331391B6486E60036FD6B /* AppDelegate.swift */; };
+		CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAC3313B1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld */; };
+		CAC3313F1B6486E60036FD6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC3313E1B6486E60036FD6B /* ViewController.swift */; };
+		CAC331421B6486E60036FD6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC331401B6486E60036FD6B /* Main.storyboard */; };
+		CAC331441B6486E60036FD6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC331431B6486E60036FD6B /* Images.xcassets */; };
+		CAC331471B6486E60036FD6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC331451B6486E60036FD6B /* LaunchScreen.xib */; };
+		CAC331531B6486E60036FD6B /* TAMU_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331521B6486E60036FD6B /* TAMU_MobileTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAC3314D1B6486E60036FD6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC3312C1B6486E60036FD6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAC331331B6486E60036FD6B;
+			remoteInfo = "TAMU Mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAC331341B6486E60036FD6B /* TAMU Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAMU Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC331381B6486E60036FD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC331391B6486E60036FD6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAC3313C1B6486E60036FD6B /* TAMU_Mobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TAMU_Mobile.xcdatamodel; sourceTree = "<group>"; };
+		CAC3313E1B6486E60036FD6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAC331411B6486E60036FD6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAC331431B6486E60036FD6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CAC331461B6486E60036FD6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CAC3314C1B6486E60036FD6B /* TAMU MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAMU MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC331511B6486E60036FD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC331521B6486E60036FD6B /* TAMU_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMU_MobileTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAC331311B6486E60036FD6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC331491B6486E60036FD6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAC3312B1B6486E60036FD6B = {
+			isa = PBXGroup;
+			children = (
+				CAC331361B6486E60036FD6B /* TAMU Mobile */,
+				CAC3314F1B6486E60036FD6B /* TAMU MobileTests */,
+				CAC331351B6486E60036FD6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAC331351B6486E60036FD6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAC331341B6486E60036FD6B /* TAMU Mobile.app */,
+				CAC3314C1B6486E60036FD6B /* TAMU MobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC331361B6486E60036FD6B /* TAMU Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				CAC331391B6486E60036FD6B /* AppDelegate.swift */,
+				CAC3313E1B6486E60036FD6B /* ViewController.swift */,
+				CAC331401B6486E60036FD6B /* Main.storyboard */,
+				CAC331431B6486E60036FD6B /* Images.xcassets */,
+				CAC331451B6486E60036FD6B /* LaunchScreen.xib */,
+				CAC3313B1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld */,
+				CAC331371B6486E60036FD6B /* Supporting Files */,
+			);
+			path = "TAMU Mobile";
+			sourceTree = "<group>";
+		};
+		CAC331371B6486E60036FD6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAC331381B6486E60036FD6B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAC3314F1B6486E60036FD6B /* TAMU MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAC331521B6486E60036FD6B /* TAMU_MobileTests.swift */,
+				CAC331501B6486E60036FD6B /* Supporting Files */,
+			);
+			path = "TAMU MobileTests";
+			sourceTree = "<group>";
+		};
+		CAC331501B6486E60036FD6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAC331511B6486E60036FD6B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAC331331B6486E60036FD6B /* TAMU Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC331561B6486E60036FD6B /* Build configuration list for PBXNativeTarget "TAMU Mobile" */;
+			buildPhases = (
+				CAC331301B6486E60036FD6B /* Sources */,
+				CAC331311B6486E60036FD6B /* Frameworks */,
+				CAC331321B6486E60036FD6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TAMU Mobile";
+			productName = "TAMU Mobile";
+			productReference = CAC331341B6486E60036FD6B /* TAMU Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAC3314B1B6486E60036FD6B /* TAMU MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC331591B6486E60036FD6B /* Build configuration list for PBXNativeTarget "TAMU MobileTests" */;
+			buildPhases = (
+				CAC331481B6486E60036FD6B /* Sources */,
+				CAC331491B6486E60036FD6B /* Frameworks */,
+				CAC3314A1B6486E60036FD6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAC3314E1B6486E60036FD6B /* PBXTargetDependency */,
+			);
+			name = "TAMU MobileTests";
+			productName = "TAMU MobileTests";
+			productReference = CAC3314C1B6486E60036FD6B /* TAMU MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAC3312C1B6486E60036FD6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = coolaf;
+				TargetAttributes = {
+					CAC331331B6486E60036FD6B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CAC3314B1B6486E60036FD6B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CAC331331B6486E60036FD6B;
+					};
+				};
+			};
+			buildConfigurationList = CAC3312F1B6486E60036FD6B /* Build configuration list for PBXProject "TAMU Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAC3312B1B6486E60036FD6B;
+			productRefGroup = CAC331351B6486E60036FD6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAC331331B6486E60036FD6B /* TAMU Mobile */,
+				CAC3314B1B6486E60036FD6B /* TAMU MobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAC331321B6486E60036FD6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC331421B6486E60036FD6B /* Main.storyboard in Resources */,
+				CAC331471B6486E60036FD6B /* LaunchScreen.xib in Resources */,
+				CAC331441B6486E60036FD6B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC3314A1B6486E60036FD6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAC331301B6486E60036FD6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC3313F1B6486E60036FD6B /* ViewController.swift in Sources */,
+				CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */,
+				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC331481B6486E60036FD6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC331531B6486E60036FD6B /* TAMU_MobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAC3314E1B6486E60036FD6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAC331331B6486E60036FD6B /* TAMU Mobile */;
+			targetProxy = CAC3314D1B6486E60036FD6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAC331401B6486E60036FD6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC331411B6486E60036FD6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAC331451B6486E60036FD6B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC331461B6486E60036FD6B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAC331541B6486E60036FD6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAC331551B6486E60036FD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAC331571B6486E60036FD6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TAMU Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAC331581B6486E60036FD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TAMU Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CAC3315A1B6486E60036FD6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TAMU MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAMU Mobile.app/TAMU Mobile";
+			};
+			name = Debug;
+		};
+		CAC3315B1B6486E60036FD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TAMU MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAMU Mobile.app/TAMU Mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAC3312F1B6486E60036FD6B /* Build configuration list for PBXProject "TAMU Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC331541B6486E60036FD6B /* Debug */,
+				CAC331551B6486E60036FD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC331561B6486E60036FD6B /* Build configuration list for PBXNativeTarget "TAMU Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC331571B6486E60036FD6B /* Debug */,
+				CAC331581B6486E60036FD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAC331591B6486E60036FD6B /* Build configuration list for PBXNativeTarget "TAMU MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC3315A1B6486E60036FD6B /* Debug */,
+				CAC3315B1B6486E60036FD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CAC3313B1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CAC3313C1B6486E60036FD6B /* TAMU_Mobile.xcdatamodel */,
+			);
+			currentVersion = CAC3313C1B6486E60036FD6B /* TAMU_Mobile.xcdatamodel */;
+			path = TAMU_Mobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CAC3312C1B6486E60036FD6B /* Project object */;
+}
