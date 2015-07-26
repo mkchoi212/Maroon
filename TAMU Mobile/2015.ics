@@ -1,0 +1,583 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+VERSION:2.0
+NAME:Fall Semester Registrar's Calendar
+X-WR-CALNAME:Fall Semester Academic Calendar
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20150819
+LOCATION:Texas A&M University
+DESCRIPTION:Graduation Application opens for all students planning to graduate in December 2015.\n\n \n\nTexas A&M University
+SUMMARY:Graduation Application Open for December 2015 Degree Candidates
+UID:91@12002
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20150828
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day to register for fall semester classes. Refer to http://finance.tamu.edu/sbs for tuition and fee due dates.\n\n\n\n \n\nTexas A&M University
+SUMMARY:Last Day to Register for Fall 2015 Classes (5 p.m.)
+UID:92@12003
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20150831
+LOCATION:Texas A&M University
+DESCRIPTION:First day of fall semester classes.\n\nTexas A&M University
+SUMMARY:First Day of Classes - Fall Semester
+UID:93@12004
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20150904
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day for adding/dropping courses for the fall semester.\n\nTexas A&M University
+SUMMARY:Last Day to Add/Drop Courses - Fall 2015 (5 p.m.)
+UID:94@12005
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151211
+LOCATION:Texas A&M University
+DESCRIPTION:Fall semester final examinations for all students. \n\nTexas A&M University
+SUMMARY:Final Examinations - Fall 2015
+UID:95@12006
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20150930
+LOCATION:Texas A&M University
+DESCRIPTION:Undergraduate degree plan approval deadline.\n\nTexas A&M University
+SUMMARY:Undergradute Degree Plan Approval Deadline
+UID:96@12007
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151019
+LOCATION:Texas A&M University
+DESCRIPTION:12. p.m. (noon), Mid-semester grades due.\n\nTexas A&M University
+SUMMARY:Fall 2015 Mid-Semester Gradues Due (Noon)
+UID:97@12008
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151112
+DTEND;VALUE=DATE:20151202
+LOCATION:Texas A&M University
+DESCRIPTION:Preregistration for 2016 spring semester.\n\n	Undergraduate Students Registration Schedule\n	Graduate and Professional Students Registration Schedule\n\n\n\nTexas A&M University
+SUMMARY:Preregistration for Spring 2016
+UID:98@12009
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151120
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day for all students to drop courses with no penalty (Q-drop).\n\nTexas A&M University
+SUMMARY:Fall 2015 - Q-Drop Deadline (5 p.m.)
+UID:99@12010
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151118
+LOCATION:Texas A&M University
+DESCRIPTION:Bonfire 1999 Remembrance Day\n\nTexas A&M University
+SUMMARY:Bonfire 1999 Remembrance Day
+UID:100@12011
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151002
+LOCATION:Texas A&M University
+DESCRIPTION:Last day to apply for all degrees to be awarded in December without a late fee.\n\nTexas A&M University
+SUMMARY:Fall 2015 Graduation Deadline - No Late Fee
+UID:101@12012
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151120
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day to change KINE 198/199 Grade Type for Fall 2015.\n\nTexas A&M University
+SUMMARY:Last Day to Change KINE 198/199 Grade Type for Fall 2015
+UID:102@12013
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151120
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day to officially withdraw from the University.\n\nTexas A&M University
+SUMMARY:Fall 2015 - Withdrawal Deadline (5 p.m.)
+UID:103@12014
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151126
+DTEND;VALUE=DATE:20151128
+LOCATION:Texas A&M University
+DESCRIPTION:Thanksgiving Holiday\n\nTexas A&M University
+SUMMARY:Thanksgiving Holiday 
+UID:104@12015
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151207
+LOCATION:Texas A&M University
+DESCRIPTION:Redefined day, students attend their Friday classes.  Does not apply to programs offered by the College of Nursing.\n\nTexas A&M University
+SUMMARY:Fall Redefined Day - Friday
+UID:105@12016
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151208
+LOCATION:Texas A&M University
+DESCRIPTION:Redefined day, students attend their Thursday classes.  Does not apply to programs offered by the College of Nursing.\n\nTexas A&M University
+SUMMARY:Fall Redefined Day - Thursday
+UID:106@12017
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151209
+LOCATION:Texas A&M University
+DESCRIPTION:Last day of classes for fall semester classes.\n\nTexas A&M University
+SUMMARY:Last Day of Classes - Fall Semester
+UID:107@12018
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151209
+LOCATION:Texas A&M University
+DESCRIPTION:Last day to apply for all degrees to be awarded in December.\n\nTexas A&M University
+SUMMARY:Fall 2015 Graduation Deadline - Late Fee Applies
+UID:108@12019
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151210
+LOCATION:Texas A&M University
+DESCRIPTION:Reading day, no classes.\n\nTexas A&M University
+SUMMARY:Reading Day
+UID:109@12020
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151214
+LOCATION:Texas A&M University
+DESCRIPTION:Fall semeser final examinations for all students.\n\nTexas A&M University
+SUMMARY:Final Examinations - Fall 2015
+UID:110@12021
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151215
+LOCATION:Texas A&M University
+DESCRIPTION:Fall semester final examinations for all students.\n\nTexas A&M University
+SUMMARY:Final Examinations - Fall 2015
+UID:111@12022
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151216
+LOCATION:Texas A&M University
+DESCRIPTION:Fall semester final examinations for all students.\n\nTexas A&M University
+SUMMARY:Final Examinations - Fall 2015
+UID:112@12023
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151217
+LOCATION:Texas A&M University
+DESCRIPTION:6 p.m., Grades due for all degree candidates in Howdy.\n\nTexas A&M University
+SUMMARY:Grades Due for December 2015 Degree Candidates (6 p.m.)
+UID:113@12024
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151218
+LOCATION:Texas A&M University
+DESCRIPTION:Commencement and Commissioning.\n\nTexas A&M University
+SUMMARY:Commencement and Commissioning
+UID:114@12025
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151221
+LOCATION:Texas A&M University
+DESCRIPTION:12 p.m. (noon), Final grades for all students due in Howdy.\n\nTexas A&M University
+SUMMARY:Fall 2015 - Final Grades Due
+UID:115@12026
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151224
+DTEND;VALUE=DATE:20160102
+LOCATION:Texas A&M University
+DESCRIPTION:Faculty and staff holiday\n\nTexas A&M University
+SUMMARY:Faculty and Staff Holiday
+UID:116@12027
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151218
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day for December undergraduate degree candidates to apply for Tuition Rebate in Howdy.\n\nTexas A&M University
+SUMMARY:Tuition Rebate Application Deadline for December 2015 Undergraduate Degree Candidates (5 PM)
+UID:117@12028
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190732Z
+DTSTART;VALUE=DATE:20151125
+LOCATION:Texas A&M University
+DESCRIPTION:Reading day, no classes.\n\nTexas A&M University
+SUMMARY:Reading Day, No Classes
+UID:118@12029
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160106
+LOCATION:Texas A&M University
+DESCRIPTION:Graduation Application opens for all students planning to graduate in May 2016.\n\n \n\nTexas A&M University
+SUMMARY:Graduation Application Open for May 2016 Degree Candidates
+UID:119@12030
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160115
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day to register for spring semester classes. Refer to http://finance.tamu.edu/sbs for tuition and fee due dates.\n\n\n\n \n\nTexas A&M University
+SUMMARY:Last Day to Register for Spring 2016 Classes (5 p.m.)
+UID:120@12031
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160119
+LOCATION:Texas A&M University
+DESCRIPTION:First day of spring semester classes.\n\nTexas A&M University
+SUMMARY:First Day of Classes - Spring Semester
+UID:121@12032
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160125
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day for adding/dropping courses for the spring semester.\n\nTexas A&M University
+SUMMARY:Last Day to Add/Drop Courses - Spring 2016 (5 p.m.)
+UID:122@12033
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160219
+LOCATION:Texas A&M University
+DESCRIPTION:Last day to apply for all degrees to be awarded in May without a late fee.\n\nTexas A&M University
+SUMMARY:Spring 2016 Graduation Deadline - No Late Fee
+UID:123@12034
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160307
+LOCATION:Texas A&M University
+DESCRIPTION:12. p.m. (noon), Mid-semester grades due.\n\nTexas A&M University
+SUMMARY:Spring 2016 Mid-Semester Gradues Due (Noon)
+UID:124@12035
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160407
+DTEND;VALUE=DATE:20160423
+LOCATION:Texas A&M University
+DESCRIPTION:Preregistration for the 2016 first term, second term, 10-week summer semester and fall semester.\n\n	Undergraduate Students Registration Schedule\n	Graduate and Professional Students Registration Schedule\n\n\n\nTexas A&M University
+SUMMARY:Preregistration for Summer and Fall 2016
+UID:125@12036
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160419
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day for all students to drop courses with no penalty (Q-drop).\n\nTexas A&M University
+SUMMARY:Spring 2016 - Q-Drop Deadline (5 p.m.)
+UID:126@12037
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160419
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day to change KINE 198/199 Grade Type for spring 2016.\n\nTexas A&M University
+SUMMARY:Last Day to Change KINE 198/199 Grade Type for Spring 2016 (5 p.m.)
+UID:127@12038
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160419
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day to officially withdraw from the University.\n\nTexas A&M University
+SUMMARY:Spring 2016 - Withdrawal Deadline (5 p.m.)
+UID:128@12039
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160503
+LOCATION:Texas A&M University
+DESCRIPTION:Redefined day, students attend their Friday classes.  Does not apply to programs offered by the College of Nursing.\n\nTexas A&M University
+SUMMARY:Spring Redefined Day - Friday
+UID:129@12040
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160503
+LOCATION:Texas A&M University
+DESCRIPTION:Last day of classes for spring semester classes.\n\nTexas A&M University
+SUMMARY:Last Day of Classes - Spring Semester
+UID:130@12041
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160503
+LOCATION:Texas A&M University
+DESCRIPTION:Last day to apply for all degrees to be awarded in May.\n\nTexas A&M University
+SUMMARY:Spring 2016 Graduation Deadline - Late Fee Applies
+UID:131@12042
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160504
+LOCATION:Texas A&M University
+DESCRIPTION:Reading day, no classes.\n\nTexas A&M University
+SUMMARY:Reading Day
+UID:132@12043
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160506
+LOCATION:Texas A&M University
+DESCRIPTION:Spring semester final examinations for all students. \n\nTexas A&M University
+SUMMARY:Final Examinations - Spring 2016
+UID:133@12044
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160509
+LOCATION:Texas A&M University
+DESCRIPTION:Spring semeser final examinations for all students.\n\nTexas A&M University
+SUMMARY:Final Examinations - Spring 2016
+UID:134@12045
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160510
+LOCATION:Texas A&M University
+DESCRIPTION:Spring semester final examinations for all students.\n\nTexas A&M University
+SUMMARY:Final Examinations - Spring 2016
+UID:135@12046
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160505
+LOCATION:Texas A&M University
+DESCRIPTION:Spring semester final examinations for all students.\n\nTexas A&M University
+SUMMARY:Final Examinations - Spring 2016
+UID:136@12047
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160511
+LOCATION:Texas A&M University
+DESCRIPTION:6 p.m., Grades due for all degree candidates in Howdy.\n\nTexas A&M University
+SUMMARY:Grades Due for May 2016 Degree Candidates (6 p.m.)
+UID:137@12048
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160512
+LOCATION:Texas A&M University
+DESCRIPTION:Commencement and Commissioning.\n\nTexas A&M University
+SUMMARY:Commencement and Commissioning
+UID:138@12049
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160513
+LOCATION:Texas A&M University
+DESCRIPTION:5 p.m., Last day for May undergraduate degree candidates to apply for Tuition Rebate in Howdy.\n\nTexas A&M University
+SUMMARY:Tuition Rebate Application Deadline for May 2015 Undergraduate Degree Candidates (5 PM)
+UID:139@12050
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160516
+LOCATION:Texas A&M University
+DESCRIPTION:12 p.m. (noon), Final grades for all students due in Howdy.\n\nTexas A&M University
+SUMMARY:Spring 2016 - Final Grades Due
+UID:140@12051
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160118
+LOCATION:Texas A&M University
+DESCRIPTION:Martin Luther King, Jr. Day, Faculty and staff holiday.\n\nTexas A&M University
+SUMMARY:Martin Luther King, Jr. Day, Faculty and Staff Holiday
+UID:141@12052
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160314
+DTEND;VALUE=DATE:20160319
+LOCATION:Texas A&M University
+DESCRIPTION:Spring Break\n\nTexas A&M University
+SUMMARY:Spring Break
+UID:142@12053
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160317
+DTEND;VALUE=DATE:20160319
+LOCATION:Texas A&M University
+DESCRIPTION:Faculty and staff holiday.\n\nTexas A&M University
+SUMMARY:Faculty and Staff Holiday
+UID:143@12054
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160325
+LOCATION:Texas A&M University
+DESCRIPTION:Reading day, no classes.\n\nTexas A&M University
+SUMMARY:Reading Day, No Classes
+UID:144@12055
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160421
+LOCATION:Texas A&M University
+DESCRIPTION:Muster, Campus ceremony.\n\nTexas A&M University
+SUMMARY:Muster, Campus Ceremony
+UID:145@12056
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160513
+LOCATION:Texas A&M University
+DESCRIPTION:Commencement and Commissioning.\n\nTexas A&M University
+SUMMARY:Commencement and Commissioning
+UID:146@12057
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150726T190746Z
+DTSTART;VALUE=DATE:20160514
+LOCATION:Texas A&M University
+DESCRIPTION:Commencement and Commissioning.\n\nTexas A&M University
+SUMMARY:Commencement and Commissioning
+UID:147@12058
+PRIORITY:3
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

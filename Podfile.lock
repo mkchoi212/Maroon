@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection (= 2.4.1)
+    - AFNetworking/NSURLSession (= 2.4.1)
+    - AFNetworking/Reachability (= 2.4.1)
+    - AFNetworking/Security (= 2.4.1)
+    - AFNetworking/Serialization (= 2.4.1)
+    - AFNetworking/UIKit (= 2.4.1)
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMWaveTransition (0.5.7)
+  - BDBOAuth1Manager (1.4.1):
+    - AFNetworking/NSURLConnection (~> 2.4.0)
+    - AFNetworking/NSURLSession (~> 2.4.0)
+  - FoldingTabBar (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.4.1)
+  - AMWaveTransition
+  - BDBOAuth1Manager (~> 1.4.0)
+  - FoldingTabBar
+
+SPEC CHECKSUMS:
+  AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
+  AMWaveTransition: 7137a5534a064fd8a955b687865a74d07729b2fe
+  BDBOAuth1Manager: e4c50f9b4ecda6c2a9da680a45d89985e4f3edb6
+  FoldingTabBar: 463d247453a2ba826ae79f5be1e6b8b93b6aa0ce
+
+COCOAPODS: 0.38.1

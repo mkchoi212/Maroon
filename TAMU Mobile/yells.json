@@ -1,0 +1,34 @@
+{
+    "yell": [
+             {
+             "name": "Gig'em",
+             "passback": "Closed fist with thumb pointed straight up",
+             "call": "Aaaaaaaa\nGig ‘em, Aggies!"
+             },
+             {
+             "name": "Aggies",
+             "passback": "Hands flat, with index fingers and thumbs touching to form an A",
+             "call": "A-G-G-I-E-S\nA-G-G-I-E-S\nAaaaaaaaa Fight 'em, Aggies'"
+             },
+             {
+             "name": "Farmers Fight",
+             "passback": "Closed fists rotating around each other in alternating directions",
+             "call": "Farmers fight!\nFarmers fight!\nFight!Fight\nFarmers, farmers fight!"
+             },
+             {
+             "name": "Old Army",
+             "passback": "Upward pointed finger moves in circular motion",
+             "call": "Aaaa, Rrrr, Mmmm, Yyyy(Drop voice)\nTttt, Aaaa, Mmmm, Cccc(Drop voice)\nAaaaaaaa ol’ Army fight!"
+             },
+             {
+             "name": "Locomotive",
+             "passback": "Hand looks to be pulling a train whistle, reaching upward and twisting on downward motion",
+             "call": "(slow) Rah! Rah! Rah! Rah! T-A-M-C\n(faster)Rah! Rah! Rah! Rah! T-A-M-C\n(very fast)Rah! Rah! Rah! Rah! T-A-M-C\n(seniors only: whoop!) Aaaaaa Rah! Rah! Rah! Rah! Team!"
+             },
+             {
+             "name": "Beat the Hell",
+             "passback": "Left arm clapping bicep, Right arm pulling up, fist clenched",
+             "call": "Beat the hell outta (team name)"
+             }
+    ]
+}
