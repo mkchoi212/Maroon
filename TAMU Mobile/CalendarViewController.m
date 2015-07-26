@@ -10,7 +10,7 @@
 #import "MBProgressHUD.h"
 #import "MXLCalendarManager.h"
 
-@interface CalendarViewController () <UITableViewDataSource>
+@interface CalendarViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic, readwrite) NSLayoutConstraint *calendarContentViewHeightConstraint;
 @property (nonatomic) BOOL expanded;
@@ -137,6 +137,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.currentDayTableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
 }
 
 - (void)loadEventsForDate:(NSDate *)currentDate {
@@ -332,6 +337,7 @@
     self.currentDayTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.currentDayTableView.translatesAutoresizingMaskIntoConstraints = NO;
     self.currentDayTableView.dataSource = self;
+    self.currentDayTableView.delegate = self;
     self.currentDayTableView.backgroundColor = [UIColor colorWithRed:80.0/255.0 green:0 blue:0 alpha:1.0];
     self.currentDayTableView.separatorColor = [UIColor grayColor];
     
@@ -380,7 +386,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"";
+    self.title = @"Calendar";
     self.expanded = YES;
     self.navigationController.navigationBar.translucent = NO;
     

@@ -18,6 +18,7 @@ class TamuMenuViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "A&M"
         
         tableView.tableFooterView = UIView()
     }

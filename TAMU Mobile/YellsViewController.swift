@@ -21,12 +21,16 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         super.viewDidLoad()
         self.title = "Yells"
         
+        loadYells()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
         var darkBlur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
         var blurView = UIVisualEffectView(effect: darkBlur)
         blurView.frame = self.view.bounds
         self.backgroundImage.addSubview(blurView)
-        
-        loadYells()
+
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

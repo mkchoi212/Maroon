@@ -64,80 +64,7 @@
          "minStartDate":"",
          "maxEndDate":""
       },
-      {
-         "name":"C2 Cafe",
-         "slug":"C2Cafe",
-         "address":"na",
-         "city":"na",
-         "state":"na",
-         "zip":"na",
-         "lat":"na",
-         "lon":"na",
-         "tzMsg":"All times are CDT",
-         "offset":"-5",
-         "dst":"1",
-         "hideAddress":"",
-         "hours":[
-            {
-               "offset":"-5",
-               "day":"3",
-               "dst":"1",
-               "begTime":"8:00",
-               "endTime":"14:00",
-               "begDate":"5/17/15",
-               "endDate":"8/10/15"
-            },
-            {
-               "offset":"-5",
-               "day":"4",
-               "dst":"1",
-               "begTime":"8:00",
-               "endTime":"14:00",
-               "begDate":"5/17/15",
-               "endDate":"8/10/15"
-            },
-            {
-               "offset":"-5",
-               "day":"5",
-               "dst":"1",
-               "begTime":"8:00",
-               "endTime":"14:00",
-               "begDate":"5/17/15",
-               "endDate":"8/10/15"
-            },
-            {
-               "offset":"-5",
-               "day":"6",
-               "dst":"1",
-               "begTime":"8:00",
-               "endTime":"14:00",
-               "begDate":"5/17/15",
-               "endDate":"8/10/15"
-            },
-            {
-               "offset":"-5",
-               "day":"2",
-               "dst":"1",
-               "begTime":"8:00",
-               "endTime":"14:00",
-               "begDate":"5/17/15",
-               "endDate":"5/24/15"
-            },
-            {
-               "offset":"-5",
-               "day":"2",
-               "dst":"1",
-               "begTime":"8:00",
-               "endTime":"14:00",
-               "begDate":"5/26/15",
-               "endDate":"8/10/15"
-            }
-         ],
-         "days":"",
-         "minStartDate":"",
-         "maxEndDate":""
-      },
-      {
+        {
          "name":"Chick-Fil-A at Ag Cafe",
          "slug":"ChickFilAatAgCafe",
          "address":"300 Olsen Boulevard",
@@ -823,12 +750,12 @@
       {
          "name":"Smoothie King/Time Out Grill at Rec Center",
          "slug":"SmoothieKingTimeOutGrillatRecCenter",
-         "address":"na",
-         "city":"na",
-         "state":"na",
-         "zip":"na",
-         "lat":"na",
-         "lon":"na",
+         "address":"797 Olsen Boulevard",
+         "city":"College Station",
+         "state":"TX",
+         "zip":"77845",
+         "lat":"30.607094",
+         "lon":"-96.342791",
          "tzMsg":"All times are CDT",
          "offset":"-5",
          "dst":"1",
@@ -905,12 +832,12 @@
       {
          "name":"Starbucks Coffee at Evans Library",
          "slug":"StarbucksCoffeeatEvansLibrary",
-         "address":"na",
-         "city":"na",
-         "state":"na",
-         "zip":"na",
-         "lat":"na",
-         "lon":"na",
+         "address":"Sterling C. Evans Library, Texas A&M University, 0468 Spence St",
+         "city":"College Station",
+         "state":"TX",
+         "zip":"77844",
+         "lat":"30.6168674,",
+         "lon":"-96.3392238",
          "tzMsg":"All times are CDT",
          "offset":"-5",
          "dst":"1",
