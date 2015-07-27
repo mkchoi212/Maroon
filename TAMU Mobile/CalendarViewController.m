@@ -9,8 +9,10 @@
 #import "CalendarViewController.h"
 #import "MBProgressHUD.h"
 #import "MXLCalendarManager.h"
+#import "YALFoldingTabBar.h"
+#import "YALTabBarInteracting.h"
 
-@interface CalendarViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface CalendarViewController () <UITableViewDataSource, UITableViewDelegate, YALTabBarInteracting>
 
 @property (strong, nonatomic, readwrite) NSLayoutConstraint *calendarContentViewHeightConstraint;
 @property (nonatomic) BOOL expanded;
@@ -457,6 +459,10 @@
             [self.currentDayTableView reloadData];
         });
     });
+}
+
+- (void)extraRightItemDidPressed{
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,9 +11,9 @@ import Foundation
 class TamuMenuViewController: UITableViewController {
     enum menuTitle : Int {
         case athletics
-        case howdy
         case yell
         case calendar
+        case howdy
     }
     
     override func viewDidLoad() {
@@ -27,8 +27,10 @@ class TamuMenuViewController: UITableViewController {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         if indexPath.row == menuTitle.athletics.rawValue{
-            
+            let sportsVC = AthleticsPageViewController()
+            self.navigationController?.pushViewController(sportsVC, animated: true)
         }
+            
         else if indexPath.row == menuTitle.howdy.rawValue{
             let alertController = UIAlertController(title: "Confirmation", message: "Open Howdy in Safari?", preferredStyle: .Alert)
             let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Destructive, handler: nil)
@@ -40,10 +42,12 @@ class TamuMenuViewController: UITableViewController {
             
             self.presentViewController(alertController, animated: true, completion: nil)
         }
+            
         else if indexPath.row == menuTitle.yell.rawValue{
             let yellVC = storyboard?.instantiateViewControllerWithIdentifier("yells") as! YellsViewController
             self.navigationController?.pushViewController(yellVC, animated: true)
         }
+            
         else if indexPath.row == menuTitle.calendar.rawValue{
             let calendarVC = CalendarViewController()
             self.navigationController?.pushViewController(calendarVC, animated: true)

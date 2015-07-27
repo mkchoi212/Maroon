@@ -8,3 +8,5 @@
 #import "RGPaperLayout.h"
 #import "MBProgressHUD.h"
 #import "CalendarViewController.h"
+#import "JTSImageViewController.h"
+#import "JTSImageInfo.h"

@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import FoldingTabBar
 
-class YellsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class YellsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, YALTabBarInteracting {
 
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var yellLabel: UILabel!
@@ -71,4 +72,9 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         collectionView.reloadData()
         collectionView.setNeedsLayout()
     }
+    
+    func extraRightItemDidPressed(){
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
 }

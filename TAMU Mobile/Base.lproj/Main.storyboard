@@ -130,6 +130,9 @@
                     <navigationItem key="navigationItem" id="82E-vW-Rex"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <segue destination="VKY-nT-h0q" kind="show" id="uuI-dg-Eg9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olm-68-DDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,27 +169,6 @@
                                                 <constraint firstAttribute="centerY" secondItem="I0s-RW-VYh" secondAttribute="centerY" constant="0.25" id="CdQ-x0-pT7"/>
                                                 <constraint firstItem="I0s-RW-VYh" firstAttribute="leading" secondItem="dbR-9x-fNw" secondAttribute="leadingMargin" id="Xt5-uo-0bW"/>
                                                 <constraint firstAttribute="centerX" secondItem="I0s-RW-VYh" secondAttribute="centerX" id="l9u-X3-GgM"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="Ldg-5n-vLx">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ldg-5n-vLx" id="8SN-Vg-t0p">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOWDY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efu-aT-5Dg">
-                                                    <rect key="frame" x="8" y="27" width="304" height="41"/>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="36"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Efu-aT-5Dg" firstAttribute="trailing" secondItem="8SN-Vg-t0p" secondAttribute="trailingMargin" id="6mf-h0-bzg"/>
-                                                <constraint firstAttribute="centerY" secondItem="Efu-aT-5Dg" secondAttribute="centerY" constant="0.25" id="7jZ-JS-B0f"/>
-                                                <constraint firstAttribute="centerX" secondItem="Efu-aT-5Dg" secondAttribute="centerX" id="SRx-2e-x5m"/>
-                                                <constraint firstItem="Efu-aT-5Dg" firstAttribute="leading" secondItem="8SN-Vg-t0p" secondAttribute="leadingMargin" id="etY-ga-4uY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -233,6 +215,27 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="Ldg-5n-vLx">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ldg-5n-vLx" id="8SN-Vg-t0p">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOWDY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efu-aT-5Dg">
+                                                    <rect key="frame" x="8" y="27" width="304" height="41"/>
+                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="36"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Efu-aT-5Dg" firstAttribute="trailing" secondItem="8SN-Vg-t0p" secondAttribute="trailingMargin" id="6mf-h0-bzg"/>
+                                                <constraint firstAttribute="centerY" secondItem="Efu-aT-5Dg" secondAttribute="centerY" constant="0.25" id="7jZ-JS-B0f"/>
+                                                <constraint firstAttribute="centerX" secondItem="Efu-aT-5Dg" secondAttribute="centerX" id="SRx-2e-x5m"/>
+                                                <constraint firstItem="Efu-aT-5Dg" firstAttribute="leading" secondItem="8SN-Vg-t0p" secondAttribute="leadingMargin" id="etY-ga-4uY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -242,10 +245,69 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="fus-HH-G6p" kind="show" id="r3J-VC-wiy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iP-tw-Het" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="-284"/>
+            <point key="canvasLocation" x="388" y="-276"/>
+        </scene>
+        <!--Athletics Page View Controller-->
+        <scene sceneID="1nf-Ub-u58">
+            <objects>
+                <viewController storyboardIdentifier="sports" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fus-HH-G6p" customClass="AthleticsPageViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0PY-Yr-YEB"/>
+                        <viewControllerLayoutGuide type="bottom" id="wce-Dt-T7m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sKQ-3x-5Lg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="3gy-uJ-VAz" kind="show" id="DW8-Hw-RYw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCJ-7u-vwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="-284"/>
+        </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="N0b-Xs-5iH">
+            <objects>
+                <viewController storyboardIdentifier="schedule" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3gy-uJ-VAz" customClass="ScheduleViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xk3-yH-Qyk"/>
+                        <viewControllerLayoutGuide type="bottom" id="fiB-p9-X1B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7dT-9U-sXu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGI-TZ-dHG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549019607843" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qGI-TZ-dHG" firstAttribute="top" secondItem="Xk3-yH-Qyk" secondAttribute="bottom" id="39h-Vu-zRp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qGI-TZ-dHG" secondAttribute="trailing" constant="-16" id="GCB-il-nei"/>
+                            <constraint firstItem="qGI-TZ-dHG" firstAttribute="bottom" secondItem="7dT-9U-sXu" secondAttribute="bottomMargin" id="TE6-EY-EB3"/>
+                            <constraint firstItem="qGI-TZ-dHG" firstAttribute="leading" secondItem="7dT-9U-sXu" secondAttribute="leadingMargin" constant="-16" id="g03-DV-HiW"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="qGI-TZ-dHG" id="AIX-U2-4a3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjM-rG-Fts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="-284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FPS-po-UrM">
@@ -807,7 +869,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLp-jQ-GQ1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="360"/>
+            <point key="canvasLocation" x="376" y="360"/>
         </scene>
     </scenes>
     <resources>

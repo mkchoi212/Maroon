@@ -14,6 +14,15 @@
 		CA0537351B649D9A00B22B87 /* YellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0537341B649D9A00B22B87 /* YellCell.swift */; };
 		CA0537391B64A22400B22B87 /* yells.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0537381B64A22400B22B87 /* yells.json */; };
 		CA05373B1B64A54700B22B87 /* Yell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05373A1B64A54700B22B87 /* Yell.swift */; };
+		CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */; };
+		CAA120981B65DAD8007D7802 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */; };
+		CAA1209E1B65DCF9007D7802 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA1209D1B65DCF9007D7802 /* TimelineView.swift */; };
+		CAA120AB1B65DDC9007D7802 /* JTSAnimatedGIFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A01B65DDC9007D7802 /* JTSAnimatedGIFUtility.m */; };
+		CAA120AC1B65DDC9007D7802 /* JTSImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A21B65DDC9007D7802 /* JTSImageInfo.m */; };
+		CAA120AD1B65DDC9007D7802 /* JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A41B65DDC9007D7802 /* JTSImageViewController.m */; };
+		CAA120AE1B65DDC9007D7802 /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A61B65DDC9007D7802 /* JTSSimpleImageDownloader.m */; };
+		CAA120AF1B65DDC9007D7802 /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A81B65DDC9007D7802 /* UIApplication+JTSImageViewController.m */; };
+		CAA120B01B65DDC9007D7802 /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120AA1B65DDC9007D7802 /* UIImage+JTSImageEffects.m */; };
 		CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331391B6486E60036FD6B /* AppDelegate.swift */; };
 		CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAC3313B1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld */; };
 		CAC331421B6486E60036FD6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC331401B6486E60036FD6B /* Main.storyboard */; };
@@ -87,6 +96,21 @@
 		CA0537341B649D9A00B22B87 /* YellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellCell.swift; sourceTree = "<group>"; };
 		CA0537381B64A22400B22B87 /* yells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yells.json; sourceTree = "<group>"; };
 		CA05373A1B64A54700B22B87 /* Yell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yell.swift; sourceTree = "<group>"; };
+		CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleticsPageViewController.swift; sourceTree = "<group>"; };
+		CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		CAA1209D1B65DCF9007D7802 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		CAA1209F1B65DDC9007D7802 /* JTSAnimatedGIFUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSAnimatedGIFUtility.h; sourceTree = "<group>"; };
+		CAA120A01B65DDC9007D7802 /* JTSAnimatedGIFUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSAnimatedGIFUtility.m; sourceTree = "<group>"; };
+		CAA120A11B65DDC9007D7802 /* JTSImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImageInfo.h; sourceTree = "<group>"; };
+		CAA120A21B65DDC9007D7802 /* JTSImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImageInfo.m; sourceTree = "<group>"; };
+		CAA120A31B65DDC9007D7802 /* JTSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImageViewController.h; sourceTree = "<group>"; };
+		CAA120A41B65DDC9007D7802 /* JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImageViewController.m; sourceTree = "<group>"; };
+		CAA120A51B65DDC9007D7802 /* JTSSimpleImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSSimpleImageDownloader.h; sourceTree = "<group>"; };
+		CAA120A61B65DDC9007D7802 /* JTSSimpleImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSSimpleImageDownloader.m; sourceTree = "<group>"; };
+		CAA120A71B65DDC9007D7802 /* UIApplication+JTSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JTSImageViewController.h"; sourceTree = "<group>"; };
+		CAA120A81B65DDC9007D7802 /* UIApplication+JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JTSImageViewController.m"; sourceTree = "<group>"; };
+		CAA120A91B65DDC9007D7802 /* UIImage+JTSImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTSImageEffects.h"; sourceTree = "<group>"; };
+		CAA120AA1B65DDC9007D7802 /* UIImage+JTSImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTSImageEffects.m"; sourceTree = "<group>"; };
 		CAC331341B6486E60036FD6B /* TAMU Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAMU Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC331381B6486E60036FD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAC331391B6486E60036FD6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -230,6 +254,35 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		CAA120961B65D305007D7802 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				CACB68DE1B6568AB007F4AD1 /* 2015.ics */,
+				CACB68E01B6568C0007F4AD1 /* CalendarViewController.h */,
+				CACB68E11B6568C0007F4AD1 /* CalendarViewController.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		CAA120B11B65DDCC007D7802 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CAA1209F1B65DDC9007D7802 /* JTSAnimatedGIFUtility.h */,
+				CAA120A01B65DDC9007D7802 /* JTSAnimatedGIFUtility.m */,
+				CAA120A11B65DDC9007D7802 /* JTSImageInfo.h */,
+				CAA120A21B65DDC9007D7802 /* JTSImageInfo.m */,
+				CAA120A31B65DDC9007D7802 /* JTSImageViewController.h */,
+				CAA120A41B65DDC9007D7802 /* JTSImageViewController.m */,
+				CAA120A51B65DDC9007D7802 /* JTSSimpleImageDownloader.h */,
+				CAA120A61B65DDC9007D7802 /* JTSSimpleImageDownloader.m */,
+				CAA120A71B65DDC9007D7802 /* UIApplication+JTSImageViewController.h */,
+				CAA120A81B65DDC9007D7802 /* UIApplication+JTSImageViewController.m */,
+				CAA120A91B65DDC9007D7802 /* UIImage+JTSImageEffects.h */,
+				CAA120AA1B65DDC9007D7802 /* UIImage+JTSImageEffects.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		CAC3312B1B6486E60036FD6B = {
 			isa = PBXGroup;
 			children = (
@@ -258,9 +311,10 @@
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
 				CAC331791B6489310036FD6B /* RecipeViewController.swift */,
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
-				CACB68E01B6568C0007F4AD1 /* CalendarViewController.h */,
-				CACB68E11B6568C0007F4AD1 /* CalendarViewController.m */,
-				CACB68DE1B6568AB007F4AD1 /* 2015.ics */,
+				CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */,
+				CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */,
+				CAA1209D1B65DCF9007D7802 /* TimelineView.swift */,
+				CAA120961B65D305007D7802 /* Calendar */,
 				CA0537331B649D8700B22B87 /* Yells */,
 				CAC331741B6487A50036FD6B /* Food */,
 				CAC331371B6486E60036FD6B /* Supporting Files */,
@@ -271,6 +325,7 @@
 		CAC331371B6486E60036FD6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CAA120B11B65DDCC007D7802 /* Image */,
 				CACB68BF1B656855007F4AD1 /* Calendar */,
 				CA05372D1B649D1100B22B87 /* External Frameworks */,
 				CAC331751B6487BD0036FD6B /* TAMU Mobile-Bridging-Header.h */,
@@ -528,20 +583,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACB68B61B656851007F4AD1 /* JTCalendarDataCache.m in Sources */,
+				CAA120AE1B65DDC9007D7802 /* JTSSimpleImageDownloader.m in Sources */,
+				CAA120B01B65DDC9007D7802 /* UIImage+JTSImageEffects.m in Sources */,
 				CACB68971B655739007F4AD1 /* TamuMenuViewController.swift in Sources */,
 				CACB68B71B656851007F4AD1 /* JTCalendarDayView.m in Sources */,
+				CAA120981B65DAD8007D7802 /* ScheduleViewController.swift in Sources */,
 				CACB68CD1B656890007F4AD1 /* NSTimeZone+ProperAbbreviation.m in Sources */,
 				CACB68B31B656851007F4AD1 /* JTCalendar.m in Sources */,
 				CAC331711B64878E0036FD6B /* YelpClient.swift in Sources */,
 				CA05373B1B64A54700B22B87 /* Yell.swift in Sources */,
+				CAA1209E1B65DCF9007D7802 /* TimelineView.swift in Sources */,
 				CACB68BC1B656851007F4AD1 /* JTCalendarWeekView.m in Sources */,
 				CACB68BE1B656851007F4AD1 /* MBProgressHUD.m in Sources */,
 				CAC3316B1B64878E0036FD6B /* FiltersTableViewController.swift in Sources */,
+				CAA120AB1B65DDC9007D7802 /* JTSAnimatedGIFUtility.m in Sources */,
 				CAC331671B64878E0036FD6B /* Business.swift in Sources */,
 				CACB68BD1B656851007F4AD1 /* JTCircleView.m in Sources */,
 				CACB68B51B656851007F4AD1 /* JTCalendarContentView.m in Sources */,
 				CAC3316F1B64878E0036FD6B /* SwitchCell.swift in Sources */,
 				CACB68E21B6568C0007F4AD1 /* CalendarViewController.m in Sources */,
+				CAA120AF1B65DDC9007D7802 /* UIApplication+JTSImageViewController.m in Sources */,
+				CAA120AD1B65DDC9007D7802 /* JTSImageViewController.m in Sources */,
 				CAC331731B6487A10036FD6B /* ViewController.swift in Sources */,
 				CACB68DA1B656899007F4AD1 /* NSMutableArray+convenience.m in Sources */,
 				CA05372C1B649D0E00B22B87 /* RGPaperLayout.m in Sources */,
@@ -551,10 +613,12 @@
 				CAC3317B1B6489310036FD6B /* RecipeViewController.swift in Sources */,
 				CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */,
 				CAC331681B64878E0036FD6B /* BusinessCell.swift in Sources */,
+				CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */,
 				CACB68CC1B656890007F4AD1 /* MXLCalendarManager.m in Sources */,
 				CAC3316A1B64878E0036FD6B /* DetailViewController.swift in Sources */,
 				CACB68DD1B656899007F4AD1 /* VRGCalendarView.m in Sources */,
 				CACB68BA1B656851007F4AD1 /* JTCalendarMonthView.m in Sources */,
+				CAA120AC1B65DDC9007D7802 /* JTSImageInfo.m in Sources */,
 				CACB68CE1B656890007F4AD1 /* MXLCalendarAttendee.m in Sources */,
 				CACB68DB1B656899007F4AD1 /* UIColor+expanded.m in Sources */,
 				CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */,

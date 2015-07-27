@@ -8,8 +8,9 @@
 
 import Foundation
 import GoogleMaps
+import FoldingTabBar
 
-class CampusDiningViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CampusDiningViewController: UIViewController, YALTabBarInteracting {
 
     var campusPlaces = [CampusFood]()
     var markers = [GMSMarker]()
@@ -27,7 +28,7 @@ class CampusDiningViewController: UIViewController, UITableViewDataSource, UITab
         loadVenues()
         
         var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
-            longitude: -96.342316, zoom: 16)
+            longitude: -96.342316, zoom: 15)
         self.mapView.animateToCameraPosition(camera)
     }
 
@@ -92,6 +93,11 @@ class CampusDiningViewController: UIViewController, UITableViewDataSource, UITab
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .Plain, target: self, action: "onListButton")
     }
+    
+    func extraRightItemDidPressed(){
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
 }
 
 

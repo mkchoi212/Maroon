@@ -1,0 +1,6 @@
+module GUITabPagerViewController {
+  umbrella header "GUITabPagerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

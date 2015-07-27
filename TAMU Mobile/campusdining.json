@@ -80,15 +80,6 @@
          "hours":[
             {
                "offset":"-5",
-               "day":"6",
-               "dst":"1",
-               "begTime":"8:00",
-               "endTime":"14:00",
-               "begDate":"5/29/15",
-               "endDate":"5/29/15"
-            },
-            {
-               "offset":"-5",
                "day":"2",
                "dst":"1",
                "begTime":"8:00",

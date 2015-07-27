@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = greenColor
         UINavigationBar.appearance().titleTextAttributes = barAttributes
         
+        self.window?.backgroundColor = greenColor
+        
         setupAnimatedTabBar()
         
         return true
