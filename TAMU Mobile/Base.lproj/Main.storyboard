@@ -295,6 +295,7 @@
                         <outlet property="businessMapView" destination="TtE-ji-ehn" id="16E-2Z-3nD"/>
                         <outlet property="businessTableView" destination="ilS-ed-acN" id="G1p-Rx-hgR"/>
                         <segue destination="fAH-4Q-Be3" kind="show" id="ps2-Wt-vKF"/>
+                        <segue destination="kz3-wr-k6s" kind="show" id="lI2-gH-CZ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdk-0k-Owu" sceneMemberID="firstResponder"/>
@@ -537,15 +538,46 @@
                         <viewControllerLayoutGuide type="bottom" id="WMO-8e-w5d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QBD-u4-yYE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yr3-9h-TeY" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-Qe-xdO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cAN-Qe-xdO" firstAttribute="bottom" secondItem="QBD-u4-yYE" secondAttribute="bottomMargin" id="Ne5-1e-1UJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cAN-Qe-xdO" secondAttribute="trailing" constant="-16" id="Ow0-jY-jTh"/>
+                            <constraint firstItem="Yr3-9h-TeY" firstAttribute="top" secondItem="v0r-lh-mzk" secondAttribute="bottom" id="Ppe-8T-pD2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yr3-9h-TeY" secondAttribute="trailing" constant="-16" id="Re9-dZ-vKG"/>
+                            <constraint firstItem="cAN-Qe-xdO" firstAttribute="top" secondItem="v0r-lh-mzk" secondAttribute="bottom" id="Woi-89-BxX"/>
+                            <constraint firstItem="cAN-Qe-xdO" firstAttribute="leading" secondItem="QBD-u4-yYE" secondAttribute="leadingMargin" constant="-16" id="b9l-Xa-TiG"/>
+                            <constraint firstItem="WMO-8e-w5d" firstAttribute="top" secondItem="Yr3-9h-TeY" secondAttribute="bottom" id="k0k-df-HlZ"/>
+                            <constraint firstItem="Yr3-9h-TeY" firstAttribute="bottom" secondItem="QBD-u4-yYE" secondAttribute="bottomMargin" id="mUP-cq-vYK"/>
+                            <constraint firstItem="Yr3-9h-TeY" firstAttribute="leading" secondItem="QBD-u4-yYE" secondAttribute="leadingMargin" constant="-16" id="uXt-uq-q66"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="k0k-df-HlZ"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mapView" destination="Yr3-9h-TeY" id="WEs-XZ-XDc"/>
+                        <outlet property="tableView" destination="cAN-Qe-xdO" id="1c8-tR-YpN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bct-4t-vBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552" y="-1432"/>
+            <point key="canvasLocation" x="-64" y="-1535"/>
         </scene>
         <!--Food-->
         <scene sceneID="cUj-hE-zfY">

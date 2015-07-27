@@ -9,27 +9,28 @@
 import Foundation
 import GoogleMaps
 
-class CampusDiningViewController: UIViewController, CLLocationManagerDelegate {
+class CampusDiningViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var mapView = GMSMapView()
     var campusPlaces = [CampusFood]()
     var markers = [GMSMarker]()
     var mapUpdated = false
-    
+    @IBOutlet weak var tableView: UITableView!
+    var mapView: GMSMapView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "On-Campus"
 
-        var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
-        longitude: -96.342316, zoom: 2)
-        mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-      
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
+        
         loadVenues()
-        self.view = mapView
-        mapView.animateToZoom(15)
+        
+        var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
+            longitude: -96.342316, zoom: 16)
+        self.mapView.animateToCameraPosition(camera)
     }
-    
+
     func loadVenues(){
         let masterDataUrl: NSURL = NSBundle.mainBundle().URLForResource("campusdining", withExtension: "json")!
         let jsonData: NSData = NSData(contentsOfURL: masterDataUrl)!
@@ -57,7 +58,6 @@ class CampusDiningViewController: UIViewController, CLLocationManagerDelegate {
             }
             venue.hours = hoursArray
             marker.map = mapView
-            
             self.campusPlaces.append(venue)
             self.markers.append(marker)
             isOpen(venue.hours)
@@ -75,9 +75,22 @@ class CampusDiningViewController: UIViewController, CLLocationManagerDelegate {
     func getDayOfWeek()->Int {
         let todayDate = NSDate()
         let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        let myComponents = myCalendar?.components(.WeekdayCalendarUnit, fromDate: todayDate)
+        let myComponents = myCalendar?.components(NSCalendarUnit.CalendarUnitWeekday, fromDate: todayDate)
         let weekDay = myComponents?.weekday
         return weekDay!
+    }
+    
+    func onListButton() {
+        UIView.transitionFromView(mapView, toView: tableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
+        
+    }
+    
+    func onMapButton() {
+        UIView.transitionFromView(tableView, toView: mapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion : nil)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .Plain, target: self, action: "onListButton")
     }
 }
 

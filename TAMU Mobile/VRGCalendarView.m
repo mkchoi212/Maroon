@@ -332,7 +332,7 @@
     for (int i =0; i<[weekdays count]; i++) {
         NSString *weekdayValue = (NSString *)[weekdays objectAtIndex:i];
         UIFont *font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-        [weekdayValue drawInRect:CGRectMake(i*(kVRGCalendarViewDayWidth+2), 40, kVRGCalendarViewDayWidth+2, 20) withFont:font lineBreakMode:UILineBreakModeClip alignment:UITextAlignmentCenter];
+        [weekdayValue drawInRect:CGRectMake(i*(kVRGCalendarViewDayWidth+2), 40, kVRGCalendarViewDayWidth+2, 20) withFont:font lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentCenter];
     }
     
     int numRows = [self numRows];
@@ -479,7 +479,7 @@
                                            [UIColor whiteColor].CGColor);
         }
         
-        [date drawInRect:CGRectMake(targetX+2, targetY+10, kVRGCalendarViewDayWidth, kVRGCalendarViewDayHeight) withFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17] lineBreakMode:UILineBreakModeClip alignment:UITextAlignmentCenter];
+        [date drawInRect:CGRectMake(targetX+2, targetY+10, kVRGCalendarViewDayWidth, kVRGCalendarViewDayHeight) withFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17] lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentCenter];
     }
     
     //    CGContextClosePath(context);
@@ -554,7 +554,7 @@
         labelCurrentMonth.backgroundColor=[UIColor whiteColor];
         labelCurrentMonth.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:17];
         labelCurrentMonth.textColor = [UIColor whiteColor];
-        labelCurrentMonth.textAlignment = UITextAlignmentCenter;
+        labelCurrentMonth.textAlignment = NSTextAlignmentCenter;
         
         [self performSelector:@selector(reset) withObject:nil afterDelay:0.1]; //so delegate can be set after init and still get called on init
         //        [self reset];
