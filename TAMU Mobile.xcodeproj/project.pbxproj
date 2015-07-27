@@ -59,6 +59,11 @@
 		CACB68DD1B656899007F4AD1 /* VRGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CACB68D81B656899007F4AD1 /* VRGCalendarView.m */; };
 		CACB68DF1B6568AB007F4AD1 /* 2015.ics in Resources */ = {isa = PBXBuildFile; fileRef = CACB68DE1B6568AB007F4AD1 /* 2015.ics */; };
 		CACB68E21B6568C0007F4AD1 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E11B6568C0007F4AD1 /* CalendarViewController.m */; };
+		CACB68E51B657EA6007F4AD1 /* CampusDiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E41B657EA6007F4AD1 /* CampusDiningViewController.swift */; };
+		CACB68E71B657F77007F4AD1 /* CampusFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E61B657F77007F4AD1 /* CampusFood.swift */; };
+		CACB68E91B658042007F4AD1 /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E81B658042007F4AD1 /* Hours.swift */; };
+		CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68EA1B658230007F4AD1 /* FoodLocation.swift */; };
+		CACB68ED1B65A7B3007F4AD1 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68EC1B65A7B3007F4AD1 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +161,11 @@
 		CACB68DE1B6568AB007F4AD1 /* 2015.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2015.ics; sourceTree = "<group>"; };
 		CACB68E01B6568C0007F4AD1 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		CACB68E11B6568C0007F4AD1 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		CACB68E41B657EA6007F4AD1 /* CampusDiningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusDiningViewController.swift; sourceTree = "<group>"; };
+		CACB68E61B657F77007F4AD1 /* CampusFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusFood.swift; sourceTree = "<group>"; };
+		CACB68E81B658042007F4AD1 /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		CACB68EA1B658230007F4AD1 /* FoodLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodLocation.swift; sourceTree = "<group>"; };
+		CACB68EC1B65A7B3007F4AD1 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,13 +257,12 @@
 				CAC331401B6486E60036FD6B /* Main.storyboard */,
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
 				CAC331791B6489310036FD6B /* RecipeViewController.swift */,
-				CA0537281B64989A00B22B87 /* campusdining.json */,
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
 				CACB68E01B6568C0007F4AD1 /* CalendarViewController.h */,
 				CACB68E11B6568C0007F4AD1 /* CalendarViewController.m */,
 				CACB68DE1B6568AB007F4AD1 /* 2015.ics */,
 				CA0537331B649D8700B22B87 /* Yells */,
-				CAC331741B6487A50036FD6B /* Yelp */,
+				CAC331741B6487A50036FD6B /* Food */,
 				CAC331371B6486E60036FD6B /* Supporting Files */,
 			);
 			path = "TAMU Mobile";
@@ -289,18 +298,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CAC331741B6487A50036FD6B /* Yelp */ = {
+		CAC331741B6487A50036FD6B /* Food */ = {
 			isa = PBXGroup;
 			children = (
-				CA7A654A1B648AFA00817D29 /* Cells */,
-				CAC3315F1B64878E0036FD6B /* DetailViewController.swift */,
-				CAC3315C1B64878E0036FD6B /* Business.swift */,
-				CAC331601B64878E0036FD6B /* FiltersTableViewController.swift */,
-				CAC331631B64878E0036FD6B /* SwiftyJSON.swift */,
-				CAC331661B64878E0036FD6B /* YelpClient.swift */,
+				CACB68E31B657E76007F4AD1 /* Yelp */,
 				CAC331721B6487A10036FD6B /* ViewController.swift */,
+				CACB68E41B657EA6007F4AD1 /* CampusDiningViewController.swift */,
+				CACB68EC1B65A7B3007F4AD1 /* DateExtension.swift */,
+				CA0537281B64989A00B22B87 /* campusdining.json */,
+				CACB68E61B657F77007F4AD1 /* CampusFood.swift */,
+				CACB68E81B658042007F4AD1 /* Hours.swift */,
+				CACB68EA1B658230007F4AD1 /* FoodLocation.swift */,
 			);
-			name = Yelp;
+			name = Food;
 			sourceTree = "<group>";
 		};
 		CACB68BF1B656855007F4AD1 /* Calendar */ = {
@@ -353,6 +363,19 @@
 				CACB68B21B656851007F4AD1 /* MBProgressHUD.m */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		CACB68E31B657E76007F4AD1 /* Yelp */ = {
+			isa = PBXGroup;
+			children = (
+				CA7A654A1B648AFA00817D29 /* Cells */,
+				CAC3315F1B64878E0036FD6B /* DetailViewController.swift */,
+				CAC3315C1B64878E0036FD6B /* Business.swift */,
+				CAC331601B64878E0036FD6B /* FiltersTableViewController.swift */,
+				CAC331631B64878E0036FD6B /* SwiftyJSON.swift */,
+				CAC331661B64878E0036FD6B /* YelpClient.swift */,
+			);
+			name = Yelp;
 			sourceTree = "<group>";
 		};
 		FD4F6DA48DB0A4F53F9D11D3 /* Frameworks */ = {
@@ -526,6 +549,7 @@
 				CAC3316C1B64878E0036FD6B /* LabelCell.swift in Sources */,
 				CAC3316E1B64878E0036FD6B /* SwiftyJSON.swift in Sources */,
 				CAC3317B1B6489310036FD6B /* RecipeViewController.swift in Sources */,
+				CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */,
 				CAC331681B64878E0036FD6B /* BusinessCell.swift in Sources */,
 				CACB68CC1B656890007F4AD1 /* MXLCalendarManager.m in Sources */,
 				CAC3316A1B64878E0036FD6B /* DetailViewController.swift in Sources */,
@@ -538,13 +562,17 @@
 				CACB68B81B656851007F4AD1 /* JTCalendarMenuMonthView.m in Sources */,
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
 				CACB68DC1B656899007F4AD1 /* UIView+convenience.m in Sources */,
+				CACB68E71B657F77007F4AD1 /* CampusFood.swift in Sources */,
 				CACB68B91B656851007F4AD1 /* JTCalendarMenuView.m in Sources */,
+				CACB68ED1B65A7B3007F4AD1 /* DateExtension.swift in Sources */,
 				CACB68CB1B656890007F4AD1 /* MXLCalendarEvent.m in Sources */,
 				CACB68CA1B656890007F4AD1 /* MXLCalendar.m in Sources */,
 				CA05372F1B649D4600B22B87 /* YellsViewController.swift in Sources */,
+				CACB68E51B657EA6007F4AD1 /* CampusDiningViewController.swift in Sources */,
 				CACB68B41B656851007F4AD1 /* JTCalendarAppearance.m in Sources */,
 				CAC3317A1B6489310036FD6B /* HomeViewController.swift in Sources */,
 				CA0537351B649D9A00B22B87 /* YellCell.swift in Sources */,
+				CACB68E91B658042007F4AD1 /* Hours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

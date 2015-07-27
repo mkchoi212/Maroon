@@ -31,6 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
         
         businessTableView.dataSource = self
         businessTableView.delegate = self
@@ -38,39 +39,38 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         businessTableView.registerNib(UINib(nibName: "BusinessCell", bundle: nil), forCellReuseIdentifier: "BusinessCell")
         businessTableView.estimatedRowHeight = 90
         businessTableView.rowHeight = UITableViewAutomaticDimension
-
+        businessTableView.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
 
         navigationItem.title = "Off-campus Food"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Filter", style: .Plain, target: self, action: "onFilterButton")
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         
-        
-        
         // Search Controller
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
         searchController.searchBar.tintColor = UIColor.whiteColor()
-        searchController.searchBar.barTintColor = UIColor.blackColor()
+        searchController.searchBar.barTintColor = UIColor.whiteColor()
         searchController.searchBar.searchBarStyle = UISearchBarStyle.Minimal
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.sizeToFit()
+        searchController.searchBar.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
+        var textFieldInsideSearchBar = searchController.searchBar.valueForKey("searchField") as? UITextField
+        textFieldInsideSearchBar?.textColor = UIColor.whiteColor()
         
         businessTableView.tableHeaderView = searchController.searchBar
         
-        definesPresentationContext = true
-        
         client = YelpClient(consumerKey: yelpConsumerKey, consumerSecret: yelpConsumerSecret, accessToken: yelpToken, accessSecret: yelpTokenSecret)
         
-        fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
+        //fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
     }
     
     func extraLeftItemDidPressed(){
-        //        let searchVC = storyboard?.instantiateViewControllerWithIdentifier("searchVC") as! GameViewController
-        //        var nav = UINavigationController(rootViewController: searchVC)
-        //        nav.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "dismissVC")
-        //        nav.navigationBar.translucent = false
-        //
-        //        self.presentViewController(nav, animated: true, completion: nil)
+            let foodVC = storyboard?.instantiateViewControllerWithIdentifier("campusfood") as! CampusDiningViewController
+//            var nav = UINavigationController(rootViewController: searchVC)
+//            nav.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "dismissVC")
+//            nav.navigationBar.translucent = false
+//    
+            self.navigationController?.pushViewController(foodVC, animated: true)
     }
     
     private func fetchBusinessesWithQuery(query: String, params: [String: String] = [:]) {

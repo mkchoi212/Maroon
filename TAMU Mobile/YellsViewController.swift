@@ -24,15 +24,6 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         loadYells()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(true)
-        var darkBlur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-        var blurView = UIVisualEffectView(effect: darkBlur)
-        blurView.frame = self.view.bounds
-        self.backgroundImage.addSubview(blurView)
-
-    }
-    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
@@ -78,6 +69,6 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         self.yellLabel.text = self.yells.first!.call
 
         collectionView.reloadData()
-        collectionView.reloadInputViews()
+        collectionView.setNeedsLayout()
     }
 }

@@ -150,12 +150,6 @@
     // If this month hasn't already loaded and been cached, start loading events
     if (![[savedDates objectForKey:[NSNumber numberWithInteger:currentDateComponents.year]] objectForKey:[NSNumber numberWithInteger:currentDateComponents.month]]) {
         
-        // Show a loading HUD (https://github.com/jdg/MBProgressHUD)
-        MBProgressHUD *loadingHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        [loadingHUD setMode:MBProgressHUDModeIndeterminate];
-        [loadingHUD setLabelText:@"Loading..."];
-        
-        // Check the month on a background thread
         dispatch_async( dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             
             NSMutableArray *daysArray = [[NSMutableArray alloc] init];
@@ -179,10 +173,6 @@
                     NSRange rng = [cal rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:currentDate];
                     NSUInteger numberOfDaysInMonth = rng.length;
                     
-                    // We loop through each day, check if there's an event already there
-                    // and if there is, we move onto the next one and repeat until we find a day WITHOUT an event on.
-                    // Then we check if this current event occurs then.
-                    // This is a way of reducing the number of checkDate: runs we need to do. It also means the algorithm speeds up as it progresses
                     for (int i = 1; i <= numberOfDaysInMonth; i++) {
                         
                         if (![daysArray containsObject:[NSNumber numberWithInt:i]]) {
@@ -206,7 +196,7 @@
             // Refresh the UI on main thread
             dispatch_async( dispatch_get_main_queue(), ^{
                 [self.calendar reloadData];
-                [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+//                [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
             });
         });
     }
@@ -439,12 +429,7 @@
 
 - (void)calendarDidDateSelected:(JTCalendar *)calendar date:(NSDate *)date {
     // Check if all the events on this day have loaded
-    if (![currentCalendar hasLoadedAllEventsForDate:date]) {
-        // If not, show a loading HUD
-        MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        [progressHUD setMode:MBProgressHUDModeIndeterminate];
-        [progressHUD setLabelText:@"Loading..."];
-    }
+
     
     // Run on a background thread
     dispatch_async( dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -467,7 +452,6 @@
         
         // Refresh UI
         dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
             
             selectedDate = date;
             [self.currentDayTableView reloadData];

@@ -35,10 +35,6 @@ class HomeViewController: UIViewController, YALTabBarInteracting{
 
     func extraRightItemDidPressed(){
         let tamuVC = storyboard?.instantiateViewControllerWithIdentifier("tamu") as! TamuMenuViewController
-//        var nav = UINavigationController(rootViewController: yellVC)
-//        nav.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "dismissVC")
-//        nav.navigationBar.translucent = false
-        
         self.navigationController?.pushViewController(tamuVC, animated: true)
     }
 

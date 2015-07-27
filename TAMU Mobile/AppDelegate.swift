@@ -8,6 +8,7 @@
 import UIKit
 import FoldingTabBar
 import CoreData
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        setupAnimatedTabBar()
-        
+        GMSServices.provideAPIKey("AIzaSyC0WTQoKQFVeTcgBhdihj-spXNVWNZgCrg")
+    
         let barFont = UIFont(name: "GillSans-Light", size: 20)!
         let barColor = UIColor.whiteColor()
         let barAttributes : [NSString : AnyObject] = [NSFontAttributeName : barFont , NSForegroundColorAttributeName : barColor]
@@ -27,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().barTintColor = greenColor
         UINavigationBar.appearance().titleTextAttributes = barAttributes
+        
+        setupAnimatedTabBar()
         
         return true
     }
