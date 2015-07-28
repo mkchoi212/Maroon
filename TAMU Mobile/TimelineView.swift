@@ -279,7 +279,7 @@ public class TimelineView: UIView {
 		
 		let titleLabel = UILabel()
 		titleLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
-		titleLabel.font = UIFont(name: "ArialMT", size: 20)
+		titleLabel.font = UIFont(name: "Arial-BoldMT", size: 20)
 		titleLabel.textColor = titleLabelColor
 		titleLabel.text = element.date
 		titleLabel.numberOfLines = 0
@@ -337,7 +337,6 @@ public class TimelineView: UIView {
 			imageInfo.referenceRect = convertRect(i.frame, fromView: i.superview)
 			imageInfo.referenceView = self
 			imageViewer = JTSImageViewController(imageInfo: imageInfo, mode: JTSImageViewControllerMode.Image, backgroundStyle: JTSImageViewControllerBackgroundStyle._ScaledDimmedBlurred)
-			imageViewer!.showFromViewController(UIApplication.sharedApplication().keyWindow?.rootViewController, transition: JTSImageViewControllerTransition._FromOriginalPosition)
 		}
 	}
 }

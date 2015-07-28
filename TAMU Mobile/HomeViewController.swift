@@ -21,7 +21,6 @@ class HomeViewController: UIViewController, YALTabBarInteracting{
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
 
-        self.title = "Home"
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

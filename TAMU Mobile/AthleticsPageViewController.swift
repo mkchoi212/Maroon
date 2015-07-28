@@ -13,13 +13,17 @@ class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegat
     
     let story = UIStoryboard(name: "Main", bundle: nil)
     
+    enum SlideType : Int {
+        case Schedule
+        case News
+        case Now
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Athletics"
         self.dataSource = self
         self.delegate = self
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -35,24 +39,37 @@ class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegat
     
     func viewControllerForIndex(index: Int) -> UIViewController {
 
-        if index == 0 {
-            let scheduleVC = story.instantiateViewControllerWithIdentifier("schedule") as! ScheduleViewController
-            return scheduleVC
+        if let celltype = SlideType(rawValue: index){
+            switch celltype{
+            case .Schedule:
+                let scheduleVC = story.instantiateViewControllerWithIdentifier("schedule") as! ScheduleViewController
+                return scheduleVC
+            case .News:
+                 let newsVC = story.instantiateViewControllerWithIdentifier("news") as! NewsTableViewController
+                return newsVC
+            case .Now:
+                return UIViewController()
+            }
         }
         else{
             return UIViewController()
         }
     }
     
+    
     func titleForTabAtIndex(index: Int) -> String! {
-        if index == 0 {
-            return "Schedule"
-        }
-        else if index == 1 {
-            return "News"
+        if let celltype = SlideType(rawValue: index){
+            switch celltype{
+            case .Schedule:
+                return "SCHEDULE"
+            case .News:
+                return "NEWS"
+            case .Now:
+                return "NOW"
+            }
         }
         else{
-            return "Now"
+            return nil
         }
     }
     
@@ -69,7 +86,7 @@ class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegat
     }
     
     func titleFont() -> UIFont! {
-        return UIFont.systemFontOfSize(18.0)
+        return UIFont.systemFontOfSize(16.0)
     }
     
     func titleColor() -> UIColor! {

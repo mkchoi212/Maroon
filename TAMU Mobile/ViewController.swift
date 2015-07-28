@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         client = YelpClient(consumerKey: yelpConsumerKey, consumerSecret: yelpConsumerSecret, accessToken: yelpToken, accessSecret: yelpTokenSecret)
         
-        //fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
+        fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
     }
     
     func extraLeftItemDidPressed(){
@@ -125,7 +125,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 7.5
+        return 9.5
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -176,7 +176,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             let imageView = UIImageView(frame: CGRectMake(0, 0, 46, 46))
             imageView.contentMode = UIViewContentMode.ScaleAspectFit
-            imageView.setImageWithURL(NSURL(string:(annotation as! Business).imageURL!))
+            imageView.sd_setImageWithURL(NSURL(string:(annotation as! Business).imageURL!))
             view.leftCalloutAccessoryView = imageView
             let disclosureButton = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton
             view.rightCalloutAccessoryView = disclosureButton

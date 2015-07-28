@@ -1,5 +1,7 @@
 platform:ios, '8.0'
 
+pod 'SDWebImage'
+pod 'Bohr'
 pod 'GUITabPagerViewController', '~> 0.0.7'
 pod 'GoogleMaps'
 pod 'AFNetworking', '~> 2.4.1'

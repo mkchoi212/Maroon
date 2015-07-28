@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import FoldingTabBar
 //http://www.12thman.com/calendar.ashx/calendar.rss?sport_id=3&han=
 
-class ScheduleViewController: UIViewController {
+class ScheduleViewController: UIViewController, YALTabBarInteracting {
     
     @IBOutlet weak var scrollView: UIScrollView!
-    var timeline:   TimelineView!
+    var timeline : TimelineView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,20 +38,21 @@ class ScheduleViewController: UIViewController {
             ])
         
         timeline = TimelineView(bulletType: .Circle, timeFrames: [
-            TimeFrame(text: "Arizon State @ Houston\n\n", date: "September 5", image: UIImage(named: "fireworks.jpeg")),
-            TimeFrame(text: "Ball State @ Kyle Field\n\n", date: "September 12", image: UIImage(named: "heart.png")),
-            TimeFrame(text: "Nevada @ Kyle Field\n\n", date: "September 19",  image: nil),
-            TimeFrame(text: "Arkansas @ Arlington\n\n\n\n", date: "September 26", image: UIImage(named: "april.jpeg")),
-            TimeFrame(text: "Mississipi State @ Kyle Field\n\n", date: "October 3", image: nil),
-            TimeFrame(text: "Alabama @ Kyle Field\n\n", date: "October 17", image: nil),
-            TimeFrame(text: "Ole Miss @ Oxford, MI\n\n", date: "October 24", image: nil),
-            TimeFrame(text: "South Carolina @ Kyle Field\n\n", date: "October 31", image: nil),
-            TimeFrame(text: "Auburn @ Kyle Field\n\n", date: "November 7", image: nil),
-            TimeFrame(text: "Western Carolina @ Kyle Field\n\n", date: "November 14", image: nil),
-            TimeFrame(text: "Vanderbilt @ Nashvile, TN\n\n", date: "November 21", image: nil),
-            TimeFrame(text: "LSU @ Baton Rouge, LA\n\n\n\n", date: "November 28", image: nil),
-            TimeFrame(text: "SEC Championship @ Georgia Dome", date: "December 5", image: nil)
+            TimeFrame(text: "Arizon State @ Houston\n\n", date: "September 5", image: UIImage(named: "asu.jpeg")),
+            TimeFrame(text: "Ball State @ Kyle Field\n\n", date: "September 12", image: UIImage(named: "ballstate.png")),
+            TimeFrame(text: "Nevada @ Kyle Field\n\n", date: "September 19",  image: UIImage(named: "nev")),
+            TimeFrame(text: "Arkansas @ Arlington\n\n\n\n", date: "September 26", image: UIImage(named: "arkansas")),
+            TimeFrame(text: "Mississipi State @ Kyle Field\n\n", date: "October 3", image: UIImage(named: "mstate")),
+            TimeFrame(text: "Alabama @ Kyle Field\n\n", date: "October 17", image: UIImage(named: "bama")),
+            TimeFrame(text: "Ole Miss @ Oxford, MI\n\n", date: "October 24", image: UIImage(named: "olemiss")),
+            TimeFrame(text: "South Carolina @ Kyle Field\n\n", date: "October 31", image: UIImage(named: "south")),
+            TimeFrame(text: "Auburn @ Kyle Field\n\n", date: "November 7", image: UIImage(named: "auburn")),
+            TimeFrame(text: "Western Carolina @ Kyle Field\n\n", date: "November 14", image: UIImage(named: "westerncarolina")),
+            TimeFrame(text: "Vanderbilt @ Nashvile, TN\n\n", date: "November 21", image: UIImage(named: "vandy")),
+            TimeFrame(text: "LSU @ Baton Rouge, LA\n\n\n\n", date: "November 28", image: UIImage(named: "lsu")),
+            TimeFrame(text: "SEC Championship @ Georgia Dome", date: "December 5", image: UIImage(named: "sec"))
             ])
+        
         timeline.titleLabelColor = UIColor.whiteColor()
         timeline.detailLabelColor = UIColor.lightGrayColor()
         scrollView.addSubview(timeline)
@@ -64,7 +66,10 @@ class ScheduleViewController: UIViewController {
             ])
         
         view.sendSubviewToBack(scrollView)
-        
-
+    
+    }
+    
+    func extraRightItemDidPressed(){
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }

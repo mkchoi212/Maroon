@@ -59,7 +59,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         distanceLabel.text = "\(distance) mi"
         ratingImageView.contentMode = .ScaleAspectFit
         if let ratingImageURL = business.ratingImageUrl {
-            ratingImageView.setImageWithURL(NSURL(string: ratingImageURL))
+            ratingImageView.sd_setImageWithURL(NSURL(string: ratingImageURL))
         }
         numberOfReviewsLabel.text = "\(business.numberOfReviews) Reviews"
         addressLabel.text = business.displayAddress
