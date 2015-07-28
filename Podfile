@@ -1,5 +1,6 @@
 platform:ios, '8.0'
 
+pod 'NJKWebViewProgress'
 pod 'SDWebImage'
 pod 'GUITabPagerViewController', '~> 0.0.7'
 pod 'GoogleMaps'

@@ -26,6 +26,11 @@ PODS:
   - FoldingTabBar (1.0.0)
   - GoogleMaps (1.10.1)
   - GUITabPagerViewController (0.0.7)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -36,6 +41,7 @@ DEPENDENCIES:
   - FoldingTabBar
   - GoogleMaps
   - GUITabPagerViewController (~> 0.0.7)
+  - NJKWebViewProgress
   - SDWebImage
 
 SPEC CHECKSUMS:
@@ -44,6 +50,7 @@ SPEC CHECKSUMS:
   FoldingTabBar: 463d247453a2ba826ae79f5be1e6b8b93b6aa0ce
   GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
   GUITabPagerViewController: eccbdf4399cb4cb458d2d961e60c941cc97d5a9c
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
 COCOAPODS: 0.38.1
