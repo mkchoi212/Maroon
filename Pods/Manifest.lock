@@ -23,7 +23,6 @@ PODS:
   - BDBOAuth1Manager (1.4.1):
     - AFNetworking/NSURLConnection (~> 2.4.0)
     - AFNetworking/NSURLSession (~> 2.4.0)
-  - Bohr (2.1.0)
   - FoldingTabBar (1.0.0)
   - GoogleMaps (1.10.1)
   - GUITabPagerViewController (0.0.7)
@@ -34,7 +33,6 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
   - BDBOAuth1Manager (~> 1.4.0)
-  - Bohr
   - FoldingTabBar
   - GoogleMaps
   - GUITabPagerViewController (~> 0.0.7)
@@ -43,7 +41,6 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
   BDBOAuth1Manager: e4c50f9b4ecda6c2a9da680a45d89985e4f3edb6
-  Bohr: 08c66d64e8f14c2bb759d81074ebea9a3ae0024d
   FoldingTabBar: 463d247453a2ba826ae79f5be1e6b8b93b6aa0ce
   GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
   GUITabPagerViewController: eccbdf4399cb4cb458d2d961e60c941cc97d5a9c

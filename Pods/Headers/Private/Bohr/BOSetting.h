@@ -1,1 +1,0 @@
-../../../Bohr/Bohr/BOSetting.h
