@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         businessTableView.delegate = self
         businessMapView.delegate = self
         businessTableView.registerNib(UINib(nibName: "BusinessCell", bundle: nil), forCellReuseIdentifier: "BusinessCell")
-        businessTableView.estimatedRowHeight = 90
+        businessTableView.estimatedRowHeight = 100
         businessTableView.rowHeight = UITableViewAutomaticDimension
         businessTableView.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
 
@@ -66,10 +66,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func extraLeftItemDidPressed(){
             let foodVC = storyboard?.instantiateViewControllerWithIdentifier("campusfood") as! CampusDiningViewController
-//            var nav = UINavigationController(rootViewController: searchVC)
-//            nav.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "dismissVC")
-//            nav.navigationBar.translucent = false
-//    
             self.navigationController?.pushViewController(foodVC, animated: true)
     }
     
@@ -125,7 +121,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 9.5
+        return 10
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -146,7 +142,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailsViewController = storyboard.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
 
-        detailsViewController.business = self.businesses[indexPath.row]
+        detailsViewController.business = self.businesses[indexPath.section]
         
         navigationController?.pushViewController(detailsViewController, animated: true)
     }

@@ -50,7 +50,7 @@ class ScheduleViewController: UIViewController, YALTabBarInteracting {
             TimeFrame(text: "Western Carolina @ Kyle Field\n\n", date: "November 14", image: UIImage(named: "westerncarolina")),
             TimeFrame(text: "Vanderbilt @ Nashvile, TN\n\n", date: "November 21", image: UIImage(named: "vandy")),
             TimeFrame(text: "LSU @ Baton Rouge, LA\n\n\n\n", date: "November 28", image: UIImage(named: "lsu")),
-            TimeFrame(text: "SEC Championship @ Georgia Dome", date: "December 5", image: UIImage(named: "sec"))
+            TimeFrame(text: "SEC Championship @ Georgia Dome\n\n\n\n", date: "December 5", image: UIImage(named: "sec"))
             ])
         
         timeline.titleLabelColor = UIColor.whiteColor()

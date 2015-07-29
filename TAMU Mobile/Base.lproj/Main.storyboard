@@ -464,62 +464,6 @@
                                     <constraint firstAttribute="height" constant="130" id="ypX-kf-xOa"/>
                                 </constraints>
                             </imageView>
-                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51U-fj-5B2">
-                                <rect key="frame" x="0.0" y="64" width="320" height="130"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Grand Pu Bah" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaU-fL-um3">
-                                        <rect key="frame" x="8" y="37" width="153" height="31"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-n7-tyW">
-                                        <rect key="frame" x="298" y="68" width="14" height="14.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-5v-flX">
-                                        <rect key="frame" x="270" y="45" width="41.5" height="14.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N97-U6-hv0">
-                                        <rect key="frame" x="8" y="73" width="84" height="17"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="17" id="0h3-Pa-ei5"/>
-                                            <constraint firstAttribute="width" constant="84" id="NbB-kJ-6wp"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DB-EL-ucO">
-                                        <rect key="frame" x="100" y="74" width="71" height="14.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck9-TE-Bk3">
-                                        <rect key="frame" x="8" y="98" width="116" height="14.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="N97-U6-hv0" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="EJT-jF-ZLr"/>
-                                    <constraint firstAttribute="trailing" secondItem="bUH-5v-flX" secondAttribute="trailing" constant="8" id="NTD-vK-xgq"/>
-                                    <constraint firstItem="Ck9-TE-Bk3" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="NtF-76-vaN"/>
-                                    <constraint firstItem="Ck9-TE-Bk3" firstAttribute="top" secondItem="N97-U6-hv0" secondAttribute="bottom" constant="8" id="R7a-tB-mFM"/>
-                                    <constraint firstItem="VaU-fL-um3" firstAttribute="centerY" secondItem="bUH-5v-flX" secondAttribute="centerY" id="XMy-ZH-WcS"/>
-                                    <constraint firstItem="VaU-fL-um3" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="cnp-CE-gET"/>
-                                    <constraint firstItem="bUH-5v-flX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VaU-fL-um3" secondAttribute="trailing" constant="8" id="eN7-Np-hFh"/>
-                                    <constraint firstAttribute="trailing" secondItem="Fa2-n7-tyW" secondAttribute="trailing" constant="8" id="fwV-y3-p5V"/>
-                                    <constraint firstItem="Fa2-n7-tyW" firstAttribute="top" secondItem="bUH-5v-flX" secondAttribute="bottom" constant="8" id="iDT-nC-IS9"/>
-                                    <constraint firstItem="9DB-EL-ucO" firstAttribute="centerY" secondItem="N97-U6-hv0" secondAttribute="centerY" id="nrC-b0-hLw"/>
-                                    <constraint firstItem="N97-U6-hv0" firstAttribute="top" secondItem="VaU-fL-um3" secondAttribute="bottom" constant="5" id="rUN-mf-3Fn"/>
-                                    <constraint firstAttribute="centerY" secondItem="N97-U6-hv0" secondAttribute="centerY" multiplier="0.8" id="sYv-TQ-oxM"/>
-                                    <constraint firstItem="9DB-EL-ucO" firstAttribute="leading" secondItem="N97-U6-hv0" secondAttribute="trailing" constant="8" id="xtj-KV-chh"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfO-Wy-1qA">
                                 <rect key="frame" x="49" y="356" width="114" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -574,6 +518,62 @@
                                     <constraint firstAttribute="height" constant="1" id="3Rp-AW-Cqa"/>
                                 </constraints>
                             </view>
+                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51U-fj-5B2">
+                                <rect key="frame" x="0.0" y="64" width="320" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-n7-tyW">
+                                        <rect key="frame" x="298" y="68" width="14" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-5v-flX">
+                                        <rect key="frame" x="270" y="45" width="41.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N97-U6-hv0">
+                                        <rect key="frame" x="8" y="73" width="84" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="0h3-Pa-ei5"/>
+                                            <constraint firstAttribute="width" constant="84" id="NbB-kJ-6wp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DB-EL-ucO">
+                                        <rect key="frame" x="100" y="74" width="71" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck9-TE-Bk3">
+                                        <rect key="frame" x="8" y="98" width="116" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Grand Pu Bah" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaU-fL-um3">
+                                        <rect key="frame" x="8" y="37" width="153" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="N97-U6-hv0" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="EJT-jF-ZLr"/>
+                                    <constraint firstAttribute="trailing" secondItem="bUH-5v-flX" secondAttribute="trailing" constant="8" id="NTD-vK-xgq"/>
+                                    <constraint firstItem="Ck9-TE-Bk3" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="NtF-76-vaN"/>
+                                    <constraint firstItem="Ck9-TE-Bk3" firstAttribute="top" secondItem="N97-U6-hv0" secondAttribute="bottom" constant="8" id="R7a-tB-mFM"/>
+                                    <constraint firstItem="VaU-fL-um3" firstAttribute="centerY" secondItem="bUH-5v-flX" secondAttribute="centerY" id="XMy-ZH-WcS"/>
+                                    <constraint firstItem="VaU-fL-um3" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="cnp-CE-gET"/>
+                                    <constraint firstItem="bUH-5v-flX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VaU-fL-um3" secondAttribute="trailing" constant="8" id="eN7-Np-hFh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fa2-n7-tyW" secondAttribute="trailing" constant="8" id="fwV-y3-p5V"/>
+                                    <constraint firstItem="Fa2-n7-tyW" firstAttribute="top" secondItem="bUH-5v-flX" secondAttribute="bottom" constant="8" id="iDT-nC-IS9"/>
+                                    <constraint firstItem="9DB-EL-ucO" firstAttribute="centerY" secondItem="N97-U6-hv0" secondAttribute="centerY" id="nrC-b0-hLw"/>
+                                    <constraint firstItem="N97-U6-hv0" firstAttribute="top" secondItem="VaU-fL-um3" secondAttribute="bottom" constant="5" id="rUN-mf-3Fn"/>
+                                    <constraint firstAttribute="centerY" secondItem="N97-U6-hv0" secondAttribute="centerY" multiplier="0.8" id="sYv-TQ-oxM"/>
+                                    <constraint firstItem="9DB-EL-ucO" firstAttribute="leading" secondItem="N97-U6-hv0" secondAttribute="trailing" constant="8" id="xtj-KV-chh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -619,6 +619,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="qNo-BU-bjT">
+                        <barButtonItem key="rightBarButtonItem" image="startnav" id="DD9-re-3yt">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="startNavigation:" destination="NDF-xg-6oE" id="NLg-jD-AWg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="addressLabel" destination="wsG-4m-TqS" id="Pk8-bA-7aO"/>
@@ -1144,7 +1152,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-tP-WyV">
                                                     <rect key="frame" x="8" y="36" width="304" height="208"/>
-                                                    <mutableString key="text">Once again, none of your information is ever stored or used for profit or analyzation. The only part of your information that may be sent to the "cloud" is while using the Google Maps plug-in in order to view on-campus dining options but I don't get to see any of that so I would ask Google about it if you are really interested; I don't really care about where you've been because that's kind of creepy. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx  I wish to point out that this app is not affiliated with Texas A&amp;M University and I have not been paid by the university to make this app. The app has been created by a student attending Texas A&amp;M University and wishes to not get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or hate the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em Mike JS. Choi Texas A&amp;M University, Junior Computer Engineering Major</mutableString>
+                                                    <string key="text">Once again, none of your information is ever stored or used for profit or analyzation. The only part of your information that may be sent to the "cloud" is while using the Google Maps plug-in in order to view on-campus dining options but I don't get to see any of that so I would ask Google about it if you are really interested; I don't really care about where you've been because that's kind of creepy. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx  I wish to point out that this app is not affiliated with Texas A&amp;M University and I have not been paid by the university to make this app. The app has been created by a student attending Texas A&amp;M University and wishes to not get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or hate the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em Mike JS. Choi Texas A&amp;M University, Junior Computer Engineering Major</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1198,5 +1206,6 @@
         <image name="down_big" width="116" height="116"/>
         <image name="kyle" width="301" height="151"/>
         <image name="share" width="100" height="100"/>
+        <image name="startnav" width="20" height="20"/>
     </resources>
 </document>

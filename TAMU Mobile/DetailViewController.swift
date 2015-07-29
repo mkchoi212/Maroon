@@ -8,8 +8,9 @@
 
 import UIKit
 import MapKit
+import FoldingTabBar
 
-class DetailViewController: UIViewController, MKMapViewDelegate {
+class DetailViewController: UIViewController, MKMapViewDelegate, YALTabBarInteracting {
 
     var business: Business!
     @IBOutlet private weak var thumbImageView: UIImageView!
@@ -86,15 +87,45 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         }
     }
 
+    @IBAction func startNavigation(sender: AnyObject) {
+        var latitute:CLLocationDegrees =  self.business.latitude!
+        var longitute:CLLocationDegrees =  self.business.longitude!
+        
+        let regionDistance:CLLocationDistance = 10000
+        var coordinates = CLLocationCoordinate2DMake(latitute, longitute)
+        let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
+        var options = [
+            MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan: regionSpan.span)
+        ]
+        var placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        var mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = "\(self.business.name)"
+        mapItem.openInMapsWithLaunchOptions(options)
+    }
+    
     
     @IBAction func touchedCallBusinessButton() {
-        if let businessPhoneNumber = business.phoneNumber {
-            if let url = NSURL(string: "tel://\(businessPhoneNumber)") {
-                UIApplication.sharedApplication().openURL(url)
+        let alertController = UIAlertController(title: "Confirmation", message: "Do you want to call \(business.displayPhone!)?", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Destructive, handler: nil)
+        alertController.addAction(cancelAction)
+        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+            //call restaurant
+            if let businessPhoneNumber = self.business.phoneNumber {
+                if let url = NSURL(string: "tel://\(businessPhoneNumber)") {
+                    UIApplication.sharedApplication().openURL(url)
+                }
             }
         }
+        alertController.addAction(OKAction)
         
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    func extraRightItemDidPressed() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     
     private func updateMapViewAnnotation() {
         businessMapView.removeAnnotations(businessMapView.annotations)

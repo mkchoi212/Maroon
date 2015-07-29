@@ -8,8 +8,9 @@
 
 import Foundation
 import GUITabPagerViewController
+import FoldingTabBar
 
-class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegate, GUITabPagerDataSource {
+class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegate, GUITabPagerDataSource, YALTabBarInteracting {
     
     let story = UIStoryboard(name: "Main", bundle: nil)
     
@@ -73,6 +74,10 @@ class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegat
         }
     }
     
+    func extraRightItemDidPressed(){
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     func tabHeight() -> CGFloat {
         return 50.0
     }
@@ -92,4 +97,5 @@ class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegat
     func titleColor() -> UIColor! {
         return UIColor.whiteColor()
     }
+    
 }
