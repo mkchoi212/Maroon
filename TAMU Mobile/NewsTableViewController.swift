@@ -30,7 +30,6 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         self.tableView.reloadData()
     }
     
-    
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
