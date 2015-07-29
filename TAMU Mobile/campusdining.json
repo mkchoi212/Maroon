@@ -947,6 +947,79 @@
          "days":"",
          "minStartDate":"",
          "maxEndDate":""
+      },
+      {
+         "name":"Smashburger",
+         "slug":"smashburger",
+         "address": "233 Houston St",
+         "city":"College Station",
+         "state":"Texas",
+         "zip":"77840",
+         "lat":"30.617164",
+         "lon":"-96.344578",
+         "tzMsg":"All times are CDT",
+         "offset":"-5",
+         "dst":"1",
+         "hideAddress":"0",
+         "hours":[
+            {
+               "offset":"-5",
+               "day":"1",
+               "dst":"1",
+               "begTime":"11:00",
+               "endTime":"20:00",
+               "begDate":"6/1/15",
+               "endDate":"8/10/15"
+            },
+            {
+               "offset":"-5",
+               "day":"2",
+               "dst":"1",
+               "begTime":"11:00",
+               "endTime":"20:00",
+               "begDate":"6/1/15",
+               "endDate":"8/10/15"
+            },
+            {
+               "offset":"-5",
+               "day":"3",
+               "dst":"1",
+               "begTime":"11:00",
+               "endTime":"20:00",
+               "begDate":"6/1/15",
+               "endDate":"8/10/15"
+            },
+            {
+               "offset":"-5",
+               "day":"4",
+               "dst":"1",
+               "begTime":"11:00",
+               "endTime":"20:00",
+               "begDate":"6/1/15",
+               "endDate":"8/10/15"
+            },
+            {
+               "offset":"-5",
+               "day":"5",
+               "dst":"1",
+               "begTime":"11:00",
+               "endTime":"20:00",
+               "begDate":"6/1/15",
+               "endDate":"8/10/15"
+            },
+            {
+               "offset":"-5",
+               "day":"7",
+               "dst":"1",
+               "begTime":"13:00",
+               "endTime":"20:00",
+               "begDate":"6/1/15",
+               "endDate":"8/10/15"
+            }
+         ],
+         "days":"",
+         "minStartDate":"",
+         "maxEndDate":""
       }
    ]
 }

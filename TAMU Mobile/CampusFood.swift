@@ -9,18 +9,16 @@
 import Foundation
 
 class CampusFood {
-    var name = String()
     var address = FoodLocation()
     var hours = [Hours]()
     
-    init(name : String, address : FoodLocation, hours : [Hours]) {
-        self.name = name
+    init(address : FoodLocation, hours : [Hours]) {
         self.address = address
         self.hours = hours
     }
     
     convenience init() {
-        self.init(name : "name", address : FoodLocation(), hours : [Hours]())
+        self.init(address : FoodLocation(), hours : [Hours]())
     }
     
 }

@@ -646,7 +646,7 @@
             </objects>
             <point key="canvasLocation" x="856" y="-910"/>
         </scene>
-        <!--Campus Dining View Controller-->
+        <!--On-Campus-->
         <scene sceneID="KMw-Yg-Izm">
             <objects>
                 <viewController storyboardIdentifier="campusfood" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kz3-wr-k6s" customClass="CampusDiningViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
@@ -662,21 +662,65 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-Qe-xdO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-Qe-xdO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="65" id="0kI-DV-JJL">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="87" id="0kI-DV-JJL" customClass="CampusDiningCell" customModule="TAMU_Mobile" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0kI-DV-JJL" id="4N7-gm-sqA">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-vE-5bf">
+                                                    <rect key="frame" x="8" y="28" width="222" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSk-vx-1Lf">
+                                                    <rect key="frame" x="238" y="28" width="74" height="31"/>
+                                                    <color key="backgroundColor" red="0.35294117650000001" green="0.83921568629999999" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="74" id="4vv-Mb-oeT"/>
+                                                        <constraint firstAttribute="height" constant="31" id="bZN-qx-WUx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M96-9x-ORC">
+                                                    <rect key="frame" x="8" y="49" width="222" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="M96-9x-ORC" firstAttribute="leading" secondItem="4N7-gm-sqA" secondAttribute="leadingMargin" id="CMo-Cu-jbL"/>
+                                                <constraint firstItem="aSk-vx-1Lf" firstAttribute="trailing" secondItem="4N7-gm-sqA" secondAttribute="trailingMargin" id="Dch-wj-6Pr"/>
+                                                <constraint firstAttribute="centerY" secondItem="aSk-vx-1Lf" secondAttribute="centerY" constant="-0.25" id="FyA-RH-0KE"/>
+                                                <constraint firstItem="nbD-vE-5bf" firstAttribute="leading" secondItem="4N7-gm-sqA" secondAttribute="leadingMargin" id="OUZ-P9-Z8K"/>
+                                                <constraint firstItem="M96-9x-ORC" firstAttribute="top" secondItem="nbD-vE-5bf" secondAttribute="bottom" constant="0.5" id="R2n-t4-Bjt"/>
+                                                <constraint firstItem="aSk-vx-1Lf" firstAttribute="leading" secondItem="M96-9x-ORC" secondAttribute="trailing" constant="8" id="Srw-g1-Sef"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="M96-9x-ORC" secondAttribute="bottom" constant="8" id="TDA-UQ-wOP"/>
+                                                <constraint firstItem="aSk-vx-1Lf" firstAttribute="leading" secondItem="nbD-vE-5bf" secondAttribute="trailing" constant="8" id="gAe-kw-j6A"/>
+                                                <constraint firstItem="nbD-vE-5bf" firstAttribute="top" secondItem="4N7-gm-sqA" secondAttribute="topMargin" constant="20" id="qhz-WJ-NVO"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="M96-9x-ORC" id="7eW-0V-lVh"/>
+                                            <outlet property="mainLabel" destination="nbD-vE-5bf" id="B33-IB-VRF"/>
+                                            <outlet property="statusLabel" destination="aSk-vx-1Lf" id="2rt-wc-LDV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kz3-wr-k6s" id="SfL-RK-Tvm"/>
+                                    <outlet property="delegate" destination="kz3-wr-k6s" id="q4A-CE-hg8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549019607843" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -698,6 +742,7 @@
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="On-Campus" id="ESv-fb-dgW"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="mapView" destination="Yr3-9h-TeY" id="WEs-XZ-XDc"/>
@@ -1152,7 +1197,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-tP-WyV">
                                                     <rect key="frame" x="8" y="36" width="304" height="208"/>
-                                                    <string key="text">Once again, none of your information is ever stored or used for profit or analyzation. The only part of your information that may be sent to the "cloud" is while using the Google Maps plug-in in order to view on-campus dining options but I don't get to see any of that so I would ask Google about it if you are really interested; I don't really care about where you've been because that's kind of creepy. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx  I wish to point out that this app is not affiliated with Texas A&amp;M University and I have not been paid by the university to make this app. The app has been created by a student attending Texas A&amp;M University and wishes to not get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or hate the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em Mike JS. Choi Texas A&amp;M University, Junior Computer Engineering Major</string>
+                                                    <mutableString key="text">Once again, none of your information is ever stored or used for profit or analyzation. The only part of your information that may be sent to the "cloud" is while using the Google Maps plug-in in order to view on-campus dining options but I don't get to see any of that so I would ask Google about it if you are really interested; I don't really care about where you've been because that's kind of creepy. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx  I wish to point out that this app is not affiliated with Texas A&amp;M University and is not an official university product. The app has been created by a student attending Texas A&amp;M University and wishes to not get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or hate the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em</mutableString>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>

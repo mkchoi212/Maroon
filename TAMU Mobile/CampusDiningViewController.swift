@@ -5,12 +5,12 @@
 //  Created by Mike Choi on 7/26/15.
 //  Copyright (c) 2015 coolaf. All rights reserved.
 //
-
+//campusdining.json date starts from 1 being monday to 7 being sunday
 import Foundation
 import GoogleMaps
 import FoldingTabBar
 
-class CampusDiningViewController: UIViewController, YALTabBarInteracting {
+class CampusDiningViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting {
 
     var campusPlaces = [CampusFood]()
     var markers = [GMSMarker]()
@@ -20,8 +20,6 @@ class CampusDiningViewController: UIViewController, YALTabBarInteracting {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = "On-Campus"
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         
@@ -46,7 +44,7 @@ class CampusDiningViewController: UIViewController, YALTabBarInteracting {
             var venue = CampusFood()
             var address = FoodLocation(name : subJson["name"] as! String, address: subJson["address"] as! String, city: subJson["city"] as! String, state: subJson["state"] as! String, zip: subJson["zip"] as! String, lat: subJson["lat"] as! String, lon: subJson["lon"] as! String)
             venue.address = address
-            
+
             marker.position = CLLocationCoordinate2DMake((subJson["lat"] as! NSString).doubleValue, (subJson["lon"] as! NSString).doubleValue)
             marker.title = subJson["name"] as! String
             marker.snippet = "Australia"
@@ -59,12 +57,33 @@ class CampusDiningViewController: UIViewController, YALTabBarInteracting {
             }
             venue.hours = hoursArray
             marker.map = mapView
-            self.campusPlaces.append(venue)
+            campusPlaces.append(venue)
             self.markers.append(marker)
             isOpen(venue.hours)
         }
+        
+        tableView.reloadData()
+        println(campusPlaces.count)
     }
     
+    //MARK: UITableView Delegate/Datasource
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return campusPlaces.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CampusDiningCell
+        cell.mainLabel.text = campusPlaces[indexPath.row].address.name
+        cell.addressLabel.text = campusPlaces[indexPath.row].address.address
+
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 85
+    }
+
     func isOpen(schedule : [Hours]) -> Bool{
 
         for item in schedule{
