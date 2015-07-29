@@ -19,7 +19,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        if (indexPath.section == 2 && indexPath.row == 1){
+        if (indexPath.section == 1 && indexPath.row == 1){
             //CONTACT ME
             let mailComposeViewController = configuredMailComposeViewController()
             if MFMailComposeViewController.canSendMail() {
@@ -34,7 +34,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
-        mailComposerVC.setToRecipients(["mkchoi212@icloud.com"])
+        mailComposerVC.setToRecipients(["mkchoi212@icloud.com", "mkchoi212@tamu.edu"])
         mailComposerVC.setSubject("What's good?!")
         mailComposerVC.setMessageBody("", isHTML: false)
         

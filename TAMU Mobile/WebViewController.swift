@@ -37,7 +37,8 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.addSubview(progressView)
+        view.backgroundColor = UIColor.whiteColor()
+        navigationController?.navigationBar.addSubview(progressView)
     }
     
     override func viewWillDisappear(animated: Bool) {

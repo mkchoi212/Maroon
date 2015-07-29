@@ -16,6 +16,7 @@
 		CA05373B1B64A54700B22B87 /* Yell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05373A1B64A54700B22B87 /* Yell.swift */; };
 		CA522EE91B682C1F003C0054 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */; };
 		CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA522EEA1B6831CB003C0054 /* WebViewController.swift */; };
+		CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */; };
 		CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */; };
 		CAA120981B65DAD8007D7802 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */; };
 		CAA1209E1B65DCF9007D7802 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA1209D1B65DCF9007D7802 /* TimelineView.swift */; };
@@ -103,6 +104,7 @@
 		CA05373A1B64A54700B22B87 /* Yell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yell.swift; sourceTree = "<group>"; };
 		CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CA522EEA1B6831CB003C0054 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewController.swift; sourceTree = "<group>"; };
 		CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleticsPageViewController.swift; sourceTree = "<group>"; };
 		CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		CAA1209D1B65DCF9007D7802 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			children = (
 				CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
+				CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -638,6 +641,7 @@
 				CAA120981B65DAD8007D7802 /* ScheduleViewController.swift in Sources */,
 				CACB68CD1B656890007F4AD1 /* NSTimeZone+ProperAbbreviation.m in Sources */,
 				CACB68B31B656851007F4AD1 /* JTCalendar.m in Sources */,
+				CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */,
 				CAC331711B64878E0036FD6B /* YelpClient.swift in Sources */,
 				CA05373B1B64A54700B22B87 /* Yell.swift in Sources */,
 				CAA1209E1B65DCF9007D7802 /* TimelineView.swift in Sources */,
