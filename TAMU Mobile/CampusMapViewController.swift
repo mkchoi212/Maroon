@@ -21,7 +21,6 @@ class CampusMapViewController: UIViewController, UITableViewDelegate, UITableVie
         var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
             longitude: -96.342316, zoom: 16)
         mapView.animateToCameraPosition(camera)
-        mapView.animateToViewingAngle(45)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

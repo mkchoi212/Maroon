@@ -1114,7 +1114,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tTg-Xt-VvE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Pa-fK-tYp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzE-gW-GSL">
@@ -1137,6 +1137,14 @@
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="BOu-sI-XyL">
+                        <barButtonItem key="rightBarButtonItem" image="share-bar" id="w2H-06-wOa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="openSafari:" destination="2M8-qU-hZY" id="gjX-Q2-cX6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="webView" destination="pzE-gW-GSL" id="DkN-Gx-EFU"/>
@@ -1323,7 +1331,8 @@
     </scenes>
     <resources>
         <image name="kyle" width="301" height="151"/>
-        <image name="share" width="100" height="100"/>
+        <image name="share" width="25" height="25"/>
+        <image name="share-bar" width="24" height="24"/>
         <image name="startnav" width="20" height="20"/>
     </resources>
 </document>

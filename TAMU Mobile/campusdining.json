@@ -44,16 +44,16 @@
                             "begTime": "9:00",
                             "endTime": "23:00"
                             }
-                        ]
+                            ]
                   },
                   {
-                  "name": "Pi R Square Food Courts",
+                  "name": "Pi R Squared Food Courts",
                   "address": "199 Spence St",
                   "city": "College Station",
                   "state": "Tx",
                   "zip": "77843",
-                  "lat": "30.618766",
-                  "lon": "-96.33913",
+                  "lat": "30.619813",
+                  "lon": "-96.340060",
                   "hours": [
                             {
                             "day": "2",
@@ -89,8 +89,386 @@
                             "day": "1",
                             "begTime": "00:00",
                             "endTime": "00:00"
-                    }
-                ]
-            }
-        ]
+                            }
+                            
+                            ]
+                  },
+                  {
+                  "name": "Duncan Dining Hall",
+                  "address": "Duncan",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.612066",
+                  "lon": "-96.335346",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "7:00",
+                            "endTime": "10:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "7:00",
+                            "endTime": "10:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "7:00",
+                            "endTime": "10:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "7:00",
+                            "endTime": "10:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:00",
+                            "endTime": "10:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "9:00",
+                            "endTime": "11:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "9:00",
+                            "endTime": "11:00"
+                            },
+                            {
+                            "day": "2",
+                            "begTime": "11:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "11:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "11:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "11:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:00",
+                            "endTime": "10:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "11:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "11:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "2",
+                            "begTime": "17:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "17:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "17:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "17:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "17:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "17:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "17:00",
+                            "endTime": "22:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "The Gril at the Pavilion",
+                  "address": "Pavilion",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.616822",
+                  "lon": "-96.338017",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "8:00",
+                            "endTime": "16:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Aggie Express at the Underground",
+                  "address": "Pavilion",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617271",
+                  "lon": "-96.344214",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "7:30",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "7:30",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "7:30",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "7:30",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:30",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "10:00",
+                            "endTime": "18:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "10:00",
+                            "endTime": "20:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Starbucks at Evans",
+                  "address": "Evans",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617218",
+                  "lon": "-96.339081",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:30",
+                            "endTime": "17:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "10:00",
+                            "endTime": "17:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "10:00",
+                            "endTime": "24:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Rev's American Gril",
+                  "address": "MSC",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.612423",
+                  "lon": "-96.340635",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:30",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "12:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "12:00",
+                            "endTime": "24:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Chick-n-Grill",
+                  "address": "MSC",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.612133",
+                  "lon": "-96.341041",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "11:0",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Panda Express",
+                  "address": "MSC",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.611657",
+                  "lon": "-96.341676",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "11:00",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "11:00",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "11:00",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "11:00",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "11:00",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "11:00",
+                            "endTime": "22:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "11:00",
+                            "endTime": "22:00"
+                            }
+                            ]
+                  }
+                  ]
 }

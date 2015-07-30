@@ -46,6 +46,19 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
         
     }
     
+    @IBAction func openSafari(sender: AnyObject) {
+        let alertController = UIAlertController(title: "Confirmation", message: "Open page in Safari?", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Destructive, handler: nil)
+        alertController.addAction(cancelAction)
+        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+            UIApplication.sharedApplication().openURL(requestURL)
+        }
+        alertController.addAction(OKAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         view.backgroundColor = UIColor.whiteColor()
