@@ -295,7 +295,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkb-wb-dqH">
-                                                    <rect key="frame" x="8" y="8" width="35.5" height="18"/>
+                                                    <rect key="frame" x="8" y="8" width="36" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -488,12 +488,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, San Francisco, CA 94109" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsG-4m-TqS">
-                                <rect key="frame" x="16" y="340" width="225.5" height="14.5"/>
+                                <rect key="frame" x="16" y="340" width="226" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recomended Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQO-yo-EWA">
-                                <rect key="frame" x="16" y="393" width="148" height="16.5"/>
+                                <rect key="frame" x="16" y="393" width="148" height="17"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -522,12 +522,12 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-n7-tyW">
-                                        <rect key="frame" x="298" y="68" width="14" height="14.5"/>
+                                        <rect key="frame" x="298" y="68" width="14" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-5v-flX">
-                                        <rect key="frame" x="270" y="45" width="41.5" height="14.5"/>
+                                        <rect key="frame" x="270" y="45" width="42" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -540,12 +540,12 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DB-EL-ucO">
-                                        <rect key="frame" x="100" y="74" width="71" height="14.5"/>
+                                        <rect key="frame" x="100" y="74" width="71" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck9-TE-Bk3">
-                                        <rect key="frame" x="8" y="98" width="116" height="14.5"/>
+                                        <rect key="frame" x="8" y="98" width="116" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -675,7 +675,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-vE-5bf">
-                                                    <rect key="frame" x="8" y="28" width="222" height="20.5"/>
+                                                    <rect key="frame" x="8" y="28" width="222" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1164,13 +1164,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE APP DOES NOT TRACK ANY OF YOUR INFORMATION  YOUR INFORMATION IS YOURS" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-zR-qkO">
-                                                    <rect key="frame" x="8" y="18" width="304" height="533.5"/>
+                                                    <rect key="frame" x="8" y="18" width="304" height="534"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_big" translatesAutoresizingMaskIntoConstraints="NO" id="yQj-Js-sZX">
-                                                    <rect key="frame" x="134.5" y="483.5" width="52" height="53"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="down_big" translatesAutoresizingMaskIntoConstraints="NO" id="yQj-Js-sZX">
+                                                    <rect key="frame" x="135" y="484" width="52" height="53"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -1197,7 +1197,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-tP-WyV">
                                                     <rect key="frame" x="8" y="36" width="304" height="208"/>
-                                                    <mutableString key="text">Once again, none of your information is ever stored or used for profit or analyzation. The only part of your information that may be sent to the "cloud" is while using the Google Maps plug-in in order to view on-campus dining options but I don't get to see any of that so I would ask Google about it if you are really interested; I don't really care about where you've been because that's kind of creepy. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx  I wish to point out that this app is not affiliated with Texas A&amp;M University and is not an official university product. The app has been created by a student attending Texas A&amp;M University and wishes to not get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or hate the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em</mutableString>
+                                                    <string key="text">Once again, none of your information is ever stored or used for profit or analyzation. The only part of your information that may be sent to the "cloud" is while using the Google Maps plug-in in order to view on-campus dining options but I don't get to see any of that so I would ask Google about it if you are really interested; I don't really care about where you've been because that's kind of creepy. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx  I wish to point out that this app is not affiliated with Texas A&amp;M University and is not an official university product. The app has been created by a student attending Texas A&amp;M University and wishes to not get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or hate the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>

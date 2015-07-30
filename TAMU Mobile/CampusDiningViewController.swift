@@ -5,7 +5,7 @@
 //  Created by Mike Choi on 7/26/15.
 //  Copyright (c) 2015 coolaf. All rights reserved.
 //
-//campusdining.json date starts from 1 being monday to 7 being sunday
+//campusdining.json date... sun : 1, mon : 2, tues : 3,wed : 4, thur : 5, fri : 6, sat : 7
 import Foundation
 import GoogleMaps
 import FoldingTabBar
@@ -17,16 +17,15 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     var mapUpdated = false
     @IBOutlet weak var tableView: UITableView!
     var mapView: GMSMapView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         
         loadVenues()
-        
         var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
-            longitude: -96.342316, zoom: 15)
+        longitude: -96.342316, zoom: 15)
         self.mapView.animateToCameraPosition(camera)
     }
 
@@ -52,18 +51,17 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
             var hoursObject = subJson["hours"] as! [AnyObject]
             var hoursArray = [Hours]()
             for day in hoursObject{
-                let dayHours = Hours(day: day["day"] as! String, begTime: day["begTime"] as! String, endTime: day["endTime"] as! String, begDate: day["begDate"] as! String, endDate: day["endDate"] as! String)
+                let dayHours = Hours(day: day["day"] as! String, begTime: day["begTime"] as! String, endTime: day["endTime"] as! String)
                 hoursArray.append(dayHours)
             }
             venue.hours = hoursArray
             marker.map = mapView
+
             campusPlaces.append(venue)
             self.markers.append(marker)
-            isOpen(venue.hours)
         }
-        
+        isOpen()
         tableView.reloadData()
-        println(campusPlaces.count)
     }
     
     //MARK: UITableView Delegate/Datasource
@@ -74,9 +72,19 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CampusDiningCell
-        cell.mainLabel.text = campusPlaces[indexPath.row].address.name
-        cell.addressLabel.text = campusPlaces[indexPath.row].address.address
+        let foodPlace = campusPlaces[indexPath.row]
+        cell.mainLabel.text = foodPlace.address.name
+        cell.addressLabel.text = foodPlace.address.address
 
+        if foodPlace.open{
+            cell.statusLabel.backgroundColor = UIColor(red: 90.0/255.0, green: 214.0/255.0, blue: 83.0/255.0, alpha: 1)
+            cell.statusLabel.text = "Open"
+        }
+        else{
+            cell.statusLabel.backgroundColor = UIColor.redColor()
+            cell.statusLabel.text = "Closed"
+        }
+        
         return cell
     }
     
@@ -84,18 +92,43 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         return 85
     }
 
-    func isOpen(schedule : [Hours]) -> Bool{
-
-        for item in schedule{
-          println(item.day.toInt(), getDayOfWeek())
+    func isOpen(){
+        let todayDate = getDayOfWeek()
+        let now = NSDate()
+        var open = Bool()
+        
+        for venue in campusPlaces{
+            for (index, businessDay) in enumerate(venue.hours){
+                if businessDay.day.toInt() == todayDate{
+                    let begTime = now.dateAt(hours: businessDay.begTime.getHour(), minutes: businessDay.begTime.getMinutes())
+                    let endTime = now.dateAt(hours: businessDay.endTime.getHour(), minutes: businessDay.endTime.getMinutes())
+                    
+                    if now > begTime && now < endTime{
+                        println(index)
+                        println("found and open")
+                        venue.open = true
+                        break
+                    }
+                    else{
+                        println("found and closed")
+                        println(index)
+                        venue.open = false
+                        break
+                    }
+                }
+                else{
+                    println("not found and closed")
+                    println(index)
+                    venue.open = false
+                }
+            }
         }
-        return true
     }
     
-    func getDayOfWeek()->Int {
-        let todayDate = NSDate()
+    func getDayOfWeek() -> Int {
+        let now = NSDate()
         let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        let myComponents = myCalendar?.components(NSCalendarUnit.CalendarUnitWeekday, fromDate: todayDate)
+        let myComponents = myCalendar?.components(NSCalendarUnit.CalendarUnitWeekday, fromDate: now)
         let weekDay = myComponents?.weekday
         return weekDay!
     }

@@ -11,14 +11,15 @@ import Foundation
 class CampusFood {
     var address = FoodLocation()
     var hours = [Hours]()
+    var open = Bool()
     
-    init(address : FoodLocation, hours : [Hours]) {
+    init(address : FoodLocation, hours : [Hours], open : Bool) {
         self.address = address
         self.hours = hours
     }
     
     convenience init() {
-        self.init(address : FoodLocation(), hours : [Hours]())
+        self.init(address : FoodLocation(), hours : [Hours](), open : true)
     }
     
 }

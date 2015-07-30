@@ -18,6 +18,8 @@
 		CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA522EEA1B6831CB003C0054 /* WebViewController.swift */; };
 		CA529CD51B687BD300113DFC /* CampusDiningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA529CD41B687BD300113DFC /* CampusDiningCell.swift */; };
 		CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */; };
+		CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D31B698A60003733DF /* DateExtension.swift */; };
+		CA9FD4D61B698B1B003733DF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D51B698B1B003733DF /* StringExtension.swift */; };
 		CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */; };
 		CAA120981B65DAD8007D7802 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */; };
 		CAA1209E1B65DCF9007D7802 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA1209D1B65DCF9007D7802 /* TimelineView.swift */; };
@@ -106,6 +108,8 @@
 		CA522EEA1B6831CB003C0054 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CA529CD41B687BD300113DFC /* CampusDiningCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusDiningCell.swift; sourceTree = "<group>"; };
 		CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewController.swift; sourceTree = "<group>"; };
+		CA9FD4D31B698A60003733DF /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		CA9FD4D51B698B1B003733DF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleticsPageViewController.swift; sourceTree = "<group>"; };
 		CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		CAA1209D1B65DCF9007D7802 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
@@ -382,6 +386,8 @@
 				CA529CD41B687BD300113DFC /* CampusDiningCell.swift */,
 				CA0537281B64989A00B22B87 /* campusdining.json */,
 				CACB68E61B657F77007F4AD1 /* CampusFood.swift */,
+				CA9FD4D31B698A60003733DF /* DateExtension.swift */,
+				CA9FD4D51B698B1B003733DF /* StringExtension.swift */,
 				CACB68E81B658042007F4AD1 /* Hours.swift */,
 				CACB68EA1B658230007F4AD1 /* FoodLocation.swift */,
 			);
@@ -667,6 +673,7 @@
 				CAC3317B1B6489310036FD6B /* RecipeViewController.swift in Sources */,
 				CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */,
 				CAC331681B64878E0036FD6B /* BusinessCell.swift in Sources */,
+				CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */,
 				CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */,
 				CACB68CC1B656890007F4AD1 /* MXLCalendarManager.m in Sources */,
 				CAC3316A1B64878E0036FD6B /* DetailViewController.swift in Sources */,
@@ -681,6 +688,7 @@
 				CACB68B81B656851007F4AD1 /* JTCalendarMenuMonthView.m in Sources */,
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
 				CACB68DC1B656899007F4AD1 /* UIView+convenience.m in Sources */,
+				CA9FD4D61B698B1B003733DF /* StringExtension.swift in Sources */,
 				CACB68E71B657F77007F4AD1 /* CampusFood.swift in Sources */,
 				CACB68B91B656851007F4AD1 /* JTCalendarMenuView.m in Sources */,
 				CACB68CB1B656890007F4AD1 /* MXLCalendarEvent.m in Sources */,
