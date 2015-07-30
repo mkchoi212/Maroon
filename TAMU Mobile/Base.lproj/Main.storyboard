@@ -428,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2B-wI-MR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="-916"/>
+            <point key="canvasLocation" x="986" y="-910"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="3OL-NL-HNn">
@@ -797,7 +797,7 @@
         <!--Yells View Controller-->
         <scene sceneID="OgX-tb-5Om">
             <objects>
-                <viewController storyboardIdentifier="yells" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UUd-Yt-1Br" customClass="YellsViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="yells" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UUd-Yt-1Br" customClass="YellsViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HOq-A4-PWH"/>
                         <viewControllerLayoutGuide type="bottom" id="OSJ-xD-5Dh"/>
@@ -993,6 +993,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="collectionView" destination="y4m-Me-IbC" id="yXJ-qH-HeG"/>
