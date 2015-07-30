@@ -164,20 +164,18 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         self.navigationController?.pushViewController(yelpVC, animated: true)
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-    
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         searchActive = true;
     }
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchBar.endEditing(true)
         searchActive = false;
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         searchActive = false;
+        searchBar.endEditing(true)
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
@@ -199,6 +197,9 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         tableView.reloadData()
     }
 
+    @IBAction func tapOutside(sender: AnyObject) {
+        searchBar.endEditing(true)
+    }
 }
 
 
