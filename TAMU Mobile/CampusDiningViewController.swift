@@ -46,7 +46,6 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
 
             marker.position = CLLocationCoordinate2DMake((subJson["lat"] as! NSString).doubleValue, (subJson["lon"] as! NSString).doubleValue)
             marker.title = subJson["name"] as! String
-            marker.snippet = "Australia"
             
             var hoursObject = subJson["hours"] as! [AnyObject]
             var hoursArray = [Hours]()
@@ -60,6 +59,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
             campusPlaces.append(venue)
             self.markers.append(marker)
         }
+        
         isOpen()
         tableView.reloadData()
     }
@@ -97,28 +97,25 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         let now = NSDate()
         var open = Bool()
         
-        for venue in campusPlaces{
-            for (index, businessDay) in enumerate(venue.hours){
+        for (index, venue) in enumerate(campusPlaces){
+            for businessDay in venue.hours{
                 if businessDay.day.toInt() == todayDate{
                     let begTime = now.dateAt(hours: businessDay.begTime.getHour(), minutes: businessDay.begTime.getMinutes())
                     let endTime = now.dateAt(hours: businessDay.endTime.getHour(), minutes: businessDay.endTime.getMinutes())
                     
                     if now > begTime && now < endTime{
-                        println(index)
-                        println("found and open")
                         venue.open = true
+                        markers[index].snippet = "Open"
                         break
                     }
                     else{
-                        println("found and closed")
-                        println(index)
                         venue.open = false
+                        markers[index].snippet = "Closed"
                         break
                     }
                 }
                 else{
-                    println("not found and closed")
-                    println(index)
+                    markers[index].snippet = "Closed"
                     venue.open = false
                 }
             }

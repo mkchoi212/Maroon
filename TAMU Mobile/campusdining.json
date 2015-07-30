@@ -57,43 +57,36 @@
                   "hours": [
                             {
                             "day": "2",
-                            "dst": "1",
                             "begTime": "10:00",
                             "endTime": "17:00"
                             },
                             {
                             "day": "3",
-                            "dst": "1",
                             "begTime": "10:00",
                             "endTime": "17:00"
                             },
                             {
                             "day": "4",
-                            "dst": "1",
                             "begTime": "10:00",
                             "endTime": "17:00"
                             },
                             {
                             "day": "5",
-                            "dst": "1",
                             "begTime": "10:00",
                             "endTime": "17:00"
                             },
                             {
                             "day": "6",
-                            "dst": "1",
                             "begTime": "10:00",
                             "endTime": "14:00"
                             },
                             {
                             "day": "7",
-                            "dst": "1",
                             "begTime": "00:00",
                             "endTime": "00:00"
                             },
                             {
                             "day": "1",
-                            "dst": "1",
                             "begTime": "00:00",
                             "endTime": "00:00"
                             }

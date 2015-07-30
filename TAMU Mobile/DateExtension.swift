@@ -21,9 +21,7 @@ extension NSDate
         
         //get the month/day/year componentsfor today's date.
         let date_components = calendar.components(NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitDay, fromDate: self)
-        //date_components.timeZone = NSTimeZone(abbreviation: "UTC")
 
-        //Create an NSDate for 8:00 AM today.
         date_components.hour = hours
         date_components.minute = minutes
         date_components.second = 0
