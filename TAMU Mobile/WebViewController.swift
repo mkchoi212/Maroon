@@ -8,18 +8,29 @@
 
 import Foundation
 import NJKWebViewProgress
+import FoldingTabBar
 
-class WebViewController: UIViewController, UINavigationBarDelegate, UINavigationControllerDelegate, UIWebViewDelegate, NSURLSessionTaskDelegate,NJKWebViewProgressDelegate {
+class WebViewController: UIViewController, UINavigationBarDelegate, UINavigationControllerDelegate, UIWebViewDelegate, NSURLSessionTaskDelegate,NJKWebViewProgressDelegate, YALTabBarInteracting {
 
     @IBOutlet weak var webView: UIWebView!
     var progressView = NJKWebViewProgressView()
     var progressProxy = NJKWebViewProgress()
     var sessionChecked = false
+    var coolaf = true
+    var requestURL = NSURL()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let requestURL = NSURL(string: "https://lifeplusdev.wordpress.com")!
+        if coolaf{
+            self.title = "cool.af"
+            requestURL = NSURL(string: "https://lifeplusdev.wordpress.com")!
+        }
+        else{
+            self.title = "Bus Routes"
+            requestURL = NSURL(string: "http://transport.tamu.edu/busroutes/")!
+        }
+        
         let request = NSURLRequest(URL: requestURL)
         webView.loadRequest(request)
         
@@ -48,6 +59,10 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
 
     func webViewProgress(webViewProgress: NJKWebViewProgress!, updateProgress progress: Float) {
         progressView.setProgress(progress, animated: true)
+    }
+    
+    func extraLeftItemDidPressed(){
+        navigationController?.popViewControllerAnimated(true)
     }
 
 }

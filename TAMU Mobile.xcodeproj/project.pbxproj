@@ -20,6 +20,7 @@
 		CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */; };
 		CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D31B698A60003733DF /* DateExtension.swift */; };
 		CA9FD4D61B698B1B003733DF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D51B698B1B003733DF /* StringExtension.swift */; };
+		CA9FD4D81B69AFB9003733DF /* CampusMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */; };
 		CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */; };
 		CAA120981B65DAD8007D7802 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */; };
 		CAA1209E1B65DCF9007D7802 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA1209D1B65DCF9007D7802 /* TimelineView.swift */; };
@@ -110,6 +111,7 @@
 		CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewController.swift; sourceTree = "<group>"; };
 		CA9FD4D31B698A60003733DF /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CA9FD4D51B698B1B003733DF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusMapViewController.swift; sourceTree = "<group>"; };
 		CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleticsPageViewController.swift; sourceTree = "<group>"; };
 		CAA120971B65DAD8007D7802 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		CAA1209D1B65DCF9007D7802 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
@@ -260,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */,
-				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
 				CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */,
 			);
 			name = Settings;
@@ -336,6 +337,8 @@
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
 				CAC331791B6489310036FD6B /* RecipeViewController.swift */,
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
+				CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */,
+				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
 				CAC665AA1B66DDEC003E465D /* Athletics */,
 				CAA120961B65D305007D7802 /* Calendar */,
 				CA0537331B649D8700B22B87 /* Yells */,
@@ -700,6 +703,7 @@
 				CA0537351B649D9A00B22B87 /* YellCell.swift in Sources */,
 				CACB68E91B658042007F4AD1 /* Hours.swift in Sources */,
 				CA522EE91B682C1F003C0054 /* SettingsTableViewController.swift in Sources */,
+				CA9FD4D81B69AFB9003733DF /* CampusMapViewController.swift in Sources */,
 				CAC665AE1B66E125003E465D /* XMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

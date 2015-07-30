@@ -102,6 +102,7 @@
                         <exclude reference="ATh-sq-17G"/>
                         <exclude reference="D2L-L6-dbM"/>
                         <exclude reference="WEy-nh-3iN"/>
+                        <exclude reference="nvd-wR-Wf7"/>
                         <exclude reference="xUE-ul-Li2"/>
                     </mask>
                 </variation>
@@ -116,7 +117,7 @@
                 <outlet property="ratingImageView" destination="0hE-jf-J56" id="zp7-P6-m0v"/>
                 <outlet property="thumbImageView" destination="bvd-bN-TW9" id="OBH-MM-lsu"/>
             </connections>
-            <point key="canvasLocation" x="434.5" y="350.5"/>
+            <point key="canvasLocation" x="448.5" y="403.5"/>
         </tableViewCell>
     </objects>
 </document>

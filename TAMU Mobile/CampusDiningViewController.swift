@@ -26,7 +26,8 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         loadVenues()
         var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
         longitude: -96.342316, zoom: 15)
-        self.mapView.animateToCameraPosition(camera)
+        mapView.animateToCameraPosition(camera)
+        mapView.animateToViewingAngle(45)
     }
 
     func loadVenues(){
@@ -145,6 +146,10 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     
     func extraRightItemDidPressed(){
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
 }
