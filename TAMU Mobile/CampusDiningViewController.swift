@@ -72,10 +72,10 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchActive{
-            return searchResults.count + 1
+            return searchResults.count
         }
         else{
-            return campusPlaces.count + 1
+            return campusPlaces.count
         }
     }
     
