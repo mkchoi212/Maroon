@@ -1,7 +1,7 @@
 {
     "locations": [
                   {
-                  "name": "Aggie Express at Hullabaloo",
+                  "name": "Aggie Express @ Hullabaloo",
                   "address": "Hullabaloo Hall",
                   "city": "College Station",
                   "state": "TX",
@@ -37,12 +37,12 @@
                             {
                             "day": "7",
                             "begTime": "8:00",
-                            "endTime": "23:00"
+                            "endTime": "24:00"
                             },
                             {
                             "day": "1",
                             "begTime": "9:00",
-                            "endTime": "23:00"
+                            "endTime": "24:00"
                             }
                             ]
                   },
@@ -246,7 +246,7 @@
                             ]
                   },
                   {
-                  "name": "Aggie Express at the Underground",
+                  "name": "Aggie Express @ Underground",
                   "address": "Pavilion",
                   "city": "College Station",
                   "state": "TX",
@@ -277,17 +277,7 @@
                             {
                             "day": "6",
                             "begTime": "7:30",
-                            "endTime": "20:00"
-                            },
-                            {
-                            "day": "7",
-                            "begTime": "10:00",
-                            "endTime": "18:00"
-                            },
-                            {
-                            "day": "1",
-                            "begTime": "10:00",
-                            "endTime": "20:00"
+                            "endTime": "22:00"
                             }
                             ]
                   },
@@ -469,6 +459,166 @@
                             "endTime": "22:00"
                             }
                             ]
+                  },
+                  {
+                  "name": "Einsteins Bagel",
+                  "address": "Sbisa",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617120",
+                  "lon": "-96.344290",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "8:00",
+                            "endTime": "15:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Outtakes",
+                  "address": "Blocker",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.619538",
+                  "lon": "-96.342129",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "7:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "7:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "7:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "7:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:00",
+                            "endTime": "20:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Smashburger",
+                  "address": "Sbisa Dining Hall",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.616969",
+                  "lon": "-96.344021",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "11:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "11:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "11:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "11:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "11:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "13:00",
+                            "endTime": "20:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Lime Fresh Mex",
+                  "address": "Sbisa Dining Hall",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617078",
+                  "lon": "-96.344131",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "11:00",
+                            "endTime": "21:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "12:00",
+                            "endTime": "20:00"
+                            }
+                            ]
                   }
+
                   ]
 }

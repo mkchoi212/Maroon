@@ -30,16 +30,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
-        
-        businessTableView.dataSource = self
-        businessTableView.delegate = self
+
+        businessTableView.tableFooterView = UIView()
+
         businessMapView.delegate = self
         businessTableView.registerNib(UINib(nibName: "BusinessCell", bundle: nil), forCellReuseIdentifier: "BusinessCell")
         businessTableView.estimatedRowHeight = 100
         businessTableView.rowHeight = UITableViewAutomaticDimension
-        businessTableView.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
 
         navigationItem.title = "Off-campus Food"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Filter", style: .Plain, target: self, action: "onFilterButton")
@@ -60,13 +57,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         businessTableView.tableHeaderView = searchController.searchBar
         
         client = YelpClient(consumerKey: yelpConsumerKey, consumerSecret: yelpConsumerSecret, accessToken: yelpToken, accessSecret: yelpTokenSecret)
-        
         fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
     }
     
     func extraLeftItemDidPressed(){
-            let foodVC = storyboard?.instantiateViewControllerWithIdentifier("campusfood") as! CampusDiningViewController
-            self.navigationController?.pushViewController(foodVC, animated: true)
+        navigationController?.popViewControllerAnimated(true)
     }
     
     private func fetchBusinessesWithQuery(query: String, params: [String: String] = [:]) {
@@ -113,26 +108,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //MARK - UITableViewDataSource
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-     }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.businesses.count
-    }
-    
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        var spacing = UIView()
-        spacing.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
-        return spacing
-    }
+     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BusinessCell") as! BusinessCell
-        cell.setBusiness(businesses[indexPath.section], forIndex: indexPath.section)
+        cell.setBusiness(businesses[indexPath.row], forIndex: indexPath.row)
         return cell
     }
     
@@ -142,7 +123,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailsViewController = storyboard.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
 
-        detailsViewController.business = self.businesses[indexPath.section]
+        detailsViewController.business = self.businesses[indexPath.row]
         
         navigationController?.pushViewController(detailsViewController, animated: true)
     }

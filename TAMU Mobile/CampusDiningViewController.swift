@@ -144,7 +144,8 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func extraRightItemDidPressed(){
-        self.navigationController?.popViewControllerAnimated(true)
+        let yelpVC = storyboard?.instantiateViewControllerWithIdentifier("yelp") as! ViewController
+        self.navigationController?.pushViewController(yelpVC, animated: true)
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
