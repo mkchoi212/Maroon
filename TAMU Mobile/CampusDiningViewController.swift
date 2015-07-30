@@ -10,17 +10,21 @@ import Foundation
 import GoogleMaps
 import FoldingTabBar
 
-class CampusDiningViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting {
+class CampusDiningViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, YALTabBarInteracting {
 
+    var searchResults = [CampusFood]()
     var campusPlaces = [CampusFood]()
     var markers = [GMSMarker]()
     var mapUpdated = false
+     var searchActive : Bool = false
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     var mapView: GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.tableFooterView = UIView()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         
         loadVenues()
@@ -67,15 +71,28 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     //MARK: UITableView Delegate/Datasource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return campusPlaces.count
+        if searchActive{
+            return searchResults.count + 1
+        }
+        else{
+            return campusPlaces.count + 1
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CampusDiningCell
-        let foodPlace = campusPlaces[indexPath.row]
+        var foodPlace : CampusFood
+        
+        if searchActive {
+            foodPlace = searchResults[indexPath.row]
+        }
+        else{
+            foodPlace = campusPlaces[indexPath.row]
+        }
+        
         cell.mainLabel.text = foodPlace.address.name
         cell.addressLabel.text = foodPlace.address.address
-
+        
         if foodPlace.open{
             cell.statusLabel.backgroundColor = UIColor(red: 90.0/255.0, green: 214.0/255.0, blue: 83.0/255.0, alpha: 1)
             cell.statusLabel.text = "Open"
@@ -111,7 +128,6 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
                     else{
                         venue.open = false
                         markers[index].snippet = "Closed"
-                        break
                     }
                 }
                 else{
@@ -152,6 +168,37 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        searchResults = campusPlaces.filter({ (text) -> Bool in
+            let tmp: NSString = text.address.name
+            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            return range.location != NSNotFound
+        })
+        if(searchResults.count == 0){
+            searchActive = false;
+        } else {
+            searchActive = true;
+        }
+        tableView.reloadData()
+    }
+
 }
 
 
