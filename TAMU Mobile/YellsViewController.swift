@@ -70,7 +70,7 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         self.yellLabel.text = self.yells.first!.call
 
         collectionView.reloadData()
-        collectionView.setNeedsLayout()
+        collectionView.collectionViewLayout.invalidateLayout()
     }
     
     func extraRightItemDidPressed(){

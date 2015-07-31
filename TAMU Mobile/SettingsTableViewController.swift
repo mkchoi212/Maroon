@@ -23,6 +23,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
             //CONTACT ME
             let mailComposeViewController = configuredMailComposeViewController()
             if MFMailComposeViewController.canSendMail() {
+                mailComposeViewController.navigationBar.tintColor = UIColor.whiteColor()
                 self.presentViewController(mailComposeViewController, animated: true, completion: nil)
             } else {
                 self.showSendMailErrorAlert()
