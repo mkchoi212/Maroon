@@ -47,7 +47,7 @@
                             ]
                   },
                   {
-                  "name": "Pi R Squared Food Courts",
+                  "name": "Pi Are Square Food Courts",
                   "address": "199 Spence St",
                   "city": "College Station",
                   "state": "Tx",
@@ -619,6 +619,241 @@
                             }
                             ]
                   }
-
+                  ,
+                  {
+                  "name": "Sbisa Dining Hall",
+                  "address": "Sbisa",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617139",
+                  "lon": "-96.343575",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "7:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "8:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "9:00",
+                            "endTime": "15:00"
+                            },
+                            {
+                            "day": "2",
+                            "begTime": "17:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "17:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "17:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "17:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "17:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "17:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "17:00",
+                            "endTime": "20:00"
+                            }
+                        ]
+                  },
+                  {
+                  "name": "Papa Johns @ Underground",
+                  "address": "undergrnd",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617378",
+                  "lon": "-96.343766",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "10:00",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "10:00",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "10:00",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "10:00",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "10:00",
+                            "endTime": "24:00"
+                            },
+                            {
+                            "day": "1",
+                            "begTime": "14:00",
+                            "endTime": "24:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Chick-fil-a @ Underground",
+                  "address": "undergrnd",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617439",
+                  "lon": "-96.343861",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "10:00",
+                            "endTime": "16:00"
+                            },
+                            {
+                            "day": "7",
+                            "begTime": "10:00",
+                            "endTime": "19:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Houston Street Subs @ Underground",
+                  "address": "undergrnd",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617359",
+                  "lon": "-96.344025",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "10:00",
+                            "endTime": "17:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "10:00",
+                            "endTime": "17:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "10:00",
+                            "endTime": "17:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "10:00",
+                            "endTime": "17:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "10:00",
+                            "endTime": "16:00"
+                            }
+                            ]
+                  },
+                  {
+                  "name": "Smoothie King @ Underground",
+                  "address": "undergrnd",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.617282",
+                  "lon": "-96.344170",
+                  "hours": [
+                            {
+                            "day": "2",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "3",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "4",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "5",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            },
+                            {
+                            "day": "6",
+                            "begTime": "8:00",
+                            "endTime": "20:00"
+                            }
+                            ]
+                  }
                   ]
 }
