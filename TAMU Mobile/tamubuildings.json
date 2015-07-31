@@ -1,0 +1,4114 @@
+["buildings",
+  {
+    "abbrev": 0,
+    "name": "Olsen (E.D.) Grove Picnic Area",
+    "address": "959 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "OLSN",
+    "name": "Olsen Field at Bluebell Park",
+    "address": "955 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Johnson Track & Field",
+    "address": "950 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Olsen Field Batting Cage Facility",
+    "address": "949 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soccer/Intramural Restroom",
+    "address": "946 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "West Campus Office Pavilion",
+    "address": "942 Olsen Bl",
+    "city": "College Station",
+    "zip": 77843,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Julia And Mark Ellis '79 Soccer Building",
+    "address": "940 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Wireless Telecommunications Facility",
+    "address": "934 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Track & Field Support Center",
+    "address": "922 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Track & Field CTR Ticket Booth",
+    "address": "920 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Softball Building",
+    "address": "910 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "PISC",
+    "name": "Penberthy Intramural Sports Center",
+    "address": "858 Penberthy Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "SREC",
+    "name": "Student Recreation Center",
+    "address": "797 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "PEBC",
+    "name": "Physical Education Boot Camp and Archery Annex",
+    "address": "762 Penberthy Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Mitchell Tennis Center Ticket Booth",
+    "address": "754 Penberthy Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "George P. Mitchell '40 Outdoor Tennis Center",
+    "address": "750 Penberthy Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "WCTC",
+    "name": "Omar Smith Instructional Tennis Center",
+    "address": "746 Penberthy Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Cox-McFerrin Center for Aggie Basketball",
+    "address": "736 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "REED",
+    "name": "Reed Arena",
+    "address": "730 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "HCRB",
+    "name": "Human Clinical Research Building",
+    "address": "675 John Kimbrough Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "PEAP",
+    "name": "Physical Education Activity Program Building",
+    "address": "632 Penberthy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "AGLS",
+    "name": "Agriculture and Life Sciences Building",
+    "address": "600 John Kimbrough Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "AGSV",
+    "name": "AgriLife Services Building",
+    "address": "578 John Kimbrough Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "AGCT",
+    "name": "The AgriLife Center",
+    "address": "556 John Kimbrough Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "PRPV",
+    "name": "Pearce Animal Pavilion",
+    "address": "555 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Flammable Mat Storage",
+    "address": "530 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "SCIG",
+    "name": "Southern Crop Improvement Greenhouse",
+    "address": "502 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "SCIC",
+    "name": "Borlaug Center for Southern Crop Improvement",
+    "address": "498 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "HFSB",
+    "name": "Horticulture/Forest Science Building",
+    "address": "495 Horticulture Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Animal Science Stallion Barn",
+    "address": "489 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "MSTC",
+    "name": "Rosenthal Meat Science & Technology Center",
+    "address": "488 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "KLCT",
+    "name": "Kleberg Center",
+    "address": "474 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "HRCT",
+    "name": "Horse Center",
+    "address": "461 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "PDCWC",
+    "name": "Player Development Center-West Campus",
+    "address": "447 Tom Chandler Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "EQNB",
+    "name": "Animal Science Equine Nutrition Barn",
+    "address": "425 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "West Campus Switching Station",
+    "address": "385 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil & Crop Greenhouse",
+    "address": "384 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "AEPM",
+    "name": "AG Engineering Power & Machinery Building",
+    "address": "379 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "AESH",
+    "name": "AG Engr Res Lab & Shop",
+    "address": "377 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "HOBG",
+    "name": "Price Hobgood Ag. Engineering Research Lab",
+    "address": "375 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "CMAT",
+    "name": "Cater-Mattil Hall",
+    "address": "373 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Equine Hay & Grass Storage",
+    "address": "371 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "HPCT",
+    "name": "HEEP Center",
+    "address": "370 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "SUP1",
+    "name": "Satellite Utility Plant No. 1",
+    "address": "350 John Kimbrough Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "BICH",
+    "name": "Biochemistry/Biophysics Building",
+    "address": "300 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Horticulture Implement Shed - A",
+    "address": "275 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "NMR",
+    "name": "Nuclear Magnetic Resonance Facility",
+    "address": "272 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Floriculture Farm Storage Bldg",
+    "address": "271 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Horticulture Implement Shed - B",
+    "address": "267 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Horticulture Shop and Garage",
+    "address": "265 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "TX Forest Service Greenhouse",
+    "address": "264 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Horticulture Shop",
+    "address": "261 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "TX Forest Service Greenhouse",
+    "address": "250 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "TX Forest Service GH Headhouse",
+    "address": "248 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "White Creek Apartments #1",
+    "address": "225 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "White Creek Apartments #2",
+    "address": "225 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "White Creek Apartments #3",
+    "address": "225 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "WCLF",
+    "name": "West Campus Library Facility",
+    "address": "214 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "SPHCLS",
+    "name": "School of Public Health - Classroom Bldg",
+    "address": "214 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "SPHADM",
+    "name": "School of Public Health - Admin Bldg",
+    "address": "212 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Adriance Lab",
+    "address": "211 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "WCBA",
+    "name": "Wehner Building",
+    "address": "210 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "SPHLAB",
+    "name": "School of Public Health - Lab Bldg",
+    "address": "210 Adriance Lab Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "REYN",
+    "name": "Reynolds Medical Sciences Building",
+    "address": "206 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "MEDL",
+    "name": "Medical Sciences Library",
+    "address": "202 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "WCG",
+    "name": "West Campus Parking Garage",
+    "address": "201 John Kimbrough Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Parking Toll Booth At PA72",
+    "address": "200 Olsen Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "12.47 KV Switching Station",
+    "address": "178 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": "UBO",
+    "name": "Utilities & Energy Services Business Office",
+    "address": "176 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "IODP Hazmat Containment",
+    "address": "1002 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Penberthy RecSports Pavillion",
+    "address": "1000 Penberthy Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Reed House",
+    "address": "1 Reed Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "West Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #7",
+    "address": "999 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #1",
+    "address": "995 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #8",
+    "address": "985 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #2",
+    "address": "975 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #9",
+    "address": "965 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #3",
+    "address": "955 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #4",
+    "address": "945 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #5",
+    "address": "935 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Animal Isolation Bldg #6",
+    "address": "925 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Quarantine Unit",
+    "address": "814 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "TIPS C",
+    "name": "Texas A&M Institute for Preclinical Studies C",
+    "address": "812 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "TIPS B",
+    "name": "Texas A&M Institute for Preclinical Studies B",
+    "address": "806 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Quarantine Unit",
+    "address": "802 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "TIPS A",
+    "name": "Texas A&M Institute for Preclinical Studies A",
+    "address": "800 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "PGBG",
+    "name": "Perennial Grass Breeding and Genetics",
+    "address": "787 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "EQCT",
+    "name": "Equine Center Stable",
+    "address": "7806 Turkey Creek Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Equine Center Restroom",
+    "address": "7802 Turkey Creek Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Weed Science Field Lab",
+    "address": "763 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "GSC",
+    "name": "General Services Complex",
+    "address": "750 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "LFB",
+    "name": "W.P. Luse Foundation Building",
+    "address": "730 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "LARR Support Personnel Bldg",
+    "address": "690 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Animal Housing Unit",
+    "address": "688 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Trailer House @ Tereco",
+    "address": "686 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "USDA Greenhouse 2",
+    "address": "685 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Housing Unit",
+    "address": "684 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Animal Housing Unit",
+    "address": "682 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Animal Housing Unit",
+    "address": "680 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Trailer House @ Tereco",
+    "address": "680 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Animal Housing Unit",
+    "address": "676 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "REPR",
+    "name": "Reproductive Sciences Lab",
+    "address": "676 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Animal Housing Unit",
+    "address": "674 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CMP-Animal Housing Unit",
+    "address": "672 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Deer Shelter",
+    "address": "670 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "TIGM",
+    "name": "Texas A&M Institute For Genomic Medicine",
+    "address": "670 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Implement #2",
+    "address": "669 Farm Service Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VIDI",
+    "name": "Veterinary Medicine Building 2",
+    "address": "668 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VICI",
+    "name": "Veterinary Medicine Building 3",
+    "address": "664 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Storage 2",
+    "address": "661 Farm Service Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VENI",
+    "name": "Veterinary Medicine Building 1",
+    "address": "660 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "TURF",
+    "name": "Turfgrass Field Lab",
+    "address": "657 Farm Service Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Virus-Vector Research Lab",
+    "address": "657 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Shop",
+    "address": "655 Farm Service Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Implement #1",
+    "address": "653 Farm Service Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Office",
+    "address": "652 Farm Service Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "GSC Portable Building",
+    "address": "648 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMB3",
+    "name": "TVMC-Barn No 3",
+    "address": "645 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Poultry Disease Research",
+    "address": "642 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "CPAT",
+    "name": "Cardiovascular Pathology Laboratory",
+    "address": "640 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "VMP Shop",
+    "address": "633 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "TICK",
+    "name": "Tick Research Facility",
+    "address": "611 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Experimental Animal Building",
+    "address": "605 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "PHRL",
+    "name": "Poultry Health Research Lab",
+    "address": "603 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Warehouse",
+    "address": "602 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMCA",
+    "name": "TVMC-Caged Animals",
+    "address": "601 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "PLNT",
+    "name": "Physical Plant Administration & Shops",
+    "address": "600 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VRB",
+    "name": "Veterinary Research Building",
+    "address": "588 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMR",
+    "name": "Vet Med Research Bldg Addition",
+    "address": "588 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77843,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Isolation Laboratory",
+    "address": "550 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Non Surgical Animal Procedure",
+    "address": "544 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Barn No 2",
+    "address": "537 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMTF",
+    "name": "Theriogenology Facility, Equine Reproduction",
+    "address": "522 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMSB",
+    "name": "TVMC-Surgery Building",
+    "address": "510 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VLAH",
+    "name": "Veterinary Large Animal Hospital",
+    "address": "500 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMDL Building",
+    "address": "483 Agronomy Rd.",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "FOOD",
+    "name": "Fred Dollar Food Services Commissary",
+    "address": "474 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "PPGM",
+    "name": "Phys Plant-Grounds Maintenance",
+    "address": "470 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Office of the State Chemist Building",
+    "address": "445 Aronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "TRSV",
+    "name": "Transit Services",
+    "address": "444 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Agronomy Field Crop Laboratory",
+    "address": "410 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VSAH",
+    "name": "Veterinary Small Animal Hospital",
+    "address": "408 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "FSSB",
+    "name": "Variety Testing and Sorghum Breeding",
+    "address": "405 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VTH",
+    "name": "Veterinary Teaching Hospital",
+    "address": "404 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMA",
+    "name": "Veterinary Medicine Administration",
+    "address": "402 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "SUP2",
+    "name": "Satellite Utility Plant No. 2",
+    "address": "401 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMS",
+    "name": "Veterinary Medical Sciences Building",
+    "address": "400 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "SCSC-Weed Sci Greenhouse",
+    "address": "396 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil & Crop Peanut Greenhouse",
+    "address": "392 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "SCSC Small Grain Greenhouse",
+    "address": "388 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "FLSV",
+    "name": "Fleet Services",
+    "address": "388 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Schmidt House",
+    "address": "3869 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Greenhouse",
+    "address": "380 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Parsons Mounted Cavalry Building",
+    "address": "3748 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Greenhouse-Small Grains",
+    "address": "374 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil & Crop Sci Dry Processing",
+    "address": "373 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Cotton Ginning Lab",
+    "address": "373 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Greenhouse-Cotton Taxonomy",
+    "address": "372 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "SCSFGH",
+    "name": "SCS Forage Greenhouse",
+    "address": "369 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Plant Science Greenhouse",
+    "address": "367 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Cotton Greenhouse",
+    "address": "367 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Plant Science Grain Sorghum Greenhouse",
+    "address": "365 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Shed At Challenge Course",
+    "address": "3634 N Traditions Dr",
+    "city": "Bryan",
+    "zip": 77807,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Cabin At Challenge Course",
+    "address": "3630 N Traditions Dr",
+    "city": "Bryan",
+    "zip": 77807,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "BEAS",
+    "name": "Beasley Laboratory",
+    "address": "363 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Classroom At Challenge Course",
+    "address": "3626 N Traditions Dr",
+    "city": "Bryan",
+    "zip": 77807,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hort & Plant Science Greenhouse",
+    "address": "361 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Trans Center Paint Storage",
+    "address": "360 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Agronomy Greenhouse",
+    "address": "359 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil/Crop Cotton Genetic Greenhouse",
+    "address": "357 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil & Crop Sci Greenhouse",
+    "address": "341 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil & Crop Sci Greenhouse",
+    "address": "339 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil & Crop Sci Greenhouse",
+    "address": "337 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Soil & Crop Sci Greenhouse",
+    "address": "335 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Forage and Turf Greenhouse",
+    "address": "333 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "PRCH",
+    "name": "Purchasing & Stores",
+    "address": "330 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Equine Initiative Equipment Shed",
+    "address": "3288 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Equine Initiative Barn",
+    "address": "3272 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Equine Initiative Concessions/Locker Bldg",
+    "address": "3250 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Houston Livestock Show & Rodeo Western Arena",
+    "address": "3246 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Equine Initiative Equestrian/Locker Bldg",
+    "address": "3242 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hunt Seat Arena",
+    "address": "3234 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "EQOB",
+    "name": "Equine Initiative Outreach Bldg",
+    "address": "3230 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "EQEB",
+    "name": "Equine Initiative Education Bldg",
+    "address": "3228 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Agronomy Implement Storage",
+    "address": "321 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Well Field Pump Station",
+    "address": "2951 Luza Ln",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Murray Case Sells Storage Bldg",
+    "address": "288 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Purchasing & Stores - General Storage",
+    "address": "286 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "AGRL",
+    "name": "Agronomy Field Lab",
+    "address": "285 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Purchasing & Stores - Volatile Storage",
+    "address": "280 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Parsons Cav Caretaker Facility",
+    "address": "278 Harvey Mitchell Pw S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Wildlife & Exotic Animals",
+    "address": "2771 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Wildlife & Exotic Animal Ctr",
+    "address": "2765 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Parsons Mounted Cavalry Tack Room",
+    "address": "276 Harvey Mitchell Pw S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Utilities Inventory Warehouse Building 1",
+    "address": "2750 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Billy Bryant Barn",
+    "address": "274 Harvey Mitchell Pw S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hazardous Waste Office & Support Bldg",
+    "address": "2659 Dairy Center Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "ENTO",
+    "name": "Rollins Urban and Structural Entomology Facility",
+    "address": "2656 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Electrical Distribution Storage",
+    "address": "2655 Dairy Center Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hazardous Waste Storage Bldg",
+    "address": "2655 Dairy Center Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "STL",
+    "name": "Soil Testing Lab",
+    "address": "2610 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Forest Science Storage",
+    "address": "260 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Utilities Water Operations Building F&B Storage",
+    "address": "2484 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Oil Tanks Boiler House",
+    "address": "2480 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "DISTRIBUTION STORAGE (NULL)",
+    "address": "2420 F & B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "FSLB",
+    "name": "Forest Science Laboratory Building",
+    "address": "242 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Water Distribution Pump Station No. 1",
+    "address": "2416 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Water Distribution Pump Station No. 2",
+    "address": "2410 F&B Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Crop Testing",
+    "address": "240 Sippel Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "LARR",
+    "name": "Laboratory Animal Care Building",
+    "address": "233 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Dry Feed Storage Facility",
+    "address": "230 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VAPA",
+    "name": "Veterinary Anatomic Pathology",
+    "address": "211 Sippel Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VMDL",
+    "name": "Texas Vet Med Diagnostic Lab",
+    "address": "188 Sippel Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Mosquito Research Lab",
+    "address": "172 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CUSE-Insect Testing Lab",
+    "address": "170 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CUSE-Special Project Lab & Storage",
+    "address": "168 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CUSE-Research Labs",
+    "address": "166 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CUSE-Shop & Storage",
+    "address": "164 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "CUSE-Toxicology Hut",
+    "address": "162 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VIV3",
+    "name": "Vivarium III",
+    "address": "161 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "CUSE",
+    "name": "Center for Urban and Structural Entomology",
+    "address": "160 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Butler Building",
+    "address": "158 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "VIV2",
+    "name": "TVMC-Small Animal Research Building",
+    "address": "157 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "INSC",
+    "name": "CUSE-Chemistry",
+    "address": "156 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Entomology Apiary Bldg",
+    "address": "152 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "BCC",
+    "name": "Biological Control Facility",
+    "address": "150 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Small Animal Building",
+    "address": "141 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "ERLB",
+    "name": "Entomology Research Lab",
+    "address": "122 Agronomy Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TVMC-Poultry Research",
+    "address": "1039 Turk Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Multi-Species Facility",
+    "address": "1000 MSRB Dr.",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": "NCTM",
+    "name": "National Center for Therapeutics Manufacturing",
+    "address": "100 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Vet School Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hatchery",
+    "address": "362 Aquatic Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Aquatic Research Center",
+    "address": "350 Aquatic Facility Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Pump House",
+    "address": "344 Aquatic Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": "ARTF",
+    "name": "Aquaculture Research Teaching Facility",
+    "address": "300 Aquatic Facility Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Lab & Office",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service East Wing",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Maint Shed",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Chemical Storage",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service West Wing Shed",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Northwest Shed",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Field Lab Equipment Shed",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Field Lab Implement Shed",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Sample Processing Laboratory",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Storage Shed",
+    "address": "201 Reveille Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Service Office Bldg",
+    "address": "14250 FM 60 E",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farm Superintendent House",
+    "address": "10724 FM 50",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Maintenance Machine Shed",
+    "address": "10720 FM 50",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": 0,
+    "name": "Implement Storage Shed",
+    "address": "10720 FM 50",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "University Farm"
+  },
+  {
+    "abbrev": "CEL",
+    "name": "Coastal Engineering Lab",
+    "address": "600 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "EBRF",
+    "name": "Electron Beam Food Research Facility",
+    "address": "400 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "TTIHQ",
+    "name": "TTI State Headquarters & Research Building",
+    "address": "2935 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "GGB",
+    "name": "Gilchrist Building (T.T.I.)",
+    "address": "2929 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "DLH",
+    "name": "Donald L. Houston Building",
+    "address": "200 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": 0,
+    "name": "Research Park Maintenance Building",
+    "address": "1810 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "2RPK",
+    "name": "2 Research Park",
+    "address": "1700 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "GERB",
+    "name": "Giesecke Engineering Research Building",
+    "address": "1617 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "CEN",
+    "name": "Centeq Building",
+    "address": "1500 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": 0,
+    "name": "1313 Research Parkway (Lynntech Building)",
+    "address": "1313 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "OTRC",
+    "name": "Offshore Technology Research Center",
+    "address": "1200 Mariner Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "ONRP",
+    "name": "1111 Research Parkway Bldg",
+    "address": "1111 Research Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": "ODP",
+    "name": "International Ocean Discovery Building",
+    "address": "1000 Discovery Dr",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Research Park"
+  },
+  {
+    "abbrev": 0,
+    "name": "Beef Cattle Center Headquarters",
+    "address": "7771 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "O.D. BUTLER, JR. Animal Sci Teaching/Research Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Farrowing/Nursery",
+    "address": "7767 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "O.D. BUTLER, JR. Animal Sci Teaching/Research Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Nutrition/Physiology Center",
+    "address": "7763 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "O.D. BUTLER, JR. Animal Sci Teaching/Research Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Thomsen Animal Euthenics Center",
+    "address": "7735 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "O.D. BUTLER, JR. Animal Sci Teaching/Research Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Sheep & Goat Center",
+    "address": "7729 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "O.D. BUTLER, JR. Animal Sci Teaching/Research Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "White (G.R.) Conference Center",
+    "address": "7707 Raymond Stotzer Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "O.D. BUTLER, JR. Animal Sci Teaching/Research Area"
+  },
+  {
+    "abbrev": "OMAR",
+    "name": "Smith Tennis Center",
+    "address": "910 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Dr. David E. Schob Military Appreciation Home",
+    "address": "906 Ashburn Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "KAMU",
+    "name": "Moore Communications Center",
+    "address": "900 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "DPDC",
+    "name": "Davis Football Player Development Center",
+    "address": "886 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BFC",
+    "name": "Bright Football Complex",
+    "address": "878 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Golf Cart Storage Building",
+    "address": "837 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "GENERATOR SHED",
+    "address": "835 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Golf Course Maintenance Shop",
+    "address": "835 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "PRES",
+    "name": "President's Residence",
+    "address": "800 Throckmorton St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ARCA",
+    "name": "Langford Architecture Center Building A",
+    "address": "798 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "O&M",
+    "name": "Oceanography & Meteorology Building",
+    "address": "797 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Storage",
+    "address": "788 Throckmorton St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ARCC",
+    "name": "Architecture Building C",
+    "address": "788 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CONC",
+    "name": "Concrete Materials Laboratory",
+    "address": "785 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ARCB",
+    "name": "Architecture Building B",
+    "address": "782 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "DCAN",
+    "name": "Duncan Dining Hall",
+    "address": "777 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "RUDD",
+    "name": "Rudder Residence Hall",
+    "address": "770 Mosher Ln",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HARR",
+    "name": "Harrington Hall - Dorm 11",
+    "address": "767 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "UTAY",
+    "name": "Utay Hall - Dorm 12",
+    "address": "766 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Corps Lounge - F",
+    "address": "766 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Shed-VP Student Services",
+    "address": "750 Throckmorton St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "PRVP",
+    "name": "Vice President's Residence",
+    "address": "750 Throckmorton St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "SSPG",
+    "name": "South Side Parking Garage",
+    "address": "750 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Corps Lounge - E",
+    "address": "745 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "WHIT",
+    "name": "White Hall - Dorm 10",
+    "address": "736 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "WHTE",
+    "name": "Whitely Hall - Dorm 9",
+    "address": "735 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "TEAG",
+    "name": "Teague Research Center",
+    "address": "735 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CSA",
+    "name": "DPC Annex",
+    "address": "733 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CSC",
+    "name": "Computing Services Center",
+    "address": "731 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "TAES",
+    "name": "TAES Annex Building",
+    "address": "730 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "C E",
+    "name": "Civil Engineering Building",
+    "address": "727 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MOSH",
+    "name": "Mosher Residence Hall",
+    "address": "725 Mosher Ln",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "KRUE",
+    "name": "Krueger Residence Hall",
+    "address": "722 Lubbock St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HRBB",
+    "name": "Bright Building",
+    "address": "710 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "WELL",
+    "name": "Wells Residence Hall",
+    "address": "700 Mosher Ln",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HARL",
+    "name": "Harrell Hall - Dorm 8",
+    "address": "696 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "EPPR",
+    "name": "Eppright Residence Hall",
+    "address": "695 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "LEON",
+    "name": "Leonard Hall - Dorm 7",
+    "address": "695 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ASH1",
+    "name": "H. Grady Ash, Jr. '58 Leadership Learning Center",
+    "address": "693 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BUZB",
+    "name": "Buzbee Leadership Learning Center",
+    "address": "682 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "COMM",
+    "name": "Commons",
+    "address": "676 Lubbock St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "GAIN",
+    "name": "Gainer Hall - Dorm 5",
+    "address": "665 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "LACY",
+    "name": "Lacy Hall - Dorm 6",
+    "address": "664 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "UCPG",
+    "name": "University Center Parking Garage",
+    "address": "660 Throckmorton St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "APPE",
+    "name": "Appelt Residence Hall",
+    "address": "660 Mosher Ln",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ASTO",
+    "name": "Aston Residence Hall",
+    "address": "655 Mosher Ln",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CHAN",
+    "name": "Chemistry",
+    "address": "646 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "LIND",
+    "name": "John H. Lindsey Building",
+    "address": "646 Lewis St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "EABA",
+    "name": "Engineering Activities Bldg A",
+    "address": "646 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HLB",
+    "name": "HEEP Laboratory Building",
+    "address": "645 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "UNDE",
+    "name": "Underwood Residence Hall",
+    "address": "644 Mosher Ln",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "FOUN",
+    "name": "Fountain Hall - Dorm 4",
+    "address": "636 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "DUNN",
+    "name": "Dunn Residence Hall",
+    "address": "636 Lubbock St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BRIG",
+    "name": "Briggs Hall - Dorm 3",
+    "address": "635 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "EABB",
+    "name": "Engineering Activities Bldg B",
+    "address": "620 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HALB",
+    "name": "Halbouty Geosciences Building",
+    "address": "611 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ADAM",
+    "name": "Adams Band Hall",
+    "address": "611 Lewis St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Chemistry Chemical Storage",
+    "address": "610 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "KIES",
+    "name": "Kiest Hall - Dorm 2",
+    "address": "606 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "SPEN",
+    "name": "Spence Hall - Dorm 1",
+    "address": "605 Military Mall",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hensel Park Telecom Building #2",
+    "address": "594 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "EABC",
+    "name": "Engineering Activities Bldg C",
+    "address": "588 Lamar St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "HAM Radio Modular Building",
+    "address": "582 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CHEM",
+    "name": "Chemistry",
+    "address": "580 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MPHY",
+    "name": "Mitchell Physics Building",
+    "address": "578 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "GOLF",
+    "name": "Golf Course Clubhouse",
+    "address": "577 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MIST",
+    "name": "Mitchell Inst for Fundamental Phys & Astronomy",
+    "address": "576 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "RDMC",
+    "name": "Reed-McDonald Building",
+    "address": "575 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "FRAN",
+    "name": "Francis Hall",
+    "address": "574 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Biology Greenhouse",
+    "address": "570 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hensel Park Telecom Building",
+    "address": "570 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Floriculture Greenhouse",
+    "address": "568 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "NFFL",
+    "name": "Nursery Floral Field Laboratory",
+    "address": "566 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Floriculture Growing Facility",
+    "address": "561 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Floriculture Research Greenhouse",
+    "address": "555 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HECC",
+    "name": "Harrington Education Center Classroom Building",
+    "address": "544 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "EDCT",
+    "name": "Harrington Education Center Office Tower",
+    "address": "540 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Horticulture Garden Volunteer Office",
+    "address": "540 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Potting Shed",
+    "address": "538 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "STCH",
+    "name": "State Chemist Building",
+    "address": "533 Coke St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HORTOF",
+    "name": "Horticulture  Office",
+    "address": "530 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Greenhouse",
+    "address": "528 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Greenhouse",
+    "address": "526 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BTLR",
+    "name": "Butler Hall",
+    "address": "525 Lubbock St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Greenhouse",
+    "address": "524 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Greenhouse 4",
+    "address": "522 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HORTCL",
+    "name": "Horticulture Classroom",
+    "address": "520 Floriculture Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Greenhouse 5",
+    "address": "520 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MILS",
+    "name": "Military Sciences Building",
+    "address": "520 Coke St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "PSYC",
+    "name": "Psychology Building",
+    "address": "515 Coke St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Shop Warehouse",
+    "address": "514 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Office Shop/Stor",
+    "address": "512 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "THOM",
+    "name": "Thompson Hall",
+    "address": "510 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Storage",
+    "address": "510 College Ave",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance - Tractor Shed",
+    "address": "508 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Grounds Maintenance Supply Bldg",
+    "address": "506 College Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CLAC",
+    "name": "Williams Alumni Center",
+    "address": "505 George Bush Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Hensel Park Restrooms",
+    "address": "502 College Av",
+    "city": "Bryan",
+    "zip": 77801,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CAIN",
+    "name": "Cain Hall",
+    "address": "500 Gene Stallings Bl",
+    "city": "College Station",
+    "zip": 77844,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "SUP3",
+    "name": "Satellite Utility Plant No. 3",
+    "address": "477 Joe Routt Bl",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "SCCT",
+    "name": "Sam Houston Sanders Corps of Cadets Center",
+    "address": "475 Short St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BIZL",
+    "name": "Bizzell Hall",
+    "address": "471 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "FERM",
+    "name": "Fermier Hall",
+    "address": "466 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HELD",
+    "name": "Heldenfels Hall",
+    "address": "466 Nagle St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HART",
+    "name": "Hart Residence Hall",
+    "address": "460 Throckmorton St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BLTN",
+    "name": "Bolton Hall",
+    "address": "456 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "NGLE",
+    "name": "Nagle Hall",
+    "address": "454 Throckmorton St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CCPG",
+    "name": "Central Campus Parking Garage",
+    "address": "450 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HEAT",
+    "name": "Heaton Hall",
+    "address": "444 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "PETR",
+    "name": "Peterson Building",
+    "address": "435 Nagle St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MILN",
+    "name": "Milner Hall",
+    "address": "425 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "PAV",
+    "name": "Pavilion",
+    "address": "424 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BSBW",
+    "name": "Biological Sciences Bldg West",
+    "address": "424 Nagle St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BSBE",
+    "name": "Biological Sciences Bldg East",
+    "address": "424 Nagle St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ANIN",
+    "name": "Animal Industries Building",
+    "address": "423 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "LEGE",
+    "name": "Legett Residence Hall",
+    "address": "422 Ross St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "4HHQ",
+    "name": "AgriLife Extension 4-H State Headquarters",
+    "address": "4180 SH 6 S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "COKE",
+    "name": "Coke Building",
+    "address": "415 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Vending Machine Booth",
+    "address": "408 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "RDER",
+    "name": "Rudder Tower",
+    "address": "401 Joe Routt Bl",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HGLR",
+    "name": "Hagler Center",
+    "address": "401 George Bush Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "LIBR",
+    "name": "Evans Library",
+    "address": "400 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "JJKB",
+    "name": "Koldus Building",
+    "address": "400 Joe Routt Bl",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ADMN",
+    "name": "Jack K. Williams Administration Building",
+    "address": "400 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "LAAH",
+    "name": "Liberal Arts and Arts & Humanities Building",
+    "address": "399 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "GLAS",
+    "name": "Melbern G. Glasscock Building",
+    "address": "398 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ACAD",
+    "name": "Academic Building",
+    "address": "377 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "YMCA",
+    "name": "YMCA Building",
+    "address": "365 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ANTH",
+    "name": "Anthropology Building",
+    "address": "340 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "USB",
+    "name": "University Services Building",
+    "address": "3380 University Dr E",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "SCTS",
+    "name": "Scoates Hall",
+    "address": "333 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BEUT",
+    "name": "Beutel Health Center",
+    "address": "311 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "SCHU",
+    "name": "Schuhmacher Residence Hall",
+    "address": "308 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Civilian Lounge - C1",
+    "address": "308 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HLBL",
+    "name": "Hullabaloo Residence Hall",
+    "address": "306 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Laundry @ The Gardens",
+    "address": "302 Ball St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens J",
+    "address": "302 Ball St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens K",
+    "address": "302 Ball St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens L",
+    "address": "302 Ball St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens F",
+    "address": "302 Ball St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens G",
+    "address": "302 Ball St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens H",
+    "address": "302 Ball St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Moore-Connally Building",
+    "address": "301 Tarrow St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ILSB",
+    "name": "Interdisciplinary Life Sciences Building",
+    "address": "301 Old Main Dr",
+    "city": "College Station",
+    "zip": 77844,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MCFA",
+    "name": "McFadden Residence Hall",
+    "address": "301 Jones St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CHPL",
+    "name": "All Faiths Chapel",
+    "address": "300 Houston St",
+    "city": "College Station",
+    "zip": 77844,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MSC",
+    "name": "Memorial Student Center",
+    "address": "275 Joe Routt Bl",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HUGH",
+    "name": "Hughes Residence Hall",
+    "address": "265 Jones St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "UACC",
+    "name": "University Apartments Community Center",
+    "address": "250 Calvin Moore Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Bonfire Memorial Restroom",
+    "address": "249 Polo Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "RICH",
+    "name": "Joe C. Richardson Petroleum Engineering Building",
+    "address": "245 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "DRTY",
+    "name": "Doherty Building",
+    "address": "242 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "EIC",
+    "name": "Engineering Innovation Center",
+    "address": "233 Ireland St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "SBSA",
+    "name": "Sbisa Dining Hall",
+    "address": "233 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "LECH",
+    "name": "Lechner Residence Hall",
+    "address": "232 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "FOWL",
+    "name": "Fowler Residence Hall",
+    "address": "225 Jones St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Civilian Lounge - A1",
+    "address": "225 Jones St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "University Apts Community Maintenance Bldg",
+    "address": "225 Calvin Moore Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HEND",
+    "name": "Henderson Hall",
+    "address": "222 Jones St",
+    "city": "College Station",
+    "zip": 77844,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CUP",
+    "name": "Central Utility Plant",
+    "address": "222 Ireland St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "KEAT",
+    "name": "Keathley Residence Hall",
+    "address": "214 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MOSE",
+    "name": "Moses Residence Hall",
+    "address": "212 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Civilian Lounge - A2",
+    "address": "212 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HAAS",
+    "name": "Haas Residence Hall",
+    "address": "212 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CLEM",
+    "name": "Clements Residence Hall",
+    "address": "211 Jones St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "DAVI",
+    "name": "Davis-Gary Residence Hall",
+    "address": "210 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CVLNA3",
+    "name": "Civilian Lounge - A3",
+    "address": "210 University Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Volatile Storage Building",
+    "address": "210 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MEOB",
+    "name": "Mechanical Engineering Office Building",
+    "address": "202 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "AMSB",
+    "name": "Texas A&M System Agency Office Building",
+    "address": "200 Technology Way",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Albritton Bell Tower",
+    "address": "200 Old Main Dr",
+    "city": "College Station",
+    "zip": 77844,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CVLB",
+    "name": "CE Office & Lab Building",
+    "address": "199 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Break Room at Central Utility Plant",
+    "address": "193 Asbury St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "WEB",
+    "name": "Wisenbaker Engineering Building",
+    "address": "188 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MCNW",
+    "name": "McNew Laboratory",
+    "address": "185 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ENPH",
+    "name": "James J. Cain '51 Building",
+    "address": "180 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "McFerrin Athletic Center-Indoor Football",
+    "address": "177 Wellborn Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Storage and Lab-Cyclotron",
+    "address": "176 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Tennis Court Restrooms",
+    "address": "175 Wellborn Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ITRK",
+    "name": "McFerrin Athletic Center-Indoor Track",
+    "address": "171 Wellborn Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "WALT",
+    "name": "Walton Residence Hall",
+    "address": "166 Houston St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "UCO",
+    "name": "Utilities & Energy Services Central Office",
+    "address": "165 Asbury St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "KYLE",
+    "name": "Kyle Field",
+    "address": "161 Wellborn Rd",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Lone Star Gas Protector Building",
+    "address": "160 Ireland St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HOBB",
+    "name": "Hobby Residence Hall",
+    "address": "160 Asbury St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BLOC",
+    "name": "Blocker Building",
+    "address": "155 Ireland St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "BMSB",
+    "name": "Business Management Services Building",
+    "address": "1501 South Texas Av",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "TEES State Headquarters Bldg",
+    "address": "1470 William D Fitch Pw",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "NEEL",
+    "name": "Neeley Residence Hall",
+    "address": "140 Asbury St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "EEC",
+    "name": "Engineering Education Complex/Zachry",
+    "address": "125 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CYCL",
+    "name": "Luedecke Building (Cyclotron)",
+    "address": "120 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Becky Gates Children's Center",
+    "address": "1125 Hensel Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Becky Gates Children's Center Multipurpose Bldg",
+    "address": "1121 Hensel Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens M",
+    "address": "1100 Hensel Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens N",
+    "address": "1100 Hensel Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens P",
+    "address": "1100 Hensel Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "The Gardens Q",
+    "address": "1100 Hensel Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": 0,
+    "name": "Activity Building",
+    "address": "1100 Hensel Dr",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "HOTA",
+    "name": "Hotard Hall",
+    "address": "110 Asbury St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "NSPG",
+    "name": "Northside Parking Garage",
+    "address": "104 Ireland St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "ETB",
+    "name": "Emerging Technologies Building",
+    "address": "101 Bizzell St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "MASS",
+    "name": "Munnerlyn Astronomy & Space Sciences Engineering",
+    "address": "101 Asbury St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "CHEN",
+    "name": "Jack E. Brown Chemical Engineering Building",
+    "address": "100 Spence St",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Main Campus"
+  },
+  {
+    "abbrev": "GERG",
+    "name": "GERG Main Office Building",
+    "address": "833 Graham Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": 0,
+    "name": "GERG East Lab & Office Building",
+    "address": "833 Graham Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": 0,
+    "name": "GERG Portable Building",
+    "address": "833 Graham Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": 0,
+    "name": "GERG Warehouse",
+    "address": "833 Graham Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": 0,
+    "name": "GERG Solvent Shed",
+    "address": "833 Graham Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": 0,
+    "name": "GERG Gas Shed",
+    "address": "833 Graham Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": 0,
+    "name": "GERG-Autonomous Vehicle Bldg",
+    "address": "833 Graham Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": "RINK",
+    "name": "Arctic Wolf Ice Rink",
+    "address": "400 Holleman Dr E",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": "GRND",
+    "name": "Grand Station Entertainment",
+    "address": "2400 Earl Rudder Fy",
+    "city": "College Station",
+    "zip": 77840,
+    "section": "Local Non-lease"
+  },
+  {
+    "abbrev": "ALLN",
+    "name": "Allen Building (Academic West)",
+    "address": "1004 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Bush Library"
+  },
+  {
+    "abbrev": "BPCC",
+    "name": "Annenberg Presidential Conference Center",
+    "address": "1002 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Bush Library"
+  },
+  {
+    "abbrev": "BPLM",
+    "name": "George Bush Presidential Library & Museum",
+    "address": "1000 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Bush Library"
+  },
+  {
+    "abbrev": "WWTP",
+    "name": "Wastewater Treatment Plant",
+    "address": "9685 Whites Creek Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": "OBSR",
+    "name": "Robotic Observatory",
+    "address": "2790 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": "OBSV",
+    "name": "Physics Teaching Observatory",
+    "address": "2788 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "TAC Realty Hanger",
+    "address": "2600 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Range Science Field Lab",
+    "address": "2540 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "N.S.C. Hyperbaric Lab",
+    "address": "2530 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Radioactive Waste Building",
+    "address": "2528 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Nuclear Science Center Laboratory",
+    "address": "2524 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Nuclear Science Cntr",
+    "address": "2522 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Airport Hangar",
+    "address": "1850 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Easterwood Hangar 1091",
+    "address": "1820 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Easterwood Shops",
+    "address": "1810 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Wind Tunnel Compressor Building",
+    "address": "1787 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": "WIND",
+    "name": "Nicks Low Speed Wind Tunnel",
+    "address": "1775 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Easterwood General Aviation Terminal",
+    "address": "1770 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Nat'l Aerothermochemistry Lab, Bldg 2",
+    "address": "1753 Geroge Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Nat'l Aerothermochemistry Lab, Bldg 1",
+    "address": "1737 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": "KSWT",
+    "name": "Klebanoff-Saric Wind Tunnel (Unsteady Wind Tunnel)",
+    "address": "1721 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Easterwood Airport Hangar",
+    "address": "1680 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Easterwood Hangar 1092",
+    "address": "1660 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Easterwood Rescue and Fire Facility",
+    "address": "1550 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Turbo Machine Storage Facility",
+    "address": "1493 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Turbo Lab Support Building",
+    "address": "1485 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Turbomachinery Laboratory",
+    "address": "1485 George Bush Dr W",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Refuse Collection Maintenance",
+    "address": "1204 Harvey Mitchell Pw S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": "FARM",
+    "name": "Poultry Science Headquarters",
+    "address": "1202 Harvey Mitchell Pw S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Poultry Sci Integrated Repro",
+    "address": "1200 Harvey Mitchell Pw S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Land, Air, Space Robotics",
+    "address": "1188 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "Easterwood Maintenance Support Facility",
+    "address": "1180 Nuclear Science Rd",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": "UEOA",
+    "name": "Utilities & Energy Services Energy Office",
+    "address": "1092 Harvey Mitchell Pw S",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  },
+  {
+    "abbrev": 0,
+    "name": "McKenzie Terminal Building",
+    "address": "1 McKenzie Terminal Bl",
+    "city": "College Station",
+    "zip": 77845,
+    "section": "Airport Area"
+  }
+]

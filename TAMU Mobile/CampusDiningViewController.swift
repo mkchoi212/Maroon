@@ -123,6 +123,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
                     if now > begTime && now < endTime{
                         venue.open = true
                         markers[index].snippet = "Open"
+                        
                         break
                     }
                     else{

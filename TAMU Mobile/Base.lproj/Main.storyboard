@@ -652,12 +652,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yr3-9h-TeY" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yr3-9h-TeY" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-Qe-xdO">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-Qe-xdO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -680,7 +680,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-vE-5bf">
-                                                    <rect key="frame" x="8" y="28" width="222" height="21"/>
+                                                    <rect key="frame" x="8" y="28" width="222" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1063,7 +1063,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="cool.af" id="S7z-ep-n2l">
+                            <tableViewSection headerTitle="cool.af" footerTitle="FOR #F**ITSHIPIT" id="S7z-ep-n2l">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sMi-gi-lU5">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -1276,7 +1276,8 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-tP-WyV">
                                                     <rect key="frame" x="8" y="36" width="304" height="208"/>
-                                                    <string key="text">Once again, none of your information is ever stored or used for profit or analyzation. Your location is NOT being sent to the cloud for people to analyze. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx.   I wish to strongly point out that this app is not affiliated with Texas A&amp;M University in any shape or form and is not an official university product. The app has been created by a student attending Texas A&amp;M University and that said student does not wish to get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or dislike the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em</string>
+                                                    <mutableString key="text">Once again, none of your information is ever stored or used for profit or analyzation. Your location is NOT being sent to the cloud for people to analyze. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx.   I wish to strongly point out that this app is not affiliated with Texas A&amp;M University in any shape or form and is not an official university product. The app has been created by a student attending Texas A&amp;M University and that said student does not wish to get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or dislike the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em Sincerely,
+Mike C.</mutableString>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1337,55 +1338,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jg8-pW-fJz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="separatorColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="qdP-zq-OOk">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qdP-zq-OOk" id="8fU-9W-8Ie">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="jHu-6f-5TC" id="XaC-fN-IA7"/>
-                                    <outlet property="delegate" destination="jHu-6f-5TC" id="MyF-y3-L08"/>
-                                </connections>
-                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="Search Building" translatesAutoresizingMaskIntoConstraints="NO" id="KG0-yw-9ch">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="df3-CM-sdW" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="df3-CM-sdW" secondAttribute="trailing" constant="-16" id="35E-hM-ph3"/>
-                            <constraint firstItem="df3-CM-sdW" firstAttribute="leading" secondItem="uEj-7s-jtn" secondAttribute="leadingMargin" constant="-16" id="5HC-R7-sBd"/>
-                            <constraint firstItem="jg8-pW-fJz" firstAttribute="top" secondItem="Ksb-px-asu" secondAttribute="bottom" id="Am9-hg-WzU"/>
-                            <constraint firstItem="df3-CM-sdW" firstAttribute="top" secondItem="Ksb-px-asu" secondAttribute="bottom" id="UL3-Wt-rTE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jg8-pW-fJz" secondAttribute="trailing" constant="-16" id="g1m-p7-ZYc"/>
-                            <constraint firstItem="Vcz-oJ-5rH" firstAttribute="top" secondItem="df3-CM-sdW" secondAttribute="bottom" id="gee-M7-nwh"/>
-                            <constraint firstItem="jg8-pW-fJz" firstAttribute="bottom" secondItem="uEj-7s-jtn" secondAttribute="bottomMargin" id="p3C-A1-9fz"/>
-                            <constraint firstItem="df3-CM-sdW" firstAttribute="bottom" secondItem="uEj-7s-jtn" secondAttribute="bottomMargin" id="qhk-4K-cfy"/>
-                            <constraint firstItem="jg8-pW-fJz" firstAttribute="leading" secondItem="uEj-7s-jtn" secondAttribute="leadingMargin" constant="-16" id="vXp-8Q-049"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="df3-CM-sdW" secondAttribute="trailing" constant="-16" id="6sT-Pu-Ird"/>
+                            <constraint firstItem="df3-CM-sdW" firstAttribute="top" secondItem="KG0-yw-9ch" secondAttribute="bottom" id="G7w-Ud-a5j"/>
+                            <constraint firstItem="KG0-yw-9ch" firstAttribute="leading" secondItem="uEj-7s-jtn" secondAttribute="leadingMargin" constant="-16" id="J3k-jr-gtR"/>
+                            <constraint firstItem="df3-CM-sdW" firstAttribute="leading" secondItem="uEj-7s-jtn" secondAttribute="leadingMargin" constant="-16" id="Qdd-NV-pFx"/>
+                            <constraint firstItem="KG0-yw-9ch" firstAttribute="top" secondItem="Ksb-px-asu" secondAttribute="bottom" id="ZkJ-UO-C6h"/>
+                            <constraint firstItem="df3-CM-sdW" firstAttribute="bottom" secondItem="uEj-7s-jtn" secondAttribute="bottomMargin" id="h4B-x6-jxN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KG0-yw-9ch" secondAttribute="trailing" constant="-16" id="zfl-3Y-xXq"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="gee-M7-nwh"/>
-                            </mask>
-                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Campus Map" id="5ss-8N-vqc"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="mapView" destination="df3-CM-sdW" id="jMO-w0-gp3"/>
-                        <outlet property="tableView" destination="jg8-pW-fJz" id="vsX-cc-OFn"/>
+                        <outlet property="searchBar" destination="KG0-yw-9ch" id="d8z-V1-hRk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBk-wd-tLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
