@@ -1,5 +1,8 @@
 platform:ios, '8.0'
 
+pod 'Fabric'
+pod 'TwitterKit'
+pod 'TwitterCore'
 pod 'NJKWebViewProgress'
 pod 'SDWebImage'
 pod 'GUITabPagerViewController', '~> 0.0.7'

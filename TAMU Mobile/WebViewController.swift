@@ -16,21 +16,23 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
     var progressView = NJKWebViewProgressView()
     var progressProxy = NJKWebViewProgress()
     var sessionChecked = false
-    var coolaf = true
+    var urlString = String()
     var requestURL = NSURL()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if coolaf{
+        if urlString == "https://lifeplusdev.wordpress.com" {
             self.title = "cool.af"
-            requestURL = NSURL(string: "https://lifeplusdev.wordpress.com")!
         }
-        else{
+        else if urlString == "http://transport.tamu.edu/busroutes/" {
             self.title = "Bus Routes"
-            requestURL = NSURL(string: "http://transport.tamu.edu/busroutes/")!
+        }
+        else {
+            self.title = "Twtr"
         }
         
+        requestURL = NSURL(string: urlString)!
         let request = NSURLRequest(URL: requestURL)
         webView.loadRequest(request)
         

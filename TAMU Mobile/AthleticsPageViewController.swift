@@ -49,7 +49,7 @@ class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegat
                  let newsVC = story.instantiateViewControllerWithIdentifier("news") as! NewsTableViewController
                 return newsVC
             case .Now:
-                return UIViewController()
+                return TwitterViewController()
             }
         }
         else{

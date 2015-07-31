@@ -23,6 +23,9 @@ PODS:
   - BDBOAuth1Manager (1.4.1):
     - AFNetworking/NSURLConnection (~> 2.4.0)
     - AFNetworking/NSURLSession (~> 2.4.0)
+  - Fabric (1.2.8):
+    - Fabric/Base (= 1.2.8)
+  - Fabric/Base (1.2.8)
   - FoldingTabBar (1.0.0)
   - GoogleMaps (1.10.1)
   - GUITabPagerViewController (0.0.7)
@@ -34,23 +37,31 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - TwitterCore (1.8.1)
+  - TwitterKit (1.8.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
   - BDBOAuth1Manager (~> 1.4.0)
+  - Fabric
   - FoldingTabBar
   - GoogleMaps
   - GUITabPagerViewController (~> 0.0.7)
   - NJKWebViewProgress
   - SDWebImage
+  - TwitterCore
+  - TwitterKit
 
 SPEC CHECKSUMS:
   AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
   BDBOAuth1Manager: e4c50f9b4ecda6c2a9da680a45d89985e4f3edb6
+  Fabric: a9eabe53915e9f1db55a84dd2838737928675878
   FoldingTabBar: 463d247453a2ba826ae79f5be1e6b8b93b6aa0ce
   GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
   GUITabPagerViewController: eccbdf4399cb4cb458d2d961e60c941cc97d5a9c
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  TwitterCore: 0a26fb8054bc23d8986344d3dcb6602255b6aec5
+  TwitterKit: 88daaebdb8bfb5847d76d8ae159841248427931d
 
 COCOAPODS: 0.38.1

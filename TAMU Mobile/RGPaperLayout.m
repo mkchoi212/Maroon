@@ -60,9 +60,6 @@
             
             //transform
             attributes.transform3D  = [self transformFromFraction:fraction/2];
-            
-            
-            
         }
     }
     

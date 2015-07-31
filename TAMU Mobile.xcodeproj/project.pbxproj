@@ -30,6 +30,7 @@
 		CAA120AE1B65DDC9007D7802 /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A61B65DDC9007D7802 /* JTSSimpleImageDownloader.m */; };
 		CAA120AF1B65DDC9007D7802 /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A81B65DDC9007D7802 /* UIApplication+JTSImageViewController.m */; };
 		CAA120B01B65DDC9007D7802 /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120AA1B65DDC9007D7802 /* UIImage+JTSImageEffects.m */; };
+		CABD3D5B1B6AF0FA0074143D /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD3D5A1B6AF0FA0074143D /* TwitterViewController.swift */; };
 		CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331391B6486E60036FD6B /* AppDelegate.swift */; };
 		CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAC3313B1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld */; };
 		CAC331421B6486E60036FD6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC331401B6486E60036FD6B /* Main.storyboard */; };
@@ -127,6 +128,7 @@
 		CAA120A81B65DDC9007D7802 /* UIApplication+JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JTSImageViewController.m"; sourceTree = "<group>"; };
 		CAA120A91B65DDC9007D7802 /* UIImage+JTSImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTSImageEffects.h"; sourceTree = "<group>"; };
 		CAA120AA1B65DDC9007D7802 /* UIImage+JTSImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTSImageEffects.m"; sourceTree = "<group>"; };
+		CABD3D5A1B6AF0FA0074143D /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		CAC331341B6486E60036FD6B /* TAMU Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAMU Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC331381B6486E60036FD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAC331391B6486E60036FD6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				CAA120941B65D2FD007D7802 /* AthleticsPageViewController.swift */,
+				CABD3D5A1B6AF0FA0074143D /* TwitterViewController.swift */,
 				CAC665AF1B66E12B003E465D /* News */,
 				CAC665B01B66E136003E465D /* Schedule */,
 			);
@@ -512,6 +515,7 @@
 				CAC331311B6486E60036FD6B /* Frameworks */,
 				CAC331321B6486E60036FD6B /* Resources */,
 				9C7E9BA18C177946A9F2148D /* Copy Pods Resources */,
+				CABD3D591B6AF09B0074143D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -634,6 +638,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CABD3D591B6AF09B0074143D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 0d5d7dbf250fb8bef567c9ddae0ab171a41c0428 9a533e1fbbf94f2000f6628865cacfb62009f03e302b4123fbaced08628e8576";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -688,6 +705,7 @@
 				CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */,
 				CACB68D91B656899007F4AD1 /* NSDate+convenience.m in Sources */,
 				CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */,
+				CABD3D5B1B6AF0FA0074143D /* TwitterViewController.swift in Sources */,
 				CACB68B81B656851007F4AD1 /* JTCalendarMenuMonthView.m in Sources */,
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
 				CACB68DC1B656899007F4AD1 /* UIView+convenience.m in Sources */,

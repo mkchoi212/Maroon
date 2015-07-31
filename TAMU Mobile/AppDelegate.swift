@@ -9,6 +9,8 @@ import UIKit
 import FoldingTabBar
 import CoreData
 import GoogleMaps
+import Fabric
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         GMSServices.provideAPIKey("AIzaSyC0WTQoKQFVeTcgBhdihj-spXNVWNZgCrg")
-    
+        Fabric.with([Twitter()])
+
         let barFont = UIFont(name: "GillSans-Light", size: 20)!
         let barColor = UIColor.whiteColor()
         let barAttributes : [NSString : AnyObject] = [NSFontAttributeName : barFont , NSForegroundColorAttributeName : barColor]

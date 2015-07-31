@@ -47,7 +47,7 @@ class CampusMapViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func extraRightItemDidPressed(){
         let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-        webVC.coolaf = false
+        webVC.urlString = "http://transport.tamu.edu/busroutes/"
         navigationController?.pushViewController(webVC, animated: true)
     }
 }

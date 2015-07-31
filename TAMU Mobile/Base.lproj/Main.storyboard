@@ -1081,7 +1081,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="2M8-qU-hZY" kind="show" id="pxi-W7-rC0"/>
+                                            <segue destination="2M8-qU-hZY" kind="show" identifier="coolaf" id="pxi-W7-rC0"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dte-mm-4vO">
