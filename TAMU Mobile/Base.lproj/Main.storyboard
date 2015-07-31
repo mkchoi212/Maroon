@@ -752,9 +752,6 @@
                                 <exclude reference="k0k-df-HlZ"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="oO9-OM-tTc" appends="YES" id="Grt-5g-ALz"/>
-                        </connections>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="On-Campus" id="ESv-fb-dgW"/>
@@ -767,11 +764,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bct-4t-vBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="oO9-OM-tTc">
-                    <connections>
-                        <action selector="tapOutside:" destination="kz3-wr-k6s" id="rZ6-6I-BBR"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="22" y="-910"/>
         </scene>
@@ -1276,8 +1268,8 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-tP-WyV">
                                                     <rect key="frame" x="8" y="36" width="304" height="208"/>
-                                                    <mutableString key="text">Once again, none of your information is ever stored or used for profit or analyzation. Your location is NOT being sent to the cloud for people to analyze. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx.   I wish to strongly point out that this app is not affiliated with Texas A&amp;M University in any shape or form and is not an official university product. The app has been created by a student attending Texas A&amp;M University and that said student does not wish to get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or dislike the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em Sincerely,
-Mike C.</mutableString>
+                                                    <string key="text">Once again, none of your information is ever stored or used for profit or analyzation. Your location is NOT being sent to the cloud for people to analyze. Twitter social plug-in only displays tweets from accounts only related to Texas A&amp;M University's athletics program. The news feed's source is TAMU athletic program's RSS feed which you can publicly access here: http://www.12thman.com/rss.aspx.   I wish to strongly point out that this app is not affiliated with Texas A&amp;M University in any shape or form and is not an official university product. The app has been created by a student attending Texas A&amp;M University and that said student does not wish to get into any legal troubles as it could serious screw up his/her financial budget as he/she is in fact, a college student. The said student made this app not to undermine any authorities but to benefit his/her fellow students as the official A&amp;M app in the App Store is quite... dispiriting.   Also, if you like or dislike the app, please leave a review in the App Store as I would like to see what people think of the app for future improvements.  Thanks and Gig 'em Sincerely,
+Mike C.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1340,11 +1332,18 @@ Mike C.</mutableString>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search Building" translatesAutoresizingMaskIntoConstraints="NO" id="KG0-yw-9ch">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.41530933580000001" green="0.0" blue="0.0022924091639999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.41530933580000001" green="0.0" blue="0.0022924091639999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="df3-CM-sdW" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="44" width="320" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="jHu-6f-5TC" id="Lpg-Ft-KJn"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
