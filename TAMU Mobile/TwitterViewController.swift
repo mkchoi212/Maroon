@@ -8,23 +8,26 @@
 
 import Foundation
 import TwitterKit
+import CWStatusBarNotification
 
 class TwitterViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
     
     override func viewDidLoad() {
-            super.viewDidLoad()
+        super.viewDidLoad()
             
-            Twitter.sharedInstance().logInGuestWithCompletion { session, error in
-                if let validSession = session {
-                    let client = Twitter.sharedInstance().APIClient
-                    self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#12thman", APIClient: client)
-                } else {
-                    println("error: \(error.localizedDescription)")
-                }
+        Twitter.sharedInstance().logInGuestWithCompletion { session, error in
+            if let validSession = session {
+                let client = Twitter.sharedInstance().APIClient
+                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#12thman", APIClient: client)
+            } else {
+                println("asdf")
+                let networkNotification = CWStatusBarNotification()
+                networkNotification.notificationLabelBackgroundColor = UIColor.blackColor()
+                networkNotification.displayNotificationWithMessage("Could not connect to Twitter's servers. Opps", forDuration: 2.0)
             }
         }
-    
-    // Swift
+    }
+
     func tweetView(tweetView: TWTRTweetView!, didTapURL url: NSURL!) {
         // Open your own custom webview
         let mainSB = UIStoryboard(name: "Main", bundle: nil)

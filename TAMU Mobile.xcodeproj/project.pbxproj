@@ -87,6 +87,8 @@
 		CACB68E71B657F77007F4AD1 /* CampusFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E61B657F77007F4AD1 /* CampusFood.swift */; };
 		CACB68E91B658042007F4AD1 /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E81B658042007F4AD1 /* Hours.swift */; };
 		CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68EA1B658230007F4AD1 /* FoodLocation.swift */; };
+		CAF083F41B6BEDFE00DC0487 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF083F31B6BEDFE00DC0487 /* Reachability.m */; };
+		CAF083F71B6BFED300DC0487 /* YellInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +220,9 @@
 		CACB68E61B657F77007F4AD1 /* CampusFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusFood.swift; sourceTree = "<group>"; };
 		CACB68E81B658042007F4AD1 /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
 		CACB68EA1B658230007F4AD1 /* FoodLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodLocation.swift; sourceTree = "<group>"; };
+		CAF083F21B6BEDFE00DC0487 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CAF083F31B6BEDFE00DC0487 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +267,7 @@
 			children = (
 				CA05372E1B649D4600B22B87 /* YellsViewController.swift */,
 				CA0537341B649D9A00B22B87 /* YellCell.swift */,
+				CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */,
 				CA05373A1B64A54700B22B87 /* Yell.swift */,
 				CA0537381B64A22400B22B87 /* yells.json */,
 			);
@@ -374,6 +380,7 @@
 		CAC331371B6486E60036FD6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CAF083F51B6BEE0200DC0487 /* Reachability */,
 				CAA120B11B65DDCC007D7802 /* Image */,
 				CACB68BF1B656855007F4AD1 /* Calendar */,
 				CA05372D1B649D1100B22B87 /* External Frameworks */,
@@ -513,6 +520,15 @@
 				CAC331661B64878E0036FD6B /* YelpClient.swift */,
 			);
 			name = Yelp;
+			sourceTree = "<group>";
+		};
+		CAF083F51B6BEE0200DC0487 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CAF083F21B6BEDFE00DC0487 /* Reachability.h */,
+				CAF083F31B6BEDFE00DC0487 /* Reachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 		FD4F6DA48DB0A4F53F9D11D3 /* Frameworks */ = {
@@ -691,6 +707,7 @@
 				CACB68B31B656851007F4AD1 /* JTCalendar.m in Sources */,
 				CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */,
 				CAC331711B64878E0036FD6B /* YelpClient.swift in Sources */,
+				CAF083F71B6BFED300DC0487 /* YellInfoCell.swift in Sources */,
 				CA05373B1B64A54700B22B87 /* Yell.swift in Sources */,
 				CAA1209E1B65DCF9007D7802 /* TimelineView.swift in Sources */,
 				CACB68BC1B656851007F4AD1 /* JTCalendarWeekView.m in Sources */,
@@ -730,6 +747,7 @@
 				CACB68D91B656899007F4AD1 /* NSDate+convenience.m in Sources */,
 				CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */,
 				CABD3D5B1B6AF0FA0074143D /* TwitterViewController.swift in Sources */,
+				CAF083F41B6BEDFE00DC0487 /* Reachability.m in Sources */,
 				CACB68B81B656851007F4AD1 /* JTCalendarMenuMonthView.m in Sources */,
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
 				CACB68DC1B656899007F4AD1 /* UIView+convenience.m in Sources */,

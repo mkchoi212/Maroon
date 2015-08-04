@@ -56,10 +56,10 @@
             fraction = [self allowedRadian:fraction];
             CGFloat offset = fabs((fractionComputedOffset)* (1 - fabsf(cosf(fraction))));
             CGFloat yComputedOffset = collectionViewHeight + offset;
-            attributes.center = CGPointMake(attributes.center.x, yComputedOffset+20);
+            attributes.center = CGPointMake(attributes.center.x, yComputedOffset-20);
             
             //transform
-            attributes.transform3D  = [self transformFromFraction:fraction/2];
+            attributes.transform3D  = [self transformFromFraction:fraction/3.5];
         }
     }
     

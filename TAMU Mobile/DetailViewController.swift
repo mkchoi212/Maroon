@@ -28,8 +28,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate, YALTabBarIntera
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         businessMapView.delegate = self
         navigationItem.title = "Yelp"
         

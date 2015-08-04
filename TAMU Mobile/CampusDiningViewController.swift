@@ -16,7 +16,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     var campusPlaces = [CampusFood]()
     var markers = [GMSMarker]()
     var mapUpdated = false
-     var searchActive : Bool = false
+    var searchActive = false
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var mapView: GMSMapView!

@@ -9,13 +9,13 @@
 import Foundation
 import FoldingTabBar
 
-class YellsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, YALTabBarInteracting {
+class YellsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting {
 
-    @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var yellLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var yellTitle: UILabel!
     @IBOutlet weak var passBackLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    var yellIndex = 0
     var yells = [Yell]()
     
     override func viewDidLoad() {
@@ -24,6 +24,37 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         loadYells()
     }
+    
+    //MARK : TABLEVIEW DELEGATE
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 20
+    }
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! YellInfoCell
+        if indexPath.section == 0 {
+            cell.mainLabel.text = "PASSBACK"
+            cell.descriptionLabel.text = yells[yellIndex].passback
+        }
+        else{
+            cell.mainLabel.text = "YELL"
+            cell.descriptionLabel.text = yells[yellIndex].call
+        }
+        return cell
+    }
+    //MARK : COLLECTIONVIEW DELEGATE
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
@@ -47,9 +78,9 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         let underlinedString = NSAttributedString(string: cell.label.text!.uppercaseString, attributes: underline)
         self.yellTitle.attributedText = underlinedString
         
+        yellIndex = indexPath.section
         self.yellTitle.attributedText = underlinedString
-        self.passBackLabel.text = self.yells[indexPath.section].passback
-        self.yellLabel.text = self.yells[indexPath.section].call
+        tableView.reloadData()
     }
     
     func loadYells(){
@@ -66,11 +97,10 @@ class YellsViewController: UIViewController, UICollectionViewDelegate, UICollect
         let underline = [NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue]
         let underlinedString = NSAttributedString(string: self.yells[0].name.uppercaseString, attributes: underline)
         self.yellTitle.attributedText = underlinedString
-        self.passBackLabel.text = self.yells.first!.passback
-        self.yellLabel.text = self.yells.first!.call
 
         collectionView.reloadData()
         collectionView.collectionViewLayout.invalidateLayout()
+        tableView.reloadData()
     }
     
     func extraRightItemDidPressed(){

@@ -11,12 +11,14 @@ import CoreData
 import GoogleMaps
 import Fabric
 import TwitterKit
+import CWStatusBarNotification
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var greenColor = UIColor(red: 80.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+    let statusNotification = CWStatusBarNotification()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         

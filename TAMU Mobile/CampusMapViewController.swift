@@ -9,11 +9,18 @@
 import Foundation
 import GoogleMaps
 import FoldingTabBar
+import MapKit
+import CWStatusBarNotification
 
-class CampusMapViewController: UIViewController, YALTabBarInteracting {
+class CampusMapViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting {
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
     var buildings = [Building]()
+    var searchResults = [Building]()
+    var searchActive = false
+    var geocoder = CLGeocoder()
+    var currentMarker = GMSMarker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +30,93 @@ class CampusMapViewController: UIViewController, YALTabBarInteracting {
         mapView.animateToCameraPosition(camera)
         
         loadBuildings()
+        view.sendSubviewToBack(tableView)
+        tableView.reloadData()
+    }
+    
+    //MARK : TABLEVIEW DELEGATE
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        var campusBuilding : Building
+        
+        if searchActive {
+            campusBuilding = searchResults[indexPath.row]
+        }
+        else {
+            campusBuilding = buildings[indexPath.row]
+        }
+        cell.textLabel?.text = "\(campusBuilding.name), \(campusBuilding.abbrev)"
+        cell.detailTextLabel?.text = campusBuilding.section
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let selectedBuilding = searchResults[indexPath.row]
+        let buildingAddress = "\(selectedBuilding.address), TX, College Station \(selectedBuilding.zip)"
+   
+        mapView.clear()
+        geocoder.geocodeAddressString(buildingAddress, completionHandler: {(placemarks: [AnyObject]!, error: NSError!) -> Void in
+            if let placemark = placemarks?[0] as? CLPlacemark {
+                self.currentMarker.title = selectedBuilding.name
+                self.currentMarker.snippet = selectedBuilding.section
+                self.currentMarker.position = placemark.location.coordinate
+                self.currentMarker.map = self.mapView
+                var camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
+                    longitude: placemark.location.coordinate.longitude, zoom: 17)
+                self.mapView.animateToCameraPosition(camera)
+            }
+        })
+        dismissKeyboard()
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchActive{
+            return searchResults.count
+        }
+        else{
+            return 0
+        }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 75
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        searchResults = buildings.filter({ (text) -> Bool in
+            let tmp: NSString = text.name
+            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            return range.location != NSNotFound
+        })
+        if(searchResults.count == 0){
+            searchActive = false;
+        } else {
+            searchActive = true;
+        }
+        tableView.reloadData()
+    }
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        view.bringSubviewToFront(tableView)
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+        view.sendSubviewToBack(tableView)
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+        view.sendSubviewToBack(tableView)
+        searchBar.endEditing(true)
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        view.sendSubviewToBack(tableView)
+        searchActive = false;
     }
     
     func loadBuildings(){
@@ -41,12 +135,30 @@ class CampusMapViewController: UIViewController, YALTabBarInteracting {
             else{
                 building.abbrev = ""
             }
-            
             buildings.append(building)
         }
-        println(buildings.count)
     }
 
+    @IBAction func startNav(sender: AnyObject) {
+        if currentMarker.title != nil {
+            let regionDistance:CLLocationDistance = 10000
+            let coordinates = currentMarker.position
+            let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
+            var options = [
+                MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: regionSpan.center),
+                MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan: regionSpan.span)
+            ]
+            var placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+            var mapItem = MKMapItem(placemark: placemark)
+            mapItem.name = "\(currentMarker.title)"
+            mapItem.openInMapsWithLaunchOptions(options)
+        }
+        else {
+            let notification = CWStatusBarNotification()
+            notification.notificationLabelBackgroundColor = UIColor.blackColor()
+            notification.displayNotificationWithMessage("Please select a location first", forDuration: 2.0)
+        }
+    }
     
     //MARK : ETC delegate methods
     
@@ -57,6 +169,7 @@ class CampusMapViewController: UIViewController, YALTabBarInteracting {
     }
     
     func dismissKeyboard() {
+        view.sendSubviewToBack(tableView)
         searchBar.endEditing(true)
     }
 }
