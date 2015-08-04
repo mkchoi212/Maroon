@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         GMSServices.provideAPIKey("AIzaSyC0WTQoKQFVeTcgBhdihj-spXNVWNZgCrg")
+        SVGeocoder.setGoogleMapsAPIKey("AIzaSyDMpb-f2UPrErM80V8rcAk0RVqe9Y-8z-g")
         Fabric.with([Twitter()])
 
         let barFont = UIFont(name: "GillSans-Light", size: 20)!

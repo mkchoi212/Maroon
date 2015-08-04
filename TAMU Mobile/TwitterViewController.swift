@@ -18,7 +18,7 @@ class TwitterViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let validSession = session {
                 let client = Twitter.sharedInstance().APIClient
-                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#12thman", APIClient: client)
+                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#TAMU", APIClient: client)
             } else {
                 println("asdf")
                 let networkNotification = CWStatusBarNotification()

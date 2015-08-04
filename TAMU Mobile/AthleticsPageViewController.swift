@@ -21,7 +21,6 @@ class AthleticsPageViewController: GUITabPagerViewController, GUITabPagerDelegat
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "Athletics"
         self.dataSource = self
         self.delegate = self

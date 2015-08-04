@@ -53,21 +53,45 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let selectedBuilding = searchResults[indexPath.row]
-        let buildingAddress = "\(selectedBuilding.address), TX, College Station \(selectedBuilding.zip)"
+        let buildingAddress = "\(selectedBuilding.address), TX, College Station \(selectedBuilding.zip), USA"
    
         mapView.clear()
-        geocoder.geocodeAddressString(buildingAddress, completionHandler: {(placemarks: [AnyObject]!, error: NSError!) -> Void in
+        
+        SVGeocoder.geocode(buildingAddress, completion: { (placemarks : [AnyObject]!, response : NSHTTPURLResponse!, error : NSError!) -> Void in
+            if error == nil{
+                if let placemark = placemarks?[0] as? SVPlacemark {
+                    self.currentMarker.title = selectedBuilding.name
+                    self.currentMarker.snippet = selectedBuilding.section
+                    self.currentMarker.position = placemark.location.coordinate
+                    self.currentMarker.map = self.mapView
+                    self.dismissKeyboard()
+                    var camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
+                        longitude: placemark.location.coordinate.longitude, zoom: 17)
+                    self.mapView.animateToCameraPosition(camera)
+                }
+            }
+            else {
+                var notification = CWStatusBarNotification()
+                notification.notificationLabelBackgroundColor = UIColor.blackColor()
+                notification.displayNotificationWithMessage("Server overloaded. Coordinates may be slightly inaccurate", forDuration: 2.0)
+                self.appleGeocodeBackup(buildingAddress, building: selectedBuilding)
+            }
+        })
+    }
+    
+    func appleGeocodeBackup(address : String, building : Building) {
+        geocoder.geocodeAddressString(address, completionHandler: {(placemarks: [AnyObject]!, error: NSError!) -> Void in
             if let placemark = placemarks?[0] as? CLPlacemark {
-                self.currentMarker.title = selectedBuilding.name
-                self.currentMarker.snippet = selectedBuilding.section
+                self.currentMarker.title = building.name
+                self.currentMarker.snippet = building.section
                 self.currentMarker.position = placemark.location.coordinate
                 self.currentMarker.map = self.mapView
+                self.dismissKeyboard()
                 var camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
                     longitude: placemark.location.coordinate.longitude, zoom: 17)
                 self.mapView.animateToCameraPosition(camera)
             }
         })
-        dismissKeyboard()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

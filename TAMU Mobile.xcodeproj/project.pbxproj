@@ -87,6 +87,8 @@
 		CACB68E71B657F77007F4AD1 /* CampusFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E61B657F77007F4AD1 /* CampusFood.swift */; };
 		CACB68E91B658042007F4AD1 /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68E81B658042007F4AD1 /* Hours.swift */; };
 		CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68EA1B658230007F4AD1 /* FoodLocation.swift */; };
+		CAD2BFED1B70549D00AF54A8 /* SVGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD2BFEA1B70549D00AF54A8 /* SVGeocoder.m */; };
+		CAD2BFEE1B70549D00AF54A8 /* SVPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */; };
 		CAF083F41B6BEDFE00DC0487 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF083F31B6BEDFE00DC0487 /* Reachability.m */; };
 		CAF083F71B6BFED300DC0487 /* YellInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */; };
 /* End PBXBuildFile section */
@@ -220,6 +222,10 @@
 		CACB68E61B657F77007F4AD1 /* CampusFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusFood.swift; sourceTree = "<group>"; };
 		CACB68E81B658042007F4AD1 /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
 		CACB68EA1B658230007F4AD1 /* FoodLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodLocation.swift; sourceTree = "<group>"; };
+		CAD2BFE91B70549D00AF54A8 /* SVGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGeocoder.h; sourceTree = "<group>"; };
+		CAD2BFEA1B70549D00AF54A8 /* SVGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGeocoder.m; sourceTree = "<group>"; };
+		CAD2BFEB1B70549D00AF54A8 /* SVPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPlacemark.h; sourceTree = "<group>"; };
+		CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPlacemark.m; sourceTree = "<group>"; };
 		CAF083F21B6BEDFE00DC0487 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CAF083F31B6BEDFE00DC0487 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellInfoCell.swift; sourceTree = "<group>"; };
@@ -330,6 +336,7 @@
 		CABD3D641B6B100C0074143D /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				CAD2BFEF1B7054A100AF54A8 /* Google Geocoder */,
 				CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */,
 				CABD3D621B6B10060074143D /* tamubuildings.json */,
 				CABD3D651B6B21110074143D /* Building.swift */,
@@ -520,6 +527,17 @@
 				CAC331661B64878E0036FD6B /* YelpClient.swift */,
 			);
 			name = Yelp;
+			sourceTree = "<group>";
+		};
+		CAD2BFEF1B7054A100AF54A8 /* Google Geocoder */ = {
+			isa = PBXGroup;
+			children = (
+				CAD2BFE91B70549D00AF54A8 /* SVGeocoder.h */,
+				CAD2BFEA1B70549D00AF54A8 /* SVGeocoder.m */,
+				CAD2BFEB1B70549D00AF54A8 /* SVPlacemark.h */,
+				CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */,
+			);
+			name = "Google Geocoder";
 			sourceTree = "<group>";
 		};
 		CAF083F51B6BEE0200DC0487 /* Reachability */ = {
@@ -723,6 +741,7 @@
 				CAC3316F1B64878E0036FD6B /* SwitchCell.swift in Sources */,
 				CACB68E21B6568C0007F4AD1 /* CalendarViewController.m in Sources */,
 				CAA120AF1B65DDC9007D7802 /* UIApplication+JTSImageViewController.m in Sources */,
+				CAD2BFEE1B70549D00AF54A8 /* SVPlacemark.m in Sources */,
 				CAA120AD1B65DDC9007D7802 /* JTSImageViewController.m in Sources */,
 				CAC331731B6487A10036FD6B /* ViewController.swift in Sources */,
 				CACB68DA1B656899007F4AD1 /* NSMutableArray+convenience.m in Sources */,
@@ -730,6 +749,7 @@
 				CACB68BB1B656851007F4AD1 /* JTCalendarMonthWeekDaysView.m in Sources */,
 				CAC3316C1B64878E0036FD6B /* LabelCell.swift in Sources */,
 				CAC3316E1B64878E0036FD6B /* SwiftyJSON.swift in Sources */,
+				CAD2BFED1B70549D00AF54A8 /* SVGeocoder.m in Sources */,
 				CAC3317B1B6489310036FD6B /* RecipeViewController.swift in Sources */,
 				CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */,
 				CAC331681B64878E0036FD6B /* BusinessCell.swift in Sources */,

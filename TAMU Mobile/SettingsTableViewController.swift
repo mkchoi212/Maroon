@@ -36,7 +36,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
         mailComposerVC.mailComposeDelegate = self
         
         mailComposerVC.setToRecipients(["mkchoi212@icloud.com", "mkchoi212@tamu.edu"])
-        mailComposerVC.setSubject("What's good?!")
+        mailComposerVC.setSubject("What's good?")
         mailComposerVC.setMessageBody("", isHTML: false)
         
         return mailComposerVC
