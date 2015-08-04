@@ -614,7 +614,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qNo-BU-bjT">
-                        <barButtonItem key="rightBarButtonItem" image="BF43D841-6480-4893-B6B1-8C94D1D1E895" id="DD9-re-3yt">
+                        <barButtonItem key="rightBarButtonItem" image="C9346572-3C2E-4C75-8989-C12436BB73A3" id="DD9-re-3yt">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="startNavigation:" destination="NDF-xg-6oE" id="NLg-jD-AWg"/>
@@ -1431,7 +1431,7 @@ Mike C.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="BF43D841-6480-4893-B6B1-8C94D1D1E895" width="20" height="20">
+        <image name="C9346572-3C2E-4C75-8989-C12436BB73A3" width="20" height="20">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

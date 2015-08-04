@@ -12,7 +12,7 @@ import FoldingTabBar
 import MapKit
 import CWStatusBarNotification
 
-class CampusMapViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting {
+class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -94,6 +94,13 @@ class CampusMapViewController: UIViewController, UITableViewDelegate, UITableVie
         } else {
             searchActive = true;
         }
+        if searchText.isEmpty{
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.1 * Double(NSEC_PER_SEC)))
+            dispatch_after(delayTime, dispatch_get_main_queue()) {
+                self.dismissKeyboard()
+            }
+        }
+        
         tableView.reloadData()
     }
     
@@ -103,20 +110,17 @@ class CampusMapViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        searchBar.endEditing(true)
-        view.sendSubviewToBack(tableView)
+        dismissKeyboard()
         searchActive = false;
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         searchActive = false;
-        view.sendSubviewToBack(tableView)
-        searchBar.endEditing(true)
+        dismissKeyboard()
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        view.sendSubviewToBack(tableView)
-        searchActive = false;
+        dismissKeyboard()
     }
     
     func loadBuildings(){
