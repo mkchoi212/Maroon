@@ -18,4 +18,8 @@ class Yell {
         self.passback = passback
         self.call = call
     }
+    
+     convenience init(){
+        self.init(name : "Yell", passback : "passbock", call : "call")
+    }
 }

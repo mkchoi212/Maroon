@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		301ADFA53F328CF75F69B162 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74808829BDA32FBAFE5B7FDF /* libPods.a */; };
 		CA0537291B64989A00B22B87 /* campusdining.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0537281B64989A00B22B87 /* campusdining.json */; };
-		CA05372C1B649D0E00B22B87 /* RGPaperLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CA05372B1B649D0E00B22B87 /* RGPaperLayout.m */; };
 		CA05372F1B649D4600B22B87 /* YellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05372E1B649D4600B22B87 /* YellsViewController.swift */; };
 		CA0537351B649D9A00B22B87 /* YellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0537341B649D9A00B22B87 /* YellCell.swift */; };
 		CA0537391B64A22400B22B87 /* yells.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0537381B64A22400B22B87 /* yells.json */; };
@@ -89,7 +88,6 @@
 		CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68EA1B658230007F4AD1 /* FoodLocation.swift */; };
 		CAD2BFED1B70549D00AF54A8 /* SVGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD2BFEA1B70549D00AF54A8 /* SVGeocoder.m */; };
 		CAD2BFEE1B70549D00AF54A8 /* SVPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */; };
-		CAF083F41B6BEDFE00DC0487 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF083F31B6BEDFE00DC0487 /* Reachability.m */; };
 		CAF083F71B6BFED300DC0487 /* YellInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,8 +106,6 @@
 		74808829BDA32FBAFE5B7FDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8376285E59DFE8CC17C76065 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA0537281B64989A00B22B87 /* campusdining.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campusdining.json; sourceTree = "<group>"; };
-		CA05372A1B649D0E00B22B87 /* RGPaperLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGPaperLayout.h; sourceTree = "<group>"; };
-		CA05372B1B649D0E00B22B87 /* RGPaperLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGPaperLayout.m; sourceTree = "<group>"; };
 		CA05372E1B649D4600B22B87 /* YellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellsViewController.swift; sourceTree = "<group>"; };
 		CA0537341B649D9A00B22B87 /* YellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellCell.swift; sourceTree = "<group>"; };
 		CA0537381B64A22400B22B87 /* yells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yells.json; sourceTree = "<group>"; };
@@ -226,8 +222,6 @@
 		CAD2BFEA1B70549D00AF54A8 /* SVGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGeocoder.m; sourceTree = "<group>"; };
 		CAD2BFEB1B70549D00AF54A8 /* SVPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPlacemark.h; sourceTree = "<group>"; };
 		CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPlacemark.m; sourceTree = "<group>"; };
-		CAF083F21B6BEDFE00DC0487 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		CAF083F31B6BEDFE00DC0487 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,15 +251,6 @@
 				8376285E59DFE8CC17C76065 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		CA05372D1B649D1100B22B87 /* External Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CA05372A1B649D0E00B22B87 /* RGPaperLayout.h */,
-				CA05372B1B649D0E00B22B87 /* RGPaperLayout.m */,
-			);
-			name = "External Frameworks";
 			sourceTree = "<group>";
 		};
 		CA0537331B649D8700B22B87 /* Yells */ = {
@@ -387,10 +372,8 @@
 		CAC331371B6486E60036FD6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CAF083F51B6BEE0200DC0487 /* Reachability */,
 				CAA120B11B65DDCC007D7802 /* Image */,
 				CACB68BF1B656855007F4AD1 /* Calendar */,
-				CA05372D1B649D1100B22B87 /* External Frameworks */,
 				CAC331751B6487BD0036FD6B /* TAMU Mobile-Bridging-Header.h */,
 				CAC331451B6486E60036FD6B /* LaunchScreen.xib */,
 				CAC331431B6486E60036FD6B /* Images.xcassets */,
@@ -538,15 +521,6 @@
 				CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */,
 			);
 			name = "Google Geocoder";
-			sourceTree = "<group>";
-		};
-		CAF083F51B6BEE0200DC0487 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				CAF083F21B6BEDFE00DC0487 /* Reachability.h */,
-				CAF083F31B6BEDFE00DC0487 /* Reachability.m */,
-			);
-			name = Reachability;
 			sourceTree = "<group>";
 		};
 		FD4F6DA48DB0A4F53F9D11D3 /* Frameworks */ = {
@@ -745,7 +719,6 @@
 				CAA120AD1B65DDC9007D7802 /* JTSImageViewController.m in Sources */,
 				CAC331731B6487A10036FD6B /* ViewController.swift in Sources */,
 				CACB68DA1B656899007F4AD1 /* NSMutableArray+convenience.m in Sources */,
-				CA05372C1B649D0E00B22B87 /* RGPaperLayout.m in Sources */,
 				CACB68BB1B656851007F4AD1 /* JTCalendarMonthWeekDaysView.m in Sources */,
 				CAC3316C1B64878E0036FD6B /* LabelCell.swift in Sources */,
 				CAC3316E1B64878E0036FD6B /* SwiftyJSON.swift in Sources */,
@@ -767,7 +740,6 @@
 				CACB68D91B656899007F4AD1 /* NSDate+convenience.m in Sources */,
 				CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */,
 				CABD3D5B1B6AF0FA0074143D /* TwitterViewController.swift in Sources */,
-				CAF083F41B6BEDFE00DC0487 /* Reachability.m in Sources */,
 				CACB68B81B656851007F4AD1 /* JTCalendarMenuMonthView.m in Sources */,
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
 				CACB68DC1B656899007F4AD1 /* UIView+convenience.m in Sources */,

@@ -1,5 +1,6 @@
 platform:ios, '8.0'
 
+pod 'EBCardCollectionViewLayout'
 pod 'CWStatusBarNotification'
 pod 'Fabric'
 pod 'TwitterKit'

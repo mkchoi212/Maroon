@@ -53,21 +53,31 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let selectedBuilding = searchResults[indexPath.row]
-        let buildingAddress = "\(selectedBuilding.address), TX, College Station \(selectedBuilding.zip), USA"
-   
+        let buildingAddress = "\(selectedBuilding.name), College Station, TX \(selectedBuilding.zip)"
+        let alternateAddress = "\(selectedBuilding.name), \(selectedBuilding.address), College Station, TX \(selectedBuilding.zip)"
+ 
         mapView.clear()
         
         SVGeocoder.geocode(buildingAddress, completion: { (placemarks : [AnyObject]!, response : NSHTTPURLResponse!, error : NSError!) -> Void in
             if error == nil{
                 if let placemark = placemarks?[0] as? SVPlacemark {
-                    self.currentMarker.title = selectedBuilding.name
-                    self.currentMarker.snippet = selectedBuilding.section
-                    self.currentMarker.position = placemark.location.coordinate
-                    self.currentMarker.map = self.mapView
-                    self.dismissKeyboard()
-                    var camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
-                        longitude: placemark.location.coordinate.longitude, zoom: 17)
-                    self.mapView.animateToCameraPosition(camera)
+                    println(placemark)
+                    if placemark.formattedAddress == "College Station, TX, USA" || placemark.formattedAddress == "College Station, TX 77840, USA"{
+                        var notification = CWStatusBarNotification()
+                        notification.notificationLabelBackgroundColor = UIColor.blackColor()
+                        notification.displayNotificationWithMessage("Inaccurate coordinates. Trying alternate server", forDuration: 1.0)
+                        self.appleGeocodeBackup(alternateAddress, building: selectedBuilding)
+                    }
+                    else{
+                        self.currentMarker.title = selectedBuilding.name
+                        self.currentMarker.snippet = selectedBuilding.section
+                        self.currentMarker.position = placemark.location.coordinate
+                        self.currentMarker.map = self.mapView
+                        self.dismissKeyboard()
+                        var camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
+                            longitude: placemark.location.coordinate.longitude, zoom: 17)
+                        self.mapView.animateToCameraPosition(camera)
+                    }
                 }
             }
             else {

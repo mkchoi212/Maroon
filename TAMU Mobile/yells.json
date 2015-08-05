@@ -16,11 +16,6 @@
              "call": "Farmers fight!\nFarmers fight!\nFight! Fight\nFarmers, farmers fight!"
              },
              {
-             "name": "Old Army",
-             "passback": "Upward pointed finger moves in circular motion",
-             "call": "Aaaa, Rrrr, Mmmm, Yyyy(Drop voice)\nTttt, Aaaa, Mmmm, Cccc(Drop voice)\nAaaaaaaa ol’ Army fight!"
-             },
-             {
              "name": "Locomotive",
              "passback": "Hand looks to be pulling a train whistle, reaching upward and twisting on downward motion",
              "call": "(slow) Rah! Rah! Rah! Rah! T-A-M-C\n(faster) Rah! Rah! Rah! Rah! T-A-M-C\n(very fast) Rah! Rah! Rah! Rah! T-A-M-C\n(seniors only: whoop!) Aaaaaa Rah! Rah! Rah! Rah! Team!"
@@ -29,6 +24,21 @@
              "name": "Beat the Hell",
              "passback": "Left arm clapping bicep, Right arm pulling up, fist clenched",
              "call": "Beat the hell outta (team name)"
+             },
+             {
+             "name": "Old Army",
+             "passback": "Upward pointed finger moves in circular motion",
+             "call": "Aaaa, Rrrr, Mmmm, Yyyy(Drop voice)\nTttt, Aaaa, Mmmm, Cccc(Drop voice)\nAaaaaaaa ol’ Army fight!"
+             },
+             {
+             "name": "Kyle Field",
+             "passback": "Left hand raised with waving motion, right hand at your side with index fnger pointing to the ground",
+             "call": "K-Y-L-E\nF-I-E-L-D\nAaaaaaaaaaaaaa\nKyle Field, Aaaa"
+             },
+             {
+             "name": "Sky Rocket",
+             "passback": "Slap hands together with right hand moving upward and index finer pointed to the sky",
+             "call": "(whistle) BOOM\nRah Rah Team Aaaaaa"
              }
-    ]
+        ]
 }

@@ -24,6 +24,7 @@ PODS:
     - AFNetworking/NSURLConnection (~> 2.4.0)
     - AFNetworking/NSURLSession (~> 2.4.0)
   - CWStatusBarNotification (2.3.1)
+  - EBCardCollectionViewLayout (0.2.0)
   - Fabric (1.2.8):
     - Fabric/Base (= 1.2.8)
   - Fabric/Base (1.2.8)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
   - BDBOAuth1Manager (~> 1.4.0)
   - CWStatusBarNotification
+  - EBCardCollectionViewLayout
   - Fabric
   - FoldingTabBar
   - GoogleMaps
@@ -58,6 +60,7 @@ SPEC CHECKSUMS:
   AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
   BDBOAuth1Manager: e4c50f9b4ecda6c2a9da680a45d89985e4f3edb6
   CWStatusBarNotification: 73d86949d11a2246f1a50532b157c1d313000ccd
+  EBCardCollectionViewLayout: 83acdccba21001480f50e7d4f5547cbcfb75e1e7
   Fabric: a9eabe53915e9f1db55a84dd2838737928675878
   FoldingTabBar: 463d247453a2ba826ae79f5be1e6b8b93b6aa0ce
   GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1

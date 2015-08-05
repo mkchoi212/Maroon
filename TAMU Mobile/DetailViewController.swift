@@ -28,9 +28,6 @@ class DetailViewController: UIViewController, MKMapViewDelegate, YALTabBarIntera
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        businessMapView.delegate = self
-        navigationItem.title = "Yelp"
-        
         reviewImageView.layer.cornerRadius = 3
         reviewImageView.clipsToBounds = true
         updateMapViewAnnotation()
