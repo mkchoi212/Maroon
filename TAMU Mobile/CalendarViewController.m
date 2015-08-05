@@ -211,7 +211,9 @@
     
     self.calendar = [JTCalendar new];
     self.calendar.calendarAppearance.menuMonthTextFont = [UIFont systemFontOfSize:13.0f];
-    self.calendar.calendarAppearance.menuMonthTextColor = [UIColor whiteColor];
+    self.calendar.calendarAppearance.menuMonthTextColor = [UIColor blackColor];
+    self.calendar.calendarAppearance.dayTextColor = [UIColor blackColor];
+    
     self.calendar.calendarAppearance.monthBlock = ^NSString *(NSDate *date, JTCalendar *jt_calendar){
         NSCalendar *calendar = jt_calendar.calendarAppearance.calendar;
         NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:date];
@@ -248,7 +250,7 @@
 - (void)setUpMenuView {
     self.calendarMenuView = [[JTCalendarMenuView alloc] initWithFrame:CGRectZero];
     self.calendarMenuView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.calendarMenuView.backgroundColor = [UIColor colorWithRed:80.0/255.0 green:0 blue:0 alpha:1.0];
+    self.calendarMenuView.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.calendarMenuView];
 
@@ -288,7 +290,7 @@
 - (void)setUpContentView {
     self.calendarContentView = [[JTCalendarContentView alloc] initWithFrame:CGRectZero];
     self.calendarContentView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.calendarContentView.backgroundColor = [UIColor colorWithRed:80.0/255.0 green:0 blue:0 alpha:1.0];
+    self.calendarContentView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.calendarContentView];
     
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.calendarContentView
@@ -382,7 +384,7 @@
     self.expanded = YES;
     self.navigationController.navigationBar.translucent = NO;
     
-    self.view.backgroundColor = [UIColor colorWithRed:80.0/255.0 green:0 blue:0 alpha:1.0];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self setUpCalendar];
     [self setUpBarButtonItems];
