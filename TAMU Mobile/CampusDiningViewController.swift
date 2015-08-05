@@ -82,7 +82,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CampusDiningCell
         var foodPlace : CampusFood
-        
+        println(searchActive)
         if searchActive {
             foodPlace = searchResults[indexPath.row]
         }
@@ -107,6 +107,12 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 85
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        searchBar.endEditing(true)
+    }
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        searchBar.endEditing(true)
     }
 
     func isOpen(){
@@ -165,41 +171,38 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         self.navigationController?.pushViewController(yelpVC, animated: true)
     }
     
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        searchActive = true;
-    }
-    
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
         searchBar.endEditing(true)
-        searchActive = false;
+        searchActive = false
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
+        searchActive = false
         searchBar.endEditing(true)
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
+        searchActive = false
     }
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        searchResults = campusPlaces.filter({ (text) -> Bool in
-            let tmp: NSString = text.address.name
-            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
-            return range.location != NSNotFound
-        })
-        if(searchResults.count == 0){
-            searchActive = false;
-        } else {
-            searchActive = true;
+     println("asdf")
+        if searchText == "" || searchText.isEmpty{
+            searchActive = false
+        }
+        else{
+            searchResults = campusPlaces.filter({ (text) -> Bool in
+                let tmp: NSString = text.address.name
+                let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                return range.location != NSNotFound
+            })
+            if(searchResults.count == 0){
+                searchActive = false;
+            } else {
+                searchActive = true;
+            }
         }
         tableView.reloadData()
-    }
-
-    @IBAction func tapOutside(sender: AnyObject) {
-        searchBar.endEditing(true)
     }
 }
 
