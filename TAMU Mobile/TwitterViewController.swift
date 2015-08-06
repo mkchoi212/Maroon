@@ -33,6 +33,7 @@ class TwitterViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
         let mainSB = UIStoryboard(name: "Main", bundle: nil)
         let webVC = mainSB.instantiateViewControllerWithIdentifier("webview") as! WebViewController
         webVC.urlString = url.absoluteString!
+        webVC.customTitle = "Twtr"
         navigationController?.pushViewController(webVC, animated: true)
     }
     

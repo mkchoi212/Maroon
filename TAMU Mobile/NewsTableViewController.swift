@@ -57,8 +57,24 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         if let date = currentDictionary["pubDate"]{
             cell.dateLabel.text = reformattedDate(date)
         }
-        
+        if let newslink = currentDictionary["link"]{
+            cell.link = newslink
+        }
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  
+        let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! NewsTableViewCell
+        let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
+        println(selectedCell.link)
+        webVC.urlString = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        webVC.customTitle = selectedCell.titleLabel.text!
+        
+        let navVC = UINavigationController(rootViewController: webVC)
+        navVC.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "closeVC")
+        presentViewController(navVC, animated: true, completion: nil)
     }
     
     func shareArticle(sender : AnyObject){
@@ -68,13 +84,13 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         let url = dictionary["link"]!.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         let articleURL = NSURL(string: url)
         
-        let shareText = "\nCheckout this article I found on the TAMU iOS mobile app by sick.af"
+        let shareText = "\nCheckout this article I found on the TAMU iOS mobile app by cool.io"
         let activityVC = UIActivityViewController(activityItems: [articleURL!, shareText], applicationActivities: nil)
         
         //New Excluded Activities Code
         activityVC.excludedActivityTypes = [UIActivityTypePostToVimeo, UIActivityTypePostToWeibo, UIActivityTypePostToFlickr, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToTencentWeibo]
         
-        self.presentViewController(activityVC, animated: true, completion: nil)
+        presentViewController(activityVC, animated: true, completion: nil)
     }
     
     func reformattedDate(rssDate : String) -> String{
@@ -103,11 +119,7 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 160
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-    
+
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 9.5
     }
@@ -116,6 +128,10 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         var spacing = UIView()
         spacing.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
         return spacing
+    }
+    
+    func closeVC(){
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 

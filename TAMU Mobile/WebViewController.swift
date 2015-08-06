@@ -18,6 +18,7 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
     var sessionChecked = false
     var urlString = String()
     var requestURL = NSURL()
+    var customTitle = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +29,10 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
         else if urlString == "http://transport.tamu.edu/busroutes/" {
             self.title = "Bus Routes"
         }
-        else {
-            self.title = "Twtr"
+        else{
+            self.title = customTitle
         }
-        
+
         requestURL = NSURL(string: urlString)!
         let request = NSURLRequest(URL: requestURL)
         webView.loadRequest(request)

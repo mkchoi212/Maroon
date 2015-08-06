@@ -53,7 +53,6 @@
 		CAC331711B64878E0036FD6B /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331661B64878E0036FD6B /* YelpClient.swift */; };
 		CAC331731B6487A10036FD6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331721B6487A10036FD6B /* ViewController.swift */; };
 		CAC3317A1B6489310036FD6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331781B6489310036FD6B /* HomeViewController.swift */; };
-		CAC3317B1B6489310036FD6B /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC331791B6489310036FD6B /* RecipeViewController.swift */; };
 		CAC665AC1B66DE3A003E465D /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC665AB1B66DE3A003E465D /* NewsTableViewController.swift */; };
 		CAC665AE1B66E125003E465D /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC665AD1B66E125003E465D /* XMLParser.swift */; };
 		CAC665B41B66E5DA003E465D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC665B31B66E5DA003E465D /* NewsTableViewCell.swift */; };
@@ -161,7 +160,6 @@
 		CAC331721B6487A10036FD6B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAC331751B6487BD0036FD6B /* TAMU Mobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAMU Mobile-Bridging-Header.h"; sourceTree = "<group>"; };
 		CAC331781B6489310036FD6B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CAC331791B6489310036FD6B /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		CAC665AB1B66DE3A003E465D /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		CAC665AD1B66E125003E465D /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		CAC665B31B66E5DA003E465D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -355,7 +353,6 @@
 				CAC331391B6486E60036FD6B /* AppDelegate.swift */,
 				CAC331401B6486E60036FD6B /* Main.storyboard */,
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
-				CAC331791B6489310036FD6B /* RecipeViewController.swift */,
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
 				CABD3D641B6B100C0074143D /* Map */,
@@ -723,7 +720,6 @@
 				CAC3316C1B64878E0036FD6B /* LabelCell.swift in Sources */,
 				CAC3316E1B64878E0036FD6B /* SwiftyJSON.swift in Sources */,
 				CAD2BFED1B70549D00AF54A8 /* SVGeocoder.m in Sources */,
-				CAC3317B1B6489310036FD6B /* RecipeViewController.swift in Sources */,
 				CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */,
 				CAC331681B64878E0036FD6B /* BusinessCell.swift in Sources */,
 				CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */,

@@ -14,6 +14,7 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var shareButton: UIButton!
+    var link = String()
     
     override var frame: CGRect {
         get {
