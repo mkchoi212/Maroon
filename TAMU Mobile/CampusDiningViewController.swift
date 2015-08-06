@@ -9,6 +9,7 @@
 import Foundation
 import GoogleMaps
 import FoldingTabBar
+import CWStatusBarNotification
 
 class CampusDiningViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, YALTabBarInteracting {
 
@@ -20,6 +21,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var mapView: GMSMapView!
+    var selectedVenue = CampusFood()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +65,6 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
             campusPlaces.append(venue)
             self.markers.append(marker)
         }
-        
         isOpen()
         tableView.reloadData()
     }
@@ -108,15 +109,17 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 85
     }
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var foodPlace : CampusFood
-        println(searchActive)
+
         if searchActive {
             foodPlace = searchResults[indexPath.row]
         }
         else{
             foodPlace = campusPlaces[indexPath.row]
         }
+        selectedVenue = foodPlace
         
         self.onMapButton()
         var camera = GMSCameraPosition.cameraWithLatitude((foodPlace.address.lat as NSString).doubleValue,
@@ -131,6 +134,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         
         searchBar.endEditing(true)
     }
+    
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
         searchBar.endEditing(true)
     }
@@ -173,6 +177,9 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         return weekDay!
     }
     
+    
+    //MARK : BAR BUTTON ITEMS
+    
     func onListButton() {
         UIView.transitionFromView(mapView, toView: tableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
         
@@ -184,12 +191,36 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         UIView.transitionFromView(tableView, toView: mapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion : nil)
         searchBar.endEditing(true)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .Plain, target: self, action: "onListButton")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "startnav"), style: .Plain, target: self, action: "startNav")
     }
     
     func extraRightItemDidPressed(){
         let yelpVC = storyboard?.instantiateViewControllerWithIdentifier("yelp") as! ViewController
         self.navigationController?.pushViewController(yelpVC, animated: true)
     }
+    
+    func startNav(){
+        if !(selectedVenue.address.name.isEmpty) {
+            let regionDistance:CLLocationDistance = 10000
+            let coordinates = CLLocationCoordinate2D(latitude: (selectedVenue.address.lat as NSString).doubleValue, longitude: (selectedVenue.address.lon as NSString).doubleValue)
+            let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
+            var options = [
+                MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: regionSpan.center),
+                MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan: regionSpan.span), MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeWalking
+            ]
+            var placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+            var mapItem = MKMapItem(placemark: placemark)
+            mapItem.name = "\(selectedVenue.address.name)"
+            mapItem.openInMapsWithLaunchOptions(options)
+        }
+        else {
+            let notification = CWStatusBarNotification()
+            notification.notificationLabelBackgroundColor = UIColor.blackColor()
+            notification.displayNotificationWithMessage("Please select a location first", forDuration: 2.0)
+        }
+    }
+    
+    //MARK : SEARCH BAR DELEGATES
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
         searchBar.endEditing(true)
@@ -223,6 +254,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         }
         tableView.reloadData()
     }
+    
 }
 
 

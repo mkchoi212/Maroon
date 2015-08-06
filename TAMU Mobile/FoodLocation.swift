@@ -28,6 +28,6 @@ class FoodLocation {
     }
     
     convenience init() {
-        self.init(name : "asdf", address : "asdf", city : "College Station", state : "TX", zip : "77840", lat : "lat", lon : "lon")
+        self.init(name : "", address : "asdf", city : "College Station", state : "TX", zip : "77840", lat : "lat", lon : "lon")
     }
 }
