@@ -82,7 +82,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CampusDiningCell
         var foodPlace : CampusFood
-        println(searchActive)
+
         if searchActive {
             foodPlace = searchResults[indexPath.row]
         }
@@ -109,6 +109,26 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         return 85
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var foodPlace : CampusFood
+        println(searchActive)
+        if searchActive {
+            foodPlace = searchResults[indexPath.row]
+        }
+        else{
+            foodPlace = campusPlaces[indexPath.row]
+        }
+        
+        self.onMapButton()
+        var camera = GMSCameraPosition.cameraWithLatitude((foodPlace.address.lat as NSString).doubleValue,
+            longitude: (foodPlace.address.lon as NSString).doubleValue, zoom: 18)
+        mapView.animateToCameraPosition(camera)
+        
+        let searchMarker = NSPredicate(format: "%K == %@", "title", foodPlace.address.name)
+        let userLocations = (markers as NSArray).filteredArrayUsingPredicate(searchMarker) as? [GMSMarker]
+        
+        let marker = userLocations?.first
+        mapView.selectedMarker = marker
+        
         searchBar.endEditing(true)
     }
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
@@ -186,7 +206,6 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-     println("asdf")
         if searchText == "" || searchText.isEmpty{
             searchActive = false
         }

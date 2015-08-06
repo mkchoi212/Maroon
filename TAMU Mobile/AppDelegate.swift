@@ -17,7 +17,7 @@ import CWStatusBarNotification
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var greenColor = UIColor(red: 80.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+    var maroonColor = UIColor(red: 80.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     let statusNotification = CWStatusBarNotification()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -32,10 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UINavigationBar.appearance().barTintColor = greenColor
+        UINavigationBar.appearance().barTintColor = maroonColor
         UINavigationBar.appearance().titleTextAttributes = barAttributes
-        
-        self.window?.backgroundColor = greenColor
+        UINavigationBar.appearance().translucent = false
+        self.window?.backgroundColor = maroonColor
         
         setupAnimatedTabBar()
         
@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var left2 = YALTabBarItem(itemImage: UIImage(named: "food"), leftItemImage: UIImage(named: "campus"), rightItemImage: UIImage(named: "yelp"))
         tabBarController.leftBarItems = [left1, left2]
         
-        var right1 = YALTabBarItem(itemImage: UIImage(named: "home"), leftItemImage: UIImage(named: "search"), rightItemImage: UIImage(named: "tamu"))
+        var right1 = YALTabBarItem(itemImage: UIImage(named: "home"), leftItemImage: nil, rightItemImage: UIImage(named: "tamu"))
         var right2 = YALTabBarItem(itemImage: UIImage(named: "settings"), leftItemImage: nil, rightItemImage: nil)
         tabBarController.rightBarItems = [right1, right2]
         
