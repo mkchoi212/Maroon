@@ -37,13 +37,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().translucent = false
         self.window?.backgroundColor = maroonColor
         
-        setupAnimatedTabBar()
+        if NSUserDefaults.standardUserDefaults().boolForKey("tutorialSeen"){
+            if let window = self.window{
+                window.rootViewController = setupAnimatedTabBar()
+            }
+        }
         
         return true
     }
     
-    func setupAnimatedTabBar(){
-        var tabBarController = self.window?.rootViewController as! YALFoldingTabBarController
+    func setupAnimatedTabBar() -> YALFoldingTabBarController {
+        let mainStorybaord = UIStoryboard(name: "Main", bundle: nil)
+        var tabBarController = mainStorybaord.instantiateViewControllerWithIdentifier("tab") as! YALFoldingTabBarController
         
         var left1 = YALTabBarItem(itemImage: UIImage(named: "explore"), leftItemImage: UIImage(named: "campus"), rightItemImage:  UIImage(named: "bus"))
         var left2 = YALTabBarItem(itemImage: UIImage(named: "food"), leftItemImage: UIImage(named: "campus"), rightItemImage: UIImage(named: "yelp"))
@@ -65,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets
         tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets
         
+        return tabBarController
     }
     
     

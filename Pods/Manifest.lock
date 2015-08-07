@@ -54,7 +54,7 @@ DEPENDENCIES:
   - NJKWebViewProgress
   - SDWebImage
   - TwitterCore
-  - TwitterKit
+  - TwitterKit (~> 1.8.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f

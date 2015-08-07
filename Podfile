@@ -1,9 +1,9 @@
 platform:ios, '8.0'
 
+pod 'Fabric'
 pod 'EBCardCollectionViewLayout'
 pod 'CWStatusBarNotification'
-pod 'Fabric'
-pod 'TwitterKit'
+pod 'TwitterKit', '~> 1.8.1'
 pod 'TwitterCore'
 pod 'NJKWebViewProgress'
 pod 'SDWebImage'

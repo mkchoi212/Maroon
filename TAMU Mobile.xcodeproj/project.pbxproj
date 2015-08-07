@@ -29,6 +29,9 @@
 		CAA120AE1B65DDC9007D7802 /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A61B65DDC9007D7802 /* JTSSimpleImageDownloader.m */; };
 		CAA120AF1B65DDC9007D7802 /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120A81B65DDC9007D7802 /* UIApplication+JTSImageViewController.m */; };
 		CAA120B01B65DDC9007D7802 /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA120AA1B65DDC9007D7802 /* UIImage+JTSImageEffects.m */; };
+		CAB067961B741C0C00A59496 /* MYIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB067921B741C0C00A59496 /* MYIntroductionView.m */; };
+		CAB067971B741C0C00A59496 /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB067941B741C0C00A59496 /* MYIntroductionPanel.m */; };
+		CAB0679B1B741D6300A59496 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0679A1B741D6300A59496 /* IntroductionViewController.swift */; };
 		CABD3D5B1B6AF0FA0074143D /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD3D5A1B6AF0FA0074143D /* TwitterViewController.swift */; };
 		CABD3D5D1B6AF98D0074143D /* CreditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD3D5C1B6AF98D0074143D /* CreditTableViewController.swift */; };
 		CABD3D611B6B01280074143D /* text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CABD3D601B6B01280074143D /* text.rtf */; };
@@ -131,6 +134,11 @@
 		CAA120A81B65DDC9007D7802 /* UIApplication+JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JTSImageViewController.m"; sourceTree = "<group>"; };
 		CAA120A91B65DDC9007D7802 /* UIImage+JTSImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTSImageEffects.h"; sourceTree = "<group>"; };
 		CAA120AA1B65DDC9007D7802 /* UIImage+JTSImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTSImageEffects.m"; sourceTree = "<group>"; };
+		CAB067911B741C0C00A59496 /* MYIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionView.h; sourceTree = "<group>"; };
+		CAB067921B741C0C00A59496 /* MYIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionView.m; sourceTree = "<group>"; };
+		CAB067931B741C0C00A59496 /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
+		CAB067941B741C0C00A59496 /* MYIntroductionPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionPanel.m; sourceTree = "<group>"; };
+		CAB0679A1B741D6300A59496 /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		CABD3D5A1B6AF0FA0074143D /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		CABD3D5C1B6AF98D0074143D /* CreditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditTableViewController.swift; sourceTree = "<group>"; };
 		CABD3D601B6B01280074143D /* text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = text.rtf; sourceTree = "<group>"; };
@@ -316,6 +324,18 @@
 			name = Image;
 			sourceTree = "<group>";
 		};
+		CAB067981B741C1100A59496 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				CAB0679A1B741D6300A59496 /* IntroductionViewController.swift */,
+				CAB067911B741C0C00A59496 /* MYIntroductionView.h */,
+				CAB067921B741C0C00A59496 /* MYIntroductionView.m */,
+				CAB067931B741C0C00A59496 /* MYIntroductionPanel.h */,
+				CAB067941B741C0C00A59496 /* MYIntroductionPanel.m */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
 		CABD3D641B6B100C0074143D /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +375,7 @@
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
+				CAB067981B741C1100A59496 /* Intro */,
 				CABD3D641B6B100C0074143D /* Map */,
 				CAC665AA1B66DDEC003E465D /* Athletics */,
 				CAA120961B65D305007D7802 /* Calendar */,
@@ -718,10 +739,13 @@
 				CACB68DA1B656899007F4AD1 /* NSMutableArray+convenience.m in Sources */,
 				CACB68BB1B656851007F4AD1 /* JTCalendarMonthWeekDaysView.m in Sources */,
 				CAC3316C1B64878E0036FD6B /* LabelCell.swift in Sources */,
+				CAB067961B741C0C00A59496 /* MYIntroductionView.m in Sources */,
 				CAC3316E1B64878E0036FD6B /* SwiftyJSON.swift in Sources */,
 				CAD2BFED1B70549D00AF54A8 /* SVGeocoder.m in Sources */,
+				CAB067971B741C0C00A59496 /* MYIntroductionPanel.m in Sources */,
 				CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */,
 				CAC331681B64878E0036FD6B /* BusinessCell.swift in Sources */,
+				CAB0679B1B741D6300A59496 /* IntroductionViewController.swift in Sources */,
 				CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */,
 				CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */,
 				CACB68CC1B656890007F4AD1 /* MXLCalendarManager.m in Sources */,
