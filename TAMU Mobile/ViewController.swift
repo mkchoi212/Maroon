@@ -21,40 +21,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     private let yelpConsumerSecret = "9ghoeZyZXYUR0GDnHnEdfqoqLkk"
     private let yelpToken = "Gdz-5v2nxZYXLhWYT5sKUmHYj3Lr3sg8"
     private let yelpTokenSecret = "BxxPae9UJmonyoNUXqtKx0PlgQk"
-
+    
     private var businesses = [Business]()
-    private var searchController: UISearchController!
+    private var searchController: UISearchBar!
     private let businessLimit = 20
     private var scrollOffset = 20
     private var searchTerm = "Restaurant"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         businessTableView.tableFooterView = UIView()
-
+        
         businessMapView.delegate = self
         businessTableView.registerNib(UINib(nibName: "BusinessCell", bundle: nil), forCellReuseIdentifier: "BusinessCell")
         businessTableView.estimatedRowHeight = 100
         businessTableView.rowHeight = UITableViewAutomaticDimension
-
+        
         navigationItem.title = "Off-campus Food"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Filter", style: .Plain, target: self, action: "onFilterButton")
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         
         // Search Controller
-        searchController = UISearchController(searchResultsController: nil)
-        searchController.searchBar.delegate = self
-        searchController.searchBar.tintColor = UIColor.whiteColor()
-        searchController.searchBar.barTintColor = UIColor.whiteColor()
-        searchController.searchBar.searchBarStyle = UISearchBarStyle.Minimal
-        searchController.dimsBackgroundDuringPresentation = false
-        searchController.searchBar.sizeToFit()
-        searchController.searchBar.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
-        var textFieldInsideSearchBar = searchController.searchBar.valueForKey("searchField") as? UITextField
-        textFieldInsideSearchBar?.textColor = UIColor.whiteColor()
-        
-        businessTableView.tableHeaderView = searchController.searchBar
+        searchController = UISearchBar()
+        searchController.delegate = self
+        searchController.placeholder = "Search"
+        searchController.tintColor = UIColor.blackColor()
+        searchController.barTintColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
+        searchController.sizeToFit()
+        searchController.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
+        businessTableView.tableHeaderView = searchController
         
         client = YelpClient(consumerKey: yelpConsumerKey, consumerSecret: yelpConsumerSecret, accessToken: yelpToken, accessSecret: yelpTokenSecret)
         fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
@@ -83,11 +79,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
                 println(error.description)
         }
-
+        
     }
     
     private func fetchInfiniteScrollBusinessesWithQuery(query: String, params: [String: String] = [:]) {
-
+        
         client.searchWithTerm(query, additionalParams: params, success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
             let json = JSON(response)
             
@@ -96,20 +92,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             
             self.businessTableView.reloadData()
-
+            
             self.scrollOffset += 20
             
             }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
                 println(error.description)
         }
-
+        
     }
     
     //MARK - UITableViewDataSource
-
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.businesses.count
-     }
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BusinessCell") as! BusinessCell
@@ -122,7 +118,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.businessTableView.deselectRowAtIndexPath(indexPath, animated: true)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailsViewController = storyboard.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
-
+        
         detailsViewController.business = self.businesses[indexPath.row]
         
         navigationController?.pushViewController(detailsViewController, animated: true)
@@ -133,7 +129,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let actualPosition = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height - businessTableView.frame.height
         if actualPosition >= contentHeight {
-
+            
             fetchInfiniteScrollBusinessesWithQuery(searchTerm, params: ["limit" : "\(self.businessLimit)", "offset": "\(self.scrollOffset)"])
         }
     }
@@ -169,12 +165,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailsViewController = storyboard.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
         detailsViewController.business = view.annotation as! Business
-
+        
         navigationController?.pushViewController(detailsViewController, animated: true)
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        searchTerm = searchController.searchBar.text
+        searchTerm = searchController.text
         fetchBusinessesWithQuery(searchTerm)
     }
     
@@ -191,7 +187,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         UIView.transitionFromView(businessMapView, toView: businessTableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
-
+        
     }
     
     func onMapButton() {
@@ -204,6 +200,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         println("Fire new network event: \(filters)")
         fetchBusinessesWithQuery(searchTerm, params: filters)
     }
-
+    
 }
 

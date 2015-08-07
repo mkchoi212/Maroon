@@ -35,10 +35,9 @@ class IntroductionViewController: UIViewController, MYIntroductionDelegate {
     }
     
     func introductionDidFinishWithType(finishType: MYFinishType) {
-        if (finishType.value == MYFinishTypeSwipeOut.value || finishType.value == MYFinishTypeSkipButton.value){
-            let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            presentViewController(delegate.setupAnimatedTabBar(), animated: true, completion: nil)
-        }
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        presentViewController(delegate.setupAnimatedTabBar(), animated: true, completion: nil)
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
     }
 
     
