@@ -12,7 +12,7 @@ import AFNetworking
 import BDBOAuth1Manager
 import FoldingTabBar
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, UISearchBarDelegate, FiltersViewControllerDelegate, YALTabBarInteracting{
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, UISearchBarDelegate, FiltersViewControllerDelegate, YALTabBarInteracting, CLLocationManagerDelegate{
     var client: YelpClient!
     
     @IBOutlet private weak var businessMapView: MKMapView! // make strong?
@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     private let businessLimit = 20
     private var scrollOffset = 20
     private var searchTerm = "Restaurant"
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         client = YelpClient(consumerKey: yelpConsumerKey, consumerSecret: yelpConsumerSecret, accessToken: yelpToken, accessSecret: yelpTokenSecret)
         fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
     }
     
     func extraLeftItemDidPressed(){
@@ -141,23 +146,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-        var view = mapView.dequeueReusableAnnotationViewWithIdentifier("MapViewAnnotation")
-        
-        if view == nil {
-            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "MapViewAnnotation")
-            view.canShowCallout = true
+        if !(annotation is MKUserLocation){
+            var view = mapView.dequeueReusableAnnotationViewWithIdentifier("MapViewAnnotation")
             
-            let imageView = UIImageView(frame: CGRectMake(0, 0, 46, 46))
-            imageView.contentMode = UIViewContentMode.ScaleAspectFit
-            imageView.sd_setImageWithURL(NSURL(string:(annotation as! Business).imageURL!))
-            view.leftCalloutAccessoryView = imageView
-            let disclosureButton = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton
-            view.rightCalloutAccessoryView = disclosureButton
+            if view == nil {
+                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "MapViewAnnotation")
+                view.canShowCallout = true
+                
+                let imageView = UIImageView(frame: CGRectMake(0, 0, 46, 46))
+                imageView.contentMode = UIViewContentMode.ScaleAspectFit
+                imageView.sd_setImageWithURL(NSURL(string:(annotation as! Business).imageURL!))
+                view.leftCalloutAccessoryView = imageView
+                let disclosureButton = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton
+                view.rightCalloutAccessoryView = disclosureButton
+            }
+            view.annotation = annotation
+            return view
         }
-        
-        view.annotation = annotation
-        
-        return view
+        else{
+            return nil
+        }
     }
     
     func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
@@ -197,9 +205,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func filtersViewController(filtersViewController: FiltersTableViewController, didChangeFilters filters: [String : String]) {
-        println("Fire new network event: \(filters)")
         fetchBusinessesWithQuery(searchTerm, params: filters)
     }
     
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if (status == CLAuthorizationStatus.AuthorizedWhenInUse){
+            self.locationManager.startUpdatingLocation()
+        }
+        else if (status == CLAuthorizationStatus.Denied){
+            let alertVC = UIAlertController(title: "Background Location Access Disabled", message: "In order to be notified about your family, please open this app's settings and set location access to 'When In Use'.", preferredStyle: UIAlertControllerStyle.Alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Destructive, handler: nil)
+            let openAction = UIAlertAction(title: "Open Settings", style: .Default) { (action) in
+                if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+            alertVC.addAction(cancelAction)
+            alertVC.addAction(openAction)
+            self.presentViewController(alertVC, animated: true, completion: nil)
+        }
+        else if (status == CLAuthorizationStatus.NotDetermined){
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+    func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {
+        businessMapView.showAnnotations(businessMapView.annotations, animated: true)
+    }
+    
+    deinit{
+        locationManager.stopUpdatingLocation()
+    }
 }
 

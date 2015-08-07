@@ -39,7 +39,7 @@ class YellsViewController: UIViewController, UICollectionViewDataSource, YALTabB
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! YellCell
         var yellName = yells[indexPath.item].name
-        cell.label.text = yellName
+        cell.label.text = yellName.uppercaseString
         cell.passbackLabel.text = yells[indexPath.item].passback
         cell.descriptionLabel.text = yells[indexPath.item].call
         
