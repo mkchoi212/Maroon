@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		301ADFA53F328CF75F69B162 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74808829BDA32FBAFE5B7FDF /* libPods.a */; };
+		9E6457D7EEEC8C63C4A88DF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9B56CA8483606939EB260 /* libPods.a */; };
 		CA0537291B64989A00B22B87 /* campusdining.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0537281B64989A00B22B87 /* campusdining.json */; };
 		CA05372F1B649D4600B22B87 /* YellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05372E1B649D4600B22B87 /* YellsViewController.swift */; };
 		CA0537351B649D9A00B22B87 /* YellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0537341B649D9A00B22B87 /* YellCell.swift */; };
@@ -90,6 +90,15 @@
 		CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACB68EA1B658230007F4AD1 /* FoodLocation.swift */; };
 		CAD2BFED1B70549D00AF54A8 /* SVGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD2BFEA1B70549D00AF54A8 /* SVGeocoder.m */; };
 		CAD2BFEE1B70549D00AF54A8 /* SVPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */; };
+		CAEDFCAD1B77CEB700E33B5B /* NSLayoutConstraint+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCA41B77CEB700E33B5B /* NSLayoutConstraint+Easy.swift */; };
+		CAEDFCAE1B77CEB700E33B5B /* SADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCA51B77CEB700E33B5B /* SADetailViewController.swift */; };
+		CAEDFCAF1B77CEB700E33B5B /* SAParallaxContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCA61B77CEB700E33B5B /* SAParallaxContainerView.swift */; };
+		CAEDFCB01B77CEB700E33B5B /* SAParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCA71B77CEB700E33B5B /* SAParallaxViewCell.swift */; };
+		CAEDFCB11B77CEB700E33B5B /* SAParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCA81B77CEB700E33B5B /* SAParallaxViewController.swift */; };
+		CAEDFCB21B77CEB700E33B5B /* SAParallaxViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCA91B77CEB700E33B5B /* SAParallaxViewLayout.swift */; };
+		CAEDFCB31B77CEB700E33B5B /* SATransitionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCAA1B77CEB700E33B5B /* SATransitionContainerView.swift */; };
+		CAEDFCB41B77CEB700E33B5B /* SATransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCAB1B77CEB700E33B5B /* SATransitionManager.swift */; };
+		CAEDFCB51B77CEB700E33B5B /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEDFCAC1B77CEB700E33B5B /* UIImage+Blur.swift */; };
 		CAF083F71B6BFED300DC0487 /* YellInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,8 +113,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3EE9B56CA8483606939EB260 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5647285B2354C4DCE96FC2A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		74808829BDA32FBAFE5B7FDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8376285E59DFE8CC17C76065 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA0537281B64989A00B22B87 /* campusdining.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campusdining.json; sourceTree = "<group>"; };
 		CA05372E1B649D4600B22B87 /* YellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellsViewController.swift; sourceTree = "<group>"; };
@@ -228,6 +237,15 @@
 		CAD2BFEA1B70549D00AF54A8 /* SVGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGeocoder.m; sourceTree = "<group>"; };
 		CAD2BFEB1B70549D00AF54A8 /* SVPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPlacemark.h; sourceTree = "<group>"; };
 		CAD2BFEC1B70549D00AF54A8 /* SVPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPlacemark.m; sourceTree = "<group>"; };
+		CAEDFCA41B77CEB700E33B5B /* NSLayoutConstraint+Easy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Easy.swift"; sourceTree = "<group>"; };
+		CAEDFCA51B77CEB700E33B5B /* SADetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SADetailViewController.swift; sourceTree = "<group>"; };
+		CAEDFCA61B77CEB700E33B5B /* SAParallaxContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxContainerView.swift; sourceTree = "<group>"; };
+		CAEDFCA71B77CEB700E33B5B /* SAParallaxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewCell.swift; sourceTree = "<group>"; };
+		CAEDFCA81B77CEB700E33B5B /* SAParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewController.swift; sourceTree = "<group>"; };
+		CAEDFCA91B77CEB700E33B5B /* SAParallaxViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewLayout.swift; sourceTree = "<group>"; };
+		CAEDFCAA1B77CEB700E33B5B /* SATransitionContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATransitionContainerView.swift; sourceTree = "<group>"; };
+		CAEDFCAB1B77CEB700E33B5B /* SATransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATransitionManager.swift; sourceTree = "<group>"; };
+		CAEDFCAC1B77CEB700E33B5B /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
 		CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,7 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301ADFA53F328CF75F69B162 /* libPods.a in Frameworks */,
+				9E6457D7EEEC8C63C4A88DF2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +280,7 @@
 		CA0537331B649D8700B22B87 /* Yells */ = {
 			isa = PBXGroup;
 			children = (
+				CAEDFCA31B77CE7000E33B5B /* Parallax VC */,
 				CA05372E1B649D4600B22B87 /* YellsViewController.swift */,
 				CA0537341B649D9A00B22B87 /* YellCell.swift */,
 				CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */,
@@ -541,10 +560,26 @@
 			name = "Google Geocoder";
 			sourceTree = "<group>";
 		};
+		CAEDFCA31B77CE7000E33B5B /* Parallax VC */ = {
+			isa = PBXGroup;
+			children = (
+				CAEDFCA41B77CEB700E33B5B /* NSLayoutConstraint+Easy.swift */,
+				CAEDFCA51B77CEB700E33B5B /* SADetailViewController.swift */,
+				CAEDFCA61B77CEB700E33B5B /* SAParallaxContainerView.swift */,
+				CAEDFCA71B77CEB700E33B5B /* SAParallaxViewCell.swift */,
+				CAEDFCA81B77CEB700E33B5B /* SAParallaxViewController.swift */,
+				CAEDFCA91B77CEB700E33B5B /* SAParallaxViewLayout.swift */,
+				CAEDFCAA1B77CEB700E33B5B /* SATransitionContainerView.swift */,
+				CAEDFCAB1B77CEB700E33B5B /* SATransitionManager.swift */,
+				CAEDFCAC1B77CEB700E33B5B /* UIImage+Blur.swift */,
+			);
+			name = "Parallax VC";
+			sourceTree = "<group>";
+		};
 		FD4F6DA48DB0A4F53F9D11D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74808829BDA32FBAFE5B7FDF /* libPods.a */,
+				3EE9B56CA8483606939EB260 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -734,8 +769,10 @@
 				CACB68E21B6568C0007F4AD1 /* CalendarViewController.m in Sources */,
 				CAA120AF1B65DDC9007D7802 /* UIApplication+JTSImageViewController.m in Sources */,
 				CAD2BFEE1B70549D00AF54A8 /* SVPlacemark.m in Sources */,
+				CAEDFCB01B77CEB700E33B5B /* SAParallaxViewCell.swift in Sources */,
 				CAA120AD1B65DDC9007D7802 /* JTSImageViewController.m in Sources */,
 				CAC331731B6487A10036FD6B /* ViewController.swift in Sources */,
+				CAEDFCB41B77CEB700E33B5B /* SATransitionManager.swift in Sources */,
 				CACB68DA1B656899007F4AD1 /* NSMutableArray+convenience.m in Sources */,
 				CACB68BB1B656851007F4AD1 /* JTCalendarMonthWeekDaysView.m in Sources */,
 				CAC3316C1B64878E0036FD6B /* LabelCell.swift in Sources */,
@@ -744,10 +781,13 @@
 				CAD2BFED1B70549D00AF54A8 /* SVGeocoder.m in Sources */,
 				CAB067971B741C0C00A59496 /* MYIntroductionPanel.m in Sources */,
 				CACB68EB1B658230007F4AD1 /* FoodLocation.swift in Sources */,
+				CAEDFCB21B77CEB700E33B5B /* SAParallaxViewLayout.swift in Sources */,
 				CAC331681B64878E0036FD6B /* BusinessCell.swift in Sources */,
 				CAB0679B1B741D6300A59496 /* IntroductionViewController.swift in Sources */,
 				CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */,
+				CAEDFCB31B77CEB700E33B5B /* SATransitionContainerView.swift in Sources */,
 				CAA120951B65D2FD007D7802 /* AthleticsPageViewController.swift in Sources */,
+				CAEDFCB51B77CEB700E33B5B /* UIImage+Blur.swift in Sources */,
 				CACB68CC1B656890007F4AD1 /* MXLCalendarManager.m in Sources */,
 				CAC3316A1B64878E0036FD6B /* DetailViewController.swift in Sources */,
 				CACB68DD1B656899007F4AD1 /* VRGCalendarView.m in Sources */,
@@ -755,6 +795,8 @@
 				CAA120AC1B65DDC9007D7802 /* JTSImageInfo.m in Sources */,
 				CABD3D5D1B6AF98D0074143D /* CreditTableViewController.swift in Sources */,
 				CACB68CE1B656890007F4AD1 /* MXLCalendarAttendee.m in Sources */,
+				CAEDFCAF1B77CEB700E33B5B /* SAParallaxContainerView.swift in Sources */,
+				CAEDFCAD1B77CEB700E33B5B /* NSLayoutConstraint+Easy.swift in Sources */,
 				CACB68DB1B656899007F4AD1 /* UIColor+expanded.m in Sources */,
 				CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */,
 				CACB68D91B656899007F4AD1 /* NSDate+convenience.m in Sources */,
@@ -764,6 +806,7 @@
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
 				CACB68DC1B656899007F4AD1 /* UIView+convenience.m in Sources */,
 				CA9FD4D61B698B1B003733DF /* StringExtension.swift in Sources */,
+				CAEDFCB11B77CEB700E33B5B /* SAParallaxViewController.swift in Sources */,
 				CACB68E71B657F77007F4AD1 /* CampusFood.swift in Sources */,
 				CACB68B91B656851007F4AD1 /* JTCalendarMenuView.m in Sources */,
 				CACB68CB1B656890007F4AD1 /* MXLCalendarEvent.m in Sources */,
@@ -777,6 +820,7 @@
 				CA522EE91B682C1F003C0054 /* SettingsTableViewController.swift in Sources */,
 				CA9FD4D81B69AFB9003733DF /* CampusMapViewController.swift in Sources */,
 				CAC665AE1B66E125003E465D /* XMLParser.swift in Sources */,
+				CAEDFCAE1B77CEB700E33B5B /* SADetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
