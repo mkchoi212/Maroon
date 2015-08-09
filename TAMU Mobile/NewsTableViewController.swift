@@ -68,12 +68,15 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
   
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! NewsTableViewCell
         let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-        println(selectedCell.link)
+       
         webVC.urlString = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         webVC.customTitle = selectedCell.titleLabel.text!
         
         let navVC = UINavigationController(rootViewController: webVC)
-        navVC.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "closeVC")
+        navVC.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "closeVC")
+        
+        let shareImage = UIImage(named: "share-bar")
+        navVC.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: shareImage, style: .Plain, target: webVC, action: "openSafari:")
         presentViewController(navVC, animated: true, completion: nil)
     }
     

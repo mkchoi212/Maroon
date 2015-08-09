@@ -1,5 +1,6 @@
 platform:ios, '8.0'
 
+pod 'VGParallaxHeader'
 pod 'SKPanoramaView'
 pod 'Fabric'
 pod 'EBCardCollectionViewLayout'

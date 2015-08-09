@@ -24,7 +24,9 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
             let mailComposeViewController = configuredMailComposeViewController()
             if MFMailComposeViewController.canSendMail() {
                 mailComposeViewController.navigationBar.tintColor = UIColor.whiteColor()
-                self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+                presentViewController(mailComposeViewController, animated: true, completion: { () -> Void in
+                     UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
+                })
             } else {
                 self.showSendMailErrorAlert()
             }

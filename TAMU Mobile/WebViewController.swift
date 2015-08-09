@@ -23,19 +23,26 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if urlString == "https://lifeplusdev.wordpress.com" {
-            self.title = "cool.**"
-        }
-        else if urlString == "http://transport.tamu.edu/busroutes/" {
-            self.title = "Bus Routes"
+        if (requestURL.absoluteString == nil) {
+            if urlString == "https://lifeplusdev.wordpress.com" {
+                self.title = "cool.**"
+            }
+            else if urlString == "http://transport.tamu.edu/busroutes/" {
+                self.title = "Bus Routes"
+            }
+            else{
+                self.title = customTitle
+            }
+            requestURL = NSURL(string: urlString)!
         }
         else{
-            self.title = customTitle
+            let request = NSURLRequest(URL: requestURL)
+             self.title = customTitle
         }
 
-        requestURL = NSURL(string: urlString)!
         let request = NSURLRequest(URL: requestURL)
         webView.loadRequest(request)
+
         
         webView.delegate = progressProxy
         progressProxy.webViewProxyDelegate = self

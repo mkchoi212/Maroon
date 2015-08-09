@@ -1,0 +1,6 @@
+module VGParallaxHeader {
+  umbrella header "VGParallaxHeader-umbrella.h"
+
+  export *
+  module * { export * }
+}
