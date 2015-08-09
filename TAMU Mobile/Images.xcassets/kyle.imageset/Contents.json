@@ -2,17 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "kyle-field.jpg"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "kyle@2x.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "kyle@3x.jpg"
+      "scale" : "3x"
     }
   ],
   "info" : {

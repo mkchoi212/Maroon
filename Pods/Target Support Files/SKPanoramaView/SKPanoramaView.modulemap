@@ -1,0 +1,6 @@
+module SKPanoramaView {
+  umbrella header "SKPanoramaView-umbrella.h"
+
+  export *
+  module * { export * }
+}

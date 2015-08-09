@@ -1,6 +1,6 @@
 platform:ios, '8.0'
 
-
+pod 'SKPanoramaView'
 pod 'Fabric'
 pod 'EBCardCollectionViewLayout'
 pod 'CWStatusBarNotification'

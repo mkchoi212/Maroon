@@ -8,6 +8,8 @@
 
 import Foundation
 import FoldingTabBar
+import SKPanoramaView
+
 class IntroductionViewController: UIViewController, MYIntroductionDelegate {
     
     var introductionView = MYIntroductionView()
@@ -15,10 +17,18 @@ class IntroductionViewController: UIViewController, MYIntroductionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpParallaxBackground()
         animateLabel()
     }
     
-    
+    func setUpParallaxBackground(){
+        var panoramaView = SKPanoramaView(frame: view.frame, image: UIImage(named: "kyle"))
+        panoramaView.animationDuration = 90.0
+        view.addSubview(panoramaView)
+        panoramaView.startAnimating()
+
+    }
+
     func animateLabel(){
         var titleLabel = UILabel(frame: CGRectMake(0, self.view.bounds.height/2-self.view.bounds.height/5, self.view.bounds.width, self.view.bounds.height/4))
         self.view.addSubview(titleLabel)

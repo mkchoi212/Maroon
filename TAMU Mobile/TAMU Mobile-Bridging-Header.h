@@ -9,3 +9,4 @@
 #import "SVGeocoder.h"
 #import "EBCardCollectionViewLayout.h"
 #import "MYIntroductionView.h"
+#import "SKPanoramaView.h"
