@@ -44,7 +44,7 @@ class TamuMenuViewController: UITableViewController {
             
         else if indexPath.row == menuTitle.yell.rawValue{
             let yellVC = storyboard?.instantiateViewControllerWithIdentifier("yells") as! YellsViewController
-            self.navigationController?.pushViewController(yellVC, animated: true)
+            self.presentViewController(yellVC, animated: true, completion: nil)
         }
             
         else if indexPath.row == menuTitle.calendar.rawValue{
