@@ -48,12 +48,26 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         
         cell.titleLabel.text = currentDictionary["title"]
         
-        let block: SDWebImageCompletionBlock! = {(image: UIImage!, error: NSError!, cacheType: SDImageCacheType, imageURL: NSURL!) -> Void in
+        if let urlString = currentDictionary["description"]{
+            cell.newsImage.sd_setImageWithURL(validURLAddress(urlString), placeholderImage: nil) {(image: UIImage!, error: NSError!, cacheType: SDImageCacheType, imageURL: NSURL!) -> Void in
+                if cacheType == SDImageCacheType.None{
+                    if error == nil{
+                        cell.newsImage.alpha = 0
+                        UIView.animateWithDuration(0.4, animations: { () -> Void in
+                            cell.newsImage.alpha = 1.0
+                        })
+                    }
+                    else{
+                        cell.newsImage.alpha = 0
+                        cell.newsImage.image = UIImage(named: "aggies")
+                        UIView.animateWithDuration(0.4, animations: { () -> Void in
+                            cell.newsImage.alpha = 1.0
+                        })
+                    }
+                }
+            }
         }
         
-        if let urlString = currentDictionary["description"]{
-            cell.newsImage.sd_setImageWithURL(validURLAddress(urlString), completed: block)
-        }
         if let date = currentDictionary["pubDate"]{
             cell.dateLabel.text = reformattedDate(date)
         }
@@ -112,7 +126,6 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     
     func validURLAddress(htmlString : String) -> NSURL{
         var urlString = htmlString.stringByReplacingOccurrencesOfString("<img src=\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        //urlString = urlString.stringByReplacingOccurrencesOfString("\n", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         urlString = urlString.componentsSeparatedByString("\"").first!
         urlString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
 

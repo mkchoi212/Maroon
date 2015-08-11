@@ -8,6 +8,7 @@
 
 import UIKit
 import FoldingTabBar
+import SDWebImage
 
 private let kTableHeightHeader: CGFloat = 400
 private let kTableToBeCutOff: CGFloat = 70
@@ -52,14 +53,52 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 self.newsTableView.reloadData()
             }
             self.arrayCheckCellHasLoaded = [Bool](count: self.newsArray.count, repeatedValue: false)
+            self.getHeaderImage()
         })
     }
     
+    func getHeaderImage(){
+        var polishedURL = NSURL()
+        for item in feed!.items{
+            if let unpolishedURL = item.content{
+                polishedURL = polishURL(unpolishedURL)
+                break
+            }
+        }
+        
+        bigHeaderImageView.sd_setImageWithURL(polishedURL, placeholderImage: nil) {(image: UIImage!, error: NSError!, cacheType: SDImageCacheType, imageURL: NSURL!) -> Void in
+            if error == nil{
+                var overlay = UIView(frame: CGRectMake(0, 0, self.bigHeaderImageView.frame.width, self.view.frame.height))
+                overlay.backgroundColor = UIColor.blackColor()
+                overlay.alpha = 0
+                self.bigHeaderImageView.addSubview(overlay)
+                self.bigHeaderImageView.alpha = 0
+                UIView.animateWithDuration(0.4, animations: { () -> Void in
+                    self.bigHeaderImageView.alpha = 1.0
+                    overlay.alpha = 0.3
+                })
+            }
+            else{
+                self.bigHeaderImageView.alpha = 0
+                self.bigHeaderImageView.image = UIImage(named: "kyle")
+                UIView.animateWithDuration(0.4, animations: { () -> Void in
+                    self.bigHeaderImageView.alpha = 1.0
+                })
+            }
+        }
+    }
+    
+    func polishURL(urlString : String) -> NSURL{
+        var afterIMGSRC = urlString.componentsSeparatedByString("<img src=\"")[1]
+        var isolatedString = afterIMGSRC.componentsSeparatedByString("<a href=\"")[1]
+        var polishedString = isolatedString.stringByReplacingOccurrencesOfString("\">", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        var polishedURL = polishedString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+
+        return NSURL(string: polishedURL)!
+    }
 
     //MARK: table
     func configureNewsTable() {
-        
-        self.bigHeaderImageView.image = UIImage(named: "aggies")
         
         self.tableHeaderView = self.newsTableView.tableHeaderView!
         self.newsTableView.tableHeaderView = nil

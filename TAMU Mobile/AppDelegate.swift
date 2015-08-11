@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var tabBarController = mainStorybaord.instantiateViewControllerWithIdentifier("tab") as! YALFoldingTabBarController
         
         var left1 = YALTabBarItem(itemImage: UIImage(named: "explore"), leftItemImage: UIImage(named: "campus"), rightItemImage:  UIImage(named: "bus"))
-        var left2 = YALTabBarItem(itemImage: UIImage(named: "food"), leftItemImage: UIImage(named: "campus"), rightItemImage: UIImage(named: "yelp"))
+        var left2 = YALTabBarItem(itemImage: UIImage(named: "food"), leftItemImage: UIImage(named: "campus"), rightItemImage: UIImage(named: "offcampus"))
         tabBarController.leftBarItems = [left1, left2]
         
         var right1 = YALTabBarItem(itemImage: UIImage(named: "home"), leftItemImage: nil, rightItemImage: UIImage(named: "tamu"))

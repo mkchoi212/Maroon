@@ -33,11 +33,8 @@ extension String {
         else if self == "News Releases"{
             return UIColor.purpleColor()
         }
-        else if self == "Announcements"{
+        else {
             return UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 85.0/255.0, alpha: 1.0)
-        }
-        else{
-            return UIColor(red: 80.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
         }
     }
 }
