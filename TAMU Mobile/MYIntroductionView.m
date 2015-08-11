@@ -189,7 +189,7 @@
 -(void)buildBackgroundImage{
     self.BackgroundImageView = [[UIImageView alloc] initWithFrame:self.frame];
     self.BackgroundImageView.backgroundColor = [UIColor clearColor];
-    self.BackgroundImageView.contentMode = UIViewContentModeScaleToFill;
+    self.BackgroundImageView.contentMode = UIViewContentModeScaleAspectFit;
     self.BackgroundImageView.autoresizesSubviews = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self addSubview:self.BackgroundImageView];
 }

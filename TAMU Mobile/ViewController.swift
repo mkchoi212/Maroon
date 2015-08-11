@@ -130,7 +130,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        
+        searchController.endEditing(true)
         let actualPosition = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height - businessTableView.frame.height
         if actualPosition >= contentHeight {
@@ -199,6 +199,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func onMapButton() {
+        searchController.endEditing(true)
         UIView.transitionFromView(businessTableView, toView: businessMapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
         updateMapViewAnnotations()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .Plain, target: self, action: "onListButton")

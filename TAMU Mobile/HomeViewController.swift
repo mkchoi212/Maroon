@@ -64,7 +64,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                     var notification = CWStatusBarNotification()
                     notification.notificationLabelBackgroundColor = UIColor(red: 255.0/255.0, green: 204.0/255.0, blue: 0, alpha: 1.0)
                     notification.notificationStyle = CWNotificationStyle.NavigationBarNotification
-                    notification.displayNotificationWithMessage("No Internet Access. Please try again later", forDuration: 6.0)
+                    notification.displayNotificationWithMessage("No Internet Access. Offline features still available", forDuration: 6.0)
                 }
             }
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false

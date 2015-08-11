@@ -8,11 +8,18 @@
 
 import Foundation
 
-class PrivacyTableViewController: UITableViewController, UIScrollViewDelegate {
+class PrivacyTableViewController: UITableViewController, UIScrollViewDelegate, UITextViewDelegate {
     
+    @IBOutlet weak var statementText: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let RTFPath = NSBundle.mainBundle().pathForResource("statement", ofType: "rtf")!
+        let RTFData = NSData(contentsOfFile: RTFPath)!
+        let options = [NSDocumentTypeDocumentAttribute: NSRTFTextDocumentType]
+        
+        statementText.attributedText = NSAttributedString(data: RTFData, options: options, documentAttributes: nil, error: nil)
+
         tableView.tableFooterView = UIView()
         
         tableView.rowHeight = UITableViewAutomaticDimension

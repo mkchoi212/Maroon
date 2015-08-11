@@ -60,6 +60,6 @@
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Allows for your location to be displayed on the map respective to campus food venues</string>
 </dict>
 </plist>
