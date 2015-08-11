@@ -9,16 +9,17 @@
 import UIKit
 import FoldingTabBar
 import SDWebImage
+import CWStatusBarNotification
 
 private let kTableHeightHeader: CGFloat = 400
 private let kTableToBeCutOff: CGFloat = 70
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate, YALTabBarInteracting {
-
+    
     @IBOutlet var bigHeaderImageView: UIImageView!
     @IBOutlet var newsTableView: UITableView!
     @IBOutlet var dateLabel: UILabel!
-     var feed: RSSFeed?
+    var feed: RSSFeed?
     var tableHeaderView: UIView!
     var tableHeaderMaskToBeVisible: CAShapeLayer!
     var arrayCheckCellHasLoaded = [Bool]()
@@ -31,9 +32,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         stylingDateLabel()
         configureNewsTable()
         updatingTableHeaderView()
-        
     }
-
+    
     func stylingDateLabel() {
         var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MMMM dd"
@@ -45,15 +45,29 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func getNews(){
         let request = NSURLRequest(URL: NSURL(string: "http://today.tamu.edu/feed/")!)
-        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
-            if let myFeed = feed{
-                self.feed = feed
-                self.newsArray = feed!.items
-                self.newsTableView.reloadData()
+            if error == nil{
+                if let myFeed = feed{
+                    self.feed = feed
+                    self.newsArray = feed!.items
+                    self.newsTableView.reloadData()
+                }
+                self.arrayCheckCellHasLoaded = [Bool](count: self.newsArray.count, repeatedValue: false)
+                self.getHeaderImage()
             }
-            self.arrayCheckCellHasLoaded = [Bool](count: self.newsArray.count, repeatedValue: false)
-            self.getHeaderImage()
+            else{
+                let errorType = error!.localizedDescription
+                if errorType.rangeOfString("Internet connection") != nil{
+                    self.bigHeaderImageView.image = UIImage(named: "no_int")
+                    self.newsTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+                    var notification = CWStatusBarNotification()
+                    notification.notificationLabelBackgroundColor = UIColor(red: 255.0/255.0, green: 204.0/255.0, blue: 0, alpha: 1.0)
+                    notification.notificationStyle = CWNotificationStyle.NavigationBarNotification
+                    notification.displayNotificationWithMessage("No Internet Access. Please try again later", forDuration: 6.0)
+                }
+            }
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         })
     }
     
@@ -71,10 +85,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 var overlay = UIView(frame: CGRectMake(0, 0, self.bigHeaderImageView.frame.width, self.view.frame.height))
                 overlay.backgroundColor = UIColor.blackColor()
                 overlay.alpha = 0
+
                 self.bigHeaderImageView.addSubview(overlay)
                 self.bigHeaderImageView.alpha = 0
                 UIView.animateWithDuration(0.4, animations: { () -> Void in
                     self.bigHeaderImageView.alpha = 1.0
+                    self.newsTableView.alpha = 1.0
                     overlay.alpha = 0.3
                 })
             }
@@ -93,10 +109,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var isolatedString = afterIMGSRC.componentsSeparatedByString("<a href=\"")[1]
         var polishedString = isolatedString.stringByReplacingOccurrencesOfString("\">", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         var polishedURL = polishedString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-
+        
         return NSURL(string: polishedURL)!
     }
-
+    
     //MARK: table
     func configureNewsTable() {
         
@@ -147,7 +163,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("NewsCell") as! HomeNewsTableViewCell
-       
+        
         if let feed = self.feed{
             let item = feed.items[indexPath.row] as RSSItem
             if let category = item.categories.first{
@@ -199,7 +215,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         updatingTableHeaderView()
     }
     
-
+    
     func extraRightItemDidPressed(){
         let tamuVC = storyboard?.instantiateViewControllerWithIdentifier("tamu") as! TamuMenuViewController
         self.navigationController?.pushViewController(tamuVC, animated: true)
@@ -208,6 +224,4 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func closeVC(){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
 }
-

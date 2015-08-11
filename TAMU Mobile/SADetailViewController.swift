@@ -19,7 +19,7 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     private var headerImageView: UIImageView?
     private var headerContainerView: UIView?
     private var blurImageView: UIImageView?
-    private let kHeaderViewHeight: CGFloat = 54
+    private let kHeaderViewHeight: CGFloat = 64
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
     var passback = String()
@@ -67,13 +67,13 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
         headerContainerView.addSubview(headerView)
         self.headerView = headerView
         
-        let closeButton = UIButton(frame: CGRect(x: 0.0, y: 10.0, width: kHeaderViewHeight, height: kHeaderViewHeight))
+        let closeButton = UIButton(frame: CGRect(x: 0.0, y: 9.0, width: kHeaderViewHeight, height: kHeaderViewHeight))
         closeButton.setImage(UIImage(named: "close"), forState: UIControlState.Normal)
         closeButton.addTarget(self, action: "closeAction:", forControlEvents: .TouchUpInside)
         headerView.addSubview(closeButton)
         self.closeButton = closeButton
         
-        let titleLabel = UILabel(frame: CGRect(x: 0.0, y: 10.0, width: self.view.frame.width, height: kHeaderViewHeight))
+        let titleLabel = UILabel(frame: CGRect(x: 0.0, y: 9.0, width: self.view.frame.width, height: kHeaderViewHeight))
         titleLabel.text = yellName
         titleLabel.textAlignment = NSTextAlignment.Center
         titleLabel.font = UIFont(name: "GillSans-Light", size: 20)!

@@ -28,7 +28,7 @@ extension String {
             return UIColor(red: 255.0/255.0, green: 204.0/255.0, blue: 0.0/255.0, alpha: 1.0)
         }
         else if self == "Health & Environment"{
-            return UIColor(red: 76.0/255.0, green: 217.0/255.0, blue: 100.0/255.0, alpha: 1.0)
+            return UIColor(red: 76.0/255.0, green: 209.0/255.0, blue: 100.0/255.0, alpha: 1.0)
         }
         else if self == "News Releases"{
             return UIColor.purpleColor()

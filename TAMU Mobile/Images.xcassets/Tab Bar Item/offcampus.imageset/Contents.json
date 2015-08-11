@@ -6,12 +6,13 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "offcampus@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "offcampus.png"
+      "filename" : "offcampus@3x.png"
     }
   ],
   "info" : {

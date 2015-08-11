@@ -294,6 +294,7 @@
 			children = (
 				CAEDFCA31B77CE7000E33B5B /* Parallax VC */,
 				CA05372E1B649D4600B22B87 /* YellsViewController.swift */,
+				CAEDFCA51B77CEB700E33B5B /* SADetailViewController.swift */,
 				CA0537341B649D9A00B22B87 /* YellCell.swift */,
 				CAF083F61B6BFED300DC0487 /* YellInfoCell.swift */,
 				CA05373A1B64A54700B22B87 /* Yell.swift */,
@@ -598,7 +599,6 @@
 			isa = PBXGroup;
 			children = (
 				CAEDFCA41B77CEB700E33B5B /* NSLayoutConstraint+Easy.swift */,
-				CAEDFCA51B77CEB700E33B5B /* SADetailViewController.swift */,
 				CAEDFCA61B77CEB700E33B5B /* SAParallaxContainerView.swift */,
 				CAEDFCA71B77CEB700E33B5B /* SAParallaxViewCell.swift */,
 				CAEDFCA81B77CEB700E33B5B /* SAParallaxViewController.swift */,

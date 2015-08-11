@@ -92,6 +92,6 @@ class YellsViewController: SAParallaxViewController, YALTabBarInteracting {
 
     extension YellsViewController: UICollectionViewDelegateFlowLayout {
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-            return CGSize(width: UIScreen.mainScreen().bounds.size.width, height: 200)
+            return CGSize(width: UIScreen.mainScreen().bounds.size.width, height: 210)
         }
     }
