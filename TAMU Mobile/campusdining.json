@@ -854,6 +854,16 @@
                             "endTime": "20:00"
                             }
                             ]
+                  },
+                  {
+                  "name": "Commons Foodcourt",
+                  "address": "Commons",
+                  "city": "College Station",
+                  "state": "TX",
+                  "zip": "77840",
+                  "lat": "30.615518",
+                  "lon": "-96.336166",
+                  "hours": []
                   }
                   ]
 }

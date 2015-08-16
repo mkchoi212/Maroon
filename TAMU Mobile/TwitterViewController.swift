@@ -18,9 +18,8 @@ class TwitterViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let validSession = session {
                 let client = Twitter.sharedInstance().APIClient
-                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#TAMU", APIClient: client)
+                self.dataSource = TWTRUserTimelineDataSource(screenName: "12thman", APIClient: client)
             } else {
-                println("asdf")
                 let networkNotification = CWStatusBarNotification()
                 networkNotification.notificationLabelBackgroundColor = UIColor.blackColor()
                 networkNotification.displayNotificationWithMessage("Could not connect to Twitter's servers. Opps", forDuration: 2.0)

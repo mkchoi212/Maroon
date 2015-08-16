@@ -50,6 +50,7 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
         helpLabel.textAlignment = NSTextAlignment.Center
         helpLabel.alpha = 0
         tappedCell.addSubview(helpLabel)
+        
         var triggerTime = (Int64(NSEC_PER_SEC) * 1)
         
         UIView.animateWithDuration(0.7, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in

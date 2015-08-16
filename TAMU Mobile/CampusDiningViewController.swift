@@ -103,6 +103,11 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
             cell.statusLabel.text = "Closed"
         }
         
+        if foodPlace.address.name == "Commons Foodcourt"{
+            cell.statusLabel.backgroundColor = UIColor.lightGrayColor()
+            cell.statusLabel.text = "???"
+        }
+        
         return cell
     }
     
