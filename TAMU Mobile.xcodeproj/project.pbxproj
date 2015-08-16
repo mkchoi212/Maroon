@@ -14,6 +14,10 @@
 		CA0537391B64A22400B22B87 /* yells.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0537381B64A22400B22B87 /* yells.json */; };
 		CA05373B1B64A54700B22B87 /* Yell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05373A1B64A54700B22B87 /* Yell.swift */; };
 		CA12F46A1B80EDFF00922BA7 /* TAMUCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */; };
+		CA12F46C1B80F29000922BA7 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12F46B1B80F29000922BA7 /* ContactsCell.swift */; };
+		CA12F46E1B80F29E00922BA7 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12F46D1B80F29E00922BA7 /* ContactsTableViewController.swift */; };
+		CA12F4711B80F51D00922BA7 /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = CA12F4701B80F51D00922BA7 /* contacts.json */; };
+		CA12F4731B80F55700922BA7 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12F4721B80F55700922BA7 /* Contacts.swift */; };
 		CA522EE91B682C1F003C0054 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */; };
 		CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA522EEA1B6831CB003C0054 /* WebViewController.swift */; };
 		CA529CD51B687BD300113DFC /* CampusDiningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA529CD41B687BD300113DFC /* CampusDiningCell.swift */; };
@@ -130,6 +134,10 @@
 		CA0537381B64A22400B22B87 /* yells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yells.json; sourceTree = "<group>"; };
 		CA05373A1B64A54700B22B87 /* Yell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yell.swift; sourceTree = "<group>"; };
 		CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAMUCell.swift; sourceTree = "<group>"; };
+		CA12F46B1B80F29000922BA7 /* ContactsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		CA12F46D1B80F29E00922BA7 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		CA12F4701B80F51D00922BA7 /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		CA12F4721B80F55700922BA7 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CA522EEA1B6831CB003C0054 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CA529CD41B687BD300113DFC /* CampusDiningCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusDiningCell.swift; sourceTree = "<group>"; };
@@ -307,6 +315,17 @@
 			name = Yells;
 			sourceTree = "<group>";
 		};
+		CA12F46F1B80F2A400922BA7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				CA12F46B1B80F29000922BA7 /* ContactsCell.swift */,
+				CA12F46D1B80F29E00922BA7 /* ContactsTableViewController.swift */,
+				CA12F4721B80F55700922BA7 /* Contacts.swift */,
+				CA12F4701B80F51D00922BA7 /* contacts.json */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
 		CA522EEC1B6831CE003C0054 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +442,7 @@
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
 				CAB63F8D1B799D7F00D64165 /* StringExtension.swift */,
+				CA12F46F1B80F2A400922BA7 /* Contacts */,
 				CAAE0E8B1B77F5B100D7EAA5 /* Home */,
 				CAB067981B741C1100A59496 /* Intro */,
 				CABD3D641B6B100C0074143D /* Map */,
@@ -710,6 +730,7 @@
 				CAC331421B6486E60036FD6B /* Main.storyboard in Resources */,
 				CACB68DF1B6568AB007F4AD1 /* 2015.ics in Resources */,
 				CAC331691B64878E0036FD6B /* BusinessCell.xib in Resources */,
+				CA12F4711B80F51D00922BA7 /* contacts.json in Resources */,
 				CAC331471B6486E60036FD6B /* LaunchScreen.xib in Resources */,
 				CAC3316D1B64878E0036FD6B /* LabelCell.xib in Resources */,
 				CA0537291B64989A00B22B87 /* campusdining.json in Resources */,
@@ -802,6 +823,7 @@
 				CABD3D661B6B21110074143D /* Building.swift in Sources */,
 				CAC665AC1B66DE3A003E465D /* NewsTableViewController.swift in Sources */,
 				CACB68BE1B656851007F4AD1 /* MBProgressHUD.m in Sources */,
+				CA12F46C1B80F29000922BA7 /* ContactsCell.swift in Sources */,
 				CAC3316B1B64878E0036FD6B /* FiltersTableViewController.swift in Sources */,
 				CAA120AB1B65DDC9007D7802 /* JTSAnimatedGIFUtility.m in Sources */,
 				CAC331671B64878E0036FD6B /* Business.swift in Sources */,
@@ -853,7 +875,9 @@
 				CABD3D5B1B6AF0FA0074143D /* TwitterViewController.swift in Sources */,
 				CACB68B81B656851007F4AD1 /* JTCalendarMenuMonthView.m in Sources */,
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
+				CA12F46E1B80F29E00922BA7 /* ContactsTableViewController.swift in Sources */,
 				CACB68DC1B656899007F4AD1 /* UIView+convenience.m in Sources */,
+				CA12F4731B80F55700922BA7 /* Contacts.swift in Sources */,
 				CAEDFCB11B77CEB700E33B5B /* SAParallaxViewController.swift in Sources */,
 				CACB68E71B657F77007F4AD1 /* CampusFood.swift in Sources */,
 				CACB68B91B656851007F4AD1 /* JTCalendarMenuView.m in Sources */,

@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -120,7 +121,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="fus-HH-G6p" kind="show" identifier="athletics" id="r3J-VC-wiy"/>
-                        <segue destination="TdS-JX-cfK" kind="show" identifier="contacts" id="FYI-l1-f33"/>
+                        <segue destination="44p-OP-Cxu" kind="show" identifier="contacts" id="ctK-5n-nsa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iP-tw-Het" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -185,24 +186,70 @@
             <point key="canvasLocation" x="1320" y="-276"/>
         </scene>
         <!--Contacts-->
-        <scene sceneID="Cf8-Ef-Kgp">
+        <scene sceneID="DtE-H3-NdO">
             <objects>
-                <viewController id="TdS-JX-cfK" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZcD-4v-UpL"/>
-                        <viewControllerLayoutGuide type="bottom" id="ha4-6I-gmi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dzd-TT-khc">
+                <tableViewController id="44p-OP-Cxu" customClass="ContactsTableViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="22" sectionFooterHeight="22" id="pwJ-AI-9cg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Contacts" id="Bc3-MR-QlI"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="68" id="SWZ-Oq-t6w" customClass="ContactsCell" customModule="TAMU_Mobile" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SWZ-Oq-t6w" id="eJb-zf-uOb">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqm-I4-AbI">
+                                            <rect key="frame" x="8" y="14" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoU-Fd-YC0">
+                                            <rect key="frame" x="272" y="14" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="LoU-Fd-YC0" secondAttribute="height" multiplier="1:1" id="OjR-ya-DuP"/>
+                                                <constraint firstAttribute="width" constant="40" id="Wg9-HN-7dS"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" image="phone">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-Jt-TgB">
+                                            <rect key="frame" x="8" y="36" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="LoU-Fd-YC0" secondAttribute="centerY" id="8We-l0-jhd"/>
+                                        <constraint firstItem="LoU-Fd-YC0" firstAttribute="trailing" secondItem="eJb-zf-uOb" secondAttribute="trailingMargin" id="Fla-BL-yrN"/>
+                                        <constraint firstItem="dgG-Jt-TgB" firstAttribute="leading" secondItem="eJb-zf-uOb" secondAttribute="leadingMargin" id="KOG-md-xQw"/>
+                                        <constraint firstItem="LoU-Fd-YC0" firstAttribute="bottom" secondItem="dgG-Jt-TgB" secondAttribute="bottom" id="Vio-OX-Y0X"/>
+                                        <constraint firstItem="LoU-Fd-YC0" firstAttribute="top" secondItem="dqm-I4-AbI" secondAttribute="top" id="Zg7-IT-w2z"/>
+                                        <constraint firstItem="dqm-I4-AbI" firstAttribute="leading" secondItem="eJb-zf-uOb" secondAttribute="leadingMargin" id="zzs-u0-igV"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mainLabel" destination="dqm-I4-AbI" id="R4Q-8O-Kjt"/>
+                                    <outlet property="phoneButton" destination="LoU-Fd-YC0" id="uSJ-DK-DMc"/>
+                                    <outlet property="phoneLabel" destination="dgG-Jt-TgB" id="1yL-9R-Ubt"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="44p-OP-Cxu" id="haV-gp-8aG"/>
+                            <outlet property="delegate" destination="44p-OP-Cxu" id="YYw-m3-7wC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Contacts" id="O8z-PT-Bse"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0C6-tz-3qK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZa-sT-8fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="437"/>
+            <point key="canvasLocation" x="410" y="423"/>
         </scene>
         <!--Yells View Controller-->
         <scene sceneID="ioV-Qb-5P5">
@@ -1528,6 +1575,7 @@
     </scenes>
     <resources>
         <image name="close" width="20" height="19"/>
+        <image name="phone" width="53" height="53"/>
         <image name="share" width="25" height="25"/>
         <image name="share-bar" width="24" height="24"/>
         <image name="startnav" width="20" height="20"/>

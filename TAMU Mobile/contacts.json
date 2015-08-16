@@ -1,0 +1,53 @@
+{
+    "contacts": [
+             {
+             "name": "University Police",
+             "phone": "979-845-2345"
+             },
+             {
+             "name": "College Station Police",
+             "phone": "979-764-3600"
+             },
+             {
+             "name": "Corps Escort",
+             "phone": "979-845-6789"
+             },
+             {
+             "name": "Help Desk Central",
+             "phone": "979-845-8300"
+             },
+             {
+             "name": "Helpline",
+             "phone": "979-845-2700"
+             },
+             {
+             "name": "Student Health Center",
+             "phone": "979-845-1511"
+             },
+             {
+             "name": "Admissions",
+             "phone": "979-845-1060"
+             },
+             {
+             "name": "Carpool",
+             "phone": "979-693-9905"
+             },
+             {
+             "name": "Financial Aid",
+             "phone": "979-845-3236"
+             },
+             {
+             "name": "Parking",
+             "phone": "979-845-7275"
+             },
+             {
+             "name": "Housing",
+             "phone": "979-845-3158"
+             },
+            {
+            "name": "Transit Services (Buses)",
+             "phone": "979-845-7433"
+                 }
+
+        ]
+}
