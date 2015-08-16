@@ -205,14 +205,14 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoU-Fd-YC0">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoU-Fd-YC0">
                                             <rect key="frame" x="272" y="14" width="40" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="LoU-Fd-YC0" secondAttribute="height" multiplier="1:1" id="OjR-ya-DuP"/>
                                                 <constraint firstAttribute="width" constant="40" id="Wg9-HN-7dS"/>
                                             </constraints>
                                             <color key="tintColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" image="phone">
+                                            <state key="normal" backgroundImage="phone">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>

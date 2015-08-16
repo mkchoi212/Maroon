@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import MessageUI
+import CWStatusBarNotification
 
-class ContactsTableViewController: UITableViewController {
+class ContactsTableViewController: UITableViewController, MFMessageComposeViewControllerDelegate {
     var contacts = [Contacts]()
-    
+    let statusNotification = CWStatusBarNotification()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,17 +87,73 @@ class ContactsTableViewController: UITableViewController {
     }
     
     func longPressed(gestureRecognizer : UILongPressGestureRecognizer) {
-        if (gestureRecognizer.state == UIGestureRecognizerState.Ended) {
+        if (gestureRecognizer.state == UIGestureRecognizerState.Began) {
             var point = gestureRecognizer.locationInView(self.tableView)
             if let indexPath = self.tableView.indexPathForRowAtPoint(point)
             {
                 let data = contacts[indexPath.row]
-                var messagType = data.phone
-                println(messagType)
+                showActionSheet(data)
             }
         }
-        else if (gestureRecognizer.state == UIGestureRecognizerState.Began){
+    }
+    
+   func showActionSheet(contact: Contacts) {
+        let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
+
+        let textAction = UIAlertAction(title: "Text \(contact.name)", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            var messageVC = MFMessageComposeViewController()
             
+            messageVC.body = ""
+            messageVC.recipients = [contact.phone]
+            messageVC.messageComposeDelegate = self
+            messageVC.navigationBar.tintColor = UIColor.whiteColor()
+            self.presentViewController(messageVC, animated: true, completion: { () -> Void in
+                UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
+            })
+        })
+        let callAction = UIAlertAction(title: "Call \(contact.name)", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            var phoneNum = contact.phone.stringByReplacingOccurrencesOfString("-", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phoneNum)")!)
+        })
+    
+        let copyAction = UIAlertAction(title: "Copy to Clipboard", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            UIPasteboard.generalPasteboard().string = contact.phone
+            self.statusNotification.notificationLabelBackgroundColor = UIColor.whiteColor()
+            self.statusNotification.notificationLabelTextColor = UIColor.blackColor()
+            self.statusNotification.displayNotificationWithMessage("Copied to clipboard", forDuration: 2.0)
+        })
+    
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+        })
+    
+        optionMenu.addAction(textAction)
+        optionMenu.addAction(callAction)
+        optionMenu.addAction(copyAction)
+        optionMenu.addAction(cancelAction)
+    
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
+        self.statusNotification.notificationLabelBackgroundColor = UIColor.whiteColor()
+        self.statusNotification.notificationLabelTextColor = UIColor.blackColor()
+
+        switch (result.value) {
+        case MessageComposeResultCancelled.value:
+            statusNotification.displayNotificationWithMessage("Message was canceled", forDuration: 2.0)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultFailed.value:
+             statusNotification.displayNotificationWithMessage("Message failed", forDuration: 2.0)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultSent.value:
+            statusNotification.displayNotificationWithMessage("Message was sent", forDuration: 2.0)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        default:
+            break;
         }
     }
 }
