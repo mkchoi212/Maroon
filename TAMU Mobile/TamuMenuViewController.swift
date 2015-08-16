@@ -13,8 +13,10 @@ class TamuMenuViewController: UITableViewController {
         case athletics
         case yell
         case calendar
+        case contacts
         case howdy
     }
+    var categories = ["ATHLETICS", "YELLS", "CALENDAR", "CONTACTS", "HOWDY"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +28,7 @@ class TamuMenuViewController: UITableViewController {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         if indexPath.row == menuTitle.athletics.rawValue{
-            let sportsVC = AthleticsPageViewController()
-            self.navigationController?.pushViewController(sportsVC, animated: true)
+            performSegueWithIdentifier("athletics", sender: nil)
         }
             
         else if indexPath.row == menuTitle.howdy.rawValue{
@@ -46,11 +47,27 @@ class TamuMenuViewController: UITableViewController {
             let yellVC = storyboard?.instantiateViewControllerWithIdentifier("yells") as! YellsViewController
             self.presentViewController(yellVC, animated: true, completion: nil)
         }
-            
+        else if indexPath.row == menuTitle.contacts.rawValue{
+            performSegueWithIdentifier("contacts", sender: nil)
+        }
         else if indexPath.row == menuTitle.calendar.rawValue{
             let calendarVC = CalendarViewController()
             self.navigationController?.pushViewController(calendarVC, animated: true)
         }
     }
     
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TAMUCell
+        cell.mainLabel.text = categories[indexPath.row]
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        var cellHeight = CGFloat(view.frame.height / CGFloat(categories.count))
+        return cellHeight - 20.0
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories.count
+    }
 }

@@ -37,4 +37,20 @@ extension String {
             return UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 85.0/255.0, alpha: 1.0)
         }
     }
+    
+    func polishURL() -> NSURL{
+        var afterIMGSRC = self.componentsSeparatedByString("<img src=\"")[1]
+        let isolatedString = afterIMGSRC.componentsSeparatedByString("<a href=\"").last
+        if isolatedString != afterIMGSRC {
+            var polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\">", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            var polishedURL = polishedString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+            return NSURL(string: polishedURL)!
+        }
+        else{
+            let isolatedString = afterIMGSRC.componentsSeparatedByString("width").first
+             var polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            var polishedURL = polishedString.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            return NSURL(string: polishedURL)!
+        }
+    }
 }

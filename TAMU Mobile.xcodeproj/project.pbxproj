@@ -13,6 +13,7 @@
 		CA0537351B649D9A00B22B87 /* YellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0537341B649D9A00B22B87 /* YellCell.swift */; };
 		CA0537391B64A22400B22B87 /* yells.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0537381B64A22400B22B87 /* yells.json */; };
 		CA05373B1B64A54700B22B87 /* Yell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05373A1B64A54700B22B87 /* Yell.swift */; };
+		CA12F46A1B80EDFF00922BA7 /* TAMUCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */; };
 		CA522EE91B682C1F003C0054 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */; };
 		CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA522EEA1B6831CB003C0054 /* WebViewController.swift */; };
 		CA529CD51B687BD300113DFC /* CampusDiningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA529CD41B687BD300113DFC /* CampusDiningCell.swift */; };
@@ -128,6 +129,7 @@
 		CA0537341B649D9A00B22B87 /* YellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellCell.swift; sourceTree = "<group>"; };
 		CA0537381B64A22400B22B87 /* yells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yells.json; sourceTree = "<group>"; };
 		CA05373A1B64A54700B22B87 /* Yell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yell.swift; sourceTree = "<group>"; };
+		CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAMUCell.swift; sourceTree = "<group>"; };
 		CA522EE81B682C1F003C0054 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CA522EEA1B6831CB003C0054 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CA529CD41B687BD300113DFC /* CampusDiningCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusDiningCell.swift; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC331401B6486E60036FD6B /* Main.storyboard */,
+				CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */,
 				CAC331391B6486E60036FD6B /* AppDelegate.swift */,
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
@@ -781,6 +784,7 @@
 			files = (
 				CACB68B61B656851007F4AD1 /* JTCalendarDataCache.m in Sources */,
 				CAA120AE1B65DDC9007D7802 /* JTSSimpleImageDownloader.m in Sources */,
+				CA12F46A1B80EDFF00922BA7 /* TAMUCell.swift in Sources */,
 				CAA120B01B65DDC9007D7802 /* UIImage+JTSImageEffects.m in Sources */,
 				CACB68971B655739007F4AD1 /* TamuMenuViewController.swift in Sources */,
 				CAC665B41B66E5DA003E465D /* NewsTableViewCell.swift in Sources */,
@@ -942,7 +946,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -980,7 +984,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

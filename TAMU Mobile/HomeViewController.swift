@@ -28,6 +28,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        newsTableView.alpha = 0
         getNews()
         stylingDateLabel()
         configureNewsTable()
@@ -59,6 +60,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             else{
                 let errorType = error!.localizedDescription
                 if errorType.rangeOfString("Internet connection") != nil{
+                    self.newsTableView.alpha = 1.0
                     self.bigHeaderImageView.image = UIImage(named: "no_int")
                     self.newsTableView.separatorStyle = UITableViewCellSeparatorStyle.None
                     var notification = CWStatusBarNotification()
@@ -75,7 +77,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var polishedURL = NSURL()
         for item in feed!.items{
             if let unpolishedURL = item.content{
-                polishedURL = polishURL(unpolishedURL)
+                polishedURL = unpolishedURL.polishURL()
                 break
             }
         }
@@ -104,15 +106,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
-    func polishURL(urlString : String) -> NSURL{
-        var afterIMGSRC = urlString.componentsSeparatedByString("<img src=\"")[1]
-        var isolatedString = afterIMGSRC.componentsSeparatedByString("<a href=\"")[1]
-        var polishedString = isolatedString.stringByReplacingOccurrencesOfString("\">", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        var polishedURL = polishedString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-        
-        return NSURL(string: polishedURL)!
-    }
-    
+
     //MARK: table
     func configureNewsTable() {
         
