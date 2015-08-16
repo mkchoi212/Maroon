@@ -121,6 +121,7 @@ class Business : NSObject, MKAnnotation {
             self.closed = isClosed
         }
         
+        // http://stackoverflow.com/questions/25117321/iphone-call-from-app-in-swift-xcode-6
         if let phoneNumber = json["phone"].string {
             self.phoneNumber = phoneNumber
         }

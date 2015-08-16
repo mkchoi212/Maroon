@@ -24,7 +24,8 @@ class DetailViewController: UIViewController, MKMapViewDelegate, YALTabBarIntera
     @IBOutlet private weak var reviewLabel: UILabel!
     @IBOutlet private weak var phoneButton: UIButton!
     @IBOutlet private weak var businessMapView: MKMapView!
-
+    @IBOutlet weak var isOpen: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -80,6 +81,16 @@ class DetailViewController: UIViewController, MKMapViewDelegate, YALTabBarIntera
         if let displayPhone = business.displayPhone {
             phoneButton.setTitle(displayPhone, forState: UIControlState.Normal)
         }
+        
+        if (business.closed! == true){
+            isOpen.text = "CLOSED"
+            isOpen.textColor = UIColor.redColor()
+        }
+        else{
+            isOpen.text = "OPEN"
+            isOpen.textColor = UIColor.greenColor()
+        }
+        println(business.closed!)
     }
 
     @IBAction func startNavigation(sender: AnyObject) {

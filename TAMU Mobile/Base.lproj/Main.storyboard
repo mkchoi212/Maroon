@@ -11,6 +11,9 @@
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
         </mutableArray>
+        <mutableArray key="Raleway.ttf">
+            <string>Raleway</string>
+        </mutableArray>
     </customFonts>
     <scenes>
         <!--Introduction View Controller-->
@@ -667,6 +670,11 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-ky-C5p">
+                                        <rect key="frame" x="281" y="74" width="31" height="15"/>
+                                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -674,10 +682,12 @@
                                     <constraint firstItem="bUH-5v-flX" firstAttribute="centerY" secondItem="VaU-fL-um3" secondAttribute="centerY" id="8BP-Ry-pxp"/>
                                     <constraint firstItem="9DB-EL-ucO" firstAttribute="centerY" secondItem="VaU-fL-um3" secondAttribute="centerY" constant="22.5" id="DYs-2K-Mei"/>
                                     <constraint firstItem="N97-U6-hv0" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="EJT-jF-ZLr"/>
+                                    <constraint firstAttribute="trailing" secondItem="O0i-ky-C5p" secondAttribute="trailing" constant="8" id="Gm2-FM-CnQ"/>
                                     <constraint firstItem="bUH-5v-flX" firstAttribute="bottom" secondItem="VaU-fL-um3" secondAttribute="bottom" constant="-6" id="IlE-WA-tIx"/>
                                     <constraint firstAttribute="trailing" secondItem="bUH-5v-flX" secondAttribute="trailing" constant="8" id="NTD-vK-xgq"/>
                                     <constraint firstItem="Ck9-TE-Bk3" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="NtF-76-vaN"/>
                                     <constraint firstItem="Ck9-TE-Bk3" firstAttribute="top" secondItem="N97-U6-hv0" secondAttribute="bottom" constant="8" id="R7a-tB-mFM"/>
+                                    <constraint firstItem="O0i-ky-C5p" firstAttribute="top" secondItem="Fa2-n7-tyW" secondAttribute="bottom" constant="8" id="WBA-CH-Vca"/>
                                     <constraint firstItem="VaU-fL-um3" firstAttribute="centerY" secondItem="bUH-5v-flX" secondAttribute="centerY" id="XMy-ZH-WcS"/>
                                     <constraint firstItem="VaU-fL-um3" firstAttribute="top" secondItem="51U-fj-5B2" secondAttribute="top" constant="18" id="aUL-Va-hM7"/>
                                     <constraint firstItem="VaU-fL-um3" firstAttribute="leading" secondItem="51U-fj-5B2" secondAttribute="leading" constant="8" id="cnp-CE-gET"/>
@@ -754,6 +764,7 @@
                         <outlet property="businessMapView" destination="4Fh-IC-C4a" id="u5t-sl-KfJ"/>
                         <outlet property="categoryLabel" destination="Ck9-TE-Bk3" id="ikw-sZ-7Xv"/>
                         <outlet property="distanceLabel" destination="bUH-5v-flX" id="pi7-hr-sYb"/>
+                        <outlet property="isOpen" destination="O0i-ky-C5p" id="Bm6-2Y-hlm"/>
                         <outlet property="nameLabel" destination="VaU-fL-um3" id="eBG-6L-miM"/>
                         <outlet property="numberOfReviewsLabel" destination="9DB-EL-ucO" id="sTU-XQ-vKI"/>
                         <outlet property="phoneButton" destination="DfO-Wy-1qA" id="NnG-AO-phF"/>
