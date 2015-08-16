@@ -83,7 +83,12 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        if yell == "hymn"{
+            return 1
+        }
+        else{
+            return 2
+        }
     }
     
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,16 +96,22 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     public func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0{
-            return "PASSBACK"
+       if yell == "hymn"{
+            return "LYRICS"
         }
-        else{
-            return "YELL"
+       else{
+            if section == 0{
+                return "PASSBACK"
+            }
+            else{
+                return "YELL"
+            }
         }
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! YellCell
+        
         
         if indexPath.section == 0{
             cell.mainlabel.text = passback

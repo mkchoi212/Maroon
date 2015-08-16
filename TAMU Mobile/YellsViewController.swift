@@ -32,6 +32,7 @@ class YellsViewController: SAParallaxViewController, YALTabBarInteracting {
             var yell = Yell(name: yellItem["name"]!, passback: yellItem["passback"]!, call: yellItem["call"]!)
             self.yells.append(yell)
         }
+        self.yells.append(Yell(name: "Aggie War Hymn", passback: "All hail to dear old Texas A&M\nRally around Maroon and White\nGood luck to the dear old Texas Aggies\nThey are the boys who show the real old fight\nThat good old Aggie spirit thrills us\nAnd makes us yell and yell and yell\nSo let’s fight for dear old Texas A&M\nWe’re goin’ to beat you all to\nChig-gar-roo-gar-rem\nChig-gar-roo-gar-rem\nRough Tough! Real Stuff! Texas A&M\n\nGood-bye to texas university\nSo long to the Orange and the White\nGood luck to dear old Texas Aggies\nThey are the boys that show the real old fight\n“The eyes of Texas are upon you…”\nThat is the song they sing so well (Sounds like hell)\nSo good-bye to texas university\nWe’re going to beat you all to\nChig-gar-roo-gar-rem\nChig-gar-roo-gar-rem\nRough! Tough! Real Stuff! Texas A&M", call: "hymn"))
         collectionView.reloadData()
     }
     
