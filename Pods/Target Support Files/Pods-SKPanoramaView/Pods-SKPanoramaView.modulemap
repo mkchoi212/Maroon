@@ -1,0 +1,6 @@
+framework module SKPanoramaView {
+  umbrella header "Pods-SKPanoramaView-umbrella.h"
+
+  export *
+  module * { export * }
+}

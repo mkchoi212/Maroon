@@ -1,0 +1,152 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking 4
+#define COCOAPODS_VERSION_PATCH_AFNetworking 1
+
+// AFNetworking/NSURLConnection
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLConnection
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLConnection 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLConnection 4
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection 1
+
+// AFNetworking/NSURLSession
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLSession
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLSession 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLSession 4
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession 1
+
+// AFNetworking/Reachability
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Reachability
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Reachability 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Reachability 4
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Reachability 1
+
+// AFNetworking/Security
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Security
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Security 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Security 4
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Security 1
+
+// AFNetworking/Serialization
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Serialization
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Serialization 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Serialization 4
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 1
+
+// AFNetworking/UIKit
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_UIKit
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_UIKit 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 4
+#define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
+
+// BDBOAuth1Manager
+#define COCOAPODS_POD_AVAILABLE_BDBOAuth1Manager
+#define COCOAPODS_VERSION_MAJOR_BDBOAuth1Manager 1
+#define COCOAPODS_VERSION_MINOR_BDBOAuth1Manager 4
+#define COCOAPODS_VERSION_PATCH_BDBOAuth1Manager 1
+
+// CWStatusBarNotification
+#define COCOAPODS_POD_AVAILABLE_CWStatusBarNotification
+#define COCOAPODS_VERSION_MAJOR_CWStatusBarNotification 2
+#define COCOAPODS_VERSION_MINOR_CWStatusBarNotification 3
+#define COCOAPODS_VERSION_PATCH_CWStatusBarNotification 1
+
+// Fabric
+#define COCOAPODS_POD_AVAILABLE_Fabric
+#define COCOAPODS_VERSION_MAJOR_Fabric 1
+#define COCOAPODS_VERSION_MINOR_Fabric 2
+#define COCOAPODS_VERSION_PATCH_Fabric 8
+
+// Fabric/Base
+#define COCOAPODS_POD_AVAILABLE_Fabric_Base
+#define COCOAPODS_VERSION_MAJOR_Fabric_Base 1
+#define COCOAPODS_VERSION_MINOR_Fabric_Base 2
+#define COCOAPODS_VERSION_PATCH_Fabric_Base 8
+
+// FoldingTabBar
+#define COCOAPODS_POD_AVAILABLE_FoldingTabBar
+#define COCOAPODS_VERSION_MAJOR_FoldingTabBar 1
+#define COCOAPODS_VERSION_MINOR_FoldingTabBar 0
+#define COCOAPODS_VERSION_PATCH_FoldingTabBar 0
+
+// GUITabPagerViewController
+#define COCOAPODS_POD_AVAILABLE_GUITabPagerViewController
+#define COCOAPODS_VERSION_MAJOR_GUITabPagerViewController 0
+#define COCOAPODS_VERSION_MINOR_GUITabPagerViewController 0
+#define COCOAPODS_VERSION_PATCH_GUITabPagerViewController 7
+
+// GoogleMaps
+#define COCOAPODS_POD_AVAILABLE_GoogleMaps
+#define COCOAPODS_VERSION_MAJOR_GoogleMaps 1
+#define COCOAPODS_VERSION_MINOR_GoogleMaps 10
+#define COCOAPODS_VERSION_PATCH_GoogleMaps 1
+
+// NJKWebViewProgress
+#define COCOAPODS_POD_AVAILABLE_NJKWebViewProgress
+#define COCOAPODS_VERSION_MAJOR_NJKWebViewProgress 0
+#define COCOAPODS_VERSION_MINOR_NJKWebViewProgress 2
+#define COCOAPODS_VERSION_PATCH_NJKWebViewProgress 3
+
+// NJKWebViewProgress/Core
+#define COCOAPODS_POD_AVAILABLE_NJKWebViewProgress_Core
+#define COCOAPODS_VERSION_MAJOR_NJKWebViewProgress_Core 0
+#define COCOAPODS_VERSION_MINOR_NJKWebViewProgress_Core 2
+#define COCOAPODS_VERSION_PATCH_NJKWebViewProgress_Core 3
+
+// NJKWebViewProgress/ProgressView
+#define COCOAPODS_POD_AVAILABLE_NJKWebViewProgress_ProgressView
+#define COCOAPODS_VERSION_MAJOR_NJKWebViewProgress_ProgressView 0
+#define COCOAPODS_VERSION_MINOR_NJKWebViewProgress_ProgressView 2
+#define COCOAPODS_VERSION_PATCH_NJKWebViewProgress_ProgressView 3
+
+// PureLayout
+#define COCOAPODS_POD_AVAILABLE_PureLayout
+#define COCOAPODS_VERSION_MAJOR_PureLayout 2
+#define COCOAPODS_VERSION_MINOR_PureLayout 0
+#define COCOAPODS_VERSION_PATCH_PureLayout 6
+
+// SDWebImage
+#define COCOAPODS_POD_AVAILABLE_SDWebImage
+#define COCOAPODS_VERSION_MAJOR_SDWebImage 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage 3
+
+// SDWebImage/Core
+#define COCOAPODS_POD_AVAILABLE_SDWebImage_Core
+#define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage_Core 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage_Core 3
+
+// SKPanoramaView
+#define COCOAPODS_POD_AVAILABLE_SKPanoramaView
+#define COCOAPODS_VERSION_MAJOR_SKPanoramaView 0
+#define COCOAPODS_VERSION_MINOR_SKPanoramaView 1
+#define COCOAPODS_VERSION_PATCH_SKPanoramaView 1
+
+// TwitterCore
+#define COCOAPODS_POD_AVAILABLE_TwitterCore
+#define COCOAPODS_VERSION_MAJOR_TwitterCore 1
+#define COCOAPODS_VERSION_MINOR_TwitterCore 8
+#define COCOAPODS_VERSION_PATCH_TwitterCore 1
+
+// TwitterKit
+#define COCOAPODS_POD_AVAILABLE_TwitterKit
+#define COCOAPODS_VERSION_MAJOR_TwitterKit 1
+#define COCOAPODS_VERSION_MINOR_TwitterKit 8
+#define COCOAPODS_VERSION_PATCH_TwitterKit 1
+
+// VGParallaxHeader
+#define COCOAPODS_POD_AVAILABLE_VGParallaxHeader
+#define COCOAPODS_VERSION_MAJOR_VGParallaxHeader 0
+#define COCOAPODS_VERSION_MINOR_VGParallaxHeader 0
+#define COCOAPODS_VERSION_PATCH_VGParallaxHeader 6
+

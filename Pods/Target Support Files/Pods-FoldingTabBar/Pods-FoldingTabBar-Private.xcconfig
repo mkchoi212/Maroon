@@ -1,0 +1,9 @@
+#include "Pods-FoldingTabBar.xcconfig"
+CONFIGURATION_BUILD_DIR = $PODS_FRAMEWORK_BUILD_PATH
+FRAMEWORK_SEARCH_PATHS = "$PODS_FRAMEWORK_BUILD_PATH"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/FoldingTabBar" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BDBOAuth1Manager" "${PODS_ROOT}/Headers/Public/CWStatusBarNotification" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/FoldingTabBar" "${PODS_ROOT}/Headers/Public/GUITabPagerViewController" "${PODS_ROOT}/Headers/Public/GoogleMaps" "${PODS_ROOT}/Headers/Public/NJKWebViewProgress" "${PODS_ROOT}/Headers/Public/PureLayout" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/SKPanoramaView" "${PODS_ROOT}/Headers/Public/TwitterCore" "${PODS_ROOT}/Headers/Public/TwitterKit" "${PODS_ROOT}/Headers/Public/VGParallaxHeader"
+OTHER_LDFLAGS = ${PODS_FOLDINGTABBAR_OTHER_LDFLAGS} -ObjC
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

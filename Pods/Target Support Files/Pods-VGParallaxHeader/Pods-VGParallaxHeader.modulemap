@@ -1,0 +1,6 @@
+framework module VGParallaxHeader {
+  umbrella header "Pods-VGParallaxHeader-umbrella.h"
+
+  export *
+  module * { export * }
+}
