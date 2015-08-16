@@ -28,6 +28,7 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
         var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
             longitude: -96.342316, zoom: 16)
         mapView.animateToCameraPosition(camera)
+        mapView.myLocationEnabled = true
         
         loadBuildings()
         view.sendSubviewToBack(tableView)
@@ -61,7 +62,6 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
         SVGeocoder.geocode(buildingAddress, completion: { (placemarks : [AnyObject]!, response : NSHTTPURLResponse!, error : NSError!) -> Void in
             if error == nil{
                 if let placemark = placemarks?[0] as? SVPlacemark {
-                    println(placemark)
                     if placemark.formattedAddress == "College Station, TX, USA" || placemark.formattedAddress == "College Station, TX 77840, USA"{
                         var notification = CWStatusBarNotification()
                         notification.notificationLabelBackgroundColor = UIColor.blackColor()
