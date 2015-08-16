@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TAMU Mobile.xcodeproj">
+      location = "group:/Users/mikechoi/Desktop/TAMU/Maroon.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

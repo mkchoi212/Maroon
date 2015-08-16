@@ -10,15 +10,17 @@ import Foundation
 import FoldingTabBar
 import SKPanoramaView
 
-class IntroductionViewController: UIViewController, MYIntroductionDelegate {
+class IntroductionViewController: UIViewController, MYIntroductionDelegate, CLLocationManagerDelegate {
     
     var introductionView = MYIntroductionView()
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpParallaxBackground()
         animateLabel()
+        
     }
     
     func setUpParallaxBackground(){
@@ -33,13 +35,16 @@ class IntroductionViewController: UIViewController, MYIntroductionDelegate {
         var titleLabel = UILabel(frame: CGRectMake(0, self.view.bounds.height/2-self.view.bounds.height/5, self.view.bounds.width, self.view.bounds.height/4))
         self.view.addSubview(titleLabel)
         titleLabel.textAlignment = NSTextAlignment.Center
-        titleLabel.text = "TAMU"
+        titleLabel.text = "MAROON"
         titleLabel.textColor = UIColor.whiteColor()
         titleLabel.font = UIFont.boldSystemFontOfSize(60)
         
         UIView.animateWithDuration(1.0, delay: 1.0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
             titleLabel.frame = CGRectMake(0, 15, titleLabel.bounds.width, titleLabel.bounds.height)
         }) { (Bool) -> Void in
+            self.locationManager.delegate = self
+            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager.requestWhenInUseAuthorization()
             self.introductionPanels()
         }
     }
@@ -74,4 +79,26 @@ class IntroductionViewController: UIViewController, MYIntroductionDelegate {
         introductionView.delegate = self
         introductionView.showInView(self.view, animateDuration: 2.0)
     }
+    
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if (status == CLAuthorizationStatus.AuthorizedWhenInUse){
+            self.locationManager.startUpdatingLocation()
+        }
+        else if (status == CLAuthorizationStatus.Denied){
+            let alertVC = UIAlertController(title: "Background Location Access Disabled", message: "In order to be see your location on the map, please open this app's settings and set location access to 'When In Use'.", preferredStyle: UIAlertControllerStyle.Alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Destructive, handler: nil)
+            let openAction = UIAlertAction(title: "Open Settings", style: .Default) { (action) in
+                if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+            alertVC.addAction(cancelAction)
+            alertVC.addAction(openAction)
+            self.presentViewController(alertVC, animated: true, completion: nil)
+        }
+        else if (status == CLAuthorizationStatus.NotDetermined){
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
 }

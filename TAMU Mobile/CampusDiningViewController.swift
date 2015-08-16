@@ -33,6 +33,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
         longitude: -96.342316, zoom: 15)
         mapView.animateToCameraPosition(camera)
+        mapView.myLocationEnabled = true
     }
 
     func loadVenues(){

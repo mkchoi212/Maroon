@@ -19,7 +19,7 @@
         <!--Introduction View Controller-->
         <scene sceneID="2w4-gm-NwW">
             <objects>
-                <viewController storyboardIdentifier="intro" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AxQ-qQ-f1D" customClass="IntroductionViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AxQ-qQ-f1D" customClass="IntroductionViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Xv-h9-phS"/>
                         <viewControllerLayoutGuide type="bottom" id="Lge-gR-kHB"/>
@@ -79,7 +79,7 @@
         <!--A&M-->
         <scene sceneID="WsP-2f-Hqt">
             <objects>
-                <tableViewController storyboardIdentifier="tamu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VKY-nT-h0q" customClass="TamuMenuViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="tamu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VKY-nT-h0q" customClass="TamuMenuViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="22" sectionFooterHeight="22" id="nma-3M-lhw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="96" id="2lf-ag-vX9" customClass="TAMUCell" customModule="TAMU_Mobile" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="96" id="2lf-ag-vX9" customClass="TAMUCell" customModule="Maroon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="320" height="96"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2lf-ag-vX9" id="dbR-9x-fNw">
@@ -134,7 +134,7 @@
         <!--Athletics Page View Controller-->
         <scene sceneID="1nf-Ub-u58">
             <objects>
-                <viewController storyboardIdentifier="sports" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fus-HH-G6p" customClass="AthleticsPageViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sports" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fus-HH-G6p" customClass="AthleticsPageViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0PY-Yr-YEB"/>
                         <viewControllerLayoutGuide type="bottom" id="wce-Dt-T7m"/>
@@ -157,7 +157,7 @@
         <!--Schedule View Controller-->
         <scene sceneID="N0b-Xs-5iH">
             <objects>
-                <viewController storyboardIdentifier="schedule" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3gy-uJ-VAz" customClass="ScheduleViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="schedule" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3gy-uJ-VAz" customClass="ScheduleViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xk3-yH-Qyk"/>
                         <viewControllerLayoutGuide type="bottom" id="fiB-p9-X1B"/>
@@ -191,13 +191,13 @@
         <!--Contacts-->
         <scene sceneID="DtE-H3-NdO">
             <objects>
-                <tableViewController id="44p-OP-Cxu" customClass="ContactsTableViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="44p-OP-Cxu" customClass="ContactsTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="22" sectionFooterHeight="22" id="pwJ-AI-9cg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="68" id="SWZ-Oq-t6w" customClass="ContactsCell" customModule="TAMU_Mobile" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="68" id="SWZ-Oq-t6w" customClass="ContactsCell" customModule="Maroon" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SWZ-Oq-t6w" id="eJb-zf-uOb">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -257,7 +257,7 @@
         <!--Yells View Controller-->
         <scene sceneID="ioV-Qb-5P5">
             <objects>
-                <viewController storyboardIdentifier="yells" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jid-ug-VwY" customClass="YellsViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="yells" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jid-ug-VwY" customClass="YellsViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bmb-DV-Kza"/>
                         <viewControllerLayoutGuide type="bottom" id="FAF-Na-EIL"/>
@@ -302,7 +302,7 @@
         <!--Detail View Controller-->
         <scene sceneID="Zo8-a0-gUp">
             <objects>
-                <viewController storyboardIdentifier="detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o1A-gv-JGx" customClass="SADetailViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o1A-gv-JGx" customClass="SADetailViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zoH-lT-Vjl"/>
                         <viewControllerLayoutGuide type="bottom" id="Gea-8M-tp2"/>
@@ -318,7 +318,7 @@
                                     <constraint firstAttribute="height" constant="284" id="pQg-Gr-7rv"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="tqI-JC-65m" customClass="YellCell" customModule="TAMU_Mobile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="tqI-JC-65m" customClass="YellCell" customModule="Maroon" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tqI-JC-65m" id="30E-Ad-kBe">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -374,7 +374,7 @@
         <!--News Table View Controller-->
         <scene sceneID="C4J-20-6MY">
             <objects>
-                <tableViewController storyboardIdentifier="news" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w5A-4l-UGM" customClass="NewsTableViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="news" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w5A-4l-UGM" customClass="NewsTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="ElL-7d-3jp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,7 +382,7 @@
                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="uJM-P6-Nxi" customClass="NewsTableViewCell" customModule="TAMU_Mobile" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="uJM-P6-Nxi" customClass="NewsTableViewCell" customModule="Maroon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uJM-P6-Nxi" id="8GX-Mm-rec">
@@ -467,7 +467,7 @@
         <!--View Controller-->
         <scene sceneID="FPS-po-UrM">
             <objects>
-                <viewController storyboardIdentifier="yelp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZNE-VD-j8C" customClass="ViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="yelp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZNE-VD-j8C" customClass="ViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFm-XB-9sh"/>
                         <viewControllerLayoutGuide type="bottom" id="izE-UU-7U3"/>
@@ -525,7 +525,7 @@
         <!--Filters Table View Controller-->
         <scene sceneID="CUl-fi-35E">
             <objects>
-                <viewController storyboardIdentifier="FiltersTableViewController" id="fAH-4Q-Be3" customClass="FiltersTableViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FiltersTableViewController" id="fAH-4Q-Be3" customClass="FiltersTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6qr-dI-RmR"/>
                         <viewControllerLayoutGuide type="bottom" id="mrK-v3-Wgy"/>
@@ -560,7 +560,7 @@
         <!--Yelp-->
         <scene sceneID="3OL-NL-HNn">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="NDF-xg-6oE" customClass="DetailViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="NDF-xg-6oE" customClass="DetailViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A0v-5j-YMy"/>
                         <viewControllerLayoutGuide type="bottom" id="Ek4-DT-Plb"/>
@@ -670,7 +670,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-ky-C5p">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Open" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-ky-C5p">
                                         <rect key="frame" x="281" y="74" width="31" height="15"/>
                                         <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="12"/>
                                         <nil key="highlightedColor"/>
@@ -781,7 +781,7 @@
         <!--On-Campus-->
         <scene sceneID="KMw-Yg-Izm">
             <objects>
-                <viewController storyboardIdentifier="campusfood" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kz3-wr-k6s" customClass="CampusDiningViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="campusfood" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kz3-wr-k6s" customClass="CampusDiningViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v0r-lh-mzk"/>
                         <viewControllerLayoutGuide type="bottom" id="WMO-8e-w5d"/>
@@ -812,7 +812,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="87" id="0kI-DV-JJL" customClass="CampusDiningCell" customModule="TAMU_Mobile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="87" id="0kI-DV-JJL" customClass="CampusDiningCell" customModule="Maroon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="66" width="320" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0kI-DV-JJL" id="4N7-gm-sqA">
@@ -931,8 +931,8 @@
         <!--Settings-->
         <scene sceneID="Hj1-tI-1e3">
             <objects>
-                <tableViewController id="BML-fa-Sti" customClass="SettingsTableViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="58" sectionHeaderHeight="10" sectionFooterHeight="10" id="l8K-or-ctg">
+                <tableViewController id="BML-fa-Sti" customClass="SettingsTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="58" sectionHeaderHeight="10" sectionFooterHeight="10" id="l8K-or-ctg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
@@ -1058,6 +1058,30 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="iq4-LS-L28">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="df2-Zq-04a">
+                                        <rect key="frame" x="0.0" y="329.5" width="320" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="df2-Zq-04a" id="a3b-56-Dbe">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHT-CT-OLp">
+                                                    <rect key="frame" x="8" y="19" width="65" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HHT-CT-OLp" firstAttribute="leading" secondItem="a3b-56-Dbe" secondAttribute="leadingMargin" id="Tbd-Jl-GI1"/>
+                                                <constraint firstAttribute="centerY" secondItem="HHT-CT-OLp" secondAttribute="centerY" id="zAf-Da-q2u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="BML-fa-Sti" id="de2-k7-sEB"/>
@@ -1082,7 +1106,7 @@
         <!--Web View Controller-->
         <scene sceneID="Kap-KC-bfl">
             <objects>
-                <viewController storyboardIdentifier="webview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2M8-qU-hZY" customClass="WebViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="webview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2M8-qU-hZY" customClass="WebViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HjR-dC-Mt8"/>
                         <viewControllerLayoutGuide type="bottom" id="tTg-Xt-VvE"/>
@@ -1131,7 +1155,7 @@
         <!--Credit-->
         <scene sceneID="p4G-PG-mZI">
             <objects>
-                <viewController id="LP1-lp-cmu" customClass="CreditViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LP1-lp-cmu" customClass="CreditViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ktb-Is-Ndc"/>
                         <viewControllerLayoutGuide type="bottom" id="ND8-VG-NOM"/>
@@ -1169,7 +1193,7 @@
         <!--Privacy-->
         <scene sceneID="pOg-7I-p9R">
             <objects>
-                <tableViewController id="pcx-97-JTf" customClass="PrivacyTableViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="pcx-97-JTf" customClass="PrivacyTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="252" sectionHeaderHeight="22" sectionFooterHeight="22" id="UAb-wc-Mcx">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1268,7 +1292,7 @@
         <!--Campus Map-->
         <scene sceneID="cBL-Ne-R5m">
             <objects>
-                <viewController storyboardIdentifier="campusmap" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jHu-6f-5TC" customClass="CampusMapViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="campusmap" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jHu-6f-5TC" customClass="CampusMapViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ksb-px-asu"/>
                         <viewControllerLayoutGuide type="bottom" id="Vcz-oJ-5rH"/>
@@ -1387,7 +1411,7 @@
         <!--Home-->
         <scene sceneID="vLD-mu-kY8">
             <objects>
-                <viewController id="dLu-EC-m8d" customClass="HomeViewController" customModule="TAMU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dLu-EC-m8d" customClass="HomeViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WPU-qz-Csu"/>
                         <viewControllerLayoutGuide type="bottom" id="C5g-Zd-qdw"/>
@@ -1468,7 +1492,7 @@
                                     </variation>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="90" id="VY0-kj-Kfo" customClass="HomeNewsTableViewCell" customModule="TAMU_Mobile" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="90" id="VY0-kj-Kfo" customClass="HomeNewsTableViewCell" customModule="Maroon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VY0-kj-Kfo" id="35t-Pk-9cS">

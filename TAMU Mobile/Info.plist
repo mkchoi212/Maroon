@@ -42,7 +42,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Allows for your location to be displayed on the map respective to campus food venues</string>
+	<string>Allows for your location to be displayed on the map respective to campus buildings</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

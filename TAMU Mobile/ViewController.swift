@@ -12,15 +12,15 @@ import AFNetworking
 import BDBOAuth1Manager
 import FoldingTabBar
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, UISearchBarDelegate, FiltersViewControllerDelegate, YALTabBarInteracting, CLLocationManagerDelegate{
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, UISearchBarDelegate, FiltersViewControllerDelegate, YALTabBarInteracting{
     var client: YelpClient!
     
     @IBOutlet private weak var businessMapView: MKMapView! // make strong?
     @IBOutlet private weak var businessTableView: UITableView! // make strong?
-    private let yelpConsumerKey = "kRyJ7J0tzSytiDxknPNS3Q"
-    private let yelpConsumerSecret = "9ghoeZyZXYUR0GDnHnEdfqoqLkk"
-    private let yelpToken = "Gdz-5v2nxZYXLhWYT5sKUmHYj3Lr3sg8"
-    private let yelpTokenSecret = "BxxPae9UJmonyoNUXqtKx0PlgQk"
+    private let yelpConsumerKey = "wpX5b8fg8wIl4HhByeoEbw"
+    private let yelpConsumerSecret = "Y51H_rJrpftusR6FwxQwh2NmoC0"
+    private let yelpToken = "-qG1KVmJnbQ6Vp_iuG4EXMkEAZqd056L"
+    private let yelpTokenSecret = "UMQ8ZA4bB39yN4zxTIgOykY2B04"
     
     private var businesses = [Business]()
     private var searchController: UISearchBar!
@@ -56,9 +56,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         client = YelpClient(consumerKey: yelpConsumerKey, consumerSecret: yelpConsumerSecret, accessToken: yelpToken, accessSecret: yelpTokenSecret)
         fetchBusinessesWithQuery(searchTerm, params: ["limit": "20"])
         
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
     func extraLeftItemDidPressed(){
@@ -207,27 +205,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func filtersViewController(filtersViewController: FiltersTableViewController, didChangeFilters filters: [String : String]) {
         fetchBusinessesWithQuery(searchTerm, params: filters)
-    }
-    
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if (status == CLAuthorizationStatus.AuthorizedWhenInUse){
-            self.locationManager.startUpdatingLocation()
-        }
-        else if (status == CLAuthorizationStatus.Denied){
-            let alertVC = UIAlertController(title: "Background Location Access Disabled", message: "In order to be notified about your family, please open this app's settings and set location access to 'When In Use'.", preferredStyle: UIAlertControllerStyle.Alert)
-            let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Destructive, handler: nil)
-            let openAction = UIAlertAction(title: "Open Settings", style: .Default) { (action) in
-                if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
-                    UIApplication.sharedApplication().openURL(url)
-                }
-            }
-            alertVC.addAction(cancelAction)
-            alertVC.addAction(openAction)
-            self.presentViewController(alertVC, animated: true, completion: nil)
-        }
-        else if (status == CLAuthorizationStatus.NotDetermined){
-            locationManager.requestWhenInUseAuthorization()
-        }
     }
     
     func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {
