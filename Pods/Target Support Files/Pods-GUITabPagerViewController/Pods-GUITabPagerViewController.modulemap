@@ -1,6 +1,0 @@
-framework module GUITabPagerViewController {
-  umbrella header "Pods-GUITabPagerViewController-umbrella.h"
-
-  export *
-  module * { export * }
-}

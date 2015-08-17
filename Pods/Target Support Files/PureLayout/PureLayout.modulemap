@@ -1,4 +1,4 @@
-module PureLayout {
+framework module PureLayout {
   umbrella header "PureLayout-umbrella.h"
 
   export *

@@ -1,4 +1,4 @@
-module VGParallaxHeader {
+framework module VGParallaxHeader {
   umbrella header "VGParallaxHeader-umbrella.h"
 
   export *

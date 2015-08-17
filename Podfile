@@ -1,9 +1,10 @@
 platform:ios, '8.0'
 
+use_frameworks!
+
 pod 'VGParallaxHeader'
 pod 'SKPanoramaView'
 pod 'Fabric'
-pod 'EBCardCollectionViewLayout'
 pod 'CWStatusBarNotification'
 pod 'TwitterKit', '~> 1.8.1'
 pod 'TwitterCore'

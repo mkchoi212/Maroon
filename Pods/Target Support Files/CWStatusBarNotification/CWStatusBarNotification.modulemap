@@ -1,4 +1,4 @@
-module CWStatusBarNotification {
+framework module CWStatusBarNotification {
   umbrella header "CWStatusBarNotification-umbrella.h"
 
   export *

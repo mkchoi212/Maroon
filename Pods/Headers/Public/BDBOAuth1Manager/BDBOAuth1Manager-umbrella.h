@@ -1,1 +1,0 @@
-../../../Target Support Files/BDBOAuth1Manager/BDBOAuth1Manager-umbrella.h

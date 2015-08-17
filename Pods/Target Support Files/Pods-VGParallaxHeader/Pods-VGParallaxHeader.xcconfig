@@ -1,1 +1,0 @@
-PODS_VGPARALLAXHEADER_OTHER_LDFLAGS = -framework "QuartzCore"

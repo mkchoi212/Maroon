@@ -1,4 +1,4 @@
-module BDBOAuth1Manager {
+framework module BDBOAuth1Manager {
   umbrella header "BDBOAuth1Manager-umbrella.h"
 
   export *

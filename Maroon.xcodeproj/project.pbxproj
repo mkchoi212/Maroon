@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E6457D7EEEC8C63C4A88DF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9B56CA8483606939EB260 /* libPods.a */; };
+		A4091ED02D009A07CA8FAC97 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8576D3B1A9A642AF3016BDD1 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CA0537291B64989A00B22B87 /* campusdining.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0537281B64989A00B22B87 /* campusdining.json */; };
 		CA05372F1B649D4600B22B87 /* YellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA05372E1B649D4600B22B87 /* YellsViewController.swift */; };
 		CA0537351B649D9A00B22B87 /* YellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0537341B649D9A00B22B87 /* YellCell.swift */; };
@@ -125,9 +125,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3EE9B56CA8483606939EB260 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5647285B2354C4DCE96FC2A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8376285E59DFE8CC17C76065 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8576D3B1A9A642AF3016BDD1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0537281B64989A00B22B87 /* campusdining.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campusdining.json; sourceTree = "<group>"; };
 		CA05372E1B649D4600B22B87 /* YellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellsViewController.swift; sourceTree = "<group>"; };
 		CA0537341B649D9A00B22B87 /* YellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellCell.swift; sourceTree = "<group>"; };
@@ -278,7 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E6457D7EEEC8C63C4A88DF2 /* libPods.a in Frameworks */,
+				A4091ED02D009A07CA8FAC97 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +639,7 @@
 		FD4F6DA48DB0A4F53F9D11D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3EE9B56CA8483606939EB260 /* libPods.a */,
+				8576D3B1A9A642AF3016BDD1 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -657,6 +657,7 @@
 				CAC331321B6486E60036FD6B /* Resources */,
 				9C7E9BA18C177946A9F2148D /* Copy Pods Resources */,
 				CABD3D591B6AF09B0074143D /* ShellScript */,
+				F2FDA452C3E05F9AA9C6DC3B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -795,6 +796,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 0d5d7dbf250fb8bef567c9ddae0ab171a41c0428 9a533e1fbbf94f2000f6628865cacfb62009f03e302b4123fbaced08628e8576";
+		};
+		F2FDA452C3E05F9AA9C6DC3B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

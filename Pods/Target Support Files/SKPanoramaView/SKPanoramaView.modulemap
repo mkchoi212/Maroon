@@ -1,4 +1,4 @@
-module SKPanoramaView {
+framework module SKPanoramaView {
   umbrella header "SKPanoramaView-umbrella.h"
 
   export *

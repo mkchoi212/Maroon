@@ -8,7 +8,6 @@
 
 import Foundation
 import FoldingTabBar
-import EBCardCollectionViewLayout
 
 class YellsViewController: SAParallaxViewController, YALTabBarInteracting {
     var yells = [Yell]()
