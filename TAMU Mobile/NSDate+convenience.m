@@ -13,7 +13,7 @@
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *components = [gregorian components:NSCalendarUnitYear fromDate:self];
-    return [components year];
+    return (int)[components year];
 }
 
 
@@ -21,14 +21,14 @@
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *components = [gregorian components:NSCalendarUnitMonth fromDate:self];
-    return [components month];
+    return (int)[components month];
 }
 
 -(int)day {
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *components = [gregorian components:NSCalendarUnitDay fromDate:self];
-    return [components day];
+    return (int)[components day];
 }
 
 -(int)firstWeekDayInMonth {
@@ -42,7 +42,8 @@
     [comps setDay:1];
     NSDate *newDate = [gregorian dateFromComponents:comps];
     
-    return [gregorian ordinalityOfUnit:NSCalendarUnitWeekday inUnit:NSWeekCalendarUnit forDate:newDate];
+    //could be the wrong week of thingy...
+    return (int)[gregorian ordinalityOfUnit:NSCalendarUnitWeekday inUnit:NSCalendarUnitWeekOfMonth forDate:newDate];
 }
 
 -(NSDate *)offsetMonth:(int)numMonths {
@@ -91,7 +92,7 @@
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSRange rng = [cal rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
     NSUInteger numberOfDaysInMonth = rng.length;
-    return numberOfDaysInMonth;
+    return (int)numberOfDaysInMonth;
 }
 
 +(NSDate *)dateStartOfDay:(NSDate *)date {

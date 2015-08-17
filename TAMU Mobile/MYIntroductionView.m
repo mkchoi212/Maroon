@@ -355,7 +355,13 @@
             panelTitleHeight = ceilf(panelTitleHeight);
         }
         else {
-            panelTitleHeight = [panel.Title sizeWithFont:TITLE_FONT constrainedToSize:CGSizeMake(self.ContentScrollView.frame.size.width - 20, 100) lineBreakMode:NSLineBreakByWordWrapping].height;
+            NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+            paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+            paragraphStyle.alignment = NSTextAlignmentCenter;
+            
+            NSDictionary *attributes = @{ NSFontAttributeName: TITLE_FONT,
+                                          NSParagraphStyleAttributeName: paragraphStyle };
+            panelTitleHeight = [panel.Title boundingRectWithSize:CGSizeMake(self.ContentScrollView.frame.size.width - 20, 100) options:NSStringDrawingUsesFontLeading attributes:attributes context:nil].size.height;
         }
         
         panelTitleLabelFrame = CGRectMake(10, panelContentHeight+5, self.ContentScrollView.frame.size.width - 20, panelTitleHeight);
@@ -417,7 +423,15 @@
         panelDescriptionHeight = ceilf(panelDescriptionHeight);
     }
     else {
-        panelDescriptionHeight = [panel.Description sizeWithFont:DESCRIPTION_FONT constrainedToSize:CGSizeMake(self.ContentScrollView.frame.size.width - 20, 100) lineBreakMode:NSLineBreakByWordWrapping].height;
+        NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+        paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+        
+        NSDictionary *attributes = @{ NSFontAttributeName: DESCRIPTION_FONT,
+                                      NSParagraphStyleAttributeName: paragraphStyle };
+
+        
+        panelDescriptionHeight = [panel.Description boundingRectWithSize:CGSizeMake(self.ContentScrollView.frame.size.width - 20, 100) options:NSStringDrawingUsesFontLeading attributes:attributes context:nil].size.height;
+        
     }
     panelDescriptionHeight = panelDescriptionHeight + 10;
     

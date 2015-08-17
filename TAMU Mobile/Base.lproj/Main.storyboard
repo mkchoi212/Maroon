@@ -515,7 +515,7 @@
                     <connections>
                         <outlet property="businessMapView" destination="TtE-ji-ehn" id="16E-2Z-3nD"/>
                         <outlet property="businessTableView" destination="ilS-ed-acN" id="G1p-Rx-hgR"/>
-                        <segue destination="fAH-4Q-Be3" kind="show" id="ps2-Wt-vKF"/>
+                        <segue destination="fAH-4Q-Be3" kind="show" identifier="filter" id="ps2-Wt-vKF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdk-0k-Owu" sceneMemberID="firstResponder"/>
@@ -550,7 +550,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="filtersTableView" destination="2Pb-9j-AIL" id="9A2-VO-kGC"/>
-                        <segue destination="NDF-xg-6oE" kind="show" id="oxA-06-6yu"/>
+                        <segue destination="NDF-xg-6oE" kind="show" identifier="detail" id="oxA-06-6yu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2B-wI-MR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -602,12 +602,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, San Francisco, CA 94109" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsG-4m-TqS">
-                                <rect key="frame" x="16" y="276" width="226" height="15"/>
+                                <rect key="frame" x="16" y="276" width="225.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recomended Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQO-yo-EWA">
-                                <rect key="frame" x="16" y="329" width="148" height="17"/>
+                                <rect key="frame" x="16" y="329" width="148" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -636,7 +636,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-n7-tyW">
-                                        <rect key="frame" x="298" y="51" width="14" height="15"/>
+                                        <rect key="frame" x="298" y="51" width="14" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -648,12 +648,12 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DB-EL-ucO">
-                                        <rect key="frame" x="100" y="51" width="71" height="15"/>
+                                        <rect key="frame" x="100" y="51" width="71" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck9-TE-Bk3">
-                                        <rect key="frame" x="8" y="76" width="116" height="15"/>
+                                        <rect key="frame" x="8" y="76" width="116" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -665,13 +665,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-5v-flX">
-                                        <rect key="frame" x="270" y="28" width="42" height="15"/>
+                                        <rect key="frame" x="270" y="28" width="41.5" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Open" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-ky-C5p">
-                                        <rect key="frame" x="281" y="74" width="31" height="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-ky-C5p">
+                                        <rect key="frame" x="282.5" y="73.5" width="29.5" height="14"/>
                                         <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -776,7 +776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btr-uf-7kl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="-924"/>
+            <point key="canvasLocation" x="1416" y="-910"/>
         </scene>
         <!--On-Campus-->
         <scene sceneID="KMw-Yg-Izm">
@@ -959,7 +959,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="pcx-97-JTf" kind="show" id="5XV-hH-85t"/>
+                                            <segue destination="pcx-97-JTf" kind="show" identifier="privacy" id="5XV-hH-85t"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EW4-od-WcW">
@@ -982,7 +982,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="LP1-lp-cmu" kind="show" id="Jgh-UI-d7e"/>
+                                            <segue destination="LP1-lp-cmu" kind="show" identifier="credit" id="Jgh-UI-d7e"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1600,7 +1600,7 @@
                         <outlet property="bigHeaderImageView" destination="TKh-Hu-tLz" id="97M-gY-pIa"/>
                         <outlet property="dateLabel" destination="jP9-6U-bAz" id="XL7-QT-EnU"/>
                         <outlet property="newsTableView" destination="T84-TM-JXu" id="Oh2-2U-0Oo"/>
-                        <segue destination="VKY-nT-h0q" kind="show" id="Xu6-xH-qiH"/>
+                        <segue destination="VKY-nT-h0q" kind="show" identifier="am" id="Xu6-xH-qiH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I40-a7-cAb" sceneMemberID="firstResponder"/>
