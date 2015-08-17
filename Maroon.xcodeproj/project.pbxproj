@@ -692,11 +692,13 @@
 		CAC3312C1B6486E60036FD6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = coolaf;
 				TargetAttributes = {
 					CAC331331B6486E60036FD6B = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7J57M62A98;
 					};
 					CAC3314B1B6486E60036FD6B = {
 						CreatedOnToolsVersion = 6.4;
@@ -967,7 +969,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Choi (7J57M62A98)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Choi (7J57M62A98)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -990,7 +992,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "b6a617e6-f6b0-42ce-b0a2-913ee542eaf8";
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "5d851108-e0d2-4027-adbf-57be76868da5";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1013,7 +1016,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Choi (7J57M62A98)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Choi (7J57M62A98)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1029,7 +1032,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "b6a617e6-f6b0-42ce-b0a2-913ee542eaf8";
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "5d851108-e0d2-4027-adbf-57be76868da5";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1041,11 +1045,80 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Choi (7J57M62A98)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Choi (7J57M62A98)";
 				INFOPLIST_FILE = "TAMU Mobile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"BDBOAuth1Manager\"",
+					"-framework",
+					"\"CWStatusBarNotification\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"FoldingTabBar\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GUITabPagerViewController\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"NJKWebViewProgress\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SKPanoramaView\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VGParallaxHeader\"",
+				);
 				PRODUCT_NAME = Maroon;
-				PROVISIONING_PROFILE = "b6a617e6-f6b0-42ce-b0a2-913ee542eaf8";
+				PROVISIONING_PROFILE = "5d851108-e0d2-4027-adbf-57be76868da5";
 				SWIFT_OBJC_BRIDGING_HEADER = "TAMU Mobile/TAMU Mobile-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1057,11 +1130,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Choi (7J57M62A98)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Choi (7J57M62A98)";
 				INFOPLIST_FILE = "TAMU Mobile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Maroon;
-				PROVISIONING_PROFILE = "b6a617e6-f6b0-42ce-b0a2-913ee542eaf8";
+				PROVISIONING_PROFILE = "5d851108-e0d2-4027-adbf-57be76868da5";
 				SWIFT_OBJC_BRIDGING_HEADER = "TAMU Mobile/TAMU Mobile-Bridging-Header.h";
 			};
 			name = Release;

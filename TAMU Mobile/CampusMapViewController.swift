@@ -12,7 +12,7 @@ import FoldingTabBar
 import MapKit
 import CWStatusBarNotification
 
-class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting {
+class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableViewDelegate, UITableViewDataSource, YALTabBarInteracting, GMSMapViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
