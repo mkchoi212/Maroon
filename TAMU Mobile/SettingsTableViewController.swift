@@ -31,7 +31,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
                 self.showSendMailErrorAlert()
             }
         }
-        if (indexPath.section == 2){
+        if (indexPath.section == 1 && indexPath.row == 2){
             if let requestUrl = NSURL(string: "https://itunes.apple.com/us/app/maroon/id1023616502?ls=1&mt=8") {
                 UIApplication.sharedApplication().openURL(requestUrl)
             }
@@ -52,7 +52,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "coolaf"{
             let webVC = segue.destinationViewController as! WebViewController
-            webVC.urlString = "https://lifeplusdev.wordpress.com"
+            webVC.urlString = "http://www.coolaf.co"
         }
     }
     

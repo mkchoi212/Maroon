@@ -24,7 +24,7 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
         super.viewDidLoad()
         
         if (requestURL.absoluteString == nil) {
-            if urlString == "https://lifeplusdev.wordpress.com" {
+            if urlString == "http://www.coolaf.co" {
                 self.title = "cool.**"
             }
             else if urlString == "http://transport.tamu.edu/busroutes/" {

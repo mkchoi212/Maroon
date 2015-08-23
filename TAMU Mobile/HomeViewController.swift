@@ -105,7 +105,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
     }
-    
 
     //MARK: table
     func configureNewsTable() {
