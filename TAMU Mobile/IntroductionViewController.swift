@@ -35,13 +35,6 @@ class IntroductionViewController: VideoSplashViewController, CLLocationManagerDe
        // NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        tutorialButton.layer.cornerRadius = 5.0
-        homeButton.layer.cornerRadius = 5.0
-    
-    }
-    
     @IBAction func showTutorial(sender: AnyObject) {
         modalPresentationStyle = .Custom
         var modalVC = storyboard?.instantiateViewControllerWithIdentifier("tutorialVC") as! TutorialViewController

@@ -404,12 +404,11 @@
 			isa = PBXGroup;
 			children = (
 				CAD9147F1B8C1D7D00C9CD0A /* Modal Pop Over */,
+				CAD914881B8C2D3F00C9CD0A /* Modal Alert View */,
 				CAD914701B8C14F400C9CD0A /* am.m4v */,
 				CAD9146A1B8C0FA800C9CD0A /* VideoCutter.swift */,
 				CAD9146B1B8C0FA800C9CD0A /* VideoSplashViewController.swift */,
 				CAB0679A1B741D6300A59496 /* IntroductionViewController.swift */,
-				CAD914841B8C26C500C9CD0A /* ScrollContentViewController.swift */,
-				CAD914861B8C26F400C9CD0A /* TutorialViewController.swift */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -630,6 +629,15 @@
 				CAD9147C1B8C1D3D00C9CD0A /* UIViewController+AGBlurTransition.m */,
 			);
 			name = "Modal Pop Over";
+			sourceTree = "<group>";
+		};
+		CAD914881B8C2D3F00C9CD0A /* Modal Alert View */ = {
+			isa = PBXGroup;
+			children = (
+				CAD914841B8C26C500C9CD0A /* ScrollContentViewController.swift */,
+				CAD914861B8C26F400C9CD0A /* TutorialViewController.swift */,
+			);
+			name = "Modal Alert View";
 			sourceTree = "<group>";
 		};
 		CADAAD121B78115300F21E47 /* RSS Parser */ = {

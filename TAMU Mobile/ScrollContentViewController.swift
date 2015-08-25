@@ -13,7 +13,6 @@ class ScrollContentViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     var pageIndex: Int!
-    var titleText: String!
     var imageFile: String!
     
     
@@ -21,7 +20,5 @@ class ScrollContentViewController: UIViewController {
         super.viewDidLoad()
         
         self.imageView.image = UIImage(named: self.imageFile)
-        self.titleLabel.text = self.titleText
-        
     }
 }

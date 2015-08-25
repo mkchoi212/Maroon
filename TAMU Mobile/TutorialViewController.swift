@@ -11,15 +11,13 @@ import UIKit
 class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     
     var pageViewController: UIPageViewController!
-    var pageTitles: NSArray!
     var pageImages: NSArray!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        self.pageTitles = NSArray(objects: "Explore", "Today Widget")
-        self.pageImages = NSArray(objects: "page1", "page2")
+        self.pageImages = NSArray(objects: "panel1", "panel2", "panel3")
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         self.pageViewController.dataSource = self
@@ -38,9 +36,8 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func closeVC(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func restartAction(sender: AnyObject)
@@ -53,14 +50,13 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     
     func viewControllerAtIndex(index: Int) -> ScrollContentViewController
     {
-        if ((self.pageTitles.count == 0) || (index >= self.pageTitles.count)) {
+        if ((self.pageImages.count == 0) || (index >= self.pageImages.count)) {
             return ScrollContentViewController()
         }
         
         var vc: ScrollContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ScrollContentViewController
         
         vc.imageFile = self.pageImages[index] as! String
-        vc.titleText = self.pageTitles[index] as! String
         vc.pageIndex = index
         
         return vc
@@ -101,7 +97,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         
         index++
         
-        if (index == self.pageTitles.count)
+        if (index == self.pageImages.count)
         {
             return nil
         }
@@ -112,7 +108,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int
     {
-        return self.pageTitles.count
+        return self.pageImages.count
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int
