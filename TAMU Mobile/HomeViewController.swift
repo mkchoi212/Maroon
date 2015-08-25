@@ -98,7 +98,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
             else{
                 self.bigHeaderImageView.alpha = 0
-                self.bigHeaderImageView.image = UIImage(named: "kyle")
+                self.bigHeaderImageView.image = UIImage(named: "aggies")
                 UIView.animateWithDuration(0.4, animations: { () -> Void in
                     self.bigHeaderImageView.alpha = 1.0
                 })

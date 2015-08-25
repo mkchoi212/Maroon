@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AxQ-qQ-f1D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AxQ-qQ-f1D">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -9,6 +9,8 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
         </mutableArray>
         <mutableArray key="Raleway.ttf">
@@ -25,14 +27,76 @@
                         <viewControllerLayoutGuide type="bottom" id="Lge-gR-kHB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z9d-Y3-h40">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHb-7K-JZV">
+                                <rect key="frame" x="16" y="508" width="137.5" height="42.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="TUTORIAL">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTutorial:" destination="AxQ-qQ-f1D" eventType="touchUpInside" id="Jgw-OP-Arp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO AGGIELAND" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-fg-dkl">
+                                <rect key="frame" x="16" y="403" width="288" height="85"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maroon" translatesAutoresizingMaskIntoConstraints="NO" id="YgR-j9-oK1">
+                                <rect key="frame" x="40" y="20" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YgR-j9-oK1" secondAttribute="height" multiplier="15:8" id="zVT-0e-zND"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCy-gb-NCL">
+                                <rect key="frame" x="166" y="508" width="137.5" height="42.5"/>
+                                <color key="backgroundColor" red="0.41530933580000001" green="0.0" blue="0.0022924091639999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="AxQ-qQ-f1D" eventType="touchUpInside" id="5LN-hz-DoU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Exp-fg-dkl" firstAttribute="height" secondItem="Z9d-Y3-h40" secondAttribute="height" multiplier="0.15" id="3aD-ac-Rhv"/>
+                            <constraint firstItem="vCy-gb-NCL" firstAttribute="width" secondItem="tHb-7K-JZV" secondAttribute="width" id="4cD-pn-VJ6"/>
+                            <constraint firstItem="vCy-gb-NCL" firstAttribute="height" secondItem="tHb-7K-JZV" secondAttribute="height" id="869-Al-lSr"/>
+                            <constraint firstItem="Exp-fg-dkl" firstAttribute="leading" secondItem="Z9d-Y3-h40" secondAttribute="leadingMargin" id="8Lm-aK-Uf1"/>
+                            <constraint firstItem="Lge-gR-kHB" firstAttribute="top" secondItem="vCy-gb-NCL" secondAttribute="bottom" constant="17" id="IHl-VK-QMU"/>
+                            <constraint firstItem="YgR-j9-oK1" firstAttribute="leading" secondItem="Z9d-Y3-h40" secondAttribute="leadingMargin" constant="24" id="TIn-fV-Qma"/>
+                            <constraint firstItem="tHb-7K-JZV" firstAttribute="width" secondItem="Z9d-Y3-h40" secondAttribute="width" multiplier="0.43" id="U1W-UE-0tP"/>
+                            <constraint firstItem="tHb-7K-JZV" firstAttribute="leading" secondItem="Z9d-Y3-h40" secondAttribute="leadingMargin" id="UAD-FW-HO2"/>
+                            <constraint firstItem="tHb-7K-JZV" firstAttribute="height" secondItem="Z9d-Y3-h40" secondAttribute="height" multiplier="0.075" id="WSe-9B-WaJ"/>
+                            <constraint firstItem="tHb-7K-JZV" firstAttribute="top" secondItem="Exp-fg-dkl" secondAttribute="bottom" constant="20" id="a7u-Pw-JIs"/>
+                            <constraint firstItem="YgR-j9-oK1" firstAttribute="top" secondItem="2Xv-h9-phS" secondAttribute="bottom" id="cLA-kS-eEp"/>
+                            <constraint firstItem="vCy-gb-NCL" firstAttribute="trailing" secondItem="Z9d-Y3-h40" secondAttribute="trailingMargin" id="imO-Fe-111"/>
+                            <constraint firstItem="Lge-gR-kHB" firstAttribute="top" secondItem="tHb-7K-JZV" secondAttribute="bottom" constant="17" id="u5E-Ef-ss0"/>
+                            <constraint firstItem="Exp-fg-dkl" firstAttribute="trailing" secondItem="Z9d-Y3-h40" secondAttribute="trailingMargin" id="w9d-y0-MLH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YgR-j9-oK1" secondAttribute="trailing" constant="24" id="xfU-7e-6d6"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="homeButton" destination="vCy-gb-NCL" id="5kZ-G1-B8J"/>
+                        <outlet property="tutorialButton" destination="tHb-7K-JZV" id="KeR-Sp-CNR"/>
+                        <outlet property="welcomeLabel" destination="Exp-fg-dkl" id="wIp-aj-ifC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3K-cT-ZJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1733" y="-1211"/>
+            <point key="canvasLocation" x="-1733" y="-1207"/>
         </scene>
         <!--Folding Tab Bar Controller-->
         <scene sceneID="DOD-ah-vqI">
@@ -1610,6 +1674,7 @@
     </scenes>
     <resources>
         <image name="close" width="20" height="19"/>
+        <image name="maroon" width="500" height="300"/>
         <image name="phone" width="53" height="53"/>
         <image name="share" width="25" height="25"/>
         <image name="share-bar" width="24" height="24"/>

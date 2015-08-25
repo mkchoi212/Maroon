@@ -7,5 +7,4 @@
 #import "JTSImageViewController.h"
 #import "JTSImageInfo.h"
 #import "SVGeocoder.h"
-#import "MYIntroductionView.h"
 #import <SKPanoramaView/SKPanoramaView.h>

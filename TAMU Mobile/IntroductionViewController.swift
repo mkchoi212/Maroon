@@ -7,77 +7,47 @@
 //
 
 import Foundation
-import FoldingTabBar
-import SKPanoramaView
 
-class IntroductionViewController: UIViewController, MYIntroductionDelegate, CLLocationManagerDelegate {
+class IntroductionViewController: VideoSplashViewController, CLLocationManagerDelegate {
     
-    var introductionView = MYIntroductionView()
     var locationManager = CLLocationManager()
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var tutorialButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpParallaxBackground()
-        animateLabel()
+        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("am", ofType: "m4v")!)!
+        self.videoFrame = view.frame
+        self.fillMode = .AspectFill
+        self.alwaysRepeat = true
+        self.startTime = 0
+        self.duration = 19.0
+        self.alpha = 0.7
+        self.backgroundColor = UIColor.blackColor()
+        self.contentURL = url
         
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
+    
+       // NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
     }
     
-    func setUpParallaxBackground(){
-        var panoramaView = SKPanoramaView(frame: view.frame, image: UIImage(named: "kyle"))
-        panoramaView.animationDuration = 90.0
-        view.addSubview(panoramaView)
-        panoramaView.startAnimating()
-
-    }
-
-    func animateLabel(){
-        var titleLabel = UILabel(frame: CGRectMake(0, self.view.bounds.height/2-self.view.bounds.height/5, self.view.bounds.width, self.view.bounds.height/4))
-        self.view.addSubview(titleLabel)
-        titleLabel.textAlignment = NSTextAlignment.Center
-        titleLabel.text = "MAROON"
-        titleLabel.textColor = UIColor.whiteColor()
-        titleLabel.font = UIFont.boldSystemFontOfSize(60)
-        
-        UIView.animateWithDuration(1.0, delay: 1.0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
-            titleLabel.frame = CGRectMake(0, 15, titleLabel.bounds.width, titleLabel.bounds.height)
-        }) { (Bool) -> Void in
-            self.locationManager.delegate = self
-            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            self.locationManager.requestWhenInUseAuthorization()
-            self.introductionPanels()
-        }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tutorialButton.layer.cornerRadius = 5.0
+        homeButton.layer.cornerRadius = 5.0
     }
     
-    func introductionDidFinishWithType(finishType: MYFinishType) {
+    @IBAction func showTutorial(sender: AnyObject) {
+    }
+    
+    @IBAction func goHome(sender: AnyObject) {
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         presentViewController(delegate.setupAnimatedTabBar(), animated: true, completion: nil)
-        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
-    }
-
-    
-    func introductionDidChangeToPanel(panel: MYIntroductionPanel!, withIndex panelIndex: Int) {
-        if panelIndex == 4{
-            introductionView.SkipButton.setTitle("Home", forState: UIControlState.Normal)
-        }
-    }
-    
-    func introductionPanels() {
-        let panel1 = MYIntroductionPanel(withimage: UIImage(named: "panel1"), title: "WELCOME", description: "Welcome Ag!")
-        let panel2 = MYIntroductionPanel(withimage: UIImage(named: "panel2"), title: "DISCOVER", description: "Discover the A&M'S campus in a new way")
-        let panel3 = MYIntroductionPanel(withimage: UIImage(named: "panel3"), title: "FOOD", description: "Finding food in cstat has never been easier")
-        let panel4 = MYIntroductionPanel(withimage: UIImage(named: "panel4"), title: "ATHLETICS", description: "Aggie fan's ultimate tool")
-        let panel5 = MYIntroductionPanel(withimage: UIImage(named: "panel5"), title: "MORE", description: "There's much more to discover...")
-
-        self.introductionView = MYIntroductionView(frame: CGRectMake(0, 30, self.view.bounds.width, self.view.bounds.height-55), headerText: "", panels: [panel1, panel2, panel3, panel4, panel5], languageDirection: MYLanguageDirectionLeftToRight)
-        introductionView.HeaderImageView.autoresizingMask = UIViewAutoresizing.FlexibleWidth
-        introductionView.HeaderLabel.autoresizingMask = UIViewAutoresizing.FlexibleWidth
-        introductionView.HeaderView.autoresizingMask = UIViewAutoresizing.FlexibleWidth
-        introductionView.PageControl.autoresizingMask = UIViewAutoresizing.FlexibleWidth
-        introductionView.SkipButton.autoresizingMask = UIViewAutoresizing.FlexibleWidth
-        
-        introductionView.delegate = self
-        introductionView.showInView(self.view, animateDuration: 2.0)
+//        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
     }
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -101,4 +71,7 @@ class IntroductionViewController: UIViewController, MYIntroductionDelegate, CLLo
         }
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 }
