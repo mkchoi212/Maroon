@@ -1137,8 +1137,6 @@
 					"-framework",
 					"\"SDWebImage\"",
 					"-framework",
-					"\"SKPanoramaView\"",
-					"-framework",
 					"\"Security\"",
 					"-framework",
 					"\"Social\"",
@@ -1150,8 +1148,6 @@
 					"\"TwitterKit\"",
 					"-framework",
 					"\"UIKit\"",
-					"-framework",
-					"\"VGParallaxHeader\"",
 				);
 				PRODUCT_NAME = Maroon;
 				PROVISIONING_PROFILE = "5d851108-e0d2-4027-adbf-57be76868da5";

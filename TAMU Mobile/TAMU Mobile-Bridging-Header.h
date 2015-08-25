@@ -7,5 +7,4 @@
 #import "JTSImageViewController.h"
 #import "JTSImageInfo.h"
 #import "SVGeocoder.h"
-#import <SKPanoramaView/SKPanoramaView.h>
 #import "UIViewController+AGBlurTransition.h"

@@ -35,6 +35,7 @@ PODS:
     - NJKWebViewProgress/ProgressView (= 0.2.3)
   - NJKWebViewProgress/Core (0.2.3)
   - NJKWebViewProgress/ProgressView (0.2.3)
+  - PureLayout (3.0.0)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GUITabPagerViewController (~> 0.0.7)
   - NJKWebViewProgress
+  - PureLayout
   - SDWebImage
   - TwitterCore
   - TwitterKit (~> 1.8.1)
@@ -63,6 +65,7 @@ SPEC CHECKSUMS:
   GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
   GUITabPagerViewController: eccbdf4399cb4cb458d2d961e60c941cc97d5a9c
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  PureLayout: 270dfee2236f697ab1d5e2771c2e5c248495fa0d
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   TwitterCore: 0a26fb8054bc23d8986344d3dcb6602255b6aec5
   TwitterKit: 88daaebdb8bfb5847d76d8ae159841248427931d

@@ -2,6 +2,7 @@ platform:ios, '8.0'
 
 use_frameworks!
 
+pod 'PureLayout'
 pod 'Fabric'
 pod 'CWStatusBarNotification'
 pod 'TwitterKit', '~> 1.8.1'

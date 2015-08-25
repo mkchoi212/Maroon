@@ -58,6 +58,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/FoldingTabBar.framework'
   install_framework 'Pods/GUITabPagerViewController.framework'
   install_framework 'Pods/NJKWebViewProgress.framework'
+  install_framework 'Pods/PureLayout.framework'
   install_framework 'Pods/SDWebImage.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -67,5 +68,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/FoldingTabBar.framework'
   install_framework 'Pods/GUITabPagerViewController.framework'
   install_framework 'Pods/NJKWebViewProgress.framework'
+  install_framework 'Pods/PureLayout.framework'
   install_framework 'Pods/SDWebImage.framework'
 fi
