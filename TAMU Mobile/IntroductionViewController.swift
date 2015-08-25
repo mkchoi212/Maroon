@@ -39,9 +39,14 @@ class IntroductionViewController: VideoSplashViewController, CLLocationManagerDe
         super.viewWillAppear(animated)
         tutorialButton.layer.cornerRadius = 5.0
         homeButton.layer.cornerRadius = 5.0
+    
     }
     
     @IBAction func showTutorial(sender: AnyObject) {
+        modalPresentationStyle = .Custom
+        var modalVC = storyboard?.instantiateViewControllerWithIdentifier("tutorialVC") as! TutorialViewController
+        modalVC.transitioningDelegate = AG_blurTransitionDelegate
+        presentViewController(modalVC, animated: true, completion: nil)
     }
     
     @IBAction func goHome(sender: AnyObject) {

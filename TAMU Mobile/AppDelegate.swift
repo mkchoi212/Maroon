@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let statusNotification = CWStatusBarNotification()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+       
+        var pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
+        pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
+        pageControl.backgroundColor = UIColor.whiteColor()
         
         GMSServices.provideAPIKey("AIzaSyC0WTQoKQFVeTcgBhdihj-spXNVWNZgCrg")
         SVGeocoder.setGoogleMapsAPIKey("AIzaSyDMpb-f2UPrErM80V8rcAk0RVqe9Y-8z-g")
