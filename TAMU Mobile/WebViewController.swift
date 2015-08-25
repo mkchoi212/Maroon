@@ -25,7 +25,7 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
         
         if (requestURL.absoluteString == nil) {
             if urlString == "http://www.coolaf.co" {
-                self.title = "cool.**"
+                self.title = "waddup"
             }
             else if urlString == "http://transport.tamu.edu/busroutes/" {
                 self.title = "Bus Routes"

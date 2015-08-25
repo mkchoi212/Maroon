@@ -32,7 +32,7 @@ class IntroductionViewController: VideoSplashViewController, CLLocationManagerDe
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
     
-       // NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
     }
     
     @IBAction func showTutorial(sender: AnyObject) {
@@ -45,7 +45,6 @@ class IntroductionViewController: VideoSplashViewController, CLLocationManagerDe
     @IBAction func goHome(sender: AnyObject) {
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         presentViewController(delegate.setupAnimatedTabBar(), animated: true, completion: nil)
-//        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "tutorialSeen")
     }
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
