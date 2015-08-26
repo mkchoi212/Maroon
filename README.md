@@ -28,5 +28,8 @@ Currently, Apple and Google's reverse-geocoding service is used in order to get 
 Animations for tapping and holding onto contact tableview cells is slightly unnatural.
 
 #Future Features
+- Slide show in the home view of all images from the RSS feed
+- Scheduler in home screen via navgiation bar?
+
 # Licence
 TAMU Mobile is released under the MIT license. See LICENSE for details.
