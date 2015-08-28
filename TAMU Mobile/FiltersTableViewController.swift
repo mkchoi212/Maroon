@@ -133,7 +133,7 @@ class FiltersTableViewController: UIViewController, UITableViewDataSource, UITab
             return cell
         case Filters.MostPopular.rawValue, Filters.Categories.rawValue:
             
-            var cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell") as! SwitchCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell") as! SwitchCell
             cell.delegate = self
             cell.titleLabel.text = self.filtersBySection[indexPath.section].1[indexPath.row]
             
@@ -195,7 +195,7 @@ class FiltersTableViewController: UIViewController, UITableViewDataSource, UITab
     private func getCategories() -> [[String: String]] {
         // https://gist.github.com/wfalkwallace/6dd00fc2dae4c43103f6
         
-        var categories: Array<[String:String]> = [
+        let categories: Array<[String:String]> = [
             ["name" : "American, Traditional", "code": "tradamerican" ],
             ["name" : "Pizza", "code": "pizza" ],
             ["name" : "Sushi Bars", "code": "sushi" ],

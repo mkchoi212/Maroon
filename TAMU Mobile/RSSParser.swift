@@ -54,7 +54,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             {
                 self.callbackClosure = callback
                 
-                var parser : NSXMLParser = NSXMLParser(data: data)
+                let parser : NSXMLParser = NSXMLParser(data: data!)
                 parser.delegate = self
                 parser.shouldResolveExternalEntities = false
                 parser.parse()
@@ -75,7 +75,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         }
     }
     
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         
         if elementName == node_item
         {
@@ -108,7 +108,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_link
             {
-                item.setLink(self.currentElement)
+                item.setRSSLink(self.currentElement)
             }
             
             if elementName == node_guid
@@ -118,7 +118,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_publicationDate
             {
-                item.setPubDate(self.currentElement)
+                item.RSSsetPubDate(self.currentElement)
             }
             
             if elementName == node_description
@@ -133,17 +133,17 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_commentsLink
             {
-                item.setCommentsLink(self.currentElement)
+                item.RSSsetCommentsLink(self.currentElement)
             }
             
             if elementName == node_commentsCount
             {
-                item.commentsCount = self.currentElement.toInt()
+                item.commentsCount = Int(self.currentElement)
             }
             
             if elementName == node_commentRSSLink
             {
-                item.setCommentRSSLink(self.currentElement)
+                item.RSSsetCommentRSSLink(self.currentElement)
             }
             
             if elementName == node_author
@@ -166,7 +166,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_link
             {
-                feed.setLink(self.currentElement)
+                feed.setRSSLink(self.currentElement)
             }
             
             if elementName == node_description
@@ -196,8 +196,8 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         }
     }
     
-    func parser(parser: NSXMLParser, foundCharacters string: String?) {
-        self.currentElement += string!
+    func parser(parser: NSXMLParser, foundCharacters string: String) {
+        self.currentElement += string
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {

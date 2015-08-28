@@ -15,7 +15,7 @@ public class SATransitionManager: NSObject {
 //MARK: - UIViewControllerAnimatedTransitioning
 extension SATransitionManager: UIViewControllerAnimatedTransitioning {
 
-    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return animationDuration
     }
     
@@ -23,14 +23,14 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
         
-        if let toView = toViewController?.view, fromView = fromViewController?.view {
+        if let toView = toViewController?.view, _ = fromViewController?.view {
             let containerView = transitionContext.containerView()
             let duration = transitionDuration(transitionContext)
             
-            if let parallax = toViewController as? SAParallaxViewController {
+            if let _ = toViewController as? SAParallaxViewController {
                 if let detail = fromViewController as? SADetailViewController {
                     if let transitionContainer = detail.trantisionContainerView {
-                        containerView.addSubview(transitionContainer)
+                        containerView!.addSubview(transitionContainer)
                         
                         UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
                             
@@ -48,7 +48,7 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                                 if cancelled {
                                     transitionContainer.removeFromSuperview()
                                 } else {
-                                    containerView.addSubview(toView)
+                                    containerView!.addSubview(toView)
                                 }
                                 transitionContext.completeTransition(!cancelled)
                                 
@@ -56,10 +56,10 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                         })
                     }
                 }
-            } else if let parallax = fromViewController as? SAParallaxViewController {
+            } else if let _ = fromViewController as? SAParallaxViewController {
                 if let detail = toViewController as? SADetailViewController {
                     if let transitionContainer = detail.trantisionContainerView {
-                        containerView.addSubview(transitionContainer)
+                        containerView!.addSubview(transitionContainer)
                         
                         UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
                             
@@ -77,7 +77,7 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                                 if cancelled {
                                     transitionContainer.removeFromSuperview()
                                 } else {
-                                    containerView.addSubview(toView)
+                                    containerView!.addSubview(toView)
                                 }
                                 transitionContext.completeTransition(!cancelled)
                                 

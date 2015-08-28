@@ -16,7 +16,7 @@ class TwitterViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
         super.viewDidLoad()
             
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
-            if let validSession = session {
+            if let _ = session {
                 let client = Twitter.sharedInstance().APIClient
                 self.dataSource = TWTRUserTimelineDataSource(screenName: "12thman", APIClient: client)
             } else {
@@ -31,7 +31,7 @@ class TwitterViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
         // Open your own custom webview
         let mainSB = UIStoryboard(name: "Main", bundle: nil)
         let webVC = mainSB.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-        webVC.urlString = url.absoluteString!
+        webVC.urlString = url.absoluteString
         webVC.customTitle = "Twtr"
         navigationController?.pushViewController(webVC, animated: true)
     }

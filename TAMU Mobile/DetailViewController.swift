@@ -90,22 +90,22 @@ class DetailViewController: UIViewController, MKMapViewDelegate, YALTabBarIntera
             isOpen.text = "OPEN"
             isOpen.textColor = UIColor.greenColor()
         }
-        println(business.closed!)
+        print(business.closed!)
     }
 
     @IBAction func startNavigation(sender: AnyObject) {
-        var latitute:CLLocationDegrees =  self.business.latitude!
-        var longitute:CLLocationDegrees =  self.business.longitude!
+        let latitute:CLLocationDegrees =  self.business.latitude!
+        let longitute:CLLocationDegrees =  self.business.longitude!
         
         let regionDistance:CLLocationDistance = 10000
-        var coordinates = CLLocationCoordinate2DMake(latitute, longitute)
+        let coordinates = CLLocationCoordinate2DMake(latitute, longitute)
         let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
-        var options = [
+        let options = [
             MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: regionSpan.center),
             MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan: regionSpan.span)
         ]
-        var placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
-        var mapItem = MKMapItem(placemark: placemark)
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = "\(self.business.name)"
         mapItem.openInMapsWithLaunchOptions(options)
     }

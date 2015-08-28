@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
-        var pageControl = UIPageControl.appearance()
+        let pageControl = UIPageControl.appearance()
         pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
         pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
         pageControl.backgroundColor = UIColor.whiteColor()
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let barFont = UIFont(name: "GillSans-Light", size: 20)!
         let barColor = UIColor.whiteColor()
-        let barAttributes : [NSString : AnyObject] = [NSFontAttributeName : barFont , NSForegroundColorAttributeName : barColor]
+        let barAttributes : [String : AnyObject] = [NSFontAttributeName : barFont , NSForegroundColorAttributeName : barColor]
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
@@ -53,14 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupAnimatedTabBar() -> YALFoldingTabBarController {
         let mainStorybaord = UIStoryboard(name: "Main", bundle: nil)
-        var tabBarController = mainStorybaord.instantiateViewControllerWithIdentifier("tab") as! YALFoldingTabBarController
+        let tabBarController = mainStorybaord.instantiateViewControllerWithIdentifier("tab") as! YALFoldingTabBarController
         
-        var left1 = YALTabBarItem(itemImage: UIImage(named: "explore"), leftItemImage: UIImage(named: "campus"), rightItemImage:  UIImage(named: "bus"))
-        var left2 = YALTabBarItem(itemImage: UIImage(named: "food"), leftItemImage: UIImage(named: "campus"), rightItemImage: UIImage(named: "offcampus"))
+        let left1 = YALTabBarItem(itemImage: UIImage(named: "explore"), leftItemImage: UIImage(named: "campus"), rightItemImage:  UIImage(named: "bus"))
+        let left2 = YALTabBarItem(itemImage: UIImage(named: "food"), leftItemImage: UIImage(named: "campus"), rightItemImage: UIImage(named: "offcampus"))
         tabBarController.leftBarItems = [left1, left2]
         
-        var right1 = YALTabBarItem(itemImage: UIImage(named: "home"), leftItemImage: nil, rightItemImage: UIImage(named: "tamu"))
-        var right2 = YALTabBarItem(itemImage: UIImage(named: "settings"), leftItemImage: nil, rightItemImage: nil)
+        let right1 = YALTabBarItem(itemImage: UIImage(named: "home"), leftItemImage: nil, rightItemImage: UIImage(named: "tamu"))
+        let right2 = YALTabBarItem(itemImage: UIImage(named: "settings"), leftItemImage: nil, rightItemImage: nil)
         tabBarController.rightBarItems = [right1, right2]
         
         tabBarController.centerButtonImage = UIImage(named: "plus_icon")
@@ -108,7 +108,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.coolaf.TAMU" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as! NSURL
+        return urls[urls.count-1] 
         }()
     
     lazy var managedObjectModel: NSManagedObjectModel = {
@@ -124,7 +124,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("TAMU.sqlite")
         var error: NSError? = nil
         var failureReason = "There was an error creating or loading the application's saved data."
-        if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
+        do {
+            try coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
+        } catch var error1 as NSError {
+            error = error1
             coordinator = nil
             // Report any error we got.
             var dict = [String: AnyObject]()
@@ -136,6 +139,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog("Unresolved error \(error), \(error!.userInfo)")
             abort()
+        } catch {
+            fatalError()
         }
         
         return coordinator
@@ -157,11 +162,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func saveContext () {
         if let moc = self.managedObjectContext {
             var error: NSError? = nil
-            if moc.hasChanges && !moc.save(&error) {
-                // Replace this implementation with code to handle the error appropriately.
-                // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                NSLog("Unresolved error \(error), \(error!.userInfo)")
-                abort()
+            if moc.hasChanges {
+                do {
+                    try moc.save()
+                } catch let error1 as NSError {
+                    error = error1
+                    // Replace this implementation with code to handle the error appropriately.
+                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    NSLog("Unresolved error \(error), \(error!.userInfo)")
+                    abort()
+                }
             }
         }
     }

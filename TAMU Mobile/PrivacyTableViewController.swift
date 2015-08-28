@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PrivacyTableViewController: UITableViewController, UIScrollViewDelegate, UITextViewDelegate {
+class PrivacyTableViewController: UITableViewController, UITextViewDelegate {
     
     @IBOutlet weak var statementText: UITextView!
     override func viewDidLoad() {
@@ -18,7 +18,7 @@ class PrivacyTableViewController: UITableViewController, UIScrollViewDelegate, U
         let RTFData = NSData(contentsOfFile: RTFPath)!
         let options = [NSDocumentTypeDocumentAttribute: NSRTFTextDocumentType]
         
-        statementText.attributedText = NSAttributedString(data: RTFData, options: options, documentAttributes: nil, error: nil)
+        statementText.attributedText = try? NSAttributedString(data: RTFData, options: options, documentAttributes: nil)
 
         tableView.tableFooterView = UIView()
         
@@ -51,7 +51,7 @@ class PrivacyTableViewController: UITableViewController, UIScrollViewDelegate, U
     }
     
     func centerTable() {
-        var cellIdx = tableView.indexPathForRowAtPoint(CGPointMake(CGRectGetMidX(tableView.bounds), CGRectGetMidY(tableView.bounds)))
+        let cellIdx = tableView.indexPathForRowAtPoint(CGPointMake(CGRectGetMidX(tableView.bounds), CGRectGetMidY(tableView.bounds)))
         tableView.scrollToRowAtIndexPath(cellIdx!, atScrollPosition: UITableViewScrollPosition.Middle, animated: true)
     }
     

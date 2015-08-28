@@ -57,13 +57,13 @@ class TamuMenuViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TAMUCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TAMUCell
         cell.mainLabel.text = categories[indexPath.row]
         return cell
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        var cellHeight = CGFloat(view.frame.height / CGFloat(categories.count))
+        let cellHeight = CGFloat(view.frame.height / CGFloat(categories.count))
         return cellHeight - 20.0
     }
     

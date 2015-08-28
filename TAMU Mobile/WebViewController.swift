@@ -23,7 +23,7 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (requestURL.absoluteString == nil) {
+        if (requestURL.absoluteString.isEmpty) {
             if urlString == "http://www.coolaf.co" {
                 self.title = "waddup"
             }
@@ -36,7 +36,6 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
             requestURL = NSURL(string: urlString)!
         }
         else{
-            let request = NSURLRequest(URL: requestURL)
              self.title = customTitle
         }
 
@@ -52,7 +51,7 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
         let barFrame = CGRectMake(0, navbarBounds!.size.height-progressBarHeight, navbarBounds!.size.width-progressBarHeight, progressBarHeight)
         progressView = NJKWebViewProgressView(frame: barFrame)
         progressView.progressBarView.backgroundColor = UIColor.whiteColor()
-        progressView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleTopMargin
+        progressView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleTopMargin]
         
     }
     

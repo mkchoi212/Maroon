@@ -80,7 +80,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             MBProgressHUD.hideHUDForView(self.view, animated: true)
             
             }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                println(error.description)
+                print(error.description)
         }
         
     }
@@ -91,7 +91,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let json = JSON(response)
             
             if let businessessArray = json["businesses"].array {
-                self.businesses.extend(Business.businessWithDictionaries(businessessArray))
+                self.businesses.appendContentsOf(Business.businessWithDictionaries(businessessArray))
             }
             
             self.businessTableView.reloadData()
@@ -99,7 +99,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.scrollOffset += 20
             
             }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                println(error.description)
+                print(error.description)
         }
         
     }
@@ -143,22 +143,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         businessMapView.showAnnotations(businesses, animated: true)
     }
     
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation){
             var view = mapView.dequeueReusableAnnotationViewWithIdentifier("MapViewAnnotation")
             
             if view == nil {
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "MapViewAnnotation")
-                view.canShowCallout = true
+                view!.canShowCallout = true
                 
                 let imageView = UIImageView(frame: CGRectMake(0, 0, 46, 46))
                 imageView.contentMode = UIViewContentMode.ScaleAspectFit
                 imageView.sd_setImageWithURL(NSURL(string:(annotation as! Business).imageURL!))
-                view.leftCalloutAccessoryView = imageView
-                let disclosureButton = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton
-                view.rightCalloutAccessoryView = disclosureButton
+                view!.leftCalloutAccessoryView = imageView
+                let disclosureButton = UIButton(type: UIButtonType.DetailDisclosure)
+                view!.rightCalloutAccessoryView = disclosureButton
             }
-            view.annotation = annotation
+            view!.annotation = annotation
             return view
         }
         else{
@@ -166,7 +166,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailsViewController = storyboard.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
@@ -176,8 +176,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        searchTerm = searchController.text
-        fetchBusinessesWithQuery(searchTerm)
+        if searchController.text != nil{
+            searchTerm = searchController.text!
+            fetchBusinessesWithQuery(searchTerm)
+        }
     }
     
     func onFilterButton() {
@@ -190,7 +192,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func onListButton() {
-        UIView.transitionFromView(businessMapView, toView: businessTableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
+        UIView.transitionFromView(businessMapView, toView: businessTableView, duration: 1.0, options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews], completion: nil)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         
@@ -198,7 +200,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func onMapButton() {
         searchController.endEditing(true)
-        UIView.transitionFromView(businessTableView, toView: businessMapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
+        UIView.transitionFromView(businessTableView, toView: businessMapView, duration: 1.0, options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews], completion: nil)
         updateMapViewAnnotations()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .Plain, target: self, action: "onListButton")
     }
@@ -207,7 +209,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         fetchBusinessesWithQuery(searchTerm, params: filters)
     }
     
-    func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {
+    func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
         businessMapView.showAnnotations(businessMapView.annotations, animated: true)
     }
     

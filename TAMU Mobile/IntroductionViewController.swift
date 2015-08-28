@@ -18,7 +18,7 @@ class IntroductionViewController: VideoSplashViewController, CLLocationManagerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("am", ofType: "m4v")!)!
+        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("am", ofType: "m4v")!)
         self.videoFrame = view.frame
         self.fillMode = .AspectFill
         self.alwaysRepeat = true
@@ -37,7 +37,7 @@ class IntroductionViewController: VideoSplashViewController, CLLocationManagerDe
     
     @IBAction func showTutorial(sender: AnyObject) {
         modalPresentationStyle = .Custom
-        var modalVC = storyboard?.instantiateViewControllerWithIdentifier("tutorialVC") as! TutorialViewController
+        let modalVC = storyboard?.instantiateViewControllerWithIdentifier("tutorialVC") as! TutorialViewController
         modalVC.transitioningDelegate = AG_blurTransitionDelegate
         presentViewController(modalVC, animated: true, completion: nil)
     }
@@ -47,7 +47,7 @@ class IntroductionViewController: VideoSplashViewController, CLLocationManagerDe
         presentViewController(delegate.setupAnimatedTabBar(), animated: true, completion: nil)
     }
     
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if (status == CLAuthorizationStatus.AuthorizedWhenInUse){
             self.locationManager.startUpdatingLocation()
         }

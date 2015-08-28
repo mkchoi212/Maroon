@@ -24,11 +24,11 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
     func loadContacts(){
         let masterDataUrl: NSURL = NSBundle.mainBundle().URLForResource("contacts", withExtension: "json")!
         let jsonData: NSData = NSData(contentsOfURL: masterDataUrl)!
-        let jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: nil) as! NSDictionary
-        var contacts : NSArray = jsonResult["contacts"] as! NSArray
+        let jsonResult: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(jsonData, options: [])) as! NSDictionary
+        let contacts : NSArray = jsonResult["contacts"] as! NSArray
         for item in contacts{
             let contactItem = item as! [String : String]
-            var contact = Contacts(name: contactItem["name"]!, phone: contactItem["phone"]!)
+            let contact = Contacts(name: contactItem["name"]!, phone: contactItem["phone"]!)
             self.contacts.append(contact)
         }
         tableView.reloadData()
@@ -40,9 +40,9 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        var tappedCell = tableView.cellForRowAtIndexPath(indexPath) as! ContactsCell
+        let tappedCell = tableView.cellForRowAtIndexPath(indexPath) as! ContactsCell
 
-        var helpLabel = UILabel(frame: CGRectMake(0, 0, tappedCell.frame.width, tappedCell.frame.height))
+        let helpLabel = UILabel(frame: CGRectMake(0, 0, tappedCell.frame.width, tappedCell.frame.height))
         helpLabel.text = "HOLD FOR OPTIONS"
         helpLabel.textColor = UIColor.whiteColor()
         helpLabel.backgroundColor = UIColor.blackColor()
@@ -51,7 +51,7 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
         helpLabel.alpha = 0
         tappedCell.addSubview(helpLabel)
         
-        var triggerTime = (Int64(NSEC_PER_SEC) * 1)
+        let triggerTime = (Int64(NSEC_PER_SEC) * 1)
         
         UIView.animateWithDuration(0.7, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
             helpLabel.alpha = 1.0
@@ -68,14 +68,14 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ContactsCell
-        var contact = contacts[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ContactsCell
+        let contact = contacts[indexPath.row]
         cell.mainLabel.text = contact.name
         cell.phoneLabel.text = contact.phone
         cell.phoneButton.addTarget(self, action: "callNumber:", forControlEvents: UIControlEvents.TouchUpInside)
         cell.phoneButton.tag = indexPath.row
         
-        var longPress = UILongPressGestureRecognizer(target: self, action: "longPressed:")
+        let longPress = UILongPressGestureRecognizer(target: self, action: "longPressed:")
         cell.addGestureRecognizer(longPress)
         
         return cell
@@ -89,7 +89,7 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
     
     func longPressed(gestureRecognizer : UILongPressGestureRecognizer) {
         if (gestureRecognizer.state == UIGestureRecognizerState.Began) {
-            var point = gestureRecognizer.locationInView(self.tableView)
+            let point = gestureRecognizer.locationInView(self.tableView)
             if let indexPath = self.tableView.indexPathForRowAtPoint(point)
             {
                 let data = contacts[indexPath.row]
@@ -102,8 +102,8 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
         let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
 
         let textAction = UIAlertAction(title: "Text \(contact.name)", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            var messageVC = MFMessageComposeViewController()
+            (alert: UIAlertAction) -> Void in
+            let messageVC = MFMessageComposeViewController()
             
             messageVC.body = ""
             messageVC.recipients = [contact.phone]
@@ -114,13 +114,13 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
             })
         })
         let callAction = UIAlertAction(title: "Call \(contact.name)", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            var phoneNum = contact.phone.stringByReplacingOccurrencesOfString("-", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            (alert: UIAlertAction) -> Void in
+            let phoneNum = contact.phone.stringByReplacingOccurrencesOfString("-", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
             UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phoneNum)")!)
         })
     
         let copyAction = UIAlertAction(title: "Copy to Clipboard", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
+            (alert: UIAlertAction) -> Void in
             UIPasteboard.generalPasteboard().string = contact.phone
             self.statusNotification.notificationLabelBackgroundColor = UIColor.whiteColor()
             self.statusNotification.notificationLabelTextColor = UIColor.blackColor()
@@ -128,7 +128,7 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
         })
     
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
-            (alert: UIAlertAction!) -> Void in
+            (alert: UIAlertAction) -> Void in
         })
     
         optionMenu.addAction(textAction)
@@ -139,18 +139,18 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
         self.presentViewController(optionMenu, animated: true, completion: nil)
     }
     
-    func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
         self.statusNotification.notificationLabelBackgroundColor = UIColor.whiteColor()
         self.statusNotification.notificationLabelTextColor = UIColor.blackColor()
 
-        switch (result.value) {
-        case MessageComposeResultCancelled.value:
+        switch (result.rawValue) {
+        case MessageComposeResultCancelled.rawValue:
             statusNotification.displayNotificationWithMessage("Message was canceled", forDuration: 2.0)
             self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultFailed.value:
+        case MessageComposeResultFailed.rawValue:
              statusNotification.displayNotificationWithMessage("Message failed", forDuration: 2.0)
             self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultSent.value:
+        case MessageComposeResultSent.rawValue:
             statusNotification.displayNotificationWithMessage("Message was sent", forDuration: 2.0)
             self.dismissViewControllerAnimated(true, completion: nil)
         default:

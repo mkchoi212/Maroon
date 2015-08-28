@@ -22,8 +22,8 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         self.pageViewController.dataSource = self
         
-        var startVC = self.viewControllerAtIndex(0) as ScrollContentViewController
-        var viewControllers = [startVC]
+        let startVC = self.viewControllerAtIndex(0) as ScrollContentViewController
+        let viewControllers = [startVC]
         
         self.pageViewController.setViewControllers(viewControllers, direction: .Forward, animated: true, completion: nil)
         
@@ -42,8 +42,8 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     
     @IBAction func restartAction(sender: AnyObject)
     {
-        var startVC = self.viewControllerAtIndex(0) as ScrollContentViewController
-        var viewControllers = [startVC]
+        let startVC = self.viewControllerAtIndex(0) as ScrollContentViewController
+        let viewControllers = [startVC]
         
         pageViewController.setViewControllers(viewControllers, direction: .Forward, animated: true, completion: nil)
     }
@@ -54,7 +54,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
             return ScrollContentViewController()
         }
         
-        var vc: ScrollContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ScrollContentViewController
+        let vc: ScrollContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ScrollContentViewController
         
         vc.imageFile = self.pageImages[index] as! String
         vc.pageIndex = index
@@ -70,7 +70,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
     {
         
-        var vc = viewController as! ScrollContentViewController
+        let vc = viewController as! ScrollContentViewController
         var index = vc.pageIndex as Int
         
         
@@ -87,7 +87,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        var vc = viewController as! ScrollContentViewController
+        let vc = viewController as! ScrollContentViewController
         var index = vc.pageIndex as Int
         
         if (index == NSNotFound)

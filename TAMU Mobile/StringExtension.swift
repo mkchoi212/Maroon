@@ -11,13 +11,13 @@ import Foundation
 extension String {
     
     func getHour() -> Int {
-        var fullTime = split(self) {$0 == ":"}
-        return fullTime.first!.toInt()!
+        let fullTime = self.characters.split {$0 == ":"}.map { String($0) }
+        return Int(fullTime.first!)!
     }
     
     func getMinutes() -> Int {
-        var fullTime = split(self) {$0 == ":"}
-        return fullTime.last!.toInt()!
+        let fullTime = self.characters.split {$0 == ":"}.map { String($0) }
+        return Int(fullTime.last!)!
     }
     
     func getCategoryColor() -> UIColor{
@@ -39,17 +39,18 @@ extension String {
     }
     
     func polishURL() -> NSURL{
-        var afterIMGSRC = self.componentsSeparatedByString("<img src=\"")[1]
+        let afterIMGSRC = self.componentsSeparatedByString("<img src=\"")[1]
         let isolatedString = afterIMGSRC.componentsSeparatedByString("<a href=\"").last
         if isolatedString != afterIMGSRC {
-            var polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\">", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-            var polishedURL = polishedString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+            let polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\">", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+           
+            let polishedURL = polishedString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLPathAllowedCharacterSet())!
             return NSURL(string: polishedURL)!
         }
         else{
             let isolatedString = afterIMGSRC.componentsSeparatedByString("width").first
-             var polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-            var polishedURL = polishedString.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+             let polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            let polishedURL = polishedString.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
             return NSURL(string: polishedURL)!
         }
     }

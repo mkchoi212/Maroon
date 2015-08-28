@@ -15,7 +15,7 @@ class RSSFeed: NSObject, NSCoding {
     var title: String?
     var link: NSURL?
     
-    func setLink(let linkString: String!)
+    func setRSSLink(let linkString: String!)
     {
         link = NSURL(string: linkString)
     }
@@ -39,7 +39,7 @@ class RSSFeed: NSObject, NSCoding {
     }
     
     // MARK: NSCoding
-    required init(coder aDecoder: NSCoder)
+    required init?(coder aDecoder: NSCoder)
     {
         super.init()
         

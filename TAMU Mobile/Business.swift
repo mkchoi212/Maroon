@@ -31,7 +31,7 @@ class Business : NSObject, MKAnnotation {
         }
     }
     
-    var title: String {
+    var title: String? {
         get {
             return name
         }
@@ -40,24 +40,24 @@ class Business : NSObject, MKAnnotation {
     init(json: JSON) {
         var categoryNames = [String]()
         
-        if var categoryArray = json["categories"].array {
+        if let categoryArray = json["categories"].array {
             categoryNames = categoryArray.map { array in
-                if var category = array[0].string {
+                if let category = array[0].string {
                     return category
                 }
                 return ""
             }
         }
         
-        self.categories = ", ".join(categoryNames)
+        self.categories = categoryNames.joinWithSeparator(", ")
         
-        if var name = json["name"].string {
+        if let name = json["name"].string {
             self.name = name
         } else {
             self.name = ""
         }
         
-        if var imageURL = json["image_url"].string {
+        if let imageURL = json["image_url"].string {
             self.imageURL = imageURL
         }
         

@@ -30,7 +30,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         
         loadVenues()
-        var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
+        let camera = GMSCameraPosition.cameraWithLatitude(30.614919,
         longitude: -96.342316, zoom: 15)
         mapView.animateToCameraPosition(camera)
         mapView.myLocationEnabled = true
@@ -44,17 +44,17 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         let itemArray = json["locations"].arrayObject!
     
         for item in itemArray{
-            var marker = GMSMarker()
+            let marker = GMSMarker()
       
             let subJson = item as! [String : AnyObject]
-            var venue = CampusFood()
-            var address = FoodLocation(name : subJson["name"] as! String, address: subJson["address"] as! String, city: subJson["city"] as! String, state: subJson["state"] as! String, zip: subJson["zip"] as! String, lat: subJson["lat"] as! String, lon: subJson["lon"] as! String)
+            let venue = CampusFood()
+            let address = FoodLocation(name : subJson["name"] as! String, address: subJson["address"] as! String, city: subJson["city"] as! String, state: subJson["state"] as! String, zip: subJson["zip"] as! String, lat: subJson["lat"] as! String, lon: subJson["lon"] as! String)
             venue.address = address
 
             marker.position = CLLocationCoordinate2DMake((subJson["lat"] as! NSString).doubleValue, (subJson["lon"] as! NSString).doubleValue)
             marker.title = subJson["name"] as! String
             
-            var hoursObject = subJson["hours"] as! [AnyObject]
+            let hoursObject = subJson["hours"] as! [AnyObject]
             var hoursArray = [Hours]()
             for day in hoursObject{
                 let dayHours = Hours(day: day["day"] as! String, begTime: day["begTime"] as! String, endTime: day["endTime"] as! String)
@@ -82,7 +82,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CampusDiningCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CampusDiningCell
         var foodPlace : CampusFood
 
         if searchActive {
@@ -128,7 +128,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
         selectedVenue = foodPlace
         
         self.onMapButton()
-        var camera = GMSCameraPosition.cameraWithLatitude((foodPlace.address.lat as NSString).doubleValue,
+        let camera = GMSCameraPosition.cameraWithLatitude((foodPlace.address.lat as NSString).doubleValue,
             longitude: (foodPlace.address.lon as NSString).doubleValue, zoom: 18)
         mapView.animateToCameraPosition(camera)
         
@@ -148,11 +148,11 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     func isOpen(){
         let todayDate = getDayOfWeek()
         let now = NSDate()
-        var open = Bool()
+        _ = Bool()
         
-        for (index, venue) in enumerate(campusPlaces){
+        for (index, venue) in campusPlaces.enumerate(){
             for businessDay in venue.hours{
-                if businessDay.day.toInt() == todayDate{
+                if Int(businessDay.day) == todayDate{
                     let begTime = now.dateAt(hours: businessDay.begTime.getHour(), minutes: businessDay.begTime.getMinutes())
                     let endTime = now.dateAt(hours: businessDay.endTime.getHour(), minutes: businessDay.endTime.getMinutes())
                     
@@ -178,7 +178,7 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     func getDayOfWeek() -> Int {
         let now = NSDate()
         let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        let myComponents = myCalendar?.components(NSCalendarUnit.CalendarUnitWeekday, fromDate: now)
+        let myComponents = myCalendar?.components(NSCalendarUnit.Weekday, fromDate: now)
         let weekDay = myComponents?.weekday
         return weekDay!
     }
@@ -187,14 +187,14 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     //MARK : BAR BUTTON ITEMS
     
     func onListButton() {
-        UIView.transitionFromView(mapView, toView: tableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
+        UIView.transitionFromView(mapView, toView: tableView, duration: 1.0, options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews], completion: nil)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         searchBar.endEditing(true)
     }
     
     func onMapButton() {
-        UIView.transitionFromView(tableView, toView: mapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion : nil)
+        UIView.transitionFromView(tableView, toView: mapView, duration: 1.0, options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews], completion : nil)
         searchBar.endEditing(true)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .Plain, target: self, action: "onListButton")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "startnav"), style: .Plain, target: self, action: "startNav")
@@ -210,12 +210,12 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
             let regionDistance:CLLocationDistance = 10000
             let coordinates = CLLocationCoordinate2D(latitude: (selectedVenue.address.lat as NSString).doubleValue, longitude: (selectedVenue.address.lon as NSString).doubleValue)
             let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
-            var options = [
+            let options = [
                 MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: regionSpan.center),
                 MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan: regionSpan.span), MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeWalking
             ]
-            var placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
-            var mapItem = MKMapItem(placemark: placemark)
+            let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+            let mapItem = MKMapItem(placemark: placemark)
             mapItem.name = "\(selectedVenue.address.name)"
             mapItem.openInMapsWithLaunchOptions(options)
         }

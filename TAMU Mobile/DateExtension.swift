@@ -10,17 +10,17 @@ extension NSDate
     
     It returns a new date at the specified hours and minutes of the receiver
     
-    :param: hours: The hours value
-    :param: minutes: The new minutes
+    - parameter hours:: The hours value
+    - parameter minutes:: The new minutes
     
-    :returns: a new NSDate with the same year/month/day as the receiver, but with the specified hours/minutes values
+    - returns: a new NSDate with the same year/month/day as the receiver, but with the specified hours/minutes values
     */
-    func dateAt(#hours: Int, minutes: Int) -> NSDate
+    func dateAt(hours hours: Int, minutes: Int) -> NSDate
     {
         let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
         
         //get the month/day/year componentsfor today's date.
-        let date_components = calendar.components(NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitDay, fromDate: self)
+        let date_components = calendar.components([NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.Day], fromDate: self)
 
         date_components.hour = hours
         date_components.minute = minutes
@@ -33,7 +33,6 @@ extension NSDate
 }
 //-------------------------------------------------------------
 //Tell the system that NSDates can be compared with ==, >, >=, <, and <= operators
-extension NSDate: Equatable {}
 extension NSDate: Comparable {}
 
 //-------------------------------------------------------------

@@ -83,7 +83,7 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! NewsTableViewCell
         let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
        
-        webVC.urlString = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        webVC.urlString = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLPathAllowedCharacterSet())!
         webVC.customTitle = selectedCell.titleLabel.text!
         
         let navVC = UINavigationController(rootViewController: webVC)
@@ -95,11 +95,11 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     }
     
     func shareArticle(sender : AnyObject){
-        var cell = tableView.indexPathForRowAtPoint(sender.convertPoint(CGPointZero, toView: tableView))
+        let cell = tableView.indexPathForRowAtPoint(sender.convertPoint(CGPointZero, toView: tableView))
         let dictionary = xmlParser.arrParsedData[cell!.section] as Dictionary<String, String>
 
-        let url = dictionary["link"]!.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-        let articleURL = NSURL(string: url)
+        let url = dictionary["link"]!.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLPathAllowedCharacterSet())
+        let articleURL = NSURL(string: url!)
         
         let shareText = "\nCheckout this article I found on the TAMU iOS mobile app by cool.io"
         let activityVC = UIActivityViewController(activityItems: [articleURL!, shareText], applicationActivities: nil)
@@ -127,7 +127,7 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     func validURLAddress(htmlString : String) -> NSURL{
         var urlString = htmlString.stringByReplacingOccurrencesOfString("<img src=\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         urlString = urlString.componentsSeparatedByString("\"").first!
-        urlString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        urlString = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLPathAllowedCharacterSet())!
 
         return NSURL(string: urlString)!
     }
@@ -141,7 +141,7 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     }
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        var spacing = UIView()
+        let spacing = UIView()
         spacing.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
         return spacing
     }

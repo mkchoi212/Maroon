@@ -17,13 +17,13 @@ class CreditViewController: UIViewController, UITextViewDelegate {
         let RTFData = NSData(contentsOfFile: RTFPath)!
         let options = [NSDocumentTypeDocumentAttribute: NSRTFTextDocumentType]
 
-        textview.attributedText = NSAttributedString(data: RTFData, options: options, documentAttributes: nil, error: nil)
+        textview.attributedText = try? NSAttributedString(data: RTFData, options: options, documentAttributes: nil)
     }
     
     func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
         let mainSB = UIStoryboard(name: "Main", bundle: nil)
         let webVC = mainSB.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-        webVC.urlString = URL.absoluteString!
+        webVC.urlString = URL.absoluteString
         navigationController?.pushViewController(webVC, animated: true)
         return false
     }

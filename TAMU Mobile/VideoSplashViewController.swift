@@ -58,8 +58,6 @@ public class VideoSplashViewController: UIViewController {
         moviePlayer.scalingMode = MPMovieScalingMode.Fill
       case .None:
         moviePlayer.scalingMode = MPMovieScalingMode.None
-      default:
-        moviePlayer.scalingMode = MPMovieScalingMode.None
       }
     }
   }

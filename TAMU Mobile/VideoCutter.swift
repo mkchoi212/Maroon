@@ -24,29 +24,34 @@ public class VideoCutter: NSObject {
     dispatch_async(dispatch_get_global_queue(priority, 0)) {
       let asset = AVURLAsset(URL: url, options: nil)
       let exportSession = AVAssetExportSession(asset: asset, presetName: "AVAssetExportPresetHighestQuality")
-      var paths: NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-      var outputURL = paths.objectAtIndex(0) as! String
-      var manager = NSFileManager.defaultManager()
-      manager.createDirectoryAtPath(outputURL, withIntermediateDirectories: true, attributes: nil, error: nil)
-      outputURL = outputURL.stringByAppendingPathComponent("output.mp4")
-      manager.removeItemAtPath(outputURL, error: nil)
-      exportSession.outputURL = NSURL(fileURLWithPath: outputURL)
-      exportSession.shouldOptimizeForNetworkUse = true
-      exportSession.outputFileType = AVFileTypeMPEG4
-      var start = CMTimeMakeWithSeconds(Float64(startTime), 600)
-      var duration = CMTimeMakeWithSeconds(Float64(duration), 600)
-      var range = CMTimeRangeMake(start, duration)
-      exportSession.timeRange = range
-      exportSession.exportAsynchronouslyWithCompletionHandler { () -> Void in
-        switch exportSession.status {
+      let paths: NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+      let outputURL = paths.objectAtIndex(0) as! String
+      let manager = NSFileManager.defaultManager()
+      do {
+        try manager.createDirectoryAtPath(outputURL, withIntermediateDirectories: true, attributes: nil)
+      } catch _ {
+      }
+      do {
+        try manager.removeItemAtPath(outputURL)
+      } catch _ {
+      }
+      exportSession!.outputURL = NSURL(fileURLWithPath: outputURL).URLByAppendingPathComponent("output.mp4")
+      exportSession!.shouldOptimizeForNetworkUse = true
+      exportSession!.outputFileType = AVFileTypeMPEG4
+      let start = CMTimeMakeWithSeconds(Float64(startTime), 600)
+      let duration = CMTimeMakeWithSeconds(Float64(duration), 600)
+      let range = CMTimeRangeMake(start, duration)
+      exportSession!.timeRange = range
+      exportSession!.exportAsynchronouslyWithCompletionHandler { () -> Void in
+        switch exportSession!.status {
         case AVAssetExportSessionStatus.Completed:
-          completion?(videoPath: exportSession.outputURL, error: nil)
+          completion?(videoPath: exportSession!.outputURL, error: nil)
         case AVAssetExportSessionStatus.Failed:
-          println("Failed: \(exportSession.error)")
+          print("Failed: \(exportSession!.error)")
         case AVAssetExportSessionStatus.Cancelled:
-          println("Failed: \(exportSession.error)")
+          print("Failed: \(exportSession!.error)")
         default:
-          println("default case")
+          print("default case")
         }
       }
       dispatch_async(dispatch_get_main_queue()) {

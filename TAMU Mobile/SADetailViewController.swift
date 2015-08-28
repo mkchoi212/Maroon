@@ -110,7 +110,7 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! YellCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! YellCell
         
         
         if indexPath.section == 0{

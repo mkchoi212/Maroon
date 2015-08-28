@@ -36,7 +36,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func stylingDateLabel() {
-        var dateFormatter = NSDateFormatter()
+        let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MMMM dd"
         self.dateLabel.text = dateFormatter.stringFromDate(NSDate())
         self.dateLabel.font = UIFont(name: "HelveticaNeue", size: 30)
@@ -49,7 +49,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
             if error == nil{
-                if let myFeed = feed{
+                if let _ = feed{
                     self.feed = feed
                     self.newsArray = feed!.items
                     self.newsTableView.reloadData()
@@ -63,7 +63,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                     self.newsTableView.alpha = 1.0
                     self.bigHeaderImageView.image = UIImage(named: "no_int")
                     self.newsTableView.separatorStyle = UITableViewCellSeparatorStyle.None
-                    var notification = CWStatusBarNotification()
+                    let notification = CWStatusBarNotification()
                     notification.notificationLabelBackgroundColor = UIColor(red: 255.0/255.0, green: 204.0/255.0, blue: 0, alpha: 1.0)
                     notification.notificationStyle = CWNotificationStyle.NavigationBarNotification
                     notification.displayNotificationWithMessage("No Internet Access. Offline features still available", forDuration: 6.0)
@@ -84,7 +84,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         bigHeaderImageView.sd_setImageWithURL(polishedURL, placeholderImage: nil) {(image: UIImage!, error: NSError!, cacheType: SDImageCacheType, imageURL: NSURL!) -> Void in
             if error == nil{
-                var overlay = UIView(frame: CGRectMake(0, 0, self.bigHeaderImageView.frame.width, self.view.frame.height))
+                let overlay = UIView(frame: CGRectMake(0, 0, self.bigHeaderImageView.frame.width, self.view.frame.height))
                 overlay.backgroundColor = UIColor.blackColor()
                 overlay.alpha = 0
 
@@ -132,7 +132,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         visiblePortionOfNewsTableHeader(newsHeaderTableRect: newsHeaderTableRect)
     }
     
-    func visiblePortionOfNewsTableHeader(#newsHeaderTableRect: CGRect) {
+    func visiblePortionOfNewsTableHeader(newsHeaderTableRect newsHeaderTableRect: CGRect) {
         
         self.tableHeaderMaskToBeVisible = CAShapeLayer()
         self.tableHeaderMaskToBeVisible.fillColor = UIColor.blackColor().CGColor

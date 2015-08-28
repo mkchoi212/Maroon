@@ -25,7 +25,7 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var camera = GMSCameraPosition.cameraWithLatitude(30.614919,
+        let camera = GMSCameraPosition.cameraWithLatitude(30.614919,
             longitude: -96.342316, zoom: 16)
         mapView.animateToCameraPosition(camera)
         mapView.myLocationEnabled = true
@@ -37,7 +37,7 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
     
     //MARK : TABLEVIEW DELEGATE
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         var campusBuilding : Building
         
         if searchActive {
@@ -63,7 +63,7 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
             if error == nil{
                 if let placemark = placemarks?[0] as? SVPlacemark {
                     if placemark.formattedAddress == "College Station, TX, USA" || placemark.formattedAddress == "College Station, TX 77840, USA"{
-                        var notification = CWStatusBarNotification()
+                        let notification = CWStatusBarNotification()
                         notification.notificationLabelBackgroundColor = UIColor.blackColor()
                         notification.displayNotificationWithMessage("Inaccurate coordinates. Trying alternate server", forDuration: 1.0)
                         self.appleGeocodeBackup(alternateAddress, building: selectedBuilding)
@@ -74,14 +74,14 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
                         self.currentMarker.position = placemark.location.coordinate
                         self.currentMarker.map = self.mapView
                         self.dismissKeyboard()
-                        var camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
+                        let camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
                             longitude: placemark.location.coordinate.longitude, zoom: 17)
                         self.mapView.animateToCameraPosition(camera)
                     }
                 }
             }
             else {
-                var notification = CWStatusBarNotification()
+                let notification = CWStatusBarNotification()
                 notification.notificationLabelBackgroundColor = UIColor.blackColor()
                 notification.displayNotificationWithMessage("Server overloaded. Coordinates may be slightly inaccurate", forDuration: 2.0)
                 self.appleGeocodeBackup(buildingAddress, building: selectedBuilding)
@@ -90,18 +90,18 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
     }
     
     func appleGeocodeBackup(address : String, building : Building) {
-        geocoder.geocodeAddressString(address, completionHandler: {(placemarks: [AnyObject]!, error: NSError!) -> Void in
-            if let placemark = placemarks?[0] as? CLPlacemark {
+        geocoder.geocodeAddressString(address) { (placemarks, error) -> Void in
+            if let placemark = placemarks?[0] {
                 self.currentMarker.title = building.name
                 self.currentMarker.snippet = building.section
-                self.currentMarker.position = placemark.location.coordinate
+                self.currentMarker.position = placemark.location!.coordinate
                 self.currentMarker.map = self.mapView
                 self.dismissKeyboard()
-                var camera = GMSCameraPosition.cameraWithLatitude(placemark.location.coordinate.latitude,
-                    longitude: placemark.location.coordinate.longitude, zoom: 17)
+                let camera = GMSCameraPosition.cameraWithLatitude(placemark.location!.coordinate.latitude,
+                    longitude: placemark.location!.coordinate.longitude, zoom: 17)
                 self.mapView.animateToCameraPosition(camera)
             }
-        })
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -166,7 +166,7 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
         
         for item in itemArray{
             let subJson = item as! [String : AnyObject]
-            var building = Building(name: subJson["name"] as! String, address: subJson["address"] as! String, city: subJson["city"] as! String, zip: subJson["zip"] as! Int, section: subJson["section"] as! String)
+            let building = Building(name: subJson["name"] as! String, address: subJson["address"] as! String, city: subJson["city"] as! String, zip: subJson["zip"] as! Int, section: subJson["section"] as! String)
             if let abbrev = subJson["abbrev"] as? String {
                 building.abbrev = abbrev
             }
@@ -182,12 +182,12 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
             let regionDistance:CLLocationDistance = 10000
             let coordinates = currentMarker.position
             let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
-            var options = [
+            let options = [
                 MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: regionSpan.center),
                 MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan: regionSpan.span)
             ]
-            var placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
-            var mapItem = MKMapItem(placemark: placemark)
+            let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+            let mapItem = MKMapItem(placemark: placemark)
             mapItem.name = "\(currentMarker.title)"
             mapItem.openInMapsWithLaunchOptions(options)
         }
