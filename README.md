@@ -9,7 +9,7 @@ sudo gem install cocoapods
 # Requirements
 - iOS 8.0 or higher
 - ARC
-- 
+
 # Making changes
 If you want to work on something, PLEASE MAKE A NEW BRANCH or FORK THIS REPO and make a pull request, which I will first review and then approve.
 
