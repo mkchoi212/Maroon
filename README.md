@@ -20,6 +20,9 @@ Currently, Apple and Google's reverse-geocoding service is used in order to get 
 ###Contacts
 Animations for tapping and holding onto contact tableview cells is slightly unnatural.
 
+###Transition Animation
+Animations when flipping the screen to reveal either the map or list is quite glitchy. Never caught onto this while developing on the simualtor or on my device but it's apprenlty quite obvious on iPhone 5 & 5s. Maybe try `dealloc` the json processing thread when transitioning to and out from a view?
+
 ###Future Features
 - Slide show in the home view of all images from the RSS feed
 - Scheduler in home screen via navgiation bar?
