@@ -11,16 +11,18 @@ import MessageUI
 
 class SettingsTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    enum TableSections: Int{
+        case Legal, Coolio, VersionNumber
+    }
+    enum CoolioIndex : Int{
+        case About, Contact, Rate
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        if (indexPath.section == 1 && indexPath.row == 1){
-            //CONTACT ME
+        if (indexPath.section == TableSections.Coolio.rawValue && indexPath.row == CoolioIndex.Contact.rawValue){
+
             let mailComposeViewController = configuredMailComposeViewController()
             if MFMailComposeViewController.canSendMail() {
                 mailComposeViewController.navigationBar.tintColor = UIColor.whiteColor()
@@ -31,7 +33,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
                 self.showSendMailErrorAlert()
             }
         }
-        if (indexPath.section == 1 && indexPath.row == 2){
+        if (indexPath.section == TableSections.Coolio.rawValue && indexPath.row == CoolioIndex.Rate.rawValue){
             if let requestUrl = NSURL(string: "https://itunes.apple.com/us/app/maroon/id1023616502?ls=1&mt=8") {
                 UIApplication.sharedApplication().openURL(requestUrl)
             }
@@ -42,9 +44,8 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
         
-        mailComposerVC.setToRecipients(["mkchoi212@icloud.com", "mkchoi212@tamu.edu"])
+        mailComposerVC.setToRecipients(["mkchoi212@icloud.com", "mkchoi212@tamu.edu", "darrencola@tamu.edu"])
         mailComposerVC.setSubject("What's good?")
-        mailComposerVC.setMessageBody("", isHTML: false)
         
         return mailComposerVC
     }
@@ -60,8 +61,6 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
         let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail. Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
         sendMailErrorAlert.show()
     }
-    
-    // MARK: MFMailComposeViewControllerDelegate
     
     func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
         controller.dismissViewControllerAnimated(true, completion: nil)
