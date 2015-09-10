@@ -25,16 +25,27 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     var passback = String()
     var yell = String()
     var yellName = String()
+    var isHymn = false
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 100.0
+        tableView.estimatedRowHeight = 150.0
         tableView.tableFooterView = UIView()
 
         view.backgroundColor = .whiteColor()
         setUpViewAppearance()
+    }
+    
+    public override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.reloadData()
+        
+        UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
+            self.headerContainerView?.alpha = 1.0
+            }, completion: { (finished) in })
     }
     
     func setUpViewAppearance(){
@@ -84,7 +95,7 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        if yell == "hymn"{
+        if isHymn{
             return 1
         }
         else{
@@ -97,7 +108,7 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     public func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-       if yell == "hymn"{
+       if isHymn{
             return "LYRICS"
         }
        else{
@@ -119,16 +130,8 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
         else{
             cell.mainlabel.text = yell
         }
-        
+
         return cell
-    }
-    
-    public override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
-            self.headerContainerView?.alpha = 1.0
-        }, completion: { (finished) in })
     }
     
     public override func prefersStatusBarHidden() -> Bool {
