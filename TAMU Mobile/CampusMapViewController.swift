@@ -35,6 +35,7 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
         tableView.reloadData()
     }
     
+    
     //MARK : TABLEVIEW DELEGATE
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
