@@ -25,16 +25,30 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     var passback = String()
     var yell = String()
     var yellName = String()
+    var isHymn = false
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 100.0
+        tableView.estimatedRowHeight = 150.0
         tableView.tableFooterView = UIView()
 
         view.backgroundColor = .whiteColor()
+        setUpViewAppearance()
+    }
+    
+    public override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
+        tableView.reloadData()
+        
+        UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
+            self.headerContainerView?.alpha = 1.0
+            }, completion: { (finished) in })
+    }
+    
+    func setUpViewAppearance(){
         let width = UIScreen.mainScreen().bounds.size.width
         imageView.image = trantisionContainerView?.containerView?.imageView.image
         if let imageSize = imageView.image?.size {
@@ -45,7 +59,6 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
             tableHeight.constant = self.view.frame.height - height
         }
         
-
         let headerContainerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: width, height: kHeaderViewHeight))
         headerContainerView.alpha = 0.0
         headerContainerView.clipsToBounds = true
@@ -79,11 +92,10 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
         titleLabel.font = UIFont(name: "GillSans-Light", size: 20)!
         titleLabel.textColor = UIColor.whiteColor()
         headerView.addSubview(titleLabel)
-        
     }
     
     public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        if yell == "hymn"{
+        if isHymn{
             return 1
         }
         else{
@@ -96,7 +108,7 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     public func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-       if yell == "hymn"{
+       if isHymn{
             return "LYRICS"
         }
        else{
@@ -112,25 +124,14 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! YellCell
         
-        
         if indexPath.section == 0{
             cell.mainlabel.text = passback
         }
         else{
             cell.mainlabel.text = yell
         }
-        
+
         return cell
-    }
-    
-    public override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
-            
-            self.headerContainerView?.alpha = 1.0
-            
-        }, completion: { (finished) in })
     }
     
     public override func prefersStatusBarHidden() -> Bool {
@@ -139,13 +140,9 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     
     public func closeAction(button: UIButton) {
         UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
-            
             self.headerContainerView?.alpha = 0.0
-            
         }, completion: { (finished) in
-            
             self.dismissViewControllerAnimated(true, completion: nil)
-                
         })
     }
 }

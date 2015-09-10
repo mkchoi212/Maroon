@@ -40,5 +40,11 @@
              "passback": "Slap hands together with right hand moving upward and index finer pointed to the sky",
              "call": "(whistle) BOOM\nRah Rah Team Aaaaaa"
              }
+             ,
+             {
+             "name": "Aggie War Hymn",
+             "passback": "Hullabaloo, Caneck! Caneck! Hullabaloo, Caneck! Caneck!All hail to dear old Texas A&M\nRally around Maroon and White\nGood luck to dear old Texas Aggies\nThey are the boys who show the real old fight\nThat good old Aggie spirit thrills us\nAnd makes us yell and yell and yell\nSo let’s fight for dear old Texas A&M\nWe’re going to beat you all to\nChig-gar-roo-gar-rem\nChig-gar-roo-gar-rem\nRough Tough! Real Stuff! Texas A&M!\n\nGood-bye to texas university\nSo long to the orange and the white\nGood luck to dear old Texas Aggies\nThey are the boys that show the real old fight\n“The eyes of Texas are upon you . . .”\nThat is the song they sing so well\nSo good-bye to texas university\nWe’re going to beat you all to\nChig-gar-roo-gar-rem\nChig-gar-roo-gar-rem\nRough Tough! Real Stuff! Texas A&M!\n",
+             "call": "hymn"
+             }
         ]
 }
