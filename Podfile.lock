@@ -23,51 +23,51 @@ PODS:
   - BDBOAuth1Manager (1.4.1):
     - AFNetworking/NSURLConnection (~> 2.4.0)
     - AFNetworking/NSURLSession (~> 2.4.0)
-  - CWStatusBarNotification (2.3.1)
-  - Fabric (1.2.8):
-    - Fabric/Base (= 1.2.8)
-  - Fabric/Base (1.2.8)
+  - CWStatusBarNotification (2.3.3)
+  - Fabric (1.5.0):
+    - Fabric/Base (= 1.5.0)
+  - Fabric/Base (1.5.0)
   - FoldingTabBar (1.0.0)
-  - GoogleMaps (1.10.1)
+  - GoogleMaps (1.10.2)
   - GUITabPagerViewController (0.0.7)
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
     - NJKWebViewProgress/ProgressView (= 0.2.3)
   - NJKWebViewProgress/Core (0.2.3)
   - NJKWebViewProgress/ProgressView (0.2.3)
-  - PureLayout (3.0.0)
+  - PureLayout (3.0.1)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
-  - TwitterCore (1.8.1)
-  - TwitterKit (1.8.1)
+  - TwitterCore (1.10.0)
+  - TwitterKit (1.10.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
   - BDBOAuth1Manager (~> 1.4.0)
   - CWStatusBarNotification
   - Fabric
-  - FoldingTabBar
+  - FoldingTabBar (~> 1.0.0)
   - GoogleMaps
   - GUITabPagerViewController (~> 0.0.7)
   - NJKWebViewProgress
   - PureLayout
   - SDWebImage
   - TwitterCore
-  - TwitterKit (~> 1.8.1)
+  - TwitterKit
 
 SPEC CHECKSUMS:
   AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
   BDBOAuth1Manager: e4c50f9b4ecda6c2a9da680a45d89985e4f3edb6
-  CWStatusBarNotification: 73d86949d11a2246f1a50532b157c1d313000ccd
-  Fabric: a9eabe53915e9f1db55a84dd2838737928675878
+  CWStatusBarNotification: 2349142e97c9f16fb8247ed3c00308cd355d334b
+  Fabric: 374a4a0bbefa219ed201cbc84f2f42e4029302a6
   FoldingTabBar: 463d247453a2ba826ae79f5be1e6b8b93b6aa0ce
-  GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
+  GoogleMaps: 5c92e599b07b0a2a9b367c5dd128edc629bddfea
   GUITabPagerViewController: eccbdf4399cb4cb458d2d961e60c941cc97d5a9c
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
-  PureLayout: 270dfee2236f697ab1d5e2771c2e5c248495fa0d
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
-  TwitterCore: 0a26fb8054bc23d8986344d3dcb6602255b6aec5
-  TwitterKit: 88daaebdb8bfb5847d76d8ae159841248427931d
+  TwitterCore: 5291a4703f869a024b9457f11617914122d5e8cb
+  TwitterKit: d6912e5000fc6c1061745216875e611dbe2b5cf5
 
 COCOAPODS: 0.38.2
