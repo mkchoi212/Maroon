@@ -56,18 +56,19 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let selectedBuilding = searchResults[indexPath.row]
         let buildingAddress = "\(selectedBuilding.name), College Station, TX \(selectedBuilding.zip)"
-        let alternateAddress = "\(selectedBuilding.name), \(selectedBuilding.address), College Station, TX \(selectedBuilding.zip)"
  
+        var notification = CWStatusBarNotification()
+        notification.notificationLabelBackgroundColor = UIColor(red: 255.0/255.0, green: 204.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+        
         mapView.clear()
         
         SVGeocoder.geocode(buildingAddress, completion: { (placemarks : [AnyObject]!, response : NSHTTPURLResponse!, error : NSError!) -> Void in
             if error == nil{
-                if let placemark = placemarks?[0] as? SVPlacemark {
+                if let placemark = placemarks?.first as? SVPlacemark {
+                    println(placemark)
                     if placemark.formattedAddress == "College Station, TX, USA" || placemark.formattedAddress == "College Station, TX 77840, USA"{
-                        var notification = CWStatusBarNotification()
-                        notification.notificationLabelBackgroundColor = UIColor.blackColor()
                         notification.displayNotificationWithMessage("Inaccurate coordinates. Trying alternate server", forDuration: 1.0)
-                        self.appleGeocodeBackup(alternateAddress, building: selectedBuilding)
+                        self.appleGeocodeBackup(selectedBuilding)
                     }
                     else{
                         self.currentMarker.title = selectedBuilding.name
@@ -82,16 +83,18 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
                 }
             }
             else {
-                var notification = CWStatusBarNotification()
-                notification.notificationLabelBackgroundColor = UIColor.blackColor()
                 notification.displayNotificationWithMessage("Server overloaded. Coordinates may be slightly inaccurate", forDuration: 2.0)
-                self.appleGeocodeBackup(buildingAddress, building: selectedBuilding)
+                self.appleGeocodeBackup(selectedBuilding)
             }
         })
     }
     
-    func appleGeocodeBackup(address : String, building : Building) {
-        geocoder.geocodeAddressString(address, completionHandler: {(placemarks: [AnyObject]!, error: NSError!) -> Void in
+    
+    // CURRENTLY USED AS FALLBACK
+    func appleGeocodeBackup(building : Building) {
+        let alternateAddress = "\(building.name), \(building.address), College Station, TX \(building.zip)"
+        
+        geocoder.geocodeAddressString(alternateAddress, completionHandler: {(placemarks: [AnyObject]!, error: NSError!) -> Void in
             if let placemark = placemarks?[0] as? CLPlacemark {
                 self.currentMarker.title = building.name
                 self.currentMarker.snippet = building.section

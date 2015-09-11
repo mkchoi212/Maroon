@@ -187,15 +187,21 @@ class CampusDiningViewController: UIViewController, UITableViewDelegate, UITable
     //MARK : BAR BUTTON ITEMS
     
     func onListButton() {
-        UIView.transitionFromView(mapView, toView: tableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         searchBar.endEditing(true)
+        
+        CATransaction.flush()
+        
+        UIView.transitionFromView(mapView, toView: tableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
+    
     }
     
     func onMapButton() {
-        UIView.transitionFromView(tableView, toView: mapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion : nil)
         searchBar.endEditing(true)
+        
+        CATransaction.flush()
+        
+        UIView.transitionFromView(tableView, toView: mapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion : nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List", style: .Plain, target: self, action: "onListButton")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "startnav"), style: .Plain, target: self, action: "startNav")
     }

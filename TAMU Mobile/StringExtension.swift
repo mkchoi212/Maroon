@@ -33,6 +33,9 @@ extension String {
         else if self == "News Releases"{
             return UIColor.purpleColor()
         }
+        else if self == "Business, Law, & Society"{
+            return UIColor(red: 82.0/255.0, green: 237/255.0, blue: 199.0/255.0, alpha: 1.0)
+        }
         else {
             return UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 85.0/255.0, alpha: 1.0)
         }
