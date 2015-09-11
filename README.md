@@ -19,7 +19,10 @@ sudo gem install cocoapods
 ## Pull Requests
 I actively welcome your pull requests.
 
-1. Fork the repo and create your branch from `master` (or not, it's up to you ***but please don't merge your own PRs!!!***)
+1. Fork or clone repo and create your branch from `master`.
+```
+git clone https://github.com/mkchoi212/Maroon.git
+```
 2. If you've added code that should be tested, add tests.
 3. Please make your PR's small, manageable and most importantly, understandable as I will only be able to check on them every once in awhile.
 4. Oh also, good commit/PR messages pls
@@ -31,6 +34,7 @@ clear and has sufficient instructions to be able to reproduce the issue.
 ## Requirements
 - iOS 8.0 or higher
 - ARC
+- Currently in **Swift 1.2** for Xcode 6. Conversion to **Swift 2.0** in progress
 
 # Licence
 TAMU Mobile is released under the MIT license. See LICENSE for details.
