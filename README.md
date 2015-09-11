@@ -1,4 +1,4 @@
-# How to install
+# Setting up the project
 ```
 pod install
 ```
@@ -6,12 +6,14 @@ If you don't have cocoapods installed on your machine, run this command in order
 ```
 sudo gem install cocoapods
 ```
+*Please note when updating pods, `AFNetworking` may throw errors regarding dependencies/modules. Replace all import statements with warnings with `#import <AFNetworking/AFNetworking.h>` for now.
+
 # Requirements
 - iOS 8.0 or higher
 - ARC
 
 # Making changes
-If you want to work on something, PLEASE MAKE A NEW BRANCH or FORK THIS REPO and make a pull request, which I will first review and then approve.
+If you want to work on something, **PLEASE MAKE A NEW BRANCH or FORK THIS REPO** and make a pull request, which I will first review and then approve.
 
 ##Known Bugs
 Please refer to the issues tab on the right.
