@@ -1,4 +1,4 @@
-# How to install
+# Setting up the project
 ```
 pod install
 ```
@@ -6,24 +6,19 @@ If you don't have cocoapods installed on your machine, run this command in order
 ```
 sudo gem install cocoapods
 ```
+*Please note when updating pods, `AFNetworking` may throw errors regarding dependencies/modules. Replace all import statements with warnings with `#import <AFNetworking/AFNetworking.h>` for now.
+
 # Requirements
 - iOS 8.0 or higher
 - ARC
 
 # Making changes
-If you want to work on something, PLEASE MAKE A NEW BRANCH or FORK THIS REPO and make a pull request, which I will first review and then approve.
+If you want to work on something, **PLEASE MAKE A NEW BRANCH or FORK THIS REPO** and make a pull request, which I will first review and then approve.
 
 ##Known Bugs
-### Reverse-geocoding
-Currently, Apple and Google's reverse-geocoding service is used in order to get the cooridnates of buildings on campus. Maybe because campus buidlings within A&M's campus is not well indexed within mapping servers, some locations produce inaccurate coordinates. This maybe could be solved by tweaking with the structure of the address fed into the server?
+Please refer to the issues tab on the right.
 
-###Contacts
-Animations for tapping and holding onto contact tableview cells is slightly unnatural.
-
-###Transition Animation
-Animations when flipping the screen to reveal either the map or list is quite glitchy. Never caught onto this while developing on the simualtor or on my device but it's apprenlty quite obvious on iPhone 5 & 5s. Maybe try `dealloc` the json processing thread when transitioning to and out from a view?
-
-###Future Features
+##Improvements
 - Slide show in the home view of all images from the RSS feed
 - Scheduler in home screen via navgiation bar?
 - Link for donwloading images from the RSS feed is currently being RegExed. Maybe use an HTML parser to do this in the future? The current RegEx can be found in the `StringExtension.swift`.
