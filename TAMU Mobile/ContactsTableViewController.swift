@@ -48,12 +48,13 @@ class ContactsTableViewController: UITableViewController, MFMessageComposeViewCo
         helpLabel.backgroundColor = UIColor.blackColor()
         helpLabel.font = UIFont(name: "GillSans-Light", size: 20)!
         helpLabel.textAlignment = NSTextAlignment.Center
-        helpLabel.alpha = 0
+        helpLabel.alpha = 0.0
         tappedCell.addSubview(helpLabel)
         
         var triggerTime = (Int64(NSEC_PER_SEC) * 1)
         
-        UIView.animateWithDuration(0.7, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+        // temp solution. trying to understand threads better right now!
+        UIView.animateWithDuration(0.3, delay: 0.4, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
             helpLabel.alpha = 1.0
         }) { (completed) -> Void in
             
