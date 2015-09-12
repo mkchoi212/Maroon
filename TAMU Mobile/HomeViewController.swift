@@ -179,9 +179,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let navVC = UINavigationController(rootViewController: webVC)
         navVC.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "closeVC")
-        
-        let shareImage = UIImage(named: "share-bar")
-        navVC.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: shareImage, style: .Plain, target: webVC, action: "openSafari:")
+    
         presentViewController(navVC, animated: true, completion: nil)
     }
     

@@ -1206,10 +1206,14 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="BOu-sI-XyL">
-                        <barButtonItem key="rightBarButtonItem" image="share-bar" id="w2H-06-wOa">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="6ap-Bn-qwl">
                             <connections>
-                                <action selector="openSafari:" destination="2M8-qU-hZY" id="gjX-Q2-cX6"/>
+                                <action selector="dismissVC:" destination="2M8-qU-hZY" id="UDu-LB-R8Q"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="w2H-06-wOa">
+                            <connections>
+                                <action selector="shareArticle:" destination="2M8-qU-hZY" id="SJ0-Uf-jYm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1793,7 +1797,6 @@
         <image name="maroon" width="500" height="300"/>
         <image name="phone" width="53" height="53"/>
         <image name="share" width="25" height="25"/>
-        <image name="share-bar" width="24" height="24"/>
         <image name="startnav" width="20" height="20"/>
     </resources>
 </document>
