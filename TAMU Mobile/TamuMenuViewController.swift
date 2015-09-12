@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import FoldingTabBar
 
-class TamuMenuViewController: UITableViewController {
+class TamuMenuViewController: UITableViewController, YALTabBarInteracting {
     enum menuTitle : Int {
         case athletics
         case yell
@@ -69,5 +70,9 @@ class TamuMenuViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
+    }
+    
+    func extraRightItemDidPressed(){
+        navigationController?.popViewControllerAnimated(true)
     }
 }

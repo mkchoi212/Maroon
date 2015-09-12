@@ -38,11 +38,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func stylingDateLabel() {
         var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MMMM dd"
-        self.dateLabel.text = dateFormatter.stringFromDate(NSDate())
-        self.dateLabel.font = UIFont(name: "HelveticaNeue", size: 30)
-        self.dateLabel.textColor = UIColor.whiteColor()
+        dateLabel.text = dateFormatter.stringFromDate(NSDate())
+        dateLabel.font = UIFont(name: "HelveticaNeue", size: 30)
+        dateLabel.textColor = UIColor.whiteColor()
     }
-    
     
     func getNews(){
         let request = NSURLRequest(URL: NSURL(string: "http://today.tamu.edu/feed/")!)
@@ -134,9 +133,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func visiblePortionOfNewsTableHeader(#newsHeaderTableRect: CGRect) {
         
-        self.tableHeaderMaskToBeVisible = CAShapeLayer()
-        self.tableHeaderMaskToBeVisible.fillColor = UIColor.blackColor().CGColor
-        self.tableHeaderView.layer.mask = self.tableHeaderMaskToBeVisible
+        tableHeaderMaskToBeVisible = CAShapeLayer()
+        tableHeaderMaskToBeVisible.fillColor = UIColor.blackColor().CGColor
+        tableHeaderView.layer.mask = self.tableHeaderMaskToBeVisible
         
         let trapeziumHeaderMask = UIBezierPath()
         trapeziumHeaderMask.moveToPoint(CGPointMake(0, 0))
@@ -189,14 +188,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
-        if self.arrayCheckCellHasLoaded[indexPath.row] == false {
+        if arrayCheckCellHasLoaded[indexPath.row] == false {
             cell.alpha = 0
             
             UIView.animateWithDuration(1, animations: { () -> Void in
                 cell.alpha = 1
-                
             });
-            self.arrayCheckCellHasLoaded[indexPath.row] = true
+            arrayCheckCellHasLoaded[indexPath.row] = true
         }
     }
     
@@ -207,6 +205,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func extraRightItemDidPressed(){
         let tamuVC = storyboard?.instantiateViewControllerWithIdentifier("tamu") as! TamuMenuViewController
-        self.navigationController?.pushViewController(tamuVC, animated: true)
+        navigationController?.pushViewController(tamuVC, animated: true)
     }
 }

@@ -409,6 +409,8 @@
 				CADAAD121B78115300F21E47 /* RSS Parser */,
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
 				CAAE0E941B77FA2D00D7EAA5 /* HomeNewsTableViewCell.swift */,
+				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
+				CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -461,9 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC331401B6486E60036FD6B /* Main.storyboard */,
-				CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */,
 				CAC331391B6486E60036FD6B /* AppDelegate.swift */,
-				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
 				CA8870421BA3D48300ED49AF /* NotificationManager.swift */,
 				CA8870461BA3D4B200ED49AF /* Extensions */,
