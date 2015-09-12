@@ -83,14 +83,12 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! NewsTableViewCell
         let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
        
-        webVC.urlString = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+         var articlePath = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        webVC.requestURL = NSURL(string: articlePath)!
         webVC.customTitle = selectedCell.titleLabel.text!
+        webVC.isModal = true
         
         let navVC = UINavigationController(rootViewController: webVC)
-        navVC.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "closeVC")
-        
-        let shareImage = UIImage(named: "share-bar")
-        navVC.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: shareImage, style: .Plain, target: webVC, action: "openSafari:")
         presentViewController(navVC, animated: true, completion: nil)
     }
     
@@ -145,10 +143,4 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         spacing.backgroundColor = UIColor(red: 80.0/255.0, green: 0, blue: 0, alpha: 1.0)
         return spacing
     }
-    
-    func closeVC(){
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-
 }

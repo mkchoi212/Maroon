@@ -40,12 +40,12 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     
     public override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        tableView.reloadData()
-        
+    
         UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
             self.headerContainerView?.alpha = 1.0
-            }, completion: { (finished) in })
+            }, completion: { (finished) in
+            self.tableView.reloadData()
+        })
     }
     
     func setUpViewAppearance(){
@@ -121,6 +121,10 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
         }
     }
     
+    public func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+        
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! YellCell
         

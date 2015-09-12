@@ -27,6 +27,8 @@
 		CA5739E91B780DD9004A8CEA /* NSDate+dateFromInternetDateTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5739E41B780DD9004A8CEA /* NSDate+dateFromInternetDateTimeString.swift */; };
 		CA5739EA1B780DD9004A8CEA /* String+imageLinksFromHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5739E51B780DD9004A8CEA /* String+imageLinksFromHTML.swift */; };
 		CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */; };
+		CA8870431BA3D48300ED49AF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8870421BA3D48300ED49AF /* NotificationManager.swift */; };
+		CA8870451BA3D4AA00ED49AF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8870441BA3D4AA00ED49AF /* ColorExtension.swift */; };
 		CA9593721B7AA47800CBC954 /* statement.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA9593711B7AA47800CBC954 /* statement.rtf */; };
 		CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D31B698A60003733DF /* DateExtension.swift */; };
 		CA9FD4D81B69AFB9003733DF /* CampusMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */; };
@@ -152,6 +154,8 @@
 		CA5739E41B780DD9004A8CEA /* NSDate+dateFromInternetDateTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+dateFromInternetDateTimeString.swift"; sourceTree = "<group>"; };
 		CA5739E51B780DD9004A8CEA /* String+imageLinksFromHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+imageLinksFromHTML.swift"; sourceTree = "<group>"; };
 		CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewController.swift; sourceTree = "<group>"; };
+		CA8870421BA3D48300ED49AF /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CA8870441BA3D4AA00ED49AF /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CA9593711B7AA47800CBC954 /* statement.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = statement.rtf; sourceTree = "<group>"; };
 		CA9FD4D31B698A60003733DF /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusMapViewController.swift; sourceTree = "<group>"; };
@@ -361,6 +365,15 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		CA8870461BA3D4B200ED49AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAB63F8D1B799D7F00D64165 /* StringExtension.swift */,
+				CA8870441BA3D4AA00ED49AF /* ColorExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		CAA120961B65D305007D7802 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +409,8 @@
 				CADAAD121B78115300F21E47 /* RSS Parser */,
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
 				CAAE0E941B77FA2D00D7EAA5 /* HomeNewsTableViewCell.swift */,
+				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
+				CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -448,11 +463,10 @@
 			isa = PBXGroup;
 			children = (
 				CAC331401B6486E60036FD6B /* Main.storyboard */,
-				CA12F4691B80EDFF00922BA7 /* TAMUCell.swift */,
 				CAC331391B6486E60036FD6B /* AppDelegate.swift */,
-				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
-				CAB63F8D1B799D7F00D64165 /* StringExtension.swift */,
+				CA8870421BA3D48300ED49AF /* NotificationManager.swift */,
+				CA8870461BA3D4B200ED49AF /* Extensions */,
 				CA12F46F1B80F2A400922BA7 /* Contacts */,
 				CAAE0E8B1B77F5B100D7EAA5 /* Home */,
 				CAB067981B741C1100A59496 /* Intro */,
@@ -925,8 +939,10 @@
 				CAC3313D1B6486E60036FD6B /* TAMU_Mobile.xcdatamodeld in Sources */,
 				CACB68D91B656899007F4AD1 /* NSDate+convenience.m in Sources */,
 				CA522EEB1B6831CB003C0054 /* WebViewController.swift in Sources */,
+				CA8870431BA3D48300ED49AF /* NotificationManager.swift in Sources */,
 				CAD9147E1B8C1D3D00C9CD0A /* UIViewController+AGBlurTransition.m in Sources */,
 				CABD3D5B1B6AF0FA0074143D /* TwitterViewController.swift in Sources */,
+				CA8870451BA3D4AA00ED49AF /* ColorExtension.swift in Sources */,
 				CACB68B81B656851007F4AD1 /* JTCalendarMenuMonthView.m in Sources */,
 				CAC3313A1B6486E60036FD6B /* AppDelegate.swift in Sources */,
 				CA12F46E1B80F29E00922BA7 /* ContactsTableViewController.swift in Sources */,
