@@ -23,7 +23,7 @@ class CreditViewController: UIViewController, UITextViewDelegate {
     func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
         let mainSB = UIStoryboard(name: "Main", bundle: nil)
         let webVC = mainSB.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-        webVC.urlString = URL.absoluteString!
+        webVC.requestURL = NSURL(string: URL.absoluteString!)!
         navigationController?.pushViewController(webVC, animated: true)
         return false
     }

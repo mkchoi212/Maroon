@@ -83,8 +83,10 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! NewsTableViewCell
         let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
        
-        webVC.urlString = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+         var articlePath = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        webVC.requestURL = NSURL(string: articlePath)!
         webVC.customTitle = selectedCell.titleLabel.text!
+        webVC.isModal = true
         
         let navVC = UINavigationController(rootViewController: webVC)
         presentViewController(navVC, animated: true, completion: nil)

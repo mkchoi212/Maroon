@@ -16,35 +16,23 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
     var progressView = NJKWebViewProgressView()
     var progressProxy = NJKWebViewProgress()
     var sessionChecked = false
-    var urlString = String()
     var requestURL = NSURL()
     var customTitle = String()
+    var isModal = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (requestURL.absoluteString == nil) {
-            if urlString == "http://www.coolaf.co" {
-                self.title = "waddup"
-            }
-            else if urlString == "http://transport.tamu.edu/busroutes/" {
-                self.title = "Bus Routes"
-            }
-            else{
-                self.title = customTitle
-            }
-            requestURL = NSURL(string: urlString)!
-        }
-        else{
-            let request = NSURLRequest(URL: requestURL)
-             self.title = customTitle
-        }
-
+        setupProgressBar()
+        setupNavigationBar()
+        self.title = customTitle
+        
         let request = NSURLRequest(URL: requestURL)
         webView.loadRequest(request)
-
-        
         webView.delegate = progressProxy
+    }
+    
+    func setupProgressBar(){
         progressProxy.webViewProxyDelegate = self
         progressProxy.progressDelegate = self
         let progressBarHeight = CGFloat(2.5)
@@ -53,19 +41,26 @@ class WebViewController: UIViewController, UINavigationBarDelegate, UINavigation
         progressView = NJKWebViewProgressView(frame: barFrame)
         progressView.progressBarView.backgroundColor = UIColor.whiteColor()
         progressView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleTopMargin
-        
+    }
+    
+    func setupNavigationBar(){
+        if isModal{
+            navigationController!.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "dismissVC")
+        }
     }
     
     @IBAction func shareArticle(sender: AnyObject) {
         let objectsToShare = [customTitle, requestURL]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        activityVC.excludedActivityTypes = [UIActivityTypePostToVimeo, UIActivityTypePostToWeibo, UIActivityTypePostToFlickr, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToTencentWeibo]
+        
         activityVC.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         presentViewController(activityVC, animated: true, completion: { () -> Void in
             UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         })
     }
     
-    @IBAction func dismissVC(sender: AnyObject) {
+    func dismissVC() {
         dismissViewControllerAnimated(true, completion: nil)
     }
     override func viewWillAppear(animated: Bool) {

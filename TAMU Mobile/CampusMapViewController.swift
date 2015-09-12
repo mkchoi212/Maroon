@@ -206,7 +206,8 @@ class CampusMapViewController: UIViewController, UISearchBarDelegate,UITableView
     
     func extraRightItemDidPressed() {
         let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-        webVC.urlString = "http://transport.tamu.edu/busroutes/"
+        webVC.requestURL = NSURL(string: "http://transport.tamu.edu/busroutes/")!
+        webVC.customTitle = "Bus Routes"
         navigationController?.pushViewController(webVC, animated: true)
     }
     

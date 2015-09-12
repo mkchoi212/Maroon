@@ -57,7 +57,8 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "coolaf"{
             let webVC = segue.destinationViewController as! WebViewController
-            webVC.urlString = "http://www.coolaf.co"
+            webVC.requestURL = NSURL(string: "http://www.coolaf.co")!
+            webVC.customTitle = "waddup"
         }
     }
     

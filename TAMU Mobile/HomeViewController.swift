@@ -176,10 +176,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         webVC.requestURL = item.link!
         webVC.customTitle = item.title!
+        webVC.isModal = true
         
         let navVC = UINavigationController(rootViewController: webVC)
-        navVC.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: "closeVC")
-    
         presentViewController(navVC, animated: true, completion: nil)
     }
     
@@ -206,13 +205,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         updatingTableHeaderView()
     }
     
-    
     func extraRightItemDidPressed(){
         let tamuVC = storyboard?.instantiateViewControllerWithIdentifier("tamu") as! TamuMenuViewController
         self.navigationController?.pushViewController(tamuVC, animated: true)
-    }
-    
-    func closeVC(){
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

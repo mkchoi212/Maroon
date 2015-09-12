@@ -40,12 +40,12 @@ public class SADetailViewController: UIViewController, UITableViewDelegate, UITa
     
     public override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        tableView.reloadData()
-        
+    
         UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
             self.headerContainerView?.alpha = 1.0
-            }, completion: { (finished) in })
+            }, completion: { (finished) in
+            self.tableView.reloadData()
+        })
     }
     
     func setUpViewAppearance(){

@@ -20,24 +20,25 @@ class TwitterViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
                 let client = Twitter.sharedInstance().APIClient
                 self.dataSource = TWTRUserTimelineDataSource(screenName: "12thman", APIClient: client)
             } else {
-                let networkNotification = CWStatusBarNotification()
-                networkNotification.notificationLabelBackgroundColor = UIColor.blackColor()
-                networkNotification.displayNotificationWithMessage("Could not connect to Twitter's servers. Opps", forDuration: 2.0)
+                NotificationManager.sharedInstance.displayNotificationwithType(NotificationManager.Colors.Warning, style: NotificationManager.Styles.Status, message: "Could not connect to Twitter's servers. Opps")
             }
         }
     }
 
-    func tweetView(tweetView: TWTRTweetView!, didTapURL url: NSURL!) {
-        // Open your own custom webview
-        let mainSB = UIStoryboard(name: "Main", bundle: nil)
-        let webVC = mainSB.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-        webVC.urlString = url.absoluteString!
-        webVC.customTitle = "Twtr"
-        navigationController?.pushViewController(webVC, animated: true)
+    func tweetView(tweetView: TWTRTweetView, didTapURL url: NSURL) {
+        pushWebView(url)
     }
     
-    func tweetView(tweetView: TWTRTweetView!, didSelectTweet tweet: TWTRTweet!) {
+    func tweetView(tweetView: TWTRTweetView, didSelectTweet tweet: TWTRTweet) {
+        pushWebView(tweet.permalink)
+    }
     
+    func pushWebView(url : NSURL){
+        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+        let webVC = mainSB.instantiateViewControllerWithIdentifier("webview") as! WebViewController
+        webVC.requestURL = url
+        webVC.customTitle = "Twtr"
+        navigationController?.pushViewController(webVC, animated: true)
     }
 }
 
