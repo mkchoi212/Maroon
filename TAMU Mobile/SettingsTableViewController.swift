@@ -22,16 +22,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         if (indexPath.section == TableSections.Coolio.rawValue && indexPath.row == CoolioIndex.Contact.rawValue){
-
-            let mailComposeViewController = configuredMailComposeViewController()
-            if MFMailComposeViewController.canSendMail() {
-                mailComposeViewController.navigationBar.tintColor = UIColor.whiteColor()
-                presentViewController(mailComposeViewController, animated: true, completion: { () -> Void in
-                     UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
-                })
-            } else {
-                self.showSendMailErrorAlert()
-            }
+            presentMailViewController()
         }
         if (indexPath.section == TableSections.Coolio.rawValue && indexPath.row == CoolioIndex.Rate.rawValue){
             if let requestUrl = NSURL(string: "https://itunes.apple.com/us/app/maroon/id1023616502?ls=1&mt=8") {
@@ -40,11 +31,24 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
         }
     }
     
+    // MARK: MAIL DELEGATES AND ACTIONS
+    func presentMailViewController(){
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            mailComposeViewController.navigationBar.tintColor = UIColor.whiteColor()
+            presentViewController(mailComposeViewController, animated: true, completion: { () -> Void in
+                UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
+            })
+        } else {
+            self.showSendMailErrorAlert()
+        }
+    }
+    
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
         
-        mailComposerVC.setToRecipients(["mkchoi212@icloud.com", "mkchoi212@tamu.edu", "darrencola@tamu.edu"])
+        mailComposerVC.setToRecipients(["mike@coolaf.co", "darrencola@tamu.edu"])
         mailComposerVC.setSubject("What's good?")
         
         return mailComposerVC
@@ -63,8 +67,9 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
     }
     
     func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        if result.value == MFMailComposeResultSent.value{
+            NotificationManager.sharedInstance.displayNotificationwithType(NotificationManager.Colors.Success, style: NotificationManager.Styles.Status, message: "Message sent successfully")
+        }
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
 }

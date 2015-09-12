@@ -22,22 +22,22 @@ extension String {
     
     func getCategoryColor() -> UIColor{
         if self == "Faculty & Staff"{
-            return UIColor(red: 0/255.0, green: 122.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+            return UIColor(netHex: 0x007AFF)
         }
         else if self == "Arts & Humanities"{
-            return UIColor(red: 255.0/255.0, green: 204.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+            return UIColor(netHex: 0xFFCC00)
         }
         else if self == "Health & Environment"{
-            return UIColor(red: 76.0/255.0, green: 209.0/255.0, blue: 100.0/255.0, alpha: 1.0)
+            return UIColor(netHex: 0x4CD164)
         }
         else if self == "News Releases"{
             return UIColor.purpleColor()
         }
         else if self == "Business, Law, & Society"{
-            return UIColor(red: 82.0/255.0, green: 237/255.0, blue: 199.0/255.0, alpha: 1.0)
+            return UIColor(netHex: 0x47E6BE)
         }
         else {
-            return UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 85.0/255.0, alpha: 1.0)
+            return UIColor(netHex: 0xFF5E55)
         }
     }
     

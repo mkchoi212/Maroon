@@ -1,7 +1,7 @@
 { "buildings" : [
   {
     "abbrev": 0,
-    "name": "Olsen (E.D.) Grove Picnic Area",
+    "name": "Olsen Grove Picnic Area",
     "address": "959 Olsen Bl",
     "city": "College Station",
     "zip": 77845,
@@ -9,7 +9,7 @@
   },
   {
     "abbrev": "OLSN",
-    "name": "Olsen Field at Bluebell Park",
+    "name": "Olsen Field",
     "address": "955 Olsen Bl",
     "city": "College Station",
     "zip": 77845,
@@ -33,7 +33,7 @@
   },
   {
     "abbrev": 0,
-    "name": "Julia And Mark Ellis '79 Soccer Building",
+    "name": "Julia And Mark Ellis Soccer Building",
     "address": "940 Olsen Bl",
     "city": "College Station",
     "zip": 77845,
@@ -81,7 +81,7 @@
   },
   {
     "abbrev": 0,
-    "name": "George P. Mitchell '40 Outdoor Tennis Center",
+    "name": "George P. Mitchell Outdoor Tennis Center",
     "address": "750 Penberthy Bl",
     "city": "College Station",
     "zip": 77845,
