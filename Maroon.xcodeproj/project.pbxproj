@@ -25,7 +25,6 @@
 		CA5739E71B780DD9004A8CEA /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5739E21B780DD9004A8CEA /* RSSFeed.swift */; };
 		CA5739E81B780DD9004A8CEA /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5739E31B780DD9004A8CEA /* RSSItem.swift */; };
 		CA5739E91B780DD9004A8CEA /* NSDate+dateFromInternetDateTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5739E41B780DD9004A8CEA /* NSDate+dateFromInternetDateTimeString.swift */; };
-		CA5739EA1B780DD9004A8CEA /* String+imageLinksFromHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5739E51B780DD9004A8CEA /* String+imageLinksFromHTML.swift */; };
 		CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */; };
 		CA8870431BA3D48300ED49AF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8870421BA3D48300ED49AF /* NotificationManager.swift */; };
 		CA8870451BA3D4AA00ED49AF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8870441BA3D4AA00ED49AF /* ColorExtension.swift */; };
@@ -152,7 +151,6 @@
 		CA5739E21B780DD9004A8CEA /* RSSFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSFeed.swift; sourceTree = "<group>"; };
 		CA5739E31B780DD9004A8CEA /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
 		CA5739E41B780DD9004A8CEA /* NSDate+dateFromInternetDateTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+dateFromInternetDateTimeString.swift"; sourceTree = "<group>"; };
-		CA5739E51B780DD9004A8CEA /* String+imageLinksFromHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+imageLinksFromHTML.swift"; sourceTree = "<group>"; };
 		CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewController.swift; sourceTree = "<group>"; };
 		CA8870421BA3D48300ED49AF /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		CA8870441BA3D4AA00ED49AF /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -406,7 +404,6 @@
 		CAAE0E8B1B77F5B100D7EAA5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CADAAD121B78115300F21E47 /* RSS Parser */,
 				CAC331781B6489310036FD6B /* HomeViewController.swift */,
 				CAAE0E941B77FA2D00D7EAA5 /* HomeNewsTableViewCell.swift */,
 				CACB68961B655739007F4AD1 /* TamuMenuViewController.swift */,
@@ -466,6 +463,7 @@
 				CAC331391B6486E60036FD6B /* AppDelegate.swift */,
 				CA522EEA1B6831CB003C0054 /* WebViewController.swift */,
 				CA8870421BA3D48300ED49AF /* NotificationManager.swift */,
+				CADAAD121B78115300F21E47 /* RSS Parser */,
 				CA8870461BA3D4B200ED49AF /* Extensions */,
 				CA12F46F1B80F2A400922BA7 /* Contacts */,
 				CAAE0E8B1B77F5B100D7EAA5 /* Home */,
@@ -661,7 +659,6 @@
 				CA5739E21B780DD9004A8CEA /* RSSFeed.swift */,
 				CA5739E31B780DD9004A8CEA /* RSSItem.swift */,
 				CA5739E41B780DD9004A8CEA /* NSDate+dateFromInternetDateTimeString.swift */,
-				CA5739E51B780DD9004A8CEA /* String+imageLinksFromHTML.swift */,
 			);
 			name = "RSS Parser";
 			sourceTree = "<group>";
@@ -931,7 +928,6 @@
 				CABD3D5D1B6AF98D0074143D /* CreditTableViewController.swift in Sources */,
 				CACB68CE1B656890007F4AD1 /* MXLCalendarAttendee.m in Sources */,
 				CAEDFCAF1B77CEB700E33B5B /* SAParallaxContainerView.swift in Sources */,
-				CA5739EA1B780DD9004A8CEA /* String+imageLinksFromHTML.swift in Sources */,
 				CAEDFCAD1B77CEB700E33B5B /* NSLayoutConstraint+Easy.swift in Sources */,
 				CACB68DB1B656899007F4AD1 /* UIColor+expanded.m in Sources */,
 				CA5739E71B780DD9004A8CEA /* RSSFeed.swift in Sources */,

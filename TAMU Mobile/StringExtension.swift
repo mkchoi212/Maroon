@@ -41,19 +41,23 @@ extension String {
         }
     }
     
-    func polishURL() -> NSURL{
-        var afterIMGSRC = self.componentsSeparatedByString("<img src=\"")[1]
-        let isolatedString = afterIMGSRC.componentsSeparatedByString("<a href=\"").last
-        if isolatedString != afterIMGSRC {
-            var polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\">", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-            var polishedURL = polishedString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-            return NSURL(string: polishedURL)!
+    var imageLinksFromHTMLString : [NSURL]{
+        var matches = [NSURL]()
+        var error: NSError?
+        var full_range: NSRange = NSMakeRange(0, count(self))
+        
+        if let regex = NSRegularExpression(pattern:"(https?)\\S*(png|jpg|jpeg|gif)", options:.CaseInsensitive, error:&error){
+            regex.enumerateMatchesInString(self, options: NSMatchingOptions(0), range: full_range) {
+                (result : NSTextCheckingResult!, _, _) in
+                
+                // didn't find a way to bridge an NSRange to Range<String.Index>
+                // bridging String to NSString instead
+                var str = (self as NSString).substringWithRange(result.range) as String
+                
+                matches.append(NSURL(string: str)!)
+            }
         }
-        else{
-            let isolatedString = afterIMGSRC.componentsSeparatedByString("width").first
-             var polishedString = isolatedString!.stringByReplacingOccurrencesOfString("\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-            var polishedURL = polishedString.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-            return NSURL(string: polishedURL)!
-        }
+        return matches
     }
+
 }
