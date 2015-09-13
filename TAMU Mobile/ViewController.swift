@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         businessTableView.estimatedRowHeight = 100
         businessTableView.rowHeight = UITableViewAutomaticDimension
         
-        navigationItem.title = "Off-campus Food"
+        navigationItem.title = "OFF-CAMPUS"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Filter", style: .Plain, target: self, action: "onFilterButton")
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
         

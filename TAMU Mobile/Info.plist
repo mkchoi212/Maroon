@@ -59,7 +59,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Aachen Bold Plain.ttf</string>
+		<string>Aachen Medium Plain.ttf</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

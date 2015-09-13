@@ -28,6 +28,7 @@
 		CA6188DE1B684AEB00CBF4C6 /* PrivacyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */; };
 		CA8870431BA3D48300ED49AF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8870421BA3D48300ED49AF /* NotificationManager.swift */; };
 		CA8870451BA3D4AA00ED49AF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8870441BA3D4AA00ED49AF /* ColorExtension.swift */; };
+		CA88704A1BA536EB00ED49AF /* Aachen Medium Plain.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA8870491BA536EB00ED49AF /* Aachen Medium Plain.ttf */; };
 		CA9593721B7AA47800CBC954 /* statement.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA9593711B7AA47800CBC954 /* statement.rtf */; };
 		CA9FD4D41B698A60003733DF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D31B698A60003733DF /* DateExtension.swift */; };
 		CA9FD4D81B69AFB9003733DF /* CampusMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */; };
@@ -154,6 +155,7 @@
 		CA6188DD1B684AEB00CBF4C6 /* PrivacyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewController.swift; sourceTree = "<group>"; };
 		CA8870421BA3D48300ED49AF /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		CA8870441BA3D4AA00ED49AF /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		CA8870491BA536EB00ED49AF /* Aachen Medium Plain.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aachen Medium Plain.ttf"; sourceTree = "<group>"; };
 		CA9593711B7AA47800CBC954 /* statement.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = statement.rtf; sourceTree = "<group>"; };
 		CA9FD4D31B698A60003733DF /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CA9FD4D71B69AFB9003733DF /* CampusMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusMapViewController.swift; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 			children = (
 				CAA120B11B65DDCC007D7802 /* Image */,
 				CACB68BF1B656855007F4AD1 /* Calendar */,
+				CA8870491BA536EB00ED49AF /* Aachen Medium Plain.ttf */,
 				CAC331751B6487BD0036FD6B /* TAMU Mobile-Bridging-Header.h */,
 				CAC331451B6486E60036FD6B /* LaunchScreen.xib */,
 				CAC331431B6486E60036FD6B /* Images.xcassets */,
@@ -785,6 +788,7 @@
 				CA9593721B7AA47800CBC954 /* statement.rtf in Resources */,
 				CAC331701B64878E0036FD6B /* SwitchCell.xib in Resources */,
 				CABD3D611B6B01280074143D /* text.rtf in Resources */,
+				CA88704A1BA536EB00ED49AF /* Aachen Medium Plain.ttf in Resources */,
 				CABD3D631B6B10060074143D /* tamubuildings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
