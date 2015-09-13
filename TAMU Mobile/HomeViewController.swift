@@ -46,6 +46,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func getNews(){
         let request = NSURLRequest(URL: NSURL(string: "http://today.tamu.edu/feed/")!)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+      
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
             if error == nil{
                 if let myFeed = feed{
@@ -76,7 +77,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var polishedURL = NSURL()
         for item in feed!.items{
             if let unpolishedURL = item.content{
-                polishedURL = unpolishedURL.polishURL()
+                let urls = unpolishedURL.imageLinksFromHTMLString
+                polishedURL = urls.first!
                 break
             }
         }
@@ -107,7 +109,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     //MARK: table
     func configureNewsTable() {
-        
         self.tableHeaderView = self.newsTableView.tableHeaderView!
         self.newsTableView.tableHeaderView = nil
         self.newsTableView.addSubview(self.tableHeaderView)
@@ -115,7 +116,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         self.newsTableView.contentInset = UIEdgeInsetsMake(kTableHeightHeader, 0, 0, 0)
         self.newsTableView.contentOffset = CGPoint(x: 0, y: -kTableHeightHeader)
-        
     }
     
     func updatingTableHeaderView() {
@@ -127,7 +127,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         self.tableHeaderView.frame = newsHeaderTableRect
-        
         visiblePortionOfNewsTableHeader(newsHeaderTableRect: newsHeaderTableRect)
     }
     
