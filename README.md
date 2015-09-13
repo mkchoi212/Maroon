@@ -15,7 +15,7 @@ sudo gem install cocoapods
 ##Future Improvements
 - Slide show in the home view of all images from the RSS feed
 - Scheduler in home screen via navgiation bar?
-- Link for donwloading images from the RSS feed is currently being RegExed. Maybe use an HTML parser to do this in the future? The current RegEx can be found in the `StringExtension.swift`.
+- Link for donwloading images from the RSS feed is currently being RegExed. Maybe use an HTML parser to do this in the future? The current RegEx can be found in the `StringExtension.swift` (Done)
 
 ## Pull Requests
 I actively welcome your pull requests.
