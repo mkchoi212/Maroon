@@ -1,5 +1,6 @@
 #Maroon
 A replacement for the old, antiquated, horrible, sluggish, and ugly app called TAMUMobile.
+***currently in military. Will only be able to review PRs every couple of weeks/months...***
 
 ## Setting up the project
 ```
