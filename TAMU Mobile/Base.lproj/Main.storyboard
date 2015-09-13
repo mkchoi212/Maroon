@@ -264,7 +264,7 @@
             </objects>
             <point key="canvasLocation" x="1320" y="-276"/>
         </scene>
-        <!--CONTACTS-->
+        <!--Contacts-->
         <scene sceneID="DtE-H3-NdO">
             <objects>
                 <tableViewController id="44p-OP-Cxu" customClass="ContactsTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -323,7 +323,7 @@
                             <outlet property="delegate" destination="44p-OP-Cxu" id="YYw-m3-7wC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="CONTACTS" id="O8z-PT-Bse"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="O8z-PT-Bse"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZa-sT-8fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -627,7 +627,7 @@
             </objects>
             <point key="canvasLocation" x="986" y="-910"/>
         </scene>
-        <!--YELP-->
+        <!--Yelp-->
         <scene sceneID="3OL-NL-HNn">
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="NDF-xg-6oE" customClass="DetailViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -820,7 +820,7 @@
                             <constraint firstItem="Thj-mb-6Cw" firstAttribute="leading" secondItem="dSU-Ka-ntp" secondAttribute="leading" constant="16" id="zFd-YO-xAG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="YELP" id="EKK-hV-nmo">
+                    <navigationItem key="navigationItem" title="Yelp" id="EKK-hV-nmo">
                         <barButtonItem key="rightBarButtonItem" image="startnav" id="ng0-iY-qy7">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <connections>
@@ -848,7 +848,7 @@
             </objects>
             <point key="canvasLocation" x="1416" y="-910"/>
         </scene>
-        <!--ON-CAMPUS-->
+        <!--On-Campus-->
         <scene sceneID="KMw-Yg-Izm">
             <objects>
                 <viewController storyboardIdentifier="campusfood" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kz3-wr-k6s" customClass="CampusDiningViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -966,7 +966,7 @@
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="ON-CAMPUS" id="ESv-fb-dgW"/>
+                    <navigationItem key="navigationItem" title="On-Campus" id="ESv-fb-dgW"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -998,7 +998,7 @@
             </objects>
             <point key="canvasLocation" x="-421" y="-910"/>
         </scene>
-        <!--SETTINGS-->
+        <!--Settings-->
         <scene sceneID="Hj1-tI-1e3">
             <objects>
                 <tableViewController id="BML-fa-Sti" customClass="SettingsTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -1158,7 +1158,7 @@
                             <outlet property="delegate" destination="BML-fa-Sti" id="pwR-Gf-a4z"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SETTINGS" id="3gM-cf-zhR"/>
+                    <navigationItem key="navigationItem" title="Settings" id="3gM-cf-zhR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="footerTitlesColor">
@@ -1221,7 +1221,7 @@
             </objects>
             <point key="canvasLocation" x="-382" y="447"/>
         </scene>
-        <!--CREDIT-->
+        <!--Credit-->
         <scene sceneID="p4G-PG-mZI">
             <objects>
                 <viewController id="LP1-lp-cmu" customClass="CreditViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -1250,7 +1250,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="CREDIT" id="ElZ-DV-zeX"/>
+                    <navigationItem key="navigationItem" title="Credit" id="ElZ-DV-zeX"/>
                     <connections>
                         <outlet property="textview" destination="3VV-rY-NQN" id="2vq-CU-3rL"/>
                     </connections>
@@ -1259,7 +1259,7 @@
             </objects>
             <point key="canvasLocation" x="-382" y="1168"/>
         </scene>
-        <!--PRIVACY-->
+        <!--Privacy-->
         <scene sceneID="pOg-7I-p9R">
             <objects>
                 <tableViewController id="pcx-97-JTf" customClass="PrivacyTableViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -1329,7 +1329,7 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="PRIVACY" id="prQ-Ol-oHu"/>
+                    <navigationItem key="navigationItem" title="Privacy" id="prQ-Ol-oHu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="statementText" destination="rjc-to-2T3" id="he8-Rt-XLC"/>
@@ -1358,7 +1358,7 @@
             </objects>
             <point key="canvasLocation" x="-1342" y="447"/>
         </scene>
-        <!--CAMPUS MAP-->
+        <!--Campus Map-->
         <scene sceneID="cBL-Ne-R5m">
             <objects>
                 <viewController storyboardIdentifier="campusmap" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jHu-6f-5TC" customClass="CampusMapViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -1439,7 +1439,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="CAMPUS MAP" id="5ss-8N-vqc">
+                    <navigationItem key="navigationItem" title="Campus Map" id="5ss-8N-vqc">
                         <barButtonItem key="rightBarButtonItem" image="startnav" id="7il-zY-cxp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -1477,7 +1477,7 @@
             </objects>
             <point key="canvasLocation" x="-496" y="-1655"/>
         </scene>
-        <!--HOME-->
+        <!--Home-->
         <scene sceneID="vLD-mu-kY8">
             <objects>
                 <viewController id="dLu-EC-m8d" customClass="HomeViewController" customModule="Maroon" customModuleProvider="target" sceneMemberID="viewController">
@@ -1663,7 +1663,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="azw-qz-PeA"/>
+                    <navigationItem key="navigationItem" title="Home" id="azw-qz-PeA"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="bigHeaderImageView" destination="TKh-Hu-tLz" id="97M-gY-pIa"/>

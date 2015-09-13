@@ -30,9 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SVGeocoder.setGoogleMapsAPIKey("AIzaSyDMpb-f2UPrErM80V8rcAk0RVqe9Y-8z-g")
         Fabric.with([Twitter()])
 
-        let barFont = UIFont(name: "AachenMediumPlain", size: 21)!
         let barColor = UIColor.whiteColor()
-        let barAttributes : [NSString : AnyObject] = [NSFontAttributeName : barFont , NSForegroundColorAttributeName : barColor]
+        let barAttributes : [NSString : AnyObject] = [NSForegroundColorAttributeName : barColor]
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
