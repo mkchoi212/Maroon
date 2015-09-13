@@ -173,7 +173,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATHLETICS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0s-RW-VYh">
                                             <rect key="frame" x="8" y="27" width="304" height="41"/>
-                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="36"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="36"/>
                                             <color key="textColor" red="0.41530933580000001" green="0.0" blue="0.0022924091639999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>

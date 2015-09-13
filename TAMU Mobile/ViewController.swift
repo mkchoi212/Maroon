@@ -193,7 +193,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         UIView.transitionFromView(businessMapView, toView: businessTableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft | UIViewAnimationOptions.ShowHideTransitionViews, completion: nil)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Map", style: .Plain, target: self, action: "onMapButton")
-        
     }
     
     func onMapButton() {

@@ -79,11 +79,11 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-  
+        
         let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! NewsTableViewCell
         let webVC = storyboard?.instantiateViewControllerWithIdentifier("webview") as! WebViewController
-       
-         var articlePath = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        
+        var articlePath = selectedCell.link.stringByReplacingOccurrencesOfString("http://", withString: "http://www.", options: NSStringCompareOptions.LiteralSearch, range: nil).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         webVC.requestURL = NSURL(string: articlePath)!
         webVC.customTitle = selectedCell.titleLabel.text!
         webVC.isModal = true
@@ -95,7 +95,7 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
     func shareArticle(sender : AnyObject){
         var cell = tableView.indexPathForRowAtPoint(sender.convertPoint(CGPointZero, toView: tableView))
         let dictionary = xmlParser.arrParsedData[cell!.section] as Dictionary<String, String>
-
+        
         let url = dictionary["link"]!.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         let articleURL = NSURL(string: url)
         
@@ -112,13 +112,13 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         //Fri, 24 Jul 2015 22:35:00 GMT
         dateFormatter.dateFormat = "eee, dd MMM yyyy HH:mm:ss zzz"
         let date = dateFormatter.dateFromString(rssDate)
-
+        
         //Jul 24, 2015
         dateFormatter.timeZone = NSTimeZone(abbreviation: "UTC")
         dateFormatter.dateFormat = "MMM dd, YYYY"
- 
+        
         let dateString = dateFormatter.stringFromDate(date!)
-
+        
         return dateString
     }
     
@@ -126,14 +126,14 @@ class NewsTableViewController: UITableViewController, XMLParserDelegate {
         var urlString = htmlString.stringByReplacingOccurrencesOfString("<img src=\"", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         urlString = urlString.componentsSeparatedByString("\"").first!
         urlString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-
+        
         return NSURL(string: urlString)!
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 160
     }
-
+    
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 9.5
     }
