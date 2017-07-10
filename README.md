@@ -1,16 +1,19 @@
-#Maroon
+# Maroon
 A replacement for the old, antiquated, horrible, sluggish, and ugly app called TAMUMobile.
-***Currently in the military. Will only be able to review PRs every couple of weeks/months...***
+
+![App Preview](https://github.com/mkchoi212/Maroon/blob/master/assets/preview/preview.gif)
 
 ## Setting up the project
 ```
 pod install
 ```
-If you don't have cocoapods installed on your machine, run this command in order to install the gem
+If you don't have cocoapods installed on your machine, run this command in order to install it
+
 ```
 sudo gem install cocoapods
 ```
-*Please note when updating pods, `AFNetworking` may throw errors regarding dependencies/modules. Replace all import statements with warnings with `#import <AFNetworking/AFNetworking.h>`. Will replace `AFNetworking` with `Alamofire` soon though so yeah..*
+
+*Please note when updating pods, `AFNetworking` may throw errors regarding dependencies/modules. Replace all import statements with warnings with `#import <AFNetworking/AFNetworking.h>`. Will replace `AFNetworking` with `Alamofire` soon though.*
  
 ##Future Improvements
 - Slide show in the home view of all images from the RSS feed
